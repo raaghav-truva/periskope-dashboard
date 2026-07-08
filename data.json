@@ -1,0 +1,39 @@
+{
+  "total_org_contacts": 11805,
+  "total_scanned": 11000,
+  "label_counts": {
+    "Home Loans": 130,
+    "Active Warm": 40,
+    "Still Looking": 91,
+    "Future Plan": 21,
+    "Balance Transfer (Immediate)": 2,
+    "Balance Transfer (Future)": 3,
+    "Registration Complete": 0,
+    "M0": 0,
+    "M1": 85,
+    "M2": 40
+  },
+  "home_loans_no_m_tags": 45,
+  "m0_only": 0,
+  "m1_no_m2": 45,
+  "daily": {
+    "m0": {},
+    "m1": {
+      "2026-06-30": 42,
+      "2026-07-02": 11,
+      "2026-07-03": 12,
+      "2026-07-04": 2,
+      "2026-07-05": 1,
+      "2026-07-06": 2,
+      "2026-07-07": 13,
+      "2026-07-08": 2
+    },
+    "m2": {
+      "2026-06-30": 32,
+      "2026-07-02": 4,
+      "2026-07-03": 1,
+      "2026-07-06": 2,
+      "2026-07-08": 1
+    }
+  }
+}

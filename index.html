@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Truva Home Loans — Lead Funnel Dashboard</title>
+<style>
+  :root{
+    --bg:#0F1410;
+    --panel:#161D18;
+    --panel-2:#1C2420;
+    --line:#2A342D;
+    --text:#EAF0EA;
+    --muted:#8FA093;
+    --accent:#5FBF8F;
+    --accent-2:#E8B04B;
+    --warn:#D9714E;
+    --font-display: 'Iowan Old Style', 'Georgia', serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'SFMono-Regular', Consolas, monospace;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    padding:40px 24px 80px;
+  }
+  .wrap{max-width:1100px;margin:0 auto;}
+  header{margin-bottom:36px;border-bottom:1px solid var(--line);padding-bottom:24px;}
+  .eyebrow{
+    font-family:var(--font-mono);
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    font-size:11px;
+    color:var(--accent);
+    margin-bottom:10px;
+  }
+  h1{
+    font-family:var(--font-display);
+    font-size:36px;
+    font-weight:400;
+    margin:0 0 8px;
+    letter-spacing:-0.01em;
+  }
+  .sub{color:var(--muted);font-size:14px;max-width:640px;line-height:1.5;}
+  .refresh-note{
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--muted);
+    margin-top:14px;
+  }
+
+  .stat-row{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    margin-bottom:32px;
+  }
+  .stat{
+    background:var(--panel);
+    padding:20px 16px;
+  }
+  .stat .num{font-family:var(--font-display);font-size:32px;color:var(--text);}
+  .stat .lab{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:6px;}
+  .stat.hero .num{color:var(--accent);}
+
+  h2{
+    font-family:var(--font-display);
+    font-weight:400;
+    font-size:20px;
+    margin:44px 0 16px;
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  h2 .idx{font-family:var(--font-mono);font-size:12px;color:var(--muted);}
+
+  .grid-labels{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:10px;
+  }
+  .label-card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:16px 18px;
+    position:relative;
+    overflow:hidden;
+  }
+  .label-card .bar{
+    position:absolute;
+    left:0;top:0;bottom:0;
+    width:3px;
+    background:var(--accent);
+  }
+  .label-card.zero .bar{background:var(--warn);}
+  .label-card .name{font-size:12px;color:var(--muted);margin-bottom:6px;}
+  .label-card .count{font-family:var(--font-display);font-size:26px;}
+  .label-card.zero .count{color:var(--warn);}
+
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);}
+  th{color:var(--muted);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;}
+  td.num{font-family:var(--font-mono);text-align:right;}
+  tr.total td{font-weight:600;background:var(--panel-2);}
+
+  .funnel{display:flex;flex-direction:column;gap:6px;margin-top:6px;}
+  .funnel-row{display:grid;grid-template-columns:180px 1fr 60px;align-items:center;gap:12px;}
+  .funnel-row .label{font-size:13px;color:var(--muted);}
+  .funnel-row .track{background:var(--panel-2);border-radius:4px;height:22px;overflow:hidden;border:1px solid var(--line);}
+  .funnel-row .fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2));}
+  .funnel-row .val{font-family:var(--font-mono);font-size:13px;text-align:right;}
+
+  .daily-chart{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:20px;
+  }
+  .daily-chart svg{width:100%;height:220px;}
+  .legend{display:flex;gap:18px;margin-top:12px;font-size:12px;color:var(--muted);}
+  .legend span{display:inline-flex;align-items:center;gap:6px;}
+  .dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+
+  .callout{
+    background:rgba(217,113,78,0.08);
+    border:1px solid rgba(217,113,78,0.35);
+    border-radius:6px;
+    padding:14px 18px;
+    font-size:13px;
+    color:var(--text);
+    line-height:1.6;
+    margin-top:16px;
+  }
+  .callout b{color:var(--warn);}
+  .footnote{color:var(--muted);font-size:11px;margin-top:8px;line-height:1.6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Truva Home Loans · Periskope Pipeline</div>
+    <h1>Lead Funnel Dashboard</h1>
+    <div class="sub">Live counts pulled directly from your Periskope contact database (11,805 contacts scanned in full) — replacing the earlier "50+" estimates with exact totals.</div>
+    <div class="refresh-note">Snapshot taken 8 Jul 2026 · org: Truva Home Loans</div>
+  </header>
+
+  <div class="stat-row">
+    <div class="stat hero">
+      <div class="num" id="stat-homeloans">–</div>
+      <div class="lab">Home Loans (total)</div>
+    </div>
+    <div class="stat">
+      <div class="num" id="stat-m1">–</div>
+      <div class="lab">M1 sent</div>
+    </div>
+    <div class="stat">
+      <div class="num" id="stat-m2">–</div>
+      <div class="lab">M2 sent</div>
+    </div>
+    <div class="stat">
+      <div class="num" id="stat-untouched">–</div>
+      <div class="lab">Home Loans, no M-series yet</div>
+    </div>
+    <div class="stat">
+      <div class="num" id="stat-total">–</div>
+      <div class="lab">Total contacts in org</div>
+    </div>
+  </div>
+
+  <h2><span class="idx">01</span> Contacts by label</h2>
+  <div class="grid-labels" id="label-grid"></div>
+
+  <h2><span class="idx">02</span> M-series funnel (M0 → M1 → M2)</h2>
+  <div class="funnel" id="funnel"></div>
+  <div class="callout" id="m0-callout"></div>
+
+  <h2><span class="idx">03</span> Stuck-in-stage breakdown</h2>
+  <table>
+    <thead><tr><th>Segment</th><th class="num">Contacts</th></tr></thead>
+    <tbody id="stuck-table"></tbody>
+  </table>
+
+  <h2><span class="idx">04</span> Daily M1 / M2 sends</h2>
+  <div class="daily-chart">
+    <svg id="daily-svg" viewBox="0 0 900 220" preserveAspectRatio="none"></svg>
+    <div class="legend">
+      <span><span class="dot" style="background:#5FBF8F"></span> M1 sent</span>
+      <span><span class="dot" style="background:#E8B04B"></span> M2 sent</span>
+    </div>
+    <div class="footnote">Derived from each contact's last-updated timestamp while the M1/M2 label was present — a proxy for send date, not a message log. For exact daily send volume, pull broadcast logs by rule ID from Periskope directly.</div>
+  </div>
+
+</div>
+
+<script>
+async function loadDashboard() {
+  let data;
+  try {
+    const res = await fetch('data.json?_=' + Date.now());
+    data = await res.json();
+  } catch (e) {
+    document.body.innerHTML = '<p style="color:#D9714E;font-family:monospace;padding:40px;">Could not load data.json. Make sure it sits next to this HTML file and the GitHub Action has run at least once.</p>';
+    return;
+  }
+
+  document.getElementById('stat-homeloans').textContent = data.label_counts['Home Loans'];
+  document.getElementById('stat-m1').textContent = data.label_counts['M1'];
+  document.getElementById('stat-m2').textContent = data.label_counts['M2'];
+  document.getElementById('stat-untouched').textContent = data.home_loans_no_m_tags;
+  document.getElementById('stat-total').textContent = data.total_org_contacts.toLocaleString();
+
+  if (data.generated_at) {
+    document.querySelector('.refresh-note').textContent = 'Last updated: ' + new Date(data.generated_at).toLocaleString();
+  }
+
+  const grid = document.getElementById('label-grid');
+  Object.entries(data.label_counts).forEach(([name, count]) => {
+    const card = document.createElement('div');
+    card.className = 'label-card' + (count === 0 ? ' zero' : '');
+    card.innerHTML = `<div class="bar"></div><div class="name">${name}</div><div class="count">${count}</div>`;
+    grid.appendChild(card);
+  });
+
+  const funnelSteps = [
+    { label: 'Home Loans (entry)', value: data.label_counts['Home Loans'] },
+    { label: 'M0 sent', value: data.label_counts['M0'] },
+    { label: 'M1 sent', value: data.label_counts['M1'] },
+    { label: 'M2 sent', value: data.label_counts['M2'] },
+  ];
+  const maxVal = Math.max(...funnelSteps.map(s => s.value), 1);
+  const funnelEl = document.getElementById('funnel');
+  funnelSteps.forEach(s => {
+    const pct = Math.max((s.value / maxVal) * 100, s.value > 0 ? 4 : 0);
+    const row = document.createElement('div');
+    row.className = 'funnel-row';
+    row.innerHTML = `
+      <div class="label">${s.label}</div>
+      <div class="track"><div class="fill" style="width:${pct}%"></div></div>
+      <div class="val">${s.value}</div>`;
+    funnelEl.appendChild(row);
+  });
+
+  document.getElementById('m0-callout').innerHTML =
+    data.label_counts['M0'] === 0
+      ? `<b>M0 = 0.</b> Rule 1 ("Intro to New Leads", which tags m0) has never fired or was reset. M1/M2 contacts likely predate the rules being paused, or were tagged manually. Confirm before activating Rule 1.`
+      : `M0: ${data.label_counts['M0']} · M1: ${data.label_counts['M1']} · M2: ${data.label_counts['M2']}`;
+
+  const stuckRows = [
+    ['Home Loans present, M0/M1/M2 all absent', data.home_loans_no_m_tags],
+    ['M0 sent, M1 & M2 not sent', data.m0_only],
+    ['M1 sent, M2 not sent', data.m1_no_m2],
+  ];
+  const tbody = document.getElementById('stuck-table');
+  stuckRows.forEach(([label, val]) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${label}</td><td class="num">${val}</td>`;
+    tbody.appendChild(tr);
+  });
+
+  const svg = document.getElementById('daily-svg');
+  const allDates = Array.from(new Set([...Object.keys(data.daily.m1 || {}), ...Object.keys(data.daily.m2 || {})])).sort();
+  const W = 900, H = 220, padL = 30, padB = 24, padT = 10;
+  const maxDaily = Math.max(...allDates.map(d => Math.max((data.daily.m1||{})[d]||0, (data.daily.m2||{})[d]||0)), 1);
+  const xStep = allDates.length > 1 ? (W - padL - 10) / (allDates.length - 1) : 0;
+  function yFor(v){ return H - padB - (v / maxDaily) * (H - padB - padT); }
+  function pathFor(series){
+    return allDates.map((d,i) => {
+      const x = padL + i * xStep;
+      const y = yFor((series||{})[d] || 0);
+      return (i === 0 ? 'M' : 'L') + x.toFixed(1) + ',' + y.toFixed(1);
+    }).join(' ');
+  }
+  let svgContent = '';
+  for(let g=0; g<=4; g++){
+    const y = padT + g*(H-padT-padB)/4;
+    svgContent += `<line x1="${padL}" y1="${y}" x2="${W-10}" y2="${y}" stroke="#2A342D" stroke-width="1"/>`;
+  }
+  svgContent += `<path d="${pathFor(data.daily.m1)}" fill="none" stroke="#5FBF8F" stroke-width="2.5"/>`;
+  svgContent += `<path d="${pathFor(data.daily.m2)}" fill="none" stroke="#E8B04B" stroke-width="2.5"/>`;
+  allDates.forEach((d,i) => {
+    const x = padL + i * xStep;
+    svgContent += `<circle cx="${x}" cy="${yFor((data.daily.m1||{})[d]||0)}" r="3" fill="#5FBF8F"/>`;
+    svgContent += `<circle cx="${x}" cy="${yFor((data.daily.m2||{})[d]||0)}" r="3" fill="#E8B04B"/>`;
+    svgContent += `<text x="${x}" y="${H-4}" font-size="9" fill="#8FA093" text-anchor="middle">${d.slice(5)}</text>`;
+  });
+  svg.innerHTML = svgContent;
+}
+
+loadDashboard();
+</script>
+</body>
+</html>
