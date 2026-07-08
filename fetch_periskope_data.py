@@ -113,6 +113,21 @@ def has(contact, label_name):
     return label_name.lower() in labels
 
 
+def build_contacts_by_label(contacts):
+    """For each target label, list the contacts carrying it (name + phone),
+    so the dashboard can show who's in each bucket on click."""
+    result = {name: [] for name in TARGET_LABELS}
+    for c in contacts:
+        phone = (c.get("contact_id") or "").split("@")[0]
+        display_name = c.get("contact_name") or phone or "Unknown"
+        for name, key in TARGET_LABELS.items():
+            if has(c, key):
+                result[name].append({"name": display_name, "phone": phone})
+    for name in result:
+        result[name].sort(key=lambda c: c["name"].lower())
+    return result
+
+
 def build_dataset(contacts):
     label_counts = {
         name: sum(1 for c in contacts if has(c, key))
@@ -144,6 +159,7 @@ def build_dataset(contacts):
     return {
         "total_org_contacts": len(contacts),
         "label_counts": label_counts,
+        "contacts_by_label": build_contacts_by_label(contacts),
         "home_loans_no_m_tags": home_loans_no_m,
         "m0_only": m0_only,
         "m1_no_m2": m1_no_m2,

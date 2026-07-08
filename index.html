@@ -101,6 +101,51 @@
   .label-card .name{font-size:12px;color:var(--muted);margin-bottom:6px;}
   .label-card .count{font-family:var(--font-display);font-size:26px;}
   .label-card.zero .count{color:var(--warn);}
+  .label-card{cursor:pointer;transition:border-color .15s ease,background .15s ease;}
+  .label-card:hover{border-color:var(--accent);background:var(--panel-2);}
+
+  .modal-overlay{
+    display:none;
+    position:fixed;inset:0;
+    background:rgba(0,0,0,0.6);
+    align-items:center;justify-content:center;
+    z-index:100;
+    padding:24px;
+  }
+  .modal-overlay.open{display:flex;}
+  .modal{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:8px;
+    max-width:480px;width:100%;
+    max-height:80vh;
+    display:flex;flex-direction:column;
+    overflow:hidden;
+  }
+  .modal-header{
+    padding:18px 20px;
+    border-bottom:1px solid var(--line);
+    display:flex;align-items:center;justify-content:space-between;
+    gap:12px;
+  }
+  .modal-header .title{font-family:var(--font-display);font-size:18px;}
+  .modal-header .count-badge{font-family:var(--font-mono);font-size:11px;color:var(--muted);margin-top:4px;}
+  .modal-close{
+    background:none;border:none;color:var(--muted);
+    font-size:22px;cursor:pointer;line-height:1;padding:2px 6px;
+  }
+  .modal-close:hover{color:var(--text);}
+  .modal-body{overflow-y:auto;padding:4px 0;}
+  .contact-row{
+    display:flex;justify-content:space-between;gap:12px;
+    padding:10px 20px;
+    border-bottom:1px solid var(--line);
+    font-size:13px;
+  }
+  .contact-row:last-child{border-bottom:none;}
+  .contact-row .cname{color:var(--text);}
+  .contact-row .cphone{font-family:var(--font-mono);color:var(--muted);white-space:nowrap;}
+  .modal-empty{padding:30px 20px;color:var(--muted);font-size:13px;text-align:center;line-height:1.6;}
 
   table{width:100%;border-collapse:collapse;font-size:13px;}
   th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);}
@@ -198,6 +243,19 @@
 
 </div>
 
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <div class="title" id="modal-title"></div>
+        <div class="count-badge" id="modal-count"></div>
+      </div>
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
 <script>
 async function loadDashboard() {
   let data;
@@ -219,11 +277,41 @@ async function loadDashboard() {
     document.querySelector('.refresh-note').textContent = 'Last updated: ' + new Date(data.generated_at).toLocaleString();
   }
 
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+
+  const overlay = document.getElementById('modal-overlay');
+  const modalTitle = document.getElementById('modal-title');
+  const modalCount = document.getElementById('modal-count');
+  const modalBody = document.getElementById('modal-body');
+
+  function openModal(name, count) {
+    const contacts = (data.contacts_by_label || {})[name];
+    modalTitle.textContent = name;
+    modalCount.textContent = count + (count === 1 ? ' contact' : ' contacts');
+    if (!contacts) {
+      modalBody.innerHTML = '<div class="modal-empty">Contact list not available yet — it will appear after the next data refresh (this dashboard build added it).</div>';
+    } else if (contacts.length === 0) {
+      modalBody.innerHTML = '<div class="modal-empty">No contacts with this label.</div>';
+    } else {
+      modalBody.innerHTML = contacts.map(c =>
+        `<div class="contact-row"><span class="cname">${escapeHtml(c.name)}</span><span class="cphone">${escapeHtml(c.phone)}</span></div>`
+      ).join('');
+    }
+    overlay.classList.add('open');
+  }
+  function closeModal() { overlay.classList.remove('open'); }
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
   const grid = document.getElementById('label-grid');
   Object.entries(data.label_counts).forEach(([name, count]) => {
     const card = document.createElement('div');
     card.className = 'label-card' + (count === 0 ? ' zero' : '');
     card.innerHTML = `<div class="bar"></div><div class="name">${name}</div><div class="count">${count}</div>`;
+    card.addEventListener('click', () => openModal(name, count));
     grid.appendChild(card);
   });
 
