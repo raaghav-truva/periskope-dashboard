@@ -1,6 +1,5 @@
 {
   "total_org_contacts": 11805,
-  "total_scanned": 11000,
   "label_counts": {
     "Home Loans": 130,
     "Active Warm": 40,
@@ -35,5 +34,6 @@
       "2026-07-06": 2,
       "2026-07-08": 1
     }
-  }
+  },
+  "generated_at": "2026-07-08T20:36:20.061704Z"
 }
