@@ -52,6 +52,7 @@ import os
 import json
 import sys
 import datetime
+from collections import Counter
 import urllib.request
 import urllib.error
 
@@ -113,19 +114,52 @@ def get_org_phone():
 
 
 def fetch_all_contacts(phone):
-    """Paginate through every contact in the org."""
+    """Paginate through every contact in the org. Also returns the API's own
+    reported `count` from the first page, so main() can flag it if what we
+    actually collected doesn't match — a sign of pagination drift on a
+    dataset that's still growing while we page through it."""
     all_contacts = []
     offset = 0
     limit = 2000
     headers = {"x-phone": phone}
+    api_reported_count = None
     while True:
         data = api_get("/contacts", {"limit": limit, "offset": offset}, headers)
+        if api_reported_count is None:
+            api_reported_count = data.get("count")
         batch = data.get("contacts", [])
         all_contacts.extend(batch)
         if len(batch) < limit:
             break
         offset += limit
-    return all_contacts
+    return all_contacts, api_reported_count
+
+
+def label_diagnostics(contacts, search_name=None):
+    """Frequency count of every RAW label string actually seen (case/whitespace
+    preserved) — lets us spot near-miss variants of a target label (extra
+    space, singular/plural, different casing preserved for display) that
+    would otherwise silently fail the exact match in has(). Also, if
+    search_name is given, dumps the raw labels for any contact whose name
+    contains it, so a specific "why isn't X showing up" report can be
+    checked directly against what we actually received from the API."""
+    freq = Counter()
+    for c in contacts:
+        for lab in (c.get("labels") or []):
+            freq[lab] += 1
+    top_labels = freq.most_common(60)
+
+    matches = []
+    if search_name:
+        needle = search_name.lower()
+        for c in contacts:
+            if needle in (c.get("contact_name") or "").lower():
+                matches.append({
+                    "name": c.get("contact_name"),
+                    "phone": (c.get("contact_id") or "").split("@")[0],
+                    "labels": c.get("labels") or [],
+                })
+    return top_labels, matches
 
 
 def has(contact, label_name):
@@ -243,8 +277,22 @@ def compute_daily_from_registry(marked):
 def main():
     phone = get_org_phone()
     print(f"Using x-phone: {phone}")
-    contacts = fetch_all_contacts(phone)
+    contacts, api_reported_count = fetch_all_contacts(phone)
+
+    if api_reported_count is not None and api_reported_count != len(contacts):
+        print(f"WARNING: Periskope reported count={api_reported_count} but we "
+              f"collected {len(contacts)} contacts across pagination — possible "
+              f"drift while paging through a live/growing dataset.")
+
     dataset = build_dataset(contacts)
+    dataset["api_reported_count"] = api_reported_count
+
+    # Defaults to the contact reported missing from the dashboard so this
+    # run's log/data.json settles the question directly; override with the
+    # DEBUG_CONTACT_NAME env var to check someone else later.
+    debug_name = os.environ.get("DEBUG_CONTACT_NAME", "Abhijeet Tandel")
+    top_labels, name_matches = label_diagnostics(contacts, search_name=debug_name)
+    dataset["diagnostics"] = {"top_raw_labels": top_labels, "name_search_matches": name_matches}
 
     today = datetime.datetime.utcnow().strftime("%Y-%m-%d")
     history = load_history()
@@ -256,9 +304,13 @@ def main():
     with open("data.json", "w") as f:
         json.dump(dataset, f, indent=2)
     total_tracked = sum(len(v) for v in history["marked"].values())
-    print(f"Wrote data.json — {dataset['total_org_contacts']} contacts scanned.")
+    print(f"Wrote data.json — {dataset['total_org_contacts']} contacts scanned "
+          f"(Periskope reports {api_reported_count}).")
     print(f"History registry now tracks {total_tracked} label-marks across "
           f"{len(dataset['daily']['total'])} day(s), through {today}.")
+    print(f"Top raw labels seen: {top_labels[:15]}")
+    if name_matches:
+        print(f"DEBUG_CONTACT_NAME matches: {json.dumps(name_matches, indent=2)}")
 
 
 if __name__ == "__main__":
