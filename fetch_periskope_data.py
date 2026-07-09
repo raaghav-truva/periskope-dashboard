@@ -25,14 +25,20 @@ if the org has multiple connected WhatsApp lines).
 DAILY HISTORY: Periskope's API doesn't expose a label-change log — a
 contact only has a single `updated_at` timestamp for the whole record, which
 drifts forward whenever anything about the contact changes (not just its
-labels). Using it directly as "the day this label was applied" (which the
-`daily` proxy below still does, for one-time backfill) silently loses
-historical accuracy over time. To get durable day-by-day numbers, this
-script keeps a persisted `history.json` snapshot of cumulative M0/M1/M2
-totals on every run and derives "marked today" as the delta between today's
-totals and the last recorded snapshot. That file must be committed
-alongside data.json (the workflow does `git add data.json history.json`) —
-without it, history resets to zero on every run.
+labels). So instead of relying on that timestamp, this script keeps its own
+persisted registry in `history.json`: the first time it ever sees a given
+contact carrying m0/m1/m2, it records that contact (name + phone) against
+today's date, permanently. Once recorded, a contact's "day marked" never
+moves again, no matter what else changes on their record later — this is
+what makes the daily numbers (and the actual contact list per day) durable
+across runs. `history.json` must be committed alongside data.json (the
+workflow does `git add data.json history.json`) — without it, everything
+looks "newly marked today" on every run.
+
+On the very first run ever (empty history), each contact currently holding
+m0/m1/m2 is backfilled using their own `updated_at` date as a best-effort
+estimate of when they were marked — there's no way to know the true date
+before tracking started. Every day after that, the date recorded is exact.
 
 SETUP REQUIRED BEFORE THIS WORKS:
 1. Get a Periskope API key: console.periskope.app -> Settings -> Integrations
@@ -46,7 +52,6 @@ import os
 import json
 import sys
 import datetime
-from collections import Counter
 import urllib.request
 import urllib.error
 
@@ -162,15 +167,6 @@ def build_dataset(contacts):
         1 for c in contacts if has(c, "m1") and not has(c, "m2")
     )
 
-    daily_proxy = {"m0": Counter(), "m1": Counter(), "m2": Counter()}
-    for c in contacts:
-        d = (c.get("updated_at") or "")[:10]
-        if not d:
-            continue
-        for lab in ("m0", "m1", "m2"):
-            if has(c, lab):
-                daily_proxy[lab][d] += 1
-
     return {
         "total_org_contacts": len(contacts),
         "label_counts": label_counts,
@@ -178,7 +174,6 @@ def build_dataset(contacts):
         "home_loans_no_m_tags": home_loans_no_m,
         "m0_only": m0_only,
         "m1_no_m2": m1_no_m2,
-        "daily_proxy": {k: dict(sorted(v.items())) for k, v in daily_proxy.items()},
         "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
     }
 
@@ -186,51 +181,63 @@ def build_dataset(contacts):
 def load_history():
     if os.path.exists(HISTORY_PATH):
         with open(HISTORY_PATH) as f:
-            return json.load(f)
-    return {"snapshots": {}}
-
-
-def backfill_history_from_proxy(history, daily_proxy):
-    """First-ever run: seed history from the updated_at-based proxy so past
-    days aren't just zero. Only runs while history is empty — once real
-    snapshots start accumulating, this is never touched again."""
-    if history["snapshots"]:
-        return history
-    all_dates = sorted(set(daily_proxy["m0"]) | set(daily_proxy["m1"]) | set(daily_proxy["m2"]))
-    running = {"m0": 0, "m1": 0, "m2": 0}
-    for d in all_dates:
-        for lab in ("m0", "m1", "m2"):
-            running[lab] += daily_proxy[lab].get(d, 0)
-        history["snapshots"][d] = dict(running)
+            history = json.load(f)
+    else:
+        history = {}
+    history.setdefault("backfilled", False)
+    history.setdefault("marked", {"m0": {}, "m1": {}, "m2": {}})
     return history
 
 
-def record_today_snapshot(history, today, label_counts):
-    history["snapshots"][today] = {
-        "m0": label_counts["M0"],
-        "m1": label_counts["M1"],
-        "m2": label_counts["M2"],
+def update_marked_registry(history, contacts, today):
+    """Record, per label, the first date each contact was ever seen carrying
+    it. Once a contact_id is in the registry for a label, it's never moved —
+    that's what makes the daily breakdown (and per-day contact list) durable.
+    On the very first run (history not yet backfilled), use each contact's
+    own updated_at date as a best-effort estimate; every run after that uses
+    today, since a continuously-running daily job would have caught it
+    already if it existed before."""
+    marked = history["marked"]
+    first_run = not history["backfilled"]
+    for c in contacts:
+        contact_id = c.get("contact_id") or ""
+        if not contact_id:
+            continue
+        phone = contact_id.split("@")[0]
+        name = c.get("contact_name") or phone or "Unknown"
+        updated_date = (c.get("updated_at") or "")[:10]
+        for lab in ("m0", "m1", "m2"):
+            if has(c, lab) and contact_id not in marked[lab]:
+                date = updated_date if (first_run and updated_date) else today
+                marked[lab][contact_id] = {"date": date, "name": name, "phone": phone}
+    history["backfilled"] = True
+    return history
+
+
+def compute_daily_from_registry(marked):
+    """Turn the {label: {contact_id: {date, name, phone}}} registry into the
+    two shapes the dashboard needs: per-day counts (for the chart) and
+    per-day contact lists (for click-to-drill-down)."""
+    daily_counts = {"m0": {}, "m1": {}, "m2": {}, "total": {}}
+    daily_contacts = {"m0": {}, "m1": {}, "m2": {}}
+    for lab in ("m0", "m1", "m2"):
+        for info in marked[lab].values():
+            d = info["date"]
+            daily_counts[lab][d] = daily_counts[lab].get(d, 0) + 1
+            daily_contacts[lab].setdefault(d, []).append(
+                {"name": info["name"], "phone": info["phone"]}
+            )
+        daily_counts[lab] = dict(sorted(daily_counts[lab].items()))
+        daily_contacts[lab] = {
+            d: sorted(lst, key=lambda c: c["name"].lower())
+            for d, lst in sorted(daily_contacts[lab].items())
+        }
+    all_dates = sorted(set(daily_counts["m0"]) | set(daily_counts["m1"]) | set(daily_counts["m2"]))
+    daily_counts["total"] = {
+        d: daily_counts["m0"].get(d, 0) + daily_counts["m1"].get(d, 0) + daily_counts["m2"].get(d, 0)
+        for d in all_dates
     }
-    return history
-
-
-def compute_daily_marked(history):
-    """Derive 'marked today' series as the day-over-day delta of cumulative
-    totals — robust even if individual contacts' updated_at drifts for
-    unrelated reasons, since it only diffs aggregate counts per calendar day."""
-    dates = sorted(history["snapshots"].keys())
-    daily = {"m0": {}, "m1": {}, "m2": {}, "total": {}}
-    prev = {"m0": 0, "m1": 0, "m2": 0}
-    for d in dates:
-        snap = history["snapshots"][d]
-        total = 0
-        for lab in ("m0", "m1", "m2"):
-            marked = max(0, snap.get(lab, 0) - prev[lab])
-            daily[lab][d] = marked
-            total += marked
-            prev[lab] = snap.get(lab, 0)
-        daily["total"][d] = total
-    return daily
+    return daily_counts, daily_contacts
 
 
 def main():
@@ -241,16 +248,17 @@ def main():
 
     today = datetime.datetime.utcnow().strftime("%Y-%m-%d")
     history = load_history()
-    history = backfill_history_from_proxy(history, dataset["daily_proxy"])
-    history = record_today_snapshot(history, today, dataset["label_counts"])
-    dataset["daily"] = compute_daily_marked(history)
+    history = update_marked_registry(history, contacts, today)
+    dataset["daily"], dataset["daily_contacts"] = compute_daily_from_registry(history["marked"])
 
     with open(HISTORY_PATH, "w") as f:
         json.dump(history, f, indent=2)
     with open("data.json", "w") as f:
         json.dump(dataset, f, indent=2)
+    total_tracked = sum(len(v) for v in history["marked"].values())
     print(f"Wrote data.json — {dataset['total_org_contacts']} contacts scanned.")
-    print(f"History now covers {len(history['snapshots'])} day(s), through {today}.")
+    print(f"History registry now tracks {total_tracked} label-marks across "
+          f"{len(dataset['daily']['total'])} day(s), through {today}.")
 
 
 if __name__ == "__main__":

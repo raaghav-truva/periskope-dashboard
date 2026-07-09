@@ -239,7 +239,7 @@
       <span><span class="dot" style="background:#E8B04B"></span> M2 marked</span>
       <span><span class="dot" style="background:#8B7FD9"></span> Total marked</span>
     </div>
-    <div class="footnote">Daily counts are day-over-day deltas of cumulative M0/M1/M2 totals, tracked in a persisted history file — durable across runs, not recomputed from each contact's last-updated timestamp. Earliest days shown are a one-time backfill estimate from that timestamp (before history tracking started) and may be less precise.</div>
+    <div class="footnote">Each contact's "day marked" is recorded permanently the first time it's seen — durable across runs, not recomputed from each contact's last-updated timestamp. The earliest day(s) shown are a one-time backfill estimate from that timestamp (before this tracking started) and may be less precise. Click any point to see who was marked that day.</div>
   </div>
 
 </div>
@@ -270,20 +270,29 @@ const modalTitle = document.getElementById('modal-title');
 const modalCount = document.getElementById('modal-count');
 const modalBody = document.getElementById('modal-body');
 
-function openModal(name, count) {
-  const contacts = ((data && data.contacts_by_label) || {})[name];
-  modalTitle.textContent = name;
+function renderModal(title, contacts, emptyMessage) {
+  modalTitle.textContent = title;
+  const count = (contacts || []).length;
   modalCount.textContent = count + (count === 1 ? ' contact' : ' contacts');
   if (!contacts) {
-    modalBody.innerHTML = '<div class="modal-empty">Contact list not available yet — it will appear after the next data refresh (this dashboard build added it).</div>';
+    modalBody.innerHTML = `<div class="modal-empty">${emptyMessage}</div>`;
   } else if (contacts.length === 0) {
-    modalBody.innerHTML = '<div class="modal-empty">No contacts with this label.</div>';
+    modalBody.innerHTML = '<div class="modal-empty">No contacts here.</div>';
   } else {
     modalBody.innerHTML = contacts.map(c =>
       `<div class="contact-row"><span class="cname">${escapeHtml(c.name)}</span><span class="cphone">${escapeHtml(c.phone)}</span></div>`
     ).join('');
   }
   overlay.classList.add('open');
+}
+function openModal(name, count) {
+  const contacts = ((data && data.contacts_by_label) || {})[name];
+  renderModal(name, contacts, 'Contact list not available yet — it will appear after the next data refresh (this dashboard build added it).');
+}
+const LABEL_TITLES = { m0: 'M0', m1: 'M1', m2: 'M2' };
+function openDayModal(label, date) {
+  const contacts = (((data && data.daily_contacts) || {})[label] || {})[date];
+  renderModal(`${LABEL_TITLES[label] || label} marked — ${date}`, contacts, 'Contact list not available yet — it will appear after the next data refresh (this dashboard build added it).');
 }
 function closeModal() { overlay.classList.remove('open'); }
 document.getElementById('modal-close').addEventListener('click', closeModal);
@@ -387,9 +396,9 @@ async function loadDashboard() {
   svgContent += `<path d="${pathFor(daily.m2)}" fill="none" stroke="#E8B04B" stroke-width="2.5"/>`;
   allDates.forEach((d,i) => {
     const x = padL + i * xStep;
-    svgContent += `<circle cx="${x}" cy="${yFor((daily.m1||{})[d]||0)}" r="3" fill="#5FBF8F"/>`;
-    svgContent += `<circle cx="${x}" cy="${yFor((daily.m2||{})[d]||0)}" r="3" fill="#E8B04B"/>`;
-    svgContent += `<circle cx="${x}" cy="${yFor((daily.total||{})[d]||0)}" r="2.5" fill="#8B7FD9"/>`;
+    svgContent += `<circle cx="${x}" cy="${yFor((daily.m1||{})[d]||0)}" r="5" fill="#5FBF8F" style="cursor:pointer" onclick="openDayModal('m1','${d}')"><title>M1 marked ${d} — click for names</title></circle>`;
+    svgContent += `<circle cx="${x}" cy="${yFor((daily.m2||{})[d]||0)}" r="5" fill="#E8B04B" style="cursor:pointer" onclick="openDayModal('m2','${d}')"><title>M2 marked ${d} — click for names</title></circle>`;
+    svgContent += `<circle cx="${x}" cy="${yFor((daily.total||{})[d]||0)}" r="4" fill="#8B7FD9"/>`;
     svgContent += `<text x="${x}" y="${H-4}" font-size="9" fill="#8FA093" text-anchor="middle">${d.slice(5)}</text>`;
   });
   svg.innerHTML = svgContent;
