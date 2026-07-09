@@ -235,10 +235,11 @@
   <div class="daily-chart">
     <svg id="daily-svg" viewBox="0 0 900 220" preserveAspectRatio="none"></svg>
     <div class="legend">
-      <span><span class="dot" style="background:#5FBF8F"></span> M1 sent</span>
-      <span><span class="dot" style="background:#E8B04B"></span> M2 sent</span>
+      <span><span class="dot" style="background:#5FBF8F"></span> M1 marked</span>
+      <span><span class="dot" style="background:#E8B04B"></span> M2 marked</span>
+      <span><span class="dot" style="background:#8B7FD9"></span> Total marked</span>
     </div>
-    <div class="footnote">Derived from each contact's last-updated timestamp while the M1/M2 label was present — a proxy for send date, not a message log. For exact daily send volume, pull broadcast logs by rule ID from Periskope directly.</div>
+    <div class="footnote">Daily counts are day-over-day deltas of cumulative M0/M1/M2 totals, tracked in a persisted history file — durable across runs, not recomputed from each contact's last-updated timestamp. Earliest days shown are a one-time backfill estimate from that timestamp (before history tracking started) and may be less precise.</div>
   </div>
 
 </div>
@@ -357,9 +358,16 @@ async function loadDashboard() {
   });
 
   const svg = document.getElementById('daily-svg');
-  const allDates = Array.from(new Set([...Object.keys(data.daily.m1 || {}), ...Object.keys(data.daily.m2 || {})])).sort();
+  const daily = data.daily || {};
+  const allDates = Array.from(new Set([
+    ...Object.keys(daily.m1 || {}),
+    ...Object.keys(daily.m2 || {}),
+    ...Object.keys(daily.total || {}),
+  ])).sort();
   const W = 900, H = 220, padL = 30, padB = 24, padT = 10;
-  const maxDaily = Math.max(...allDates.map(d => Math.max((data.daily.m1||{})[d]||0, (data.daily.m2||{})[d]||0)), 1);
+  const maxDaily = Math.max(...allDates.map(d => Math.max(
+    (daily.m1||{})[d]||0, (daily.m2||{})[d]||0, (daily.total||{})[d]||0
+  )), 1);
   const xStep = allDates.length > 1 ? (W - padL - 10) / (allDates.length - 1) : 0;
   function yFor(v){ return H - padB - (v / maxDaily) * (H - padB - padT); }
   function pathFor(series){
@@ -374,12 +382,14 @@ async function loadDashboard() {
     const y = padT + g*(H-padT-padB)/4;
     svgContent += `<line x1="${padL}" y1="${y}" x2="${W-10}" y2="${y}" stroke="#2A342D" stroke-width="1"/>`;
   }
-  svgContent += `<path d="${pathFor(data.daily.m1)}" fill="none" stroke="#5FBF8F" stroke-width="2.5"/>`;
-  svgContent += `<path d="${pathFor(data.daily.m2)}" fill="none" stroke="#E8B04B" stroke-width="2.5"/>`;
+  svgContent += `<path d="${pathFor(daily.total)}" fill="none" stroke="#8B7FD9" stroke-width="2" stroke-dasharray="4,3"/>`;
+  svgContent += `<path d="${pathFor(daily.m1)}" fill="none" stroke="#5FBF8F" stroke-width="2.5"/>`;
+  svgContent += `<path d="${pathFor(daily.m2)}" fill="none" stroke="#E8B04B" stroke-width="2.5"/>`;
   allDates.forEach((d,i) => {
     const x = padL + i * xStep;
-    svgContent += `<circle cx="${x}" cy="${yFor((data.daily.m1||{})[d]||0)}" r="3" fill="#5FBF8F"/>`;
-    svgContent += `<circle cx="${x}" cy="${yFor((data.daily.m2||{})[d]||0)}" r="3" fill="#E8B04B"/>`;
+    svgContent += `<circle cx="${x}" cy="${yFor((daily.m1||{})[d]||0)}" r="3" fill="#5FBF8F"/>`;
+    svgContent += `<circle cx="${x}" cy="${yFor((daily.m2||{})[d]||0)}" r="3" fill="#E8B04B"/>`;
+    svgContent += `<circle cx="${x}" cy="${yFor((daily.total||{})[d]||0)}" r="2.5" fill="#8B7FD9"/>`;
     svgContent += `<text x="${x}" y="${H-4}" font-size="9" fill="#8FA093" text-anchor="middle">${d.slice(5)}</text>`;
   });
   svg.innerHTML = svgContent;
