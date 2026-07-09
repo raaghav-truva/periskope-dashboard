@@ -1,15 +1,15 @@
 {
-  "total_org_contacts": 11805,
+  "total_org_contacts": 11806,
   "label_counts": {
-    "Home Loans": 130,
-    "Active Warm": 40,
+    "Home Loans": 131,
+    "Active Warm": 41,
     "Still Looking": 91,
     "Future Plan": 21,
     "Balance Transfer (Immediate)": 2,
     "Balance Transfer (Future)": 3,
     "Registration Complete": 0,
     "M0": 0,
-    "M1": 85,
+    "M1": 93,
     "M2": 40
   },
   "contacts_by_label": {
@@ -351,6 +351,10 @@
         "phone": "918800777481"
       },
       {
+        "name": "Ruhi Shaikh (Fouziya)",
+        "phone": "919820585801"
+      },
+      {
         "name": "Rushikesh",
         "phone": "919028502679"
       },
@@ -651,6 +655,10 @@
       {
         "name": "Rohit Singh copy",
         "phone": "918800777481"
+      },
+      {
+        "name": "Ruhi Shaikh (Fouziya)",
+        "phone": "919820585801"
       },
       {
         "name": "Rushikesh",
@@ -1217,8 +1225,16 @@
         "phone": "919967192044"
       },
       {
+        "name": "Anil Agarwal",
+        "phone": "918169952349"
+      },
+      {
         "name": "Anirudhh Gambhir",
         "phone": "919029511391"
+      },
+      {
+        "name": "anisha Panigrahi",
+        "phone": "918879440357"
       },
       {
         "name": "Ankit Bajaj",
@@ -1257,6 +1273,10 @@
         "phone": "919867229942"
       },
       {
+        "name": "Bhakti Mistry",
+        "phone": "919820912442"
+      },
+      {
         "name": "Bharat Nanavayi",
         "phone": "919892049942"
       },
@@ -1267,6 +1287,10 @@
       {
         "name": "Chintan Jani",
         "phone": "918511137384"
+      },
+      {
+        "name": "Datta Sawant",
+        "phone": "919867740706"
       },
       {
         "name": "Deepak Harjani",
@@ -1323,6 +1347,10 @@
       {
         "name": "Manisha Prasad",
         "phone": "919953454481"
+      },
+      {
+        "name": "Manoj Gupta",
+        "phone": "917045352354"
       },
       {
         "name": "Mayur Srivastav",
@@ -1461,6 +1489,10 @@
         "phone": "919819299611"
       },
       {
+        "name": "Shubhada",
+        "phone": "919870990454"
+      },
+      {
         "name": "Shubhanshu",
         "phone": "918558807153"
       },
@@ -1513,8 +1545,16 @@
         "phone": "918940502402"
       },
       {
+        "name": "Vishal Lohire",
+        "phone": "919987646849"
+      },
+      {
         "name": "Vivek",
         "phone": "919920915156"
+      },
+      {
+        "name": "Yash Tiwari",
+        "phone": "919619325559"
       }
     ],
     "M2": [
@@ -1680,28 +1720,29 @@
       }
     ]
   },
-  "home_loans_no_m_tags": 45,
+  "home_loans_no_m_tags": 38,
   "m0_only": 0,
-  "m1_no_m2": 45,
+  "m1_no_m2": 53,
   "daily": {
     "m0": {},
     "m1": {
-      "2026-06-30": 42,
+      "2026-06-30": 41,
       "2026-07-02": 11,
-      "2026-07-03": 12,
+      "2026-07-03": 11,
       "2026-07-04": 2,
-      "2026-07-05": 1,
-      "2026-07-06": 2,
-      "2026-07-07": 13,
-      "2026-07-08": 2
+      "2026-07-06": 3,
+      "2026-07-07": 12,
+      "2026-07-08": 9,
+      "2026-07-09": 4
     },
     "m2": {
-      "2026-06-30": 32,
+      "2026-06-30": 31,
       "2026-07-02": 4,
       "2026-07-03": 1,
       "2026-07-06": 2,
-      "2026-07-08": 1
+      "2026-07-08": 1,
+      "2026-07-09": 1
     }
   },
-  "generated_at": "2026-07-08T20:49:30.488128Z"
+  "generated_at": "2026-07-09T07:03:45.543533Z"
 }
