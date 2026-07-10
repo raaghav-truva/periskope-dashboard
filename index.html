@@ -152,6 +152,9 @@
   th{color:var(--muted);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;}
   td.num{font-family:var(--font-mono);text-align:right;}
   tr.total td{font-weight:600;background:var(--panel-2);}
+  td.num.clickable{cursor:pointer;color:var(--accent);text-decoration:underline;text-decoration-color:transparent;transition:text-decoration-color .15s ease;}
+  td.num.clickable:hover{text-decoration-color:var(--accent);}
+  td.num.zero{color:var(--muted);}
 
   .funnel{display:flex;flex-direction:column;gap:6px;margin-top:6px;}
   .funnel-row{display:grid;grid-template-columns:180px 1fr 60px;align-items:center;gap:12px;}
@@ -231,16 +234,12 @@
     <tbody id="stuck-table"></tbody>
   </table>
 
-  <h2><span class="idx">04</span> Daily M1 / M2 sends</h2>
-  <div class="daily-chart">
-    <svg id="daily-svg" viewBox="0 0 900 220" preserveAspectRatio="none"></svg>
-    <div class="legend">
-      <span><span class="dot" style="background:#5FBF8F"></span> M1 marked</span>
-      <span><span class="dot" style="background:#E8B04B"></span> M2 marked</span>
-      <span><span class="dot" style="background:#8B7FD9"></span> Total marked</span>
-    </div>
-    <div class="footnote">Each contact's "day marked" is recorded permanently the first time it's seen — durable across runs, not recomputed from each contact's last-updated timestamp. The earliest day(s) shown are a one-time backfill estimate from that timestamp (before this tracking started) and may be less precise. Click any point to see who was marked that day.</div>
-  </div>
+  <h2><span class="idx">04</span> Daily marks by label</h2>
+  <table>
+    <thead><tr><th>Date</th><th class="num">M0</th><th class="num">M1</th><th class="num">M2</th><th class="num">Total</th></tr></thead>
+    <tbody id="daily-table"></tbody>
+  </table>
+  <div class="footnote">Each contact's "day marked" is recorded permanently the first time it's seen — durable across runs, not recomputed from each contact's last-updated timestamp. The earliest day(s) shown are a one-time backfill estimate from that timestamp (before this tracking started) and may be less precise. Click any non-zero number to see who was marked that day.</div>
 
 </div>
 
@@ -366,42 +365,32 @@ async function loadDashboard() {
     tbody.appendChild(tr);
   });
 
-  const svg = document.getElementById('daily-svg');
   const daily = data.daily || {};
   const allDates = Array.from(new Set([
+    ...Object.keys(daily.m0 || {}),
     ...Object.keys(daily.m1 || {}),
     ...Object.keys(daily.m2 || {}),
     ...Object.keys(daily.total || {}),
-  ])).sort();
-  const W = 900, H = 220, padL = 30, padB = 24, padT = 10;
-  const maxDaily = Math.max(...allDates.map(d => Math.max(
-    (daily.m1||{})[d]||0, (daily.m2||{})[d]||0, (daily.total||{})[d]||0
-  )), 1);
-  const xStep = allDates.length > 1 ? (W - padL - 10) / (allDates.length - 1) : 0;
-  function yFor(v){ return H - padB - (v / maxDaily) * (H - padB - padT); }
-  function pathFor(series){
-    return allDates.map((d,i) => {
-      const x = padL + i * xStep;
-      const y = yFor((series||{})[d] || 0);
-      return (i === 0 ? 'M' : 'L') + x.toFixed(1) + ',' + y.toFixed(1);
-    }).join(' ');
+  ])).sort().reverse(); // most recent first
+
+  function dailyCell(label, date, count) {
+    if (!count) return `<td class="num zero">0</td>`;
+    return `<td class="num clickable" onclick="openDayModal('${label}','${date}')">${count}</td>`;
   }
-  let svgContent = '';
-  for(let g=0; g<=4; g++){
-    const y = padT + g*(H-padT-padB)/4;
-    svgContent += `<line x1="${padL}" y1="${y}" x2="${W-10}" y2="${y}" stroke="#2A342D" stroke-width="1"/>`;
-  }
-  svgContent += `<path d="${pathFor(daily.total)}" fill="none" stroke="#8B7FD9" stroke-width="2" stroke-dasharray="4,3"/>`;
-  svgContent += `<path d="${pathFor(daily.m1)}" fill="none" stroke="#5FBF8F" stroke-width="2.5"/>`;
-  svgContent += `<path d="${pathFor(daily.m2)}" fill="none" stroke="#E8B04B" stroke-width="2.5"/>`;
-  allDates.forEach((d,i) => {
-    const x = padL + i * xStep;
-    svgContent += `<circle cx="${x}" cy="${yFor((daily.m1||{})[d]||0)}" r="5" fill="#5FBF8F" style="cursor:pointer" onclick="openDayModal('m1','${d}')"><title>M1 marked ${d} — click for names</title></circle>`;
-    svgContent += `<circle cx="${x}" cy="${yFor((daily.m2||{})[d]||0)}" r="5" fill="#E8B04B" style="cursor:pointer" onclick="openDayModal('m2','${d}')"><title>M2 marked ${d} — click for names</title></circle>`;
-    svgContent += `<circle cx="${x}" cy="${yFor((daily.total||{})[d]||0)}" r="4" fill="#8B7FD9"/>`;
-    svgContent += `<text x="${x}" y="${H-4}" font-size="9" fill="#8FA093" text-anchor="middle">${d.slice(5)}</text>`;
+  const dailyTbody = document.getElementById('daily-table');
+  dailyTbody.innerHTML = '';
+  allDates.forEach(d => {
+    const m0 = (daily.m0 || {})[d] || 0;
+    const m1 = (daily.m1 || {})[d] || 0;
+    const m2 = (daily.m2 || {})[d] || 0;
+    const total = (daily.total || {})[d] ?? (m0 + m1 + m2);
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${d}</td>${dailyCell('m0', d, m0)}${dailyCell('m1', d, m1)}${dailyCell('m2', d, m2)}<td class="num">${total}</td>`;
+    dailyTbody.appendChild(tr);
   });
-  svg.innerHTML = svgContent;
+  if (allDates.length === 0) {
+    dailyTbody.innerHTML = '<tr><td colspan="5" style="color:var(--muted);text-align:center;">No daily history yet — appears after the workflow has run at least once.</td></tr>';
+  }
 }
 
 loadDashboard();
