@@ -1,16 +1,16 @@
 {
-  "total_org_contacts": 11857,
+  "total_org_contacts": 11863,
   "label_counts": {
     "Home Loans": 162,
     "Active Warm": 49,
-    "Still Looking": 110,
+    "Still Looking": 109,
     "Future Plan": 23,
     "Balance Transfer (Immediate)": 2,
     "Balance Transfer (Future)": 3,
     "Registration Complete": 0,
     "M0": 0,
     "M1": 93,
-    "M2": 60
+    "M2": 82
   },
   "contacts_by_label": {
     "Home Loans": [
@@ -943,10 +943,6 @@
         "phone": "919892076221"
       },
       {
-        "name": "Avaneesh Singh (Avi)",
-        "phone": "919960587169"
-      },
-      {
         "name": "Bhakti Mistry",
         "phone": "919820912442"
       },
@@ -1799,6 +1795,10 @@
     ],
     "M2": [
       {
+        "name": "Aaron Mathew",
+        "phone": "919920080368"
+      },
+      {
         "name": "Abhishek D",
         "phone": "919833970011"
       },
@@ -1835,12 +1835,20 @@
         "phone": "919029511391"
       },
       {
+        "name": "anisha Panigrahi",
+        "phone": "918879440357"
+      },
+      {
         "name": "Ankit Bajaj",
         "phone": "918861006677"
       },
       {
         "name": "Ankur Sungandhi",
         "phone": "919960934555"
+      },
+      {
+        "name": "Anu",
+        "phone": "918376957781"
       },
       {
         "name": "Anubha Gupta",
@@ -1871,12 +1879,32 @@
         "phone": "918511137384"
       },
       {
+        "name": "Deepak Harjani",
+        "phone": "919769535555"
+      },
+      {
+        "name": "Deepesh Bharani",
+        "phone": "919930376354"
+      },
+      {
+        "name": "Dheeraj",
+        "phone": "919312413896"
+      },
+      {
         "name": "Dinesh Mhatre",
         "phone": "917045454599"
       },
       {
+        "name": "Ignatius Barretto",
+        "phone": "919833813561"
+      },
+      {
         "name": "Javed Choudhary",
         "phone": "919967391117"
+      },
+      {
+        "name": "Jinal Shah",
+        "phone": "919619364453"
       },
       {
         "name": "Kajal kedia / Saurabh Agarwal",
@@ -1891,8 +1919,28 @@
         "phone": "917506707010"
       },
       {
+        "name": "Kuldeep Rathore",
+        "phone": "917718834010"
+      },
+      {
+        "name": "Linus Menezes",
+        "phone": "919820050714"
+      },
+      {
+        "name": "Manisha Prasad",
+        "phone": "919953454481"
+      },
+      {
+        "name": "Manoj Gupta",
+        "phone": "917045352354"
+      },
+      {
         "name": "Mayur Srivastav",
         "phone": "918800500769"
+      },
+      {
+        "name": "Meenakshi Mediratta",
+        "phone": "919819197743"
       },
       {
         "name": "Megha",
@@ -1907,8 +1955,16 @@
         "phone": "919892475142"
       },
       {
+        "name": "Nitesh Kalantri",
+        "phone": "917045955107"
+      },
+      {
         "name": "Pankaj",
         "phone": "919820134382"
+      },
+      {
+        "name": "Pradeep",
+        "phone": "919004900624"
       },
       {
         "name": "Prasad Dixit",
@@ -1917,6 +1973,10 @@
       {
         "name": "Prasenjit Mitra",
         "phone": "919819867099"
+      },
+      {
+        "name": "Rachana Dewan",
+        "phone": "919892950954"
       },
       {
         "name": "Radhika Mehta",
@@ -1941,6 +2001,10 @@
       {
         "name": "Ravi Jain",
         "phone": "919920264985"
+      },
+      {
+        "name": "Ritesh Mittal",
+        "phone": "919696029020"
       },
       {
         "name": "Rushikesh",
@@ -1971,6 +2035,10 @@
         "phone": "919930050245"
       },
       {
+        "name": "Samta Jain",
+        "phone": "919820314939"
+      },
+      {
         "name": "Selvi Jay",
         "phone": "919920315969"
       },
@@ -1987,12 +2055,24 @@
         "phone": "919971363200"
       },
       {
+        "name": "Shrikant Maurya",
+        "phone": "919819299611"
+      },
+      {
+        "name": "Shubhada",
+        "phone": "919870990454"
+      },
+      {
         "name": "Shubhanshu",
         "phone": "918558807153"
       },
       {
         "name": "Sneha Budhia",
         "phone": "919852340897"
+      },
+      {
+        "name": "Suhas Suryawanshi",
+        "phone": "919819412043"
       },
       {
         "name": "sumit mathur",
@@ -2005,6 +2085,10 @@
       {
         "name": "Tarachand Devgan",
         "phone": "919920433892"
+      },
+      {
+        "name": "Taruna & Ankur Vats",
+        "phone": "919899575226"
       },
       {
         "name": "Umed Shaikh",
@@ -2042,8 +2126,8 @@
   },
   "home_loans_no_m_tags": 69,
   "m0_only": 0,
-  "m1_no_m2": 33,
-  "generated_at": "2026-07-12T09:33:33.327786Z",
+  "m1_no_m2": 11,
+  "generated_at": "2026-07-13T05:06:52.283116Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
@@ -2053,7 +2137,7 @@
       ],
       [
         "still looking (2-4 months)",
-        110
+        109
       ],
       [
         "m1",
@@ -2061,7 +2145,7 @@
       ],
       [
         "m2",
-        60
+        82
       ],
       [
         "active warm (1 month)",
@@ -2118,7 +2202,8 @@
       "2026-07-06": 2,
       "2026-07-08": 1,
       "2026-07-09": 1,
-      "2026-07-11": 20
+      "2026-07-11": 20,
+      "2026-07-13": 22
     },
     "total": {
       "2026-06-30": 72,
@@ -2129,7 +2214,8 @@
       "2026-07-07": 12,
       "2026-07-08": 10,
       "2026-07-09": 5,
-      "2026-07-11": 20
+      "2026-07-11": 20,
+      "2026-07-13": 22
     }
   },
   "daily_contacts": {
@@ -2777,6 +2863,96 @@
         {
           "name": "Yash Tiwari",
           "phone": "919619325559"
+        }
+      ],
+      "2026-07-13": [
+        {
+          "name": "Aaron Mathew",
+          "phone": "919920080368"
+        },
+        {
+          "name": "anisha Panigrahi",
+          "phone": "918879440357"
+        },
+        {
+          "name": "Anu",
+          "phone": "918376957781"
+        },
+        {
+          "name": "Deepak Harjani",
+          "phone": "919769535555"
+        },
+        {
+          "name": "Deepesh Bharani",
+          "phone": "919930376354"
+        },
+        {
+          "name": "Dheeraj",
+          "phone": "919312413896"
+        },
+        {
+          "name": "Ignatius Barretto",
+          "phone": "919833813561"
+        },
+        {
+          "name": "Jinal Shah",
+          "phone": "919619364453"
+        },
+        {
+          "name": "Kuldeep Rathore",
+          "phone": "917718834010"
+        },
+        {
+          "name": "Linus Menezes",
+          "phone": "919820050714"
+        },
+        {
+          "name": "Manisha Prasad",
+          "phone": "919953454481"
+        },
+        {
+          "name": "Manoj Gupta",
+          "phone": "917045352354"
+        },
+        {
+          "name": "Meenakshi Mediratta",
+          "phone": "919819197743"
+        },
+        {
+          "name": "Nitesh Kalantri",
+          "phone": "917045955107"
+        },
+        {
+          "name": "Pradeep",
+          "phone": "919004900624"
+        },
+        {
+          "name": "Rachana Dewan",
+          "phone": "919892950954"
+        },
+        {
+          "name": "Ritesh Mittal",
+          "phone": "919696029020"
+        },
+        {
+          "name": "Samta Jain",
+          "phone": "919820314939"
+        },
+        {
+          "name": "Shrikant Maurya",
+          "phone": "919819299611"
+        },
+        {
+          "name": "Shubhada",
+          "phone": "919870990454"
+        },
+        {
+          "name": "Suhas Suryawanshi",
+          "phone": "919819412043"
+        },
+        {
+          "name": "Taruna & Ankur Vats",
+          "phone": "919899575226"
         }
       ]
     }
