@@ -1,5 +1,5 @@
 {
-  "total_org_contacts": 11864,
+  "total_org_contacts": 11869,
   "label_counts": {
     "Home Loans": 168,
     "Active Warm": 49,
@@ -2231,7 +2231,7 @@
   "home_loans_no_m_tags": 58,
   "m0_only": 0,
   "m1_no_m2": 32,
-  "generated_at": "2026-07-13T15:45:08.203625Z",
+  "generated_at": "2026-07-14T09:30:12.204543Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
