@@ -1,7 +1,7 @@
 {
-  "total_org_contacts": 11869,
+  "total_org_contacts": 11880,
   "label_counts": {
-    "Home Loans": 168,
+    "Home Loans": 171,
     "Active Warm": 49,
     "Still Looking": 108,
     "Future Plan": 23,
@@ -49,6 +49,10 @@
       {
         "name": "Akshi Mahajan",
         "phone": "917738527852"
+      },
+      {
+        "name": "Alisha Shaikh",
+        "phone": "918928839385"
       },
       {
         "name": "Alok Sharma",
@@ -189,6 +193,10 @@
       {
         "name": "Deepesh Bharani",
         "phone": "919930376354"
+      },
+      {
+        "name": "Deeshank Narkar",
+        "phone": "918108959862"
       },
       {
         "name": "dhananjay chaughule",
@@ -361,6 +369,10 @@
       {
         "name": "Payal",
         "phone": "919867519195"
+      },
+      {
+        "name": "Pinky",
+        "phone": "919833527517"
       },
       {
         "name": "Pooja Manoj Agrawal Agrawal",
@@ -2228,16 +2240,16 @@
       }
     ]
   },
-  "home_loans_no_m_tags": 58,
+  "home_loans_no_m_tags": 61,
   "m0_only": 0,
   "m1_no_m2": 32,
-  "generated_at": "2026-07-14T09:30:12.204543Z",
+  "generated_at": "2026-07-15T10:17:26.062632Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
       [
         "home loans",
-        168
+        171
       ],
       [
         "m1",
@@ -2258,6 +2270,10 @@
       [
         "future plan (4+ months)",
         23
+      ],
+      [
+        "Not Qualified",
+        3
       ],
       [
         "balance transfer (future)",
