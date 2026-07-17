@@ -87,9 +87,13 @@
   }
   .theme-toggle:hover{border-color:var(--accent);color:var(--accent);}
 
-  .logo{height:1048px;display:block;margin-bottom:18px;}
+  .logo{height:64px;display:block;flex-shrink:0;}
 
-  header{margin-bottom:36px;border-bottom:1px solid var(--line);padding-bottom:24px;}
+  header{
+    margin-bottom:36px;border-bottom:1px solid var(--line);padding-bottom:24px;
+    display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;
+  }
+  .header-text{flex:1;min-width:280px;}
   .eyebrow{
     font-family:var(--font-mono);
     font-weight:500;
@@ -213,11 +217,13 @@
   </nav>
 
   <header>
+    <div class="header-text">
+      <div class="eyebrow">Truva Home Loans · Periskope Pipeline</div>
+      <h1>Message Analytics</h1>
+      <div class="sub">The M-series funnel, where contacts get stuck, and a day-by-day breakdown of who got marked M0/M1/M2 and when.</div>
+      <div class="refresh-note">–</div>
+    </div>
     <img src="logo.png" alt="Truva" class="logo" onerror="this.style.display='none'">
-    <div class="eyebrow">Truva Home Loans · Periskope Pipeline</div>
-    <h1>Message Analytics</h1>
-    <div class="sub">The M-series funnel, where contacts get stuck, and a day-by-day breakdown of who got marked M0/M1/M2 and when.</div>
-    <div class="refresh-note">–</div>
   </header>
 
   <h2><span class="idx">01</span> M-series funnel (M0 → M1 → M2)</h2>
