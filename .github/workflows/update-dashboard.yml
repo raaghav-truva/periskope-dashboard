@@ -2,8 +2,10 @@ name: Update Periskope Dashboard Data
 
 on:
   schedule:
-    # Runs daily at 03:00 UTC (~8:30am IST). Adjust the cron time as needed.
-    - cron: '0 3 * * *'
+    # Runs daily at 03:23 UTC (~8:53am IST). Off the exact hour on purpose —
+    # GitHub explicitly warns that top-of-the-hour (":00") cron slots are the
+    # most oversubscribed and most likely to be delayed or silently dropped.
+    - cron: '23 3 * * *'
   workflow_dispatch: {}  # lets you trigger it manually from the Actions tab
 
 permissions:
@@ -24,6 +26,9 @@ jobs:
       - name: Fetch latest data from Periskope
         env:
           PERISKOPE_API_KEY: ${{ secrets.PERISKOPE_API_KEY }}
+          # Optional — enables the Airtable sync-check section. Safe to leave
+          # unset; the script just skips that section if it's missing.
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
         run: python fetch_periskope_data.py
 
       - name: Commit updated data.json and history.json

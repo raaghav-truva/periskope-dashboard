@@ -46,9 +46,22 @@ SETUP REQUIRED BEFORE THIS WORKS:
 2. (Optional) If the org has more than one connected WhatsApp number and
    auto-discovery picks the wrong one, set PERISKOPE_PHONE as an additional
    secret/variable with the correct number.
+
+AIRTABLE SYNC CHECK (optional): if AIRTABLE_TOKEN is set (GitHub secret —
+a Personal Access Token with read access to the "Home Loans CRM" base), this
+script also cross-checks the Airtable "Leads" view against Periskope:
+* Leads present in Airtable but with no matching Periskope contact at all.
+* Periskope contacts labeled "Home Loans" with no matching Airtable Lead.
+* Leads whose Airtable Status (Active Warm / Still Looking / Future Plan /
+  Registration Complete — these four map 1:1 to Periskope label names) says
+  one thing while the matching Periskope contact's labels say another.
+Matching is by phone number, normalized to the last 10 digits. If
+AIRTABLE_TOKEN isn't set, this section is skipped entirely (data.json simply
+won't have an "airtable_sync" key) — everything else still runs normally.
 """
 
 import os
+import re
 import json
 import sys
 import datetime
@@ -61,6 +74,21 @@ HISTORY_PATH = "history.json"
 API_KEY = os.environ.get("PERISKOPE_API_KEY")
 BASE_URL = os.environ.get("PERISKOPE_BASE_URL", "https://api.periskope.app/v1")
 PHONE_OVERRIDE = os.environ.get("PERISKOPE_PHONE")
+
+AIRTABLE_TOKEN = os.environ.get("AIRTABLE_TOKEN")
+AIRTABLE_BASE_ID = "appfpELkqjpJ0wfZ2"  # Home Loans CRM (not secret, just an ID)
+AIRTABLE_LEADS_TABLE_ID = "tbl8UiIyUJHN1lTz5"  # Leads
+
+# Airtable "Status" choices that map 1:1 onto a Periskope label name — used
+# for the sanity-check cross-reference. Statuses with no Periskope equivalent
+# (Blocking Paid, MOU Signed, Not Qualified, Lost, etc.) are left out on
+# purpose; there's nothing on the Periskope side to compare them against.
+AIRTABLE_STATUS_TO_PERISKOPE_LABEL = {
+    "Active Warm (1 month)": "active warm (1 month)",
+    "Still Looking (2-4 Months)": "still looking (2-4 months)",
+    "Future Plan (4+ Months)": "future plan (4+ months)",
+    "Registration Complete": "registration complete",
+}
 
 if not API_KEY:
     sys.exit("ERROR: PERISKOPE_API_KEY environment variable is not set.")
@@ -182,32 +210,167 @@ def build_contacts_by_label(contacts):
     return result
 
 
+def contact_name_phone(c):
+    phone = (c.get("contact_id") or "").split("@")[0]
+    return {"name": c.get("contact_name") or phone or "Unknown", "phone": phone}
+
+
+def named_list(contacts, predicate):
+    """Name+phone list for every contact matching predicate, sorted by name —
+    same shape as build_contacts_by_label, used for the stat-row and
+    stuck-in-stage drill-downs."""
+    out = [contact_name_phone(c) for c in contacts if predicate(c)]
+    out.sort(key=lambda c: c["name"].lower())
+    return out
+
+
 def build_dataset(contacts):
     label_counts = {
         name: sum(1 for c in contacts if has(c, key))
         for name, key in TARGET_LABELS.items()
     }
 
-    home_loans_no_m = sum(
-        1 for c in contacts
-        if has(c, "home loans") and not has(c, "m0")
+    home_loans_no_m_pred = lambda c: (
+        has(c, "home loans") and not has(c, "m0")
         and not has(c, "m1") and not has(c, "m2")
     )
-    m0_only = sum(
-        1 for c in contacts
-        if has(c, "m0") and not has(c, "m1") and not has(c, "m2")
-    )
-    m1_no_m2 = sum(
-        1 for c in contacts if has(c, "m1") and not has(c, "m2")
-    )
+    m0_only_pred = lambda c: has(c, "m0") and not has(c, "m1") and not has(c, "m2")
+    m1_no_m2_pred = lambda c: has(c, "m1") and not has(c, "m2")
+
+    home_loans_no_m = sum(1 for c in contacts if home_loans_no_m_pred(c))
+    m0_only = sum(1 for c in contacts if m0_only_pred(c))
+    m1_no_m2 = sum(1 for c in contacts if m1_no_m2_pred(c))
+
+    # Name+phone lists backing every clickable number on the dashboard that
+    # isn't already covered by contacts_by_label (the "Total contacts in
+    # org" stat is deliberately excluded — at 11,000+ rows a click-through
+    # list isn't useful, so that one stays a plain number).
+    segment_contacts = {
+        "home_loans_no_m": named_list(contacts, home_loans_no_m_pred),
+        "m0_only": named_list(contacts, m0_only_pred),
+        "m1_no_m2": named_list(contacts, m1_no_m2_pred),
+    }
 
     return {
         "total_org_contacts": len(contacts),
         "label_counts": label_counts,
         "contacts_by_label": build_contacts_by_label(contacts),
+        "segment_contacts": segment_contacts,
         "home_loans_no_m_tags": home_loans_no_m,
         "m0_only": m0_only,
         "m1_no_m2": m1_no_m2,
+        "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
+    }
+
+
+def normalize_phone(raw):
+    """Last 10 digits of any phone-ish string — strips country codes,
+    '@c.us' suffixes, spaces, dashes, '+', etc. so Airtable's "9819535550"
+    and Periskope's "919819535550@c.us" land on the same key."""
+    digits = re.sub(r"\D", "", raw or "")
+    return digits[-10:] if len(digits) >= 10 else digits
+
+
+def airtable_get(path, params=None):
+    url = f"https://api.airtable.com/v0{path}"
+    if params:
+        query = "&".join(f"{k}={v}" for k, v in params.items())
+        url = f"{url}?{query}"
+    req = urllib.request.Request(url, headers={"Authorization": f"Bearer {AIRTABLE_TOKEN}"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.loads(resp.read().decode())
+    except urllib.error.HTTPError as e:
+        body = e.read().decode(errors="replace")
+        sys.exit(f"ERROR: {e.code} {e.reason} calling {url}\n{body}")
+
+
+def fetch_airtable_leads():
+    """Paginate through every record in the Leads table (Airtable's REST API
+    caps pageSize at 100, unlike Periskope's 2000)."""
+    records = []
+    offset = None
+    while True:
+        params = {"pageSize": 100}
+        if offset:
+            params["offset"] = offset
+        data = airtable_get(f"/{AIRTABLE_BASE_ID}/{AIRTABLE_LEADS_TABLE_ID}", params)
+        for rec in data.get("records", []):
+            fields = rec.get("fields", {})
+            status_obj = fields.get("Status")
+            records.append({
+                "name": fields.get("Lead Name") or "Unknown",
+                "phone_raw": fields.get("Phone Number") or "",
+                "status": status_obj.get("name") if isinstance(status_obj, dict) else status_obj,
+            })
+        offset = data.get("offset")
+        if not offset:
+            break
+    return records
+
+
+def build_airtable_sync(contacts):
+    """Cross-check Airtable's Leads view against Periskope contacts by phone
+    number. See module docstring for exactly what's compared and why."""
+    leads = fetch_airtable_leads()
+
+    periskope_by_phone = {}
+    for c in contacts:
+        phone10 = normalize_phone((c.get("contact_id") or "").split("@")[0])
+        if phone10:
+            periskope_by_phone[phone10] = c
+
+    home_loans_phones = {
+        normalize_phone((c.get("contact_id") or "").split("@")[0])
+        for c in contacts if has(c, "home loans")
+    }
+
+    leads_missing_phone = 0
+    matched = 0
+    in_airtable_not_periskope = []
+    status_label_mismatches = []
+    matched_phones = set()
+
+    for lead in leads:
+        phone10 = normalize_phone(lead["phone_raw"])
+        if not phone10:
+            leads_missing_phone += 1
+            continue
+        contact = periskope_by_phone.get(phone10)
+        if not contact:
+            in_airtable_not_periskope.append({
+                "name": lead["name"], "phone": phone10, "status": lead["status"],
+            })
+            continue
+        matched += 1
+        matched_phones.add(phone10)
+        expected_label = AIRTABLE_STATUS_TO_PERISKOPE_LABEL.get(lead["status"] or "")
+        if expected_label and not has(contact, expected_label):
+            status_label_mismatches.append({
+                "name": lead["name"],
+                "phone": phone10,
+                "airtable_status": lead["status"],
+                "expected_periskope_label": expected_label,
+                "periskope_labels": contact.get("labels") or [],
+            })
+
+    in_periskope_home_loans_not_airtable = [
+        {**contact_name_phone(c), "labels": c.get("labels") or []}
+        for c in contacts
+        if has(c, "home loans")
+        and normalize_phone((c.get("contact_id") or "").split("@")[0]) not in matched_phones
+    ]
+    in_periskope_home_loans_not_airtable.sort(key=lambda c: c["name"].lower())
+    in_airtable_not_periskope.sort(key=lambda c: c["name"].lower())
+    status_label_mismatches.sort(key=lambda c: c["name"].lower())
+
+    return {
+        "leads_total": len(leads),
+        "leads_missing_phone": leads_missing_phone,
+        "matched": matched,
+        "in_airtable_not_periskope": in_airtable_not_periskope,
+        "in_periskope_home_loans_not_airtable": in_periskope_home_loans_not_airtable,
+        "status_label_mismatches": status_label_mismatches,
         "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
     }
 
@@ -298,6 +461,18 @@ def main():
     history = load_history()
     history = update_marked_registry(history, contacts, today)
     dataset["daily"], dataset["daily_contacts"] = compute_daily_from_registry(history["marked"])
+
+    if AIRTABLE_TOKEN:
+        print("AIRTABLE_TOKEN set — running Airtable Leads vs Periskope sync check...")
+        dataset["airtable_sync"] = build_airtable_sync(contacts)
+        sync = dataset["airtable_sync"]
+        print(f"Airtable sync: {sync['leads_total']} leads, {sync['matched']} matched, "
+              f"{len(sync['in_airtable_not_periskope'])} in Airtable only, "
+              f"{len(sync['in_periskope_home_loans_not_airtable'])} in Periskope only, "
+              f"{len(sync['status_label_mismatches'])} status/label mismatches.")
+    else:
+        print("AIRTABLE_TOKEN not set — skipping Airtable sync check (data.json will have no "
+              "'airtable_sync' key). Add the secret to enable it.")
 
     with open(HISTORY_PATH, "w") as f:
         json.dump(history, f, indent=2)

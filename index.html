@@ -66,6 +66,9 @@
   .stat .num{font-family:var(--font-display);font-size:32px;color:var(--text);}
   .stat .lab{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:6px;}
   .stat.hero .num{color:var(--accent);}
+  .stat.clickable{cursor:pointer;transition:background .15s ease;}
+  .stat.clickable:hover{background:var(--panel-2);}
+  .cdetail{font-size:11px;color:var(--muted);margin-top:3px;}
 
   h2{
     font-family:var(--font-display);
@@ -199,19 +202,19 @@
   </header>
 
   <div class="stat-row">
-    <div class="stat hero">
+    <div class="stat hero clickable" onclick="openModal('Home Loans')">
       <div class="num" id="stat-homeloans">–</div>
       <div class="lab">Home Loans (total)</div>
     </div>
-    <div class="stat">
+    <div class="stat clickable" onclick="openModal('M1')">
       <div class="num" id="stat-m1">–</div>
       <div class="lab">M1 sent</div>
     </div>
-    <div class="stat">
+    <div class="stat clickable" onclick="openModal('M2')">
       <div class="num" id="stat-m2">–</div>
       <div class="lab">M2 sent</div>
     </div>
-    <div class="stat">
+    <div class="stat clickable" onclick="openSegmentModal('home_loans_no_m','Home Loans, no M-series yet')">
       <div class="num" id="stat-untouched">–</div>
       <div class="lab">Home Loans, no M-series yet</div>
     </div>
@@ -220,6 +223,7 @@
       <div class="lab">Total contacts in org</div>
     </div>
   </div>
+  <div class="footnote">Click any number above (except "Total contacts in org" — too large to list usefully) to see the name + phone list behind it.</div>
 
   <h2><span class="idx">01</span> Contacts by label</h2>
   <div class="grid-labels" id="label-grid"></div>
@@ -240,6 +244,13 @@
     <tbody id="daily-table"></tbody>
   </table>
   <div class="footnote">Each contact's "day marked" is recorded permanently the first time it's seen — durable across runs, not recomputed from each contact's last-updated timestamp. The earliest day(s) shown are a one-time backfill estimate from that timestamp (before this tracking started) and may be less precise. Click any non-zero number to see who was marked that day.</div>
+
+  <h2><span class="idx">05</span> Airtable ↔ Periskope sanity check</h2>
+  <table>
+    <thead><tr><th>Check</th><th class="num">Count</th></tr></thead>
+    <tbody id="airtable-table"></tbody>
+  </table>
+  <div class="footnote" id="airtable-footnote"></div>
 
 </div>
 
@@ -278,8 +289,11 @@ function renderModal(title, contacts, emptyMessage) {
   } else if (contacts.length === 0) {
     modalBody.innerHTML = '<div class="modal-empty">No contacts here.</div>';
   } else {
-    modalBody.innerHTML = contacts.map(c =>
-      `<div class="contact-row"><span class="cname">${escapeHtml(c.name)}</span><span class="cphone">${escapeHtml(c.phone)}</span></div>`
+    modalBody.innerHTML = contacts.map(c => `
+      <div class="contact-row">
+        <span class="cname">${escapeHtml(c.name)}${c.detail ? `<div class="cdetail">${escapeHtml(c.detail)}</div>` : ''}</span>
+        <span class="cphone">${escapeHtml(c.phone)}</span>
+      </div>`
     ).join('');
   }
   overlay.classList.add('open');
@@ -288,10 +302,27 @@ function openModal(name, count) {
   const contacts = ((data && data.contacts_by_label) || {})[name];
   renderModal(name, contacts, 'Contact list not available yet — it will appear after the next data refresh (this dashboard build added it).');
 }
+function openSegmentModal(key, title) {
+  const contacts = ((data && data.segment_contacts) || {})[key];
+  renderModal(title, contacts, 'Contact list not available yet — it will appear after the next data refresh (this dashboard build added it).');
+}
 const LABEL_TITLES = { m0: 'M0', m1: 'M1', m2: 'M2' };
 function openDayModal(label, date) {
   const contacts = (((data && data.daily_contacts) || {})[label] || {})[date];
   renderModal(`${LABEL_TITLES[label] || label} marked — ${date}`, contacts, 'Contact list not available yet — it will appear after the next data refresh (this dashboard build added it).');
+}
+function openAirtableModal(key, title) {
+  const sync = (data && data.airtable_sync) || null;
+  if (!sync) { renderModal(title, null, "Airtable sync hasn't run yet — add the AIRTABLE_TOKEN secret and re-run the workflow."); return; }
+  let contacts;
+  if (key === 'in_airtable_not_periskope') {
+    contacts = sync.in_airtable_not_periskope.map(c => ({ name: c.name, phone: c.phone, detail: 'Airtable status: ' + (c.status || '—') }));
+  } else if (key === 'in_periskope_home_loans_not_airtable') {
+    contacts = sync.in_periskope_home_loans_not_airtable.map(c => ({ name: c.name, phone: c.phone, detail: (c.labels || []).length ? 'Periskope labels: ' + c.labels.join(', ') : 'No other Periskope labels' }));
+  } else {
+    contacts = sync.status_label_mismatches.map(c => ({ name: c.name, phone: c.phone, detail: `Airtable: "${c.airtable_status}" · Periskope missing "${c.expected_periskope_label}"` }));
+  }
+  renderModal(title, contacts, 'No contacts here.');
 }
 function closeModal() { overlay.classList.remove('open'); }
 document.getElementById('modal-close').addEventListener('click', closeModal);
@@ -353,15 +384,19 @@ async function loadDashboard() {
       : `M0: ${data.label_counts['M0']} · M1: ${data.label_counts['M1']} · M2: ${data.label_counts['M2']}`;
 
   const stuckRows = [
-    ['Home Loans present, M0/M1/M2 all absent', data.home_loans_no_m_tags],
-    ['M0 sent, M1 & M2 not sent', data.m0_only],
-    ['M1 sent, M2 not sent', data.m1_no_m2],
+    ['Home Loans present, M0/M1/M2 all absent', data.home_loans_no_m_tags, 'home_loans_no_m'],
+    ['M0 sent, M1 & M2 not sent', data.m0_only, 'm0_only'],
+    ['M1 sent, M2 not sent', data.m1_no_m2, 'm1_no_m2'],
   ];
   const tbody = document.getElementById('stuck-table');
   tbody.innerHTML = '';
-  stuckRows.forEach(([label, val]) => {
+  stuckRows.forEach(([label, val, key]) => {
     const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${label}</td><td class="num">${val}</td>`;
+    const safeLabel = label.replace(/'/g, "\\'");
+    const cellHtml = val > 0
+      ? `<td class="num clickable" onclick="openSegmentModal('${key}','${safeLabel}')">${val}</td>`
+      : `<td class="num zero">${val}</td>`;
+    tr.innerHTML = `<td>${label}</td>${cellHtml}`;
     tbody.appendChild(tr);
   });
 
@@ -391,6 +426,43 @@ async function loadDashboard() {
   if (allDates.length === 0) {
     dailyTbody.innerHTML = '<tr><td colspan="5" style="color:var(--muted);text-align:center;">No daily history yet — appears after the workflow has run at least once.</td></tr>';
   }
+
+  renderAirtableSection();
+}
+
+function renderAirtableSection() {
+  const tbody = document.getElementById('airtable-table');
+  const footnote = document.getElementById('airtable-footnote');
+  const sync = data.airtable_sync;
+  tbody.innerHTML = '';
+  if (!sync) {
+    tbody.innerHTML = '<tr><td colspan="2" style="color:var(--muted);text-align:center;">Not connected yet — add the AIRTABLE_TOKEN secret and re-run the workflow to enable this check.</td></tr>';
+    footnote.textContent = '';
+    return;
+  }
+  const rows = [
+    ['Total leads in Airtable (Home Loans CRM → Leads)', sync.leads_total, null],
+    ['Leads with no phone number on file', sync.leads_missing_phone, null],
+    ['Matched to a Periskope contact', sync.matched, null],
+    ['In Airtable, no matching Periskope contact', sync.in_airtable_not_periskope.length, 'in_airtable_not_periskope'],
+    ['Periskope "Home Loans" contact, not in Airtable Leads', sync.in_periskope_home_loans_not_airtable.length, 'in_periskope_home_loans_not_airtable'],
+    ['Status (Airtable) vs Label (Periskope) mismatch', sync.status_label_mismatches.length, 'status_label_mismatches'],
+  ];
+  rows.forEach(([label, val, key]) => {
+    const tr = document.createElement('tr');
+    const safeLabel = label.replace(/'/g, "\\'");
+    let cellHtml;
+    if (key && val > 0) {
+      cellHtml = `<td class="num clickable" onclick="openAirtableModal('${key}','${safeLabel}')">${val}</td>`;
+    } else if (key) {
+      cellHtml = `<td class="num zero">${val}</td>`;
+    } else {
+      cellHtml = `<td class="num">${val}</td>`;
+    }
+    tr.innerHTML = `<td>${label}</td>${cellHtml}`;
+    tbody.appendChild(tr);
+  });
+  footnote.textContent = `Last checked ${new Date(sync.generated_at).toLocaleString()} · matched by phone number (last 10 digits) · only Active Warm / Still Looking / Future Plan / Registration Complete statuses have a direct Periskope-label equivalent, so other statuses (Blocking Paid, MOU Signed, Not Qualified, Lost, etc.) aren't included in the mismatch check.`;
 }
 
 loadDashboard();
