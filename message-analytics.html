@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Truva Home Loans — Lead Funnel Dashboard</title>
+<title>Truva Home Loans — Message Analytics</title>
 <style>
   :root{
     --bg:#0A0A0A;
@@ -68,25 +68,6 @@
     margin-top:14px;
   }
 
-  .stat-row{
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:1px;
-    background:var(--line);
-    border:1px solid var(--line);
-    margin-bottom:32px;
-  }
-  .stat{
-    background:var(--panel);
-    padding:20px 16px;
-  }
-  .stat .num{font-family:var(--font-display);font-size:32px;color:var(--text);}
-  .stat .lab{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:6px;}
-  .stat.hero .num{color:var(--accent);}
-  .stat.clickable{cursor:pointer;transition:background .15s ease;}
-  .stat.clickable:hover{background:var(--panel-2);}
-  .cdetail{font-size:11px;color:var(--muted);margin-top:3px;}
-
   h2{
     font-family:var(--font-display);
     font-weight:400;
@@ -96,33 +77,8 @@
     align-items:baseline;
     gap:10px;
   }
+  h2:first-of-type{margin-top:0;}
   h2 .idx{font-family:var(--font-mono);font-size:12px;color:var(--muted);}
-
-  .grid-labels{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:10px;
-  }
-  .label-card{
-    background:var(--panel);
-    border:1px solid var(--line);
-    border-radius:6px;
-    padding:16px 18px;
-    position:relative;
-    overflow:hidden;
-  }
-  .label-card .bar{
-    position:absolute;
-    left:0;top:0;bottom:0;
-    width:3px;
-    background:var(--accent);
-  }
-  .label-card.zero .bar{background:var(--warn);}
-  .label-card .name{font-size:12px;color:var(--muted);margin-bottom:6px;}
-  .label-card .count{font-family:var(--font-display);font-size:26px;}
-  .label-card.zero .count{color:var(--warn);}
-  .label-card{cursor:pointer;transition:border-color .15s ease,background .15s ease;}
-  .label-card:hover{border-color:var(--accent);background:var(--panel-2);}
 
   .modal-overlay{
     display:none;
@@ -165,6 +121,7 @@
   .contact-row:last-child{border-bottom:none;}
   .contact-row .cname{color:var(--text);}
   .contact-row .cphone{font-family:var(--font-mono);color:var(--muted);white-space:nowrap;}
+  .cdetail{font-size:11px;color:var(--muted);margin-top:3px;}
   .modal-empty{padding:30px 20px;color:var(--muted);font-size:13px;text-align:center;line-height:1.6;}
 
   table{width:100%;border-collapse:collapse;font-size:13px;}
@@ -201,44 +158,34 @@
 <div class="wrap">
 
   <nav class="nav">
-    <a href="index.html" class="active">Overview</a>
-    <a href="message-analytics.html">Message Analytics</a>
+    <a href="index.html">Overview</a>
+    <a href="message-analytics.html" class="active">Message Analytics</a>
     <a href="airtable-sync.html">Airtable Sync</a>
   </nav>
 
   <header>
     <div class="eyebrow">Truva Home Loans · Periskope Pipeline</div>
-    <h1>Lead Funnel Dashboard</h1>
-    <div class="sub">Live counts pulled directly from your Periskope contact database — replacing the earlier "50+" estimates with exact totals.</div>
-    <div class="refresh-note">Snapshot taken 8 Jul 2026 · org: Truva Home Loans</div>
+    <h1>Message Analytics</h1>
+    <div class="sub">The M-series funnel, where contacts get stuck, and a day-by-day breakdown of who got marked M0/M1/M2 and when.</div>
+    <div class="refresh-note">–</div>
   </header>
 
-  <div class="stat-row">
-    <div class="stat hero clickable" onclick="openModal('Home Loans')">
-      <div class="num" id="stat-homeloans">–</div>
-      <div class="lab">Home Loans (total)</div>
-    </div>
-    <div class="stat clickable" onclick="openModal('M1')">
-      <div class="num" id="stat-m1">–</div>
-      <div class="lab">M1 sent</div>
-    </div>
-    <div class="stat clickable" onclick="openModal('M2')">
-      <div class="num" id="stat-m2">–</div>
-      <div class="lab">M2 sent</div>
-    </div>
-    <div class="stat clickable" onclick="openSegmentModal('home_loans_no_m','Home Loans, no M-series yet')">
-      <div class="num" id="stat-untouched">–</div>
-      <div class="lab">Home Loans, no M-series yet</div>
-    </div>
-    <div class="stat">
-      <div class="num" id="stat-total">–</div>
-      <div class="lab">Total contacts in org</div>
-    </div>
-  </div>
-  <div class="footnote">Click any number above (except "Total contacts in org" — too large to list usefully) to see the name + phone list behind it.</div>
+  <h2><span class="idx">01</span> M-series funnel (M0 → M1 → M2)</h2>
+  <div class="funnel" id="funnel"></div>
+  <div class="callout" id="m0-callout"></div>
 
-  <h2><span class="idx">01</span> Contacts by label</h2>
-  <div class="grid-labels" id="label-grid"></div>
+  <h2><span class="idx">02</span> Stuck-in-stage breakdown</h2>
+  <table>
+    <thead><tr><th>Segment</th><th class="num">Contacts</th></tr></thead>
+    <tbody id="stuck-table"></tbody>
+  </table>
+
+  <h2><span class="idx">03</span> Daily marks by label</h2>
+  <table>
+    <thead><tr><th>Date</th><th class="num">M0</th><th class="num">M1</th><th class="num">M2</th><th class="num">Total</th></tr></thead>
+    <tbody id="daily-table"></tbody>
+  </table>
+  <div class="footnote">Each contact's "day marked" is recorded permanently the first time it's seen — durable across runs, not recomputed from each contact's last-updated timestamp. The earliest day(s) shown are a one-time backfill estimate from that timestamp (before this tracking started) and may be less precise. Click any non-zero number to see who was marked that day.</div>
 
 </div>
 
@@ -256,7 +203,7 @@
 </div>
 
 <script>
-const REFRESH_MS = 12 * 60 * 60 * 1000; // re-fetch data.json every 12 hours while the tab stays open
+const REFRESH_MS = 12 * 60 * 60 * 1000;
 let data = null;
 
 function escapeHtml(s) {
@@ -286,13 +233,14 @@ function renderModal(title, contacts, emptyMessage) {
   }
   overlay.classList.add('open');
 }
-function openModal(name) {
-  const contacts = ((data && data.contacts_by_label) || {})[name];
-  renderModal(name, contacts, 'Contact list not available yet — it will appear after the next data refresh.');
-}
 function openSegmentModal(key, title) {
   const contacts = ((data && data.segment_contacts) || {})[key];
   renderModal(title, contacts, 'Contact list not available yet — it will appear after the next data refresh.');
+}
+const LABEL_TITLES = { m0: 'M0', m1: 'M1', m2: 'M2' };
+function openDayModal(label, date) {
+  const contacts = (((data && data.daily_contacts) || {})[label] || {})[date];
+  renderModal(`${LABEL_TITLES[label] || label} marked — ${date}`, contacts, 'Contact list not available yet — it will appear after the next data refresh.');
 }
 function closeModal() { overlay.classList.remove('open'); }
 document.getElementById('modal-close').addEventListener('click', closeModal);
@@ -308,29 +256,82 @@ async function loadDashboard() {
     return;
   }
 
-  document.getElementById('stat-homeloans').textContent = data.label_counts['Home Loans'];
-  document.getElementById('stat-m1').textContent = data.label_counts['M1'];
-  document.getElementById('stat-m2').textContent = data.label_counts['M2'];
-  document.getElementById('stat-untouched').textContent = data.home_loans_no_m_tags;
-  document.getElementById('stat-total').textContent = data.total_org_contacts.toLocaleString();
-
   if (data.generated_at) {
     document.querySelector('.refresh-note').textContent = 'Last updated: ' + new Date(data.generated_at).toLocaleString();
   }
 
-  const grid = document.getElementById('label-grid');
-  grid.innerHTML = '';
-  Object.entries(data.label_counts).forEach(([name, count]) => {
-    const card = document.createElement('div');
-    card.className = 'label-card' + (count === 0 ? ' zero' : '');
-    card.innerHTML = `<div class="bar"></div><div class="name">${name}</div><div class="count">${count}</div>`;
-    card.addEventListener('click', () => openModal(name));
-    grid.appendChild(card);
+  const funnelSteps = [
+    { label: 'Home Loans (entry)', value: data.label_counts['Home Loans'] },
+    { label: 'M0 sent', value: data.label_counts['M0'] },
+    { label: 'M1 sent', value: data.label_counts['M1'] },
+    { label: 'M2 sent', value: data.label_counts['M2'] },
+  ];
+  const maxVal = Math.max(...funnelSteps.map(s => s.value), 1);
+  const funnelEl = document.getElementById('funnel');
+  funnelEl.innerHTML = '';
+  funnelSteps.forEach(s => {
+    const pct = Math.max((s.value / maxVal) * 100, s.value > 0 ? 4 : 0);
+    const row = document.createElement('div');
+    row.className = 'funnel-row';
+    row.innerHTML = `
+      <div class="label">${s.label}</div>
+      <div class="track"><div class="fill" style="width:${pct}%"></div></div>
+      <div class="val">${s.value}</div>`;
+    funnelEl.appendChild(row);
   });
+
+  document.getElementById('m0-callout').innerHTML =
+    data.label_counts['M0'] === 0
+      ? `<b>M0 = 0.</b> Rule 1 ("Intro to New Leads", which tags m0) has never fired or was reset. M1/M2 contacts likely predate the rules being paused, or were tagged manually. Confirm before activating Rule 1.`
+      : `M0: ${data.label_counts['M0']} · M1: ${data.label_counts['M1']} · M2: ${data.label_counts['M2']}`;
+
+  const stuckRows = [
+    ['Home Loans present, M0/M1/M2 all absent', data.home_loans_no_m_tags, 'home_loans_no_m'],
+    ['M0 sent, M1 & M2 not sent', data.m0_only, 'm0_only'],
+    ['M1 sent, M2 not sent', data.m1_no_m2, 'm1_no_m2'],
+  ];
+  const tbody = document.getElementById('stuck-table');
+  tbody.innerHTML = '';
+  stuckRows.forEach(([label, val, key]) => {
+    const tr = document.createElement('tr');
+    const safeLabel = label.replace(/'/g, "\\'");
+    const cellHtml = val > 0
+      ? `<td class="num clickable" onclick="openSegmentModal('${key}','${safeLabel}')">${val}</td>`
+      : `<td class="num zero">${val}</td>`;
+    tr.innerHTML = `<td>${label}</td>${cellHtml}`;
+    tbody.appendChild(tr);
+  });
+
+  const daily = data.daily || {};
+  const allDates = Array.from(new Set([
+    ...Object.keys(daily.m0 || {}),
+    ...Object.keys(daily.m1 || {}),
+    ...Object.keys(daily.m2 || {}),
+    ...Object.keys(daily.total || {}),
+  ])).sort().reverse();
+
+  function dailyCell(label, date, count) {
+    if (!count) return `<td class="num zero">0</td>`;
+    return `<td class="num clickable" onclick="openDayModal('${label}','${date}')">${count}</td>`;
+  }
+  const dailyTbody = document.getElementById('daily-table');
+  dailyTbody.innerHTML = '';
+  allDates.forEach(d => {
+    const m0 = (daily.m0 || {})[d] || 0;
+    const m1 = (daily.m1 || {})[d] || 0;
+    const m2 = (daily.m2 || {})[d] || 0;
+    const total = (daily.total || {})[d] ?? (m0 + m1 + m2);
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${d}</td>${dailyCell('m0', d, m0)}${dailyCell('m1', d, m1)}${dailyCell('m2', d, m2)}<td class="num">${total}</td>`;
+    dailyTbody.appendChild(tr);
+  });
+  if (allDates.length === 0) {
+    dailyTbody.innerHTML = '<tr><td colspan="5" style="color:var(--muted);text-align:center;">No daily history yet — appears after the workflow has run at least once.</td></tr>';
+  }
 }
 
 loadDashboard();
-setInterval(loadDashboard, REFRESH_MS); // keep the open tab in sync every 12 hours
+setInterval(loadDashboard, REFRESH_MS);
 </script>
 </body>
 </html>

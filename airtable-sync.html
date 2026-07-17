@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Truva Home Loans — Lead Funnel Dashboard</title>
+<title>Truva Home Loans — Airtable Sync</title>
 <style>
   :root{
     --bg:#0A0A0A;
@@ -68,62 +68,6 @@
     margin-top:14px;
   }
 
-  .stat-row{
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:1px;
-    background:var(--line);
-    border:1px solid var(--line);
-    margin-bottom:32px;
-  }
-  .stat{
-    background:var(--panel);
-    padding:20px 16px;
-  }
-  .stat .num{font-family:var(--font-display);font-size:32px;color:var(--text);}
-  .stat .lab{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:6px;}
-  .stat.hero .num{color:var(--accent);}
-  .stat.clickable{cursor:pointer;transition:background .15s ease;}
-  .stat.clickable:hover{background:var(--panel-2);}
-  .cdetail{font-size:11px;color:var(--muted);margin-top:3px;}
-
-  h2{
-    font-family:var(--font-display);
-    font-weight:400;
-    font-size:20px;
-    margin:44px 0 16px;
-    display:flex;
-    align-items:baseline;
-    gap:10px;
-  }
-  h2 .idx{font-family:var(--font-mono);font-size:12px;color:var(--muted);}
-
-  .grid-labels{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:10px;
-  }
-  .label-card{
-    background:var(--panel);
-    border:1px solid var(--line);
-    border-radius:6px;
-    padding:16px 18px;
-    position:relative;
-    overflow:hidden;
-  }
-  .label-card .bar{
-    position:absolute;
-    left:0;top:0;bottom:0;
-    width:3px;
-    background:var(--accent);
-  }
-  .label-card.zero .bar{background:var(--warn);}
-  .label-card .name{font-size:12px;color:var(--muted);margin-bottom:6px;}
-  .label-card .count{font-family:var(--font-display);font-size:26px;}
-  .label-card.zero .count{color:var(--warn);}
-  .label-card{cursor:pointer;transition:border-color .15s ease,background .15s ease;}
-  .label-card:hover{border-color:var(--accent);background:var(--panel-2);}
-
   .modal-overlay{
     display:none;
     position:fixed;inset:0;
@@ -165,35 +109,17 @@
   .contact-row:last-child{border-bottom:none;}
   .contact-row .cname{color:var(--text);}
   .contact-row .cphone{font-family:var(--font-mono);color:var(--muted);white-space:nowrap;}
+  .cdetail{font-size:11px;color:var(--muted);margin-top:3px;}
   .modal-empty{padding:30px 20px;color:var(--muted);font-size:13px;text-align:center;line-height:1.6;}
 
   table{width:100%;border-collapse:collapse;font-size:13px;}
   th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);}
   th{color:var(--muted);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;}
   td.num{font-family:var(--font-mono);text-align:right;}
-  tr.total td{font-weight:600;background:var(--panel-2);}
   td.num.clickable{cursor:pointer;color:var(--accent);text-decoration:underline;text-decoration-color:transparent;transition:text-decoration-color .15s ease;}
   td.num.clickable:hover{text-decoration-color:var(--accent);}
   td.num.zero{color:var(--muted);}
 
-  .funnel{display:flex;flex-direction:column;gap:6px;margin-top:6px;}
-  .funnel-row{display:grid;grid-template-columns:180px 1fr 60px;align-items:center;gap:12px;}
-  .funnel-row .label{font-size:13px;color:var(--muted);}
-  .funnel-row .track{background:var(--panel-2);border-radius:4px;height:22px;overflow:hidden;border:1px solid var(--line);}
-  .funnel-row .fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2));}
-  .funnel-row .val{font-family:var(--font-mono);font-size:13px;text-align:right;}
-
-  .callout{
-    background:rgba(255,72,2,0.08);
-    border:1px solid rgba(255,72,2,0.35);
-    border-radius:6px;
-    padding:14px 18px;
-    font-size:13px;
-    color:var(--text);
-    line-height:1.6;
-    margin-top:16px;
-  }
-  .callout b{color:var(--accent);}
   .footnote{color:var(--muted);font-size:11px;margin-top:8px;line-height:1.6;}
 </style>
 </head>
@@ -201,44 +127,23 @@
 <div class="wrap">
 
   <nav class="nav">
-    <a href="index.html" class="active">Overview</a>
+    <a href="index.html">Overview</a>
     <a href="message-analytics.html">Message Analytics</a>
-    <a href="airtable-sync.html">Airtable Sync</a>
+    <a href="airtable-sync.html" class="active">Airtable Sync</a>
   </nav>
 
   <header>
     <div class="eyebrow">Truva Home Loans · Periskope Pipeline</div>
-    <h1>Lead Funnel Dashboard</h1>
-    <div class="sub">Live counts pulled directly from your Periskope contact database — replacing the earlier "50+" estimates with exact totals.</div>
-    <div class="refresh-note">Snapshot taken 8 Jul 2026 · org: Truva Home Loans</div>
+    <h1>Airtable Sync</h1>
+    <div class="sub">Cross-checking the Home Loans CRM "Leads" view against Periskope contact labels, matched by phone number — a sanity check for where the two systems disagree.</div>
+    <div class="refresh-note">–</div>
   </header>
 
-  <div class="stat-row">
-    <div class="stat hero clickable" onclick="openModal('Home Loans')">
-      <div class="num" id="stat-homeloans">–</div>
-      <div class="lab">Home Loans (total)</div>
-    </div>
-    <div class="stat clickable" onclick="openModal('M1')">
-      <div class="num" id="stat-m1">–</div>
-      <div class="lab">M1 sent</div>
-    </div>
-    <div class="stat clickable" onclick="openModal('M2')">
-      <div class="num" id="stat-m2">–</div>
-      <div class="lab">M2 sent</div>
-    </div>
-    <div class="stat clickable" onclick="openSegmentModal('home_loans_no_m','Home Loans, no M-series yet')">
-      <div class="num" id="stat-untouched">–</div>
-      <div class="lab">Home Loans, no M-series yet</div>
-    </div>
-    <div class="stat">
-      <div class="num" id="stat-total">–</div>
-      <div class="lab">Total contacts in org</div>
-    </div>
-  </div>
-  <div class="footnote">Click any number above (except "Total contacts in org" — too large to list usefully) to see the name + phone list behind it.</div>
-
-  <h2><span class="idx">01</span> Contacts by label</h2>
-  <div class="grid-labels" id="label-grid"></div>
+  <table>
+    <thead><tr><th>Check</th><th class="num">Count</th></tr></thead>
+    <tbody id="airtable-table"></tbody>
+  </table>
+  <div class="footnote" id="airtable-footnote"></div>
 
 </div>
 
@@ -256,7 +161,7 @@
 </div>
 
 <script>
-const REFRESH_MS = 12 * 60 * 60 * 1000; // re-fetch data.json every 12 hours while the tab stays open
+const REFRESH_MS = 12 * 60 * 60 * 1000;
 let data = null;
 
 function escapeHtml(s) {
@@ -286,13 +191,18 @@ function renderModal(title, contacts, emptyMessage) {
   }
   overlay.classList.add('open');
 }
-function openModal(name) {
-  const contacts = ((data && data.contacts_by_label) || {})[name];
-  renderModal(name, contacts, 'Contact list not available yet — it will appear after the next data refresh.');
-}
-function openSegmentModal(key, title) {
-  const contacts = ((data && data.segment_contacts) || {})[key];
-  renderModal(title, contacts, 'Contact list not available yet — it will appear after the next data refresh.');
+function openAirtableModal(key, title) {
+  const sync = (data && data.airtable_sync) || null;
+  if (!sync) { renderModal(title, null, "Airtable sync hasn't run yet — add the AIRTABLE_TOKEN secret and re-run the workflow."); return; }
+  let contacts;
+  if (key === 'in_airtable_not_periskope') {
+    contacts = sync.in_airtable_not_periskope.map(c => ({ name: c.name, phone: c.phone, detail: 'Airtable status: ' + (c.status || '—') }));
+  } else if (key === 'in_periskope_home_loans_not_airtable') {
+    contacts = sync.in_periskope_home_loans_not_airtable.map(c => ({ name: c.name, phone: c.phone, detail: (c.labels || []).length ? 'Periskope labels: ' + c.labels.join(', ') : 'No other Periskope labels' }));
+  } else {
+    contacts = sync.status_label_mismatches.map(c => ({ name: c.name, phone: c.phone, detail: `Airtable: "${c.airtable_status}" · Periskope missing "${c.expected_periskope_label}"` }));
+  }
+  renderModal(title, contacts, 'No contacts here.');
 }
 function closeModal() { overlay.classList.remove('open'); }
 document.getElementById('modal-close').addEventListener('click', closeModal);
@@ -308,29 +218,46 @@ async function loadDashboard() {
     return;
   }
 
-  document.getElementById('stat-homeloans').textContent = data.label_counts['Home Loans'];
-  document.getElementById('stat-m1').textContent = data.label_counts['M1'];
-  document.getElementById('stat-m2').textContent = data.label_counts['M2'];
-  document.getElementById('stat-untouched').textContent = data.home_loans_no_m_tags;
-  document.getElementById('stat-total').textContent = data.total_org_contacts.toLocaleString();
-
   if (data.generated_at) {
     document.querySelector('.refresh-note').textContent = 'Last updated: ' + new Date(data.generated_at).toLocaleString();
   }
 
-  const grid = document.getElementById('label-grid');
-  grid.innerHTML = '';
-  Object.entries(data.label_counts).forEach(([name, count]) => {
-    const card = document.createElement('div');
-    card.className = 'label-card' + (count === 0 ? ' zero' : '');
-    card.innerHTML = `<div class="bar"></div><div class="name">${name}</div><div class="count">${count}</div>`;
-    card.addEventListener('click', () => openModal(name));
-    grid.appendChild(card);
+  const tbody = document.getElementById('airtable-table');
+  const footnote = document.getElementById('airtable-footnote');
+  const sync = data.airtable_sync;
+  tbody.innerHTML = '';
+  if (!sync) {
+    tbody.innerHTML = '<tr><td colspan="2" style="color:var(--muted);text-align:center;">Not connected yet — add the AIRTABLE_TOKEN secret and re-run the workflow to enable this check.</td></tr>';
+    footnote.textContent = '';
+    return;
+  }
+  const rows = [
+    ['Total leads in Airtable (Home Loans CRM → Leads)', sync.leads_total, null],
+    ['Leads with no phone number on file', sync.leads_missing_phone, null],
+    ['Matched to a Periskope contact', sync.matched, null],
+    ['In Airtable, no matching Periskope contact', sync.in_airtable_not_periskope.length, 'in_airtable_not_periskope'],
+    ['Periskope "Home Loans" contact, not in Airtable Leads', sync.in_periskope_home_loans_not_airtable.length, 'in_periskope_home_loans_not_airtable'],
+    ['Status (Airtable) vs Label (Periskope) mismatch', sync.status_label_mismatches.length, 'status_label_mismatches'],
+  ];
+  rows.forEach(([label, val, key]) => {
+    const tr = document.createElement('tr');
+    const safeLabel = label.replace(/'/g, "\\'");
+    let cellHtml;
+    if (key && val > 0) {
+      cellHtml = `<td class="num clickable" onclick="openAirtableModal('${key}','${safeLabel}')">${val}</td>`;
+    } else if (key) {
+      cellHtml = `<td class="num zero">${val}</td>`;
+    } else {
+      cellHtml = `<td class="num">${val}</td>`;
+    }
+    tr.innerHTML = `<td>${label}</td>${cellHtml}`;
+    tbody.appendChild(tr);
   });
+  footnote.textContent = `Last checked ${new Date(sync.generated_at).toLocaleString()} · matched by phone number (last 10 digits) · only Active Warm / Still Looking / Future Plan / Registration Complete statuses have a direct Periskope-label equivalent, so other statuses (Blocking Paid, MOU Signed, Not Qualified, Lost, etc.) aren't included in the mismatch check.`;
 }
 
 loadDashboard();
-setInterval(loadDashboard, REFRESH_MS); // keep the open tab in sync every 12 hours
+setInterval(loadDashboard, REFRESH_MS);
 </script>
 </body>
 </html>
