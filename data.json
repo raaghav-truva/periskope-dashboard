@@ -1,5 +1,5 @@
 {
-  "total_org_contacts": 11959,
+  "total_org_contacts": 11961,
   "label_counts": {
     "Home Loans": 218,
     "Active Warm": 51,
@@ -9,7 +9,7 @@
     "Balance Transfer (Future)": 3,
     "Registration Complete": 0,
     "M0": 0,
-    "M1": 114,
+    "M1": 125,
     "M2": 82
   },
   "contacts_by_label": {
@@ -1809,6 +1809,10 @@
         "phone": "919820608414"
       },
       {
+        "name": "ajayvichare3",
+        "phone": "919323005553"
+      },
+      {
         "name": "Akshi Mahajan",
         "phone": "917738527852"
       },
@@ -1909,6 +1913,10 @@
         "phone": "919633695595"
       },
       {
+        "name": "Bineet Banka",
+        "phone": "918879577475"
+      },
+      {
         "name": "Bjorn Dsouza",
         "phone": "919820363644"
       },
@@ -1923,6 +1931,10 @@
       {
         "name": "Deepak Harjani",
         "phone": "919769535555"
+      },
+      {
+        "name": "Deepak madnani",
+        "phone": "919004047204"
       },
       {
         "name": "Deepesh Bharani",
@@ -1945,8 +1957,16 @@
         "phone": "917045454599"
       },
       {
+        "name": "Dinesh Singh",
+        "phone": "919320677707"
+      },
+      {
         "name": "Divakar",
         "phone": "919956999597"
+      },
+      {
+        "name": "Hussain Ali Shaikh",
+        "phone": "919870078640"
       },
       {
         "name": "Ignatius Barretto",
@@ -2045,6 +2065,10 @@
         "phone": "919819867099"
       },
       {
+        "name": "Prashant Gupta",
+        "phone": "919930224986"
+      },
+      {
         "name": "Puneet",
         "phone": "919986290086"
       },
@@ -2061,12 +2085,24 @@
         "phone": "919920536111"
       },
       {
+        "name": "Raj",
+        "phone": "919702618253"
+      },
+      {
         "name": "Raj Bhavwat",
         "phone": "919920858852"
       },
       {
+        "name": "Rajat Varma",
+        "phone": "919820067764"
+      },
+      {
         "name": "Rajesh & Sunita Daga",
         "phone": "919535522177"
+      },
+      {
+        "name": "Rajkumar",
+        "phone": "918976049514"
       },
       {
         "name": "Ramendr Tiwari",
@@ -2205,8 +2241,16 @@
         "phone": "919953107773"
       },
       {
+        "name": "Vicky Chawla",
+        "phone": "919769608020"
+      },
+      {
         "name": "Vijay",
         "phone": "918291414805"
+      },
+      {
+        "name": "Vijay Jain",
+        "phone": "919820370350"
       },
       {
         "name": "Vikash Gupta",
@@ -2599,10 +2643,6 @@
         "phone": "919870061632"
       },
       {
-        "name": "ajayvichare3",
-        "phone": "919323005553"
-      },
-      {
         "name": "Alisha Shaikh",
         "phone": "918928839385"
       },
@@ -2651,16 +2691,8 @@
         "phone": "917208320745"
       },
       {
-        "name": "Bineet Banka",
-        "phone": "918879577475"
-      },
-      {
         "name": "Danish Khan",
         "phone": "917453878578"
-      },
-      {
-        "name": "Deepak madnani",
-        "phone": "919004047204"
       },
       {
         "name": "Deeshank Narkar",
@@ -2673,10 +2705,6 @@
       {
         "name": "Dinesh Kirodian",
         "phone": "919820023264"
-      },
-      {
-        "name": "Dinesh Singh",
-        "phone": "919320677707"
       },
       {
         "name": "Dipali",
@@ -2701,10 +2729,6 @@
       {
         "name": "Haresh Parmer",
         "phone": "919167245781"
-      },
-      {
-        "name": "Hussain Ali Shaikh",
-        "phone": "919870078640"
       },
       {
         "name": "Jagdish M. Kaushik",
@@ -2855,22 +2879,6 @@
         "phone": "917799159741"
       },
       {
-        "name": "Prashant Gupta",
-        "phone": "919930224986"
-      },
-      {
-        "name": "Raj",
-        "phone": "919702618253"
-      },
-      {
-        "name": "Rajat Varma",
-        "phone": "919820067764"
-      },
-      {
-        "name": "Rajkumar",
-        "phone": "918976049514"
-      },
-      {
         "name": "Ravi Dayma",
         "phone": "919920157851"
       },
@@ -2995,14 +3003,6 @@
         "phone": "917567190153"
       },
       {
-        "name": "Vicky Chawla",
-        "phone": "919769608020"
-      },
-      {
-        "name": "Vijay Jain",
-        "phone": "919820370350"
-      },
-      {
         "name": "VINOD KAMTEKAR",
         "phone": "917506135910"
       }
@@ -3016,6 +3016,10 @@
       {
         "name": "Abhishek",
         "phone": "919769322137"
+      },
+      {
+        "name": "ajayvichare3",
+        "phone": "919323005553"
       },
       {
         "name": "Alok Sharma",
@@ -3058,8 +3062,16 @@
         "phone": "919633695595"
       },
       {
+        "name": "Bineet Banka",
+        "phone": "918879577475"
+      },
+      {
         "name": "Datta Sawant",
         "phone": "919867740706"
+      },
+      {
+        "name": "Deepak madnani",
+        "phone": "919004047204"
       },
       {
         "name": "dhananjay chaughule",
@@ -3070,8 +3082,16 @@
         "phone": "919004493570"
       },
       {
+        "name": "Dinesh Singh",
+        "phone": "919320677707"
+      },
+      {
         "name": "Divakar",
         "phone": "919956999597"
+      },
+      {
+        "name": "Hussain Ali Shaikh",
+        "phone": "919870078640"
       },
       {
         "name": "Kunal bagaya",
@@ -3090,8 +3110,24 @@
         "phone": "919820565399"
       },
       {
+        "name": "Prashant Gupta",
+        "phone": "919930224986"
+      },
+      {
         "name": "Puneet",
         "phone": "919986290086"
+      },
+      {
+        "name": "Raj",
+        "phone": "919702618253"
+      },
+      {
+        "name": "Rajat Varma",
+        "phone": "919820067764"
+      },
+      {
+        "name": "Rajkumar",
+        "phone": "918976049514"
       },
       {
         "name": "Rana Vishal Singh",
@@ -3130,8 +3166,16 @@
         "phone": "919953107773"
       },
       {
+        "name": "Vicky Chawla",
+        "phone": "919769608020"
+      },
+      {
         "name": "Vijay",
         "phone": "918291414805"
+      },
+      {
+        "name": "Vijay Jain",
+        "phone": "919820370350"
       },
       {
         "name": "Vishal Lohire",
@@ -3139,10 +3183,10 @@
       }
     ]
   },
-  "home_loans_no_m_tags": 108,
+  "home_loans_no_m_tags": 97,
   "m0_only": 0,
-  "m1_no_m2": 32,
-  "generated_at": "2026-07-21T11:18:07.521696Z",
+  "m1_no_m2": 43,
+  "generated_at": "2026-07-21T13:34:28.593634Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
@@ -3156,7 +3200,7 @@
       ],
       [
         "m1",
-        114
+        125
       ],
       [
         "m2",
@@ -3206,7 +3250,8 @@
       "2026-07-07": 12,
       "2026-07-08": 9,
       "2026-07-09": 4,
-      "2026-07-13": 21
+      "2026-07-13": 21,
+      "2026-07-21": 11
     },
     "m2": {
       "2026-06-30": 31,
@@ -3228,7 +3273,8 @@
       "2026-07-08": 10,
       "2026-07-09": 5,
       "2026-07-11": 20,
-      "2026-07-13": 43
+      "2026-07-13": 43,
+      "2026-07-21": 11
     }
   },
   "daily_contacts": {
@@ -3707,6 +3753,52 @@
           "name": "Vijay",
           "phone": "918291414805"
         }
+      ],
+      "2026-07-21": [
+        {
+          "name": "ajayvichare3",
+          "phone": "919323005553"
+        },
+        {
+          "name": "Bineet Banka",
+          "phone": "918879577475"
+        },
+        {
+          "name": "Deepak madnani",
+          "phone": "919004047204"
+        },
+        {
+          "name": "Dinesh Singh",
+          "phone": "919320677707"
+        },
+        {
+          "name": "Hussain Ali Shaikh",
+          "phone": "919870078640"
+        },
+        {
+          "name": "Prashant Gupta",
+          "phone": "919930224986"
+        },
+        {
+          "name": "Raj",
+          "phone": "919702618253"
+        },
+        {
+          "name": "Rajat Varma",
+          "phone": "919820067764"
+        },
+        {
+          "name": "Rajkumar",
+          "phone": "918976049514"
+        },
+        {
+          "name": "Vicky Chawla",
+          "phone": "919769608020"
+        },
+        {
+          "name": "Vijay Jain",
+          "phone": "919820370350"
+        }
       ]
     },
     "m2": {
@@ -4058,7 +4150,7 @@
   },
   "airtable_sync": {
     "leads_total": 492,
-    "leads_missing_phone": 84,
+    "leads_missing_phone": 83,
     "matched": 283,
     "in_airtable_not_periskope": [
       {
@@ -4320,6 +4412,11 @@
         "name": "Maji",
         "phone": "7977265322",
         "status": "Not Qualified"
+      },
+      {
+        "name": "Manish Kashyap & Sushma Arolkar",
+        "phone": "9999999999",
+        "status": "Active Warm (1 month)"
       },
       {
         "name": "Mayur Vijay Somani",
@@ -5239,6 +5336,6 @@
         ]
       }
     ],
-    "generated_at": "2026-07-21T11:18:09.597128Z"
+    "generated_at": "2026-07-21T13:34:29.929175Z"
   }
 }
