@@ -1,9 +1,9 @@
 {
-  "total_org_contacts": 11961,
+  "total_org_contacts": 11963,
   "label_counts": {
-    "Home Loans": 218,
+    "Home Loans": 221,
     "Active Warm": 51,
-    "Still Looking": 133,
+    "Still Looking": 135,
     "Future Plan": 32,
     "Balance Transfer (Immediate)": 2,
     "Balance Transfer (Future)": 3,
@@ -97,6 +97,10 @@
       {
         "name": "Ananjan Choudhary",
         "phone": "919930987633"
+      },
+      {
+        "name": "Anant Kasibhatla",
+        "phone": "919702578482"
       },
       {
         "name": "Anant Singh",
@@ -376,11 +380,11 @@
       },
       {
         "name": "Manoj Gupta",
-        "phone": "917045352354"
+        "phone": "919820573699"
       },
       {
         "name": "Manoj Gupta",
-        "phone": "919820573699"
+        "phone": "917045352354"
       },
       {
         "name": "Manu Sujanti",
@@ -429,6 +433,10 @@
       {
         "name": "Murli Chaudhary",
         "phone": "919820018973"
+      },
+      {
+        "name": "Mushir Khan",
+        "phone": "917045640732"
       },
       {
         "name": "Nandita",
@@ -541,6 +549,10 @@
       {
         "name": "Prashant Gupta",
         "phone": "919930224986"
+      },
+      {
+        "name": "Priyanka Rajapkar",
+        "phone": "919867058900"
       },
       {
         "name": "Puneet",
@@ -1139,6 +1151,10 @@
         "phone": "919619906071"
       },
       {
+        "name": "Anant Kasibhatla",
+        "phone": "919702578482"
+      },
+      {
         "name": "Anant Singh",
         "phone": "919967192044"
       },
@@ -1292,11 +1308,11 @@
       },
       {
         "name": "Manoj Gupta",
-        "phone": "917045352354"
+        "phone": "919820573699"
       },
       {
         "name": "Manoj Gupta",
-        "phone": "919820573699"
+        "phone": "917045352354"
       },
       {
         "name": "Manu Sujanti",
@@ -1421,6 +1437,10 @@
       {
         "name": "Pratik Thorat",
         "phone": "919821924412"
+      },
+      {
+        "name": "Priyanka Rajapkar",
+        "phone": "919867058900"
       },
       {
         "name": "Puneet",
@@ -2707,6 +2727,10 @@
         "phone": "917738970849"
       },
       {
+        "name": "Anant Kasibhatla",
+        "phone": "919702578482"
+      },
+      {
         "name": "Anil Parab",
         "phone": "919820413505"
       },
@@ -2843,6 +2867,10 @@
         "phone": "919820018973"
       },
       {
+        "name": "Mushir Khan",
+        "phone": "917045640732"
+      },
+      {
         "name": "Nandita",
         "phone": "919223106467"
       },
@@ -2889,6 +2917,10 @@
       {
         "name": "Prashant Chatur",
         "phone": "917799159741"
+      },
+      {
+        "name": "Priyanka Rajapkar",
+        "phone": "919867058900"
       },
       {
         "name": "Ravi Dayma",
@@ -3239,16 +3271,16 @@
       }
     ]
   },
-  "home_loans_no_m_tags": 83,
+  "home_loans_no_m_tags": 86,
   "m0_only": 0,
   "m1_no_m2": 57,
-  "generated_at": "2026-07-22T05:06:36.672444Z",
+  "generated_at": "2026-07-22T11:20:12.053269Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
       [
         "home loans",
-        218
+        221
       ],
       [
         "m1",
@@ -3256,7 +3288,7 @@
       ],
       [
         "still looking (2-4 months)",
-        133
+        135
       ],
       [
         "m2",
@@ -3272,7 +3304,7 @@
       ],
       [
         "Not Qualified",
-        7
+        8
       ],
       [
         "balance transfer (future)",
@@ -4265,9 +4297,9 @@
     }
   },
   "airtable_sync": {
-    "leads_total": 492,
+    "leads_total": 495,
     "leads_missing_phone": 83,
-    "matched": 283,
+    "matched": 286,
     "in_airtable_not_periskope": [
       {
         "name": " Pooja",
@@ -5453,6 +5485,6 @@
         ]
       }
     ],
-    "generated_at": "2026-07-22T05:06:37.950520Z"
+    "generated_at": "2026-07-22T11:20:14.356065Z"
   }
 }
