@@ -9,7 +9,7 @@
     "Balance Transfer (Future)": 3,
     "Registration Complete": 0,
     "M0": 0,
-    "M1": 125,
+    "M1": 139,
     "M2": 82
   },
   "contacts_by_label": {
@@ -1925,6 +1925,10 @@
         "phone": "918511137384"
       },
       {
+        "name": "Danish Khan",
+        "phone": "917453878578"
+      },
+      {
         "name": "Datta Sawant",
         "phone": "919867740706"
       },
@@ -1961,8 +1965,16 @@
         "phone": "919320677707"
       },
       {
+        "name": "Dipali",
+        "phone": "917045970804"
+      },
+      {
         "name": "Divakar",
         "phone": "919956999597"
+      },
+      {
+        "name": "Haresh Parmer",
+        "phone": "919167245781"
       },
       {
         "name": "Hussain Ali Shaikh",
@@ -1979,6 +1991,10 @@
       {
         "name": "Jinal Shah",
         "phone": "919619364453"
+      },
+      {
+        "name": "Jonathan",
+        "phone": "919911540463"
       },
       {
         "name": "Kajal kedia / Saurabh Agarwal",
@@ -2033,12 +2049,24 @@
         "phone": "919819034821"
       },
       {
+        "name": "Naushad Chilwan",
+        "phone": "918104971674"
+      },
+      {
+        "name": "Nayna Desai",
+        "phone": "919029391800"
+      },
+      {
         "name": "Neha",
         "phone": "919820565399"
       },
       {
         "name": "Neha Bharti",
         "phone": "919123163416"
+      },
+      {
+        "name": "Nikeeta ",
+        "phone": "919898283680"
       },
       {
         "name": "Nirmal Parikh",
@@ -2053,8 +2081,24 @@
         "phone": "919820134382"
       },
       {
+        "name": "Pooja Manoj Agrawal Agrawal",
+        "phone": "919325635472"
+      },
+      {
+        "name": "Poonam S",
+        "phone": "919619294373"
+      },
+      {
         "name": "Pradeep",
         "phone": "919004900624"
+      },
+      {
+        "name": "Pradnya Phene Phene",
+        "phone": "918433608835"
+      },
+      {
+        "name": "Pranam",
+        "phone": "919930928781"
       },
       {
         "name": "Prasad Dixit",
@@ -2213,6 +2257,10 @@
         "phone": "919910220790"
       },
       {
+        "name": "Sunil Parab",
+        "phone": "918691884567"
+      },
+      {
         "name": "Sunil S Dayma",
         "phone": "919324410856"
       },
@@ -2233,8 +2281,16 @@
         "phone": "918527769845"
       },
       {
+        "name": "Trupti Somaiya",
+        "phone": "919892270074"
+      },
+      {
         "name": "Umed Shaikh",
         "phone": "919890183180"
+      },
+      {
+        "name": "Utkarsh Garg",
+        "phone": "917567190153"
       },
       {
         "name": "Vaibhav",
@@ -2691,10 +2747,6 @@
         "phone": "917208320745"
       },
       {
-        "name": "Danish Khan",
-        "phone": "917453878578"
-      },
-      {
         "name": "Deeshank Narkar",
         "phone": "918108959862"
       },
@@ -2705,10 +2757,6 @@
       {
         "name": "Dinesh Kirodian",
         "phone": "919820023264"
-      },
-      {
-        "name": "Dipali",
-        "phone": "917045970804"
       },
       {
         "name": "Durgesh Dadich",
@@ -2727,10 +2775,6 @@
         "phone": "919310069597"
       },
       {
-        "name": "Haresh Parmer",
-        "phone": "919167245781"
-      },
-      {
         "name": "Jagdish M. Kaushik",
         "phone": "919821225211"
       },
@@ -2745,10 +2789,6 @@
       {
         "name": "Jolly Roger's",
         "phone": "919819531157"
-      },
-      {
-        "name": "Jonathan",
-        "phone": "919911540463"
       },
       {
         "name": "Jyoti Kapadia",
@@ -2807,20 +2847,8 @@
         "phone": "919223106467"
       },
       {
-        "name": "Naushad Chilwan",
-        "phone": "918104971674"
-      },
-      {
-        "name": "Nayna Desai",
-        "phone": "919029391800"
-      },
-      {
         "name": "Nikam Murlidhar",
         "phone": "918652822453"
-      },
-      {
-        "name": "Nikeeta ",
-        "phone": "919898283680"
       },
       {
         "name": "Nitin Arya",
@@ -2849,22 +2877,6 @@
       {
         "name": "Pinky",
         "phone": "919833527517"
-      },
-      {
-        "name": "Pooja Manoj Agrawal Agrawal",
-        "phone": "919325635472"
-      },
-      {
-        "name": "Poonam S",
-        "phone": "919619294373"
-      },
-      {
-        "name": "Pradnya Phene Phene",
-        "phone": "918433608835"
-      },
-      {
-        "name": "Pranam",
-        "phone": "919930928781"
       },
       {
         "name": "Pranay NA",
@@ -2963,10 +2975,6 @@
         "phone": "918777540534"
       },
       {
-        "name": "Sunil Parab",
-        "phone": "918691884567"
-      },
-      {
         "name": "Suresh Khatanhar",
         "phone": "919664402200"
       },
@@ -2991,16 +2999,8 @@
         "phone": "919867577606"
       },
       {
-        "name": "Trupti Somaiya",
-        "phone": "919892270074"
-      },
-      {
         "name": "Ujwal Shah",
         "phone": "919987231131"
-      },
-      {
-        "name": "Utkarsh Garg",
-        "phone": "917567190153"
       },
       {
         "name": "VINOD KAMTEKAR",
@@ -3066,6 +3066,10 @@
         "phone": "918879577475"
       },
       {
+        "name": "Danish Khan",
+        "phone": "917453878578"
+      },
+      {
         "name": "Datta Sawant",
         "phone": "919867740706"
       },
@@ -3086,12 +3090,24 @@
         "phone": "919320677707"
       },
       {
+        "name": "Dipali",
+        "phone": "917045970804"
+      },
+      {
         "name": "Divakar",
         "phone": "919956999597"
       },
       {
+        "name": "Haresh Parmer",
+        "phone": "919167245781"
+      },
+      {
         "name": "Hussain Ali Shaikh",
         "phone": "919870078640"
+      },
+      {
+        "name": "Jonathan",
+        "phone": "919911540463"
       },
       {
         "name": "Kunal bagaya",
@@ -3106,8 +3122,36 @@
         "phone": "919819034821"
       },
       {
+        "name": "Naushad Chilwan",
+        "phone": "918104971674"
+      },
+      {
+        "name": "Nayna Desai",
+        "phone": "919029391800"
+      },
+      {
         "name": "Neha",
         "phone": "919820565399"
+      },
+      {
+        "name": "Nikeeta ",
+        "phone": "919898283680"
+      },
+      {
+        "name": "Pooja Manoj Agrawal Agrawal",
+        "phone": "919325635472"
+      },
+      {
+        "name": "Poonam S",
+        "phone": "919619294373"
+      },
+      {
+        "name": "Pradnya Phene Phene",
+        "phone": "918433608835"
+      },
+      {
+        "name": "Pranam",
+        "phone": "919930928781"
       },
       {
         "name": "Prashant Gupta",
@@ -3154,12 +3198,24 @@
         "phone": "919910220790"
       },
       {
+        "name": "Sunil Parab",
+        "phone": "918691884567"
+      },
+      {
         "name": "Surbhi Jain",
         "phone": "919479851517"
       },
       {
         "name": "Tejpal Dhaiya",
         "phone": "918527769845"
+      },
+      {
+        "name": "Trupti Somaiya",
+        "phone": "919892270074"
+      },
+      {
+        "name": "Utkarsh Garg",
+        "phone": "917567190153"
       },
       {
         "name": "Vaibhav",
@@ -3183,10 +3239,10 @@
       }
     ]
   },
-  "home_loans_no_m_tags": 97,
+  "home_loans_no_m_tags": 83,
   "m0_only": 0,
-  "m1_no_m2": 43,
-  "generated_at": "2026-07-21T13:34:28.593634Z",
+  "m1_no_m2": 57,
+  "generated_at": "2026-07-22T05:06:36.672444Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
@@ -3195,12 +3251,12 @@
         218
       ],
       [
-        "still looking (2-4 months)",
-        133
+        "m1",
+        139
       ],
       [
-        "m1",
-        125
+        "still looking (2-4 months)",
+        133
       ],
       [
         "m2",
@@ -3251,7 +3307,8 @@
       "2026-07-08": 9,
       "2026-07-09": 4,
       "2026-07-13": 21,
-      "2026-07-21": 11
+      "2026-07-21": 11,
+      "2026-07-22": 14
     },
     "m2": {
       "2026-06-30": 31,
@@ -3274,7 +3331,8 @@
       "2026-07-09": 5,
       "2026-07-11": 20,
       "2026-07-13": 43,
-      "2026-07-21": 11
+      "2026-07-21": 11,
+      "2026-07-22": 14
     }
   },
   "daily_contacts": {
@@ -3798,6 +3856,64 @@
         {
           "name": "Vijay Jain",
           "phone": "919820370350"
+        }
+      ],
+      "2026-07-22": [
+        {
+          "name": "Danish Khan",
+          "phone": "917453878578"
+        },
+        {
+          "name": "Dipali",
+          "phone": "917045970804"
+        },
+        {
+          "name": "Haresh Parmer",
+          "phone": "919167245781"
+        },
+        {
+          "name": "Jonathan",
+          "phone": "919911540463"
+        },
+        {
+          "name": "Naushad Chilwan",
+          "phone": "918104971674"
+        },
+        {
+          "name": "Nayna Desai",
+          "phone": "919029391800"
+        },
+        {
+          "name": "Nikeeta ",
+          "phone": "919898283680"
+        },
+        {
+          "name": "Pooja Manoj Agrawal Agrawal",
+          "phone": "919325635472"
+        },
+        {
+          "name": "Poonam S",
+          "phone": "919619294373"
+        },
+        {
+          "name": "Pradnya Phene Phene",
+          "phone": "918433608835"
+        },
+        {
+          "name": "Pranam",
+          "phone": "919930928781"
+        },
+        {
+          "name": "Sunil Parab",
+          "phone": "918691884567"
+        },
+        {
+          "name": "Trupti Somaiya",
+          "phone": "919892270074"
+        },
+        {
+          "name": "Utkarsh Garg",
+          "phone": "917567190153"
         }
       ]
     },
@@ -5220,6 +5336,7 @@
         "airtable_status": "Future Plan (4+ Months)",
         "expected_periskope_label": "future plan (4+ months)",
         "periskope_labels": [
+          "m1",
           "home loans"
         ]
       },
@@ -5336,6 +5453,6 @@
         ]
       }
     ],
-    "generated_at": "2026-07-21T13:34:29.929175Z"
+    "generated_at": "2026-07-22T05:06:37.950520Z"
   }
 }
