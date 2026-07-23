@@ -1,14 +1,14 @@
 {
-  "total_org_contacts": 11970,
+  "total_org_contacts": 11971,
   "label_counts": {
-    "Home Loans": 222,
+    "Home Loans": 223,
     "Active Warm": 51,
     "Still Looking": 135,
     "Future Plan": 32,
     "Balance Transfer (Immediate)": 2,
     "Balance Transfer (Future)": 3,
     "Registration Complete": 0,
-    "Not Qualified": 9,
+    "Not Qualified": 10,
     "MoU Signed": 1,
     "M0": 0,
     "M1": 139,
@@ -221,6 +221,10 @@
         "phone": "919820363644"
       },
       {
+        "name": "Chandrashekhar Mishra",
+        "phone": "918898669103"
+      },
+      {
         "name": "Chintan Jani",
         "phone": "918511137384"
       },
@@ -382,11 +386,11 @@
       },
       {
         "name": "Manoj Gupta",
-        "phone": "917045352354"
+        "phone": "919820573699"
       },
       {
         "name": "Manoj Gupta",
-        "phone": "919820573699"
+        "phone": "917045352354"
       },
       {
         "name": "Manu Sujanti",
@@ -1314,11 +1318,11 @@
       },
       {
         "name": "Manoj Gupta",
-        "phone": "917045352354"
+        "phone": "919820573699"
       },
       {
         "name": "Manoj Gupta",
-        "phone": "919820573699"
+        "phone": "917045352354"
       },
       {
         "name": "Manu Sujanti",
@@ -1816,6 +1820,10 @@
       {
         "name": "Alisha Shaikh",
         "phone": "918928839385"
+      },
+      {
+        "name": "Chandrashekhar Mishra",
+        "phone": "918898669103"
       },
       {
         "name": "Deeshank Narkar",
@@ -2821,6 +2829,10 @@
         "phone": "917208320745"
       },
       {
+        "name": "Chandrashekhar Mishra",
+        "phone": "918898669103"
+      },
+      {
         "name": "Deeshank Narkar",
         "phone": "918108959862"
       },
@@ -3325,16 +3337,16 @@
       }
     ]
   },
-  "home_loans_no_m_tags": 87,
+  "home_loans_no_m_tags": 88,
   "m0_only": 0,
   "m1_no_m2": 57,
-  "generated_at": "2026-07-23T12:34:23.879376Z",
+  "generated_at": "2026-07-23T12:57:22.545713Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
       [
         "home loans",
-        222
+        223
       ],
       [
         "m1",
@@ -3358,7 +3370,7 @@
       ],
       [
         "Not Qualified",
-        9
+        10
       ],
       [
         "balance transfer (future)",
@@ -4351,9 +4363,9 @@
     }
   },
   "airtable_sync": {
-    "leads_total": 256,
-    "leads_missing_phone": 4,
-    "matched": 216,
+    "leads_total": 310,
+    "leads_missing_phone": 6,
+    "matched": 229,
     "in_airtable_not_periskope": [
       {
         "name": "Afaq Naik",
@@ -4386,9 +4398,24 @@
         "status": null
       },
       {
+        "name": "Dashrath Chandorkar",
+        "phone": "9619795632",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Deejayen",
+        "phone": "9892010909",
+        "status": "Not Qualified"
+      },
+      {
         "name": "Deepak Baheti",
         "phone": "9967404215",
         "status": null
+      },
+      {
+        "name": "Deepak Salunkhe",
+        "phone": "9322748494",
+        "status": "Not Qualified"
       },
       {
         "name": "Devangshu ",
@@ -4401,9 +4428,49 @@
         "status": "Still Looking (2-4 Months)"
       },
       {
+        "name": "Dilshad Alam ",
+        "phone": "7765838960",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Dipankar Chatterjee",
+        "phone": "9967660333",
+        "status": "Not Qualified"
+      },
+      {
         "name": "Dipika Jain",
         "phone": "9820967957",
         "status": "Active Warm (1 month)"
+      },
+      {
+        "name": "Farhat fatima",
+        "phone": "9076446235",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Gautam Jaiswal",
+        "phone": "9594159436",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Gourav",
+        "phone": "9737119963",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Govind Singh",
+        "phone": "7302287234",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Hemangi Joshi",
+        "phone": "9768482177",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Imran ",
+        "phone": "8108227290",
+        "status": "Not Qualified"
       },
       {
         "name": "Imran Sayyed",
@@ -4411,9 +4478,24 @@
         "status": "Active Warm (1 month)"
       },
       {
+        "name": "Imran Shaikh",
+        "phone": "8369059345",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Imteyaz Ansari ",
+        "phone": "8757781030",
+        "status": "Not Qualified"
+      },
+      {
         "name": "Juzer Lokhandwala",
         "phone": "9867362482",
         "status": "Still Looking (2-4 Months)"
+      },
+      {
+        "name": "Kamlesh Gandhi",
+        "phone": "8291808589",
+        "status": "Not Qualified"
       },
       {
         "name": "Khushboo Gupta",
@@ -4431,6 +4513,26 @@
         "status": "Future Plan (4+ Months)"
       },
       {
+        "name": "Madan Singh ",
+        "phone": "9892324692",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Mahendra",
+        "phone": "8591970827",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Maji",
+        "phone": "7977265322",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Meraj",
+        "phone": "9277161821",
+        "status": "Not Qualified"
+      },
+      {
         "name": "Mohammad Abbas",
         "phone": "9768090555",
         "status": null
@@ -4446,6 +4548,11 @@
         "status": "Still Looking (2-4 Months)"
       },
       {
+        "name": "Nazir Rabbani",
+        "phone": "9104319633",
+        "status": "Not Qualified"
+      },
+      {
         "name": "Neeraj Sharma",
         "phone": "8291004466",
         "status": null
@@ -4454,6 +4561,11 @@
         "name": "Nishant Bhatnager",
         "phone": "9930603336",
         "status": "Registration Complete"
+      },
+      {
+        "name": "Pawan Singh",
+        "phone": "9324580158",
+        "status": "Not Qualified"
       },
       {
         "name": "Pooja Patel ",
@@ -4466,6 +4578,16 @@
         "status": null
       },
       {
+        "name": "Pradyumna",
+        "phone": "9136656055",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Prakash Soni",
+        "phone": "9702717929",
+        "status": "Not Qualified"
+      },
+      {
         "name": "Prashant Jadhav",
         "phone": "9920204059",
         "status": "Active Warm (1 month)"
@@ -4474,6 +4596,11 @@
         "name": "Prashant NA",
         "phone": "9820987022",
         "status": "Active Warm (1 month)"
+      },
+      {
+        "name": "Prathmesh Mane",
+        "phone": "9172469293",
+        "status": "Not Qualified"
       },
       {
         "name": "Priyanka Jaiswal",
@@ -4486,14 +4613,34 @@
         "status": null
       },
       {
+        "name": "Puja Tambe",
+        "phone": "7715857250",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Rahul Londhe",
+        "phone": "7045598212",
+        "status": "Not Qualified"
+      },
+      {
         "name": "Rajesh Thacker",
         "phone": "9820934996",
         "status": "Active Warm (1 month)"
       },
       {
+        "name": "Rajiv Bhele",
+        "phone": "9822230243",
+        "status": "Not Qualified"
+      },
+      {
         "name": "Rakesh Shrivastav",
         "phone": "9892189358",
         "status": "Future Plan (4+ Months)"
+      },
+      {
+        "name": "Ritesh Tambe",
+        "phone": "8767946330",
+        "status": "Not Qualified"
       },
       {
         "name": "Ronald Fernandes",
@@ -4506,9 +4653,49 @@
         "status": "Active Warm (1 month)"
       },
       {
+        "name": "Salman ",
+        "phone": "8108189018",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Samuel ",
+        "phone": "9372647841",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Satish Chawla ",
+        "phone": "9821093229",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Shailesh Borale",
+        "phone": "8108120143",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Shubhangi Shikhare",
+        "phone": "9757478394",
+        "status": "Not Qualified"
+      },
+      {
         "name": "Sulekha Bafna",
         "phone": "9222101521",
         "status": "Active Warm (1 month)"
+      },
+      {
+        "name": "Suman Singh ",
+        "phone": "9082586108",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Sunil Kumar ",
+        "phone": "8169981595",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Sunil Salve",
+        "phone": "9664755348",
+        "status": "Not Qualified"
       },
       {
         "name": "Sunita Nair",
@@ -4521,9 +4708,29 @@
         "status": "Future Plan (4+ Months)"
       },
       {
+        "name": "Swati",
+        "phone": "8369406201",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Ujjwala Patil",
+        "phone": "9890901115",
+        "status": "Not Qualified"
+      },
+      {
+        "name": "Vaishnavi Shelke",
+        "phone": "9326060929",
+        "status": "Not Qualified"
+      },
+      {
         "name": "Vicky",
         "phone": "9920197789",
         "status": null
+      },
+      {
+        "name": "Vijay Goswami ",
+        "phone": "9737434662",
+        "status": "Not Qualified"
       },
       {
         "name": "Vishal Gujarathi",
@@ -4537,14 +4744,6 @@
       }
     ],
     "in_periskope_home_loans_not_airtable": [
-      {
-        "name": "AB Entertainment (Anil Bohra)",
-        "phone": "919892634211",
-        "labels": [
-          "Not Qualified",
-          "home loans"
-        ]
-      },
       {
         "name": "Abhishek Shah",
         "phone": "917204786890",
@@ -4576,14 +4775,6 @@
         ]
       },
       {
-        "name": "Alisha Shaikh",
-        "phone": "918928839385",
-        "labels": [
-          "Not Qualified",
-          "home loans"
-        ]
-      },
-      {
         "name": "Anant Singh",
         "phone": "919967192044",
         "labels": [
@@ -4608,16 +4799,6 @@
         "phone": "917708590005",
         "labels": [
           "home loans"
-        ]
-      },
-      {
-        "name": "Arun Singh",
-        "phone": "919821058985",
-        "labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
         ]
       },
       {
@@ -4647,14 +4828,6 @@
           "m1",
           "home loans",
           "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Deeshank Narkar",
-        "phone": "918108959862",
-        "labels": [
-          "Not Qualified",
-          "home loans"
         ]
       },
       {
@@ -4726,14 +4899,6 @@
         ]
       },
       {
-        "name": "Mushir Khan",
-        "phone": "917045640732",
-        "labels": [
-          "Not Qualified",
-          "home loans"
-        ]
-      },
-      {
         "name": "Neha",
         "phone": "919820565399",
         "labels": [
@@ -4761,24 +4926,6 @@
         ]
       },
       {
-        "name": "Pinky",
-        "phone": "919833527517",
-        "labels": [
-          "Not Qualified",
-          "home loans"
-        ]
-      },
-      {
-        "name": "Prasad Dixit",
-        "phone": "919137434156",
-        "labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
         "name": "Prasenjit Mitra",
         "phone": "919819867099",
         "labels": [
@@ -4786,15 +4933,6 @@
           "m1",
           "home loans",
           "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Rajkumar",
-        "phone": "918976049514",
-        "labels": [
-          "Not Qualified",
-          "m1",
-          "home loans"
         ]
       },
       {
@@ -4833,22 +4971,6 @@
           "m1",
           "home loans",
           "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Sanjay Rathod",
-        "phone": "919324843079",
-        "labels": [
-          "Not Qualified",
-          "home loans"
-        ]
-      },
-      {
-        "name": "Sekhar Vishwakarma",
-        "phone": "919005368705",
-        "labels": [
-          "Not Qualified",
-          "home loans"
         ]
       },
       {
@@ -4978,6 +5100,18 @@
         ]
       },
       {
+        "name": "Arun Singh",
+        "phone": "9821058985",
+        "airtable_status": "Not Qualified",
+        "expected_periskope_label": "not qualified",
+        "periskope_labels": [
+          "m2",
+          "m1",
+          "home loans",
+          "still looking (2-4 months)"
+        ]
+      },
+      {
         "name": "Ashish Chaturmohta",
         "phone": "7738648833",
         "airtable_status": "Future Plan (4+ Months)",
@@ -5034,6 +5168,13 @@
           "home loans",
           "future plan (4+ months)"
         ]
+      },
+      {
+        "name": "Imran Habibur",
+        "phone": "7304419319",
+        "airtable_status": "Not Qualified",
+        "expected_periskope_label": "not qualified",
+        "periskope_labels": []
       },
       {
         "name": "Javed Choudhary",
@@ -5101,6 +5242,18 @@
         "airtable_status": "Future Plan (4+ Months)",
         "expected_periskope_label": "future plan (4+ months)",
         "periskope_labels": []
+      },
+      {
+        "name": "Prasad Dixit",
+        "phone": "9137434156",
+        "airtable_status": "Not Qualified",
+        "expected_periskope_label": "not qualified",
+        "periskope_labels": [
+          "m2",
+          "m1",
+          "home loans",
+          "still looking (2-4 months)"
+        ]
       },
       {
         "name": "Prashant Gagneja",
@@ -5345,13 +5498,13 @@
         ]
       }
     ],
-    "generated_at": "2026-07-23T12:34:28.647660Z"
+    "generated_at": "2026-07-23T12:57:24.562182Z"
   },
   "contacts_by_source": {
-    "total": 222,
+    "total": 223,
     "source_counts": {
       "Telecalling": 193,
-      "Meta Ads": 24,
+      "Meta Ads": 25,
       "Buyer Experience Team": 3,
       "Not in Airtable": 1,
       "Referral": 1
@@ -5664,11 +5817,11 @@
         },
         {
           "name": "Manoj Gupta",
-          "phone": "917045352354"
+          "phone": "919820573699"
         },
         {
           "name": "Manoj Gupta",
-          "phone": "919820573699"
+          "phone": "917045352354"
         },
         {
           "name": "Manu Sujanti",
@@ -6165,6 +6318,10 @@
           "phone": "919821058985"
         },
         {
+          "name": "Chandrashekhar Mishra",
+          "phone": "918898669103"
+        },
+        {
           "name": "Deeshank Narkar",
           "phone": "918108959862"
         },
@@ -6256,7 +6413,7 @@
         }
       ]
     },
-    "generated_at": "2026-07-23T12:34:28.652183Z"
+    "generated_at": "2026-07-23T12:57:24.566392Z"
   },
   "broadcast_responses": {
     "lookback_days": 30,
@@ -8555,7 +8712,7 @@
         ]
       }
     ],
-    "generated_at": "2026-07-23T12:34:37.379792Z"
+    "generated_at": "2026-07-23T12:57:30.186443Z"
   },
   "lead_warmth": {
     "rows": [
@@ -11486,6 +11643,22 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Chandrashekhar Mishra",
+        "phone": "8898669103",
+        "status": "Not Qualified",
+        "notes": "Needs 25 lacs for a property in Goregaon-Malad",
+        "last_conversation": "2026-07-23",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": 0,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Kajal kedia / Saurabh Agarwal",
         "phone": "9844681243",
         "status": "Active Warm (1 month)",
@@ -12318,6 +12491,6 @@
     ],
     "stale_threshold_days": 14,
     "messages_available": true,
-    "generated_at": "2026-07-23T12:34:37.395923Z"
+    "generated_at": "2026-07-23T12:57:30.201270Z"
   }
 }
