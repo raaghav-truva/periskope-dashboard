@@ -171,6 +171,31 @@
   td.num.zero{color:var(--muted);}
 
   .footnote{color:var(--muted);font-size:11px;margin-top:8px;line-height:1.6;}
+
+  h2{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:19px;
+    margin:44px 0 16px;
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  h2:first-of-type{margin-top:0;}
+  h2 .idx{font-family:var(--font-mono);font-weight:500;font-size:12px;color:var(--muted);}
+
+  td.notes-cell{max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted);}
+  td.lead-name .cdetail{font-size:11px;color:var(--muted);margin-top:2px;font-family:var(--font-mono);}
+  .badge{
+    display:inline-block;font-family:var(--font-mono);font-size:10px;font-weight:500;
+    text-transform:uppercase;letter-spacing:0.05em;padding:3px 8px;border-radius:10px;
+  }
+  .badge.stale{background:rgba(214,48,74,0.12);color:var(--warn);}
+  .badge.ok{background:rgba(255,72,2,0.10);color:var(--accent);}
+  .label-pill{
+    display:inline-block;font-family:var(--font-mono);font-size:10px;color:var(--muted);
+    border:1px solid var(--line);border-radius:10px;padding:2px 7px;margin:2px 3px 2px 0;
+  }
 </style>
 </head>
 <body>
@@ -189,17 +214,27 @@
     <div class="header-text">
       <div class="eyebrow">Truva Home Loans · Periskope Pipeline</div>
       <h1>Airtable Sync</h1>
-      <div class="sub">Cross-checking the Home Loans CRM "Periskop View" against Periskope contact labels, matched by phone number — a sanity check for where the two systems disagree.</div>
+      <div class="sub">Cross-checking the full Home Loans CRM Leads table against Periskope contact labels, matched by phone number — a sanity check for where the two systems disagree.</div>
       <div class="refresh-note">–</div>
     </div>
     <img src="logo.png" alt="Truva" class="logo" onerror="this.style.display='none'">
   </header>
 
+  <h2><span class="idx">01</span> Sync checks</h2>
   <table>
     <thead><tr><th>Check</th><th class="num">Count</th></tr></thead>
     <tbody id="airtable-table"></tbody>
   </table>
   <div class="footnote" id="airtable-footnote"></div>
+
+  <h2><span class="idx">02</span> Lead warmth</h2>
+  <table>
+    <thead><tr>
+      <th>Lead</th><th>Periskope labels</th><th>Last call</th><th>Last conversation</th><th>Last WhatsApp msg</th><th>Notes</th><th>Status</th>
+    </tr></thead>
+    <tbody id="warmth-table"></tbody>
+  </table>
+  <div class="footnote" id="warmth-footnote"></div>
 
 </div>
 
@@ -297,31 +332,64 @@ async function loadDashboard() {
   if (!sync) {
     tbody.innerHTML = '<tr><td colspan="2" style="color:var(--muted);text-align:center;">Not connected yet — add the AIRTABLE_TOKEN secret and re-run the workflow to enable this check.</td></tr>';
     footnote.textContent = '';
-    return;
+  } else {
+    const rows = [
+      ['Total leads in Airtable (Home Loans CRM → Leads table)', sync.leads_total, null],
+      ['Leads with no phone number on file', sync.leads_missing_phone, null],
+      ['Matched to a Periskope contact', sync.matched, null],
+      ['In Airtable, no matching Periskope contact', sync.in_airtable_not_periskope.length, 'in_airtable_not_periskope'],
+      ['Periskope "Home Loans" contact, not in Airtable Leads', sync.in_periskope_home_loans_not_airtable.length, 'in_periskope_home_loans_not_airtable'],
+      ['Status (Airtable) vs Label (Periskope) mismatch', sync.status_label_mismatches.length, 'status_label_mismatches'],
+    ];
+    rows.forEach(([label, val, key]) => {
+      const tr = document.createElement('tr');
+      const safeLabel = label.replace(/'/g, "\\'");
+      let cellHtml;
+      if (key && val > 0) {
+        cellHtml = `<td class="num clickable" onclick="openAirtableModal('${key}','${safeLabel}')">${val}</td>`;
+      } else if (key) {
+        cellHtml = `<td class="num zero">${val}</td>`;
+      } else {
+        cellHtml = `<td class="num">${val}</td>`;
+      }
+      tr.innerHTML = `<td>${label}</td>${cellHtml}`;
+      tbody.appendChild(tr);
+    });
+    footnote.textContent = `Last checked ${new Date(sync.generated_at).toLocaleString()} · matched by phone number (last 10 digits) · Active Warm / Still Looking / Future Plan / Registration Complete / Not Qualified / MOU Signed statuses have a direct Periskope-label equivalent; Blocking Paid and Lost don't (no matching label exists) so they're excluded from the mismatch check.`;
   }
-  const rows = [
-    ['Total leads in Airtable (Home Loans CRM → Periskop View)', sync.leads_total, null],
-    ['Leads with no phone number on file', sync.leads_missing_phone, null],
-    ['Matched to a Periskope contact', sync.matched, null],
-    ['In Airtable, no matching Periskope contact', sync.in_airtable_not_periskope.length, 'in_airtable_not_periskope'],
-    ['Periskope "Home Loans" contact, not in Airtable Leads', sync.in_periskope_home_loans_not_airtable.length, 'in_periskope_home_loans_not_airtable'],
-    ['Status (Airtable) vs Label (Periskope) mismatch', sync.status_label_mismatches.length, 'status_label_mismatches'],
-  ];
-  rows.forEach(([label, val, key]) => {
-    const tr = document.createElement('tr');
-    const safeLabel = label.replace(/'/g, "\\'");
-    let cellHtml;
-    if (key && val > 0) {
-      cellHtml = `<td class="num clickable" onclick="openAirtableModal('${key}','${safeLabel}')">${val}</td>`;
-    } else if (key) {
-      cellHtml = `<td class="num zero">${val}</td>`;
-    } else {
-      cellHtml = `<td class="num">${val}</td>`;
-    }
-    tr.innerHTML = `<td>${label}</td>${cellHtml}`;
-    tbody.appendChild(tr);
-  });
-  footnote.textContent = `Last checked ${new Date(sync.generated_at).toLocaleString()} · matched by phone number (last 10 digits) · only Active Warm / Still Looking / Future Plan / Registration Complete statuses have a direct Periskope-label equivalent, so other statuses (Blocking Paid, MOU Signed, Not Qualified, Lost, etc.) aren't included in the mismatch check.`;
+
+  const warmthTbody = document.getElementById('warmth-table');
+  const warmthFootnote = document.getElementById('warmth-footnote');
+  const warmth = data.lead_warmth;
+  warmthTbody.innerHTML = '';
+  if (!warmth) {
+    warmthTbody.innerHTML = '<tr><td colspan="7" style="color:var(--muted);text-align:center;">Not connected yet — add the AIRTABLE_TOKEN secret and re-run the workflow to enable this.</td></tr>';
+    warmthFootnote.textContent = '';
+  } else if (warmth.rows.length === 0) {
+    warmthTbody.innerHTML = '<tr><td colspan="7" style="color:var(--muted);text-align:center;">No matched Home Loans leads yet.</td></tr>';
+    warmthFootnote.textContent = '';
+  } else {
+    warmth.rows.forEach(r => {
+      const tr = document.createElement('tr');
+      const badge = r.no_contact_on_record
+        ? '<span class="badge stale">No contact on record</span>'
+        : (r.stale ? `<span class="badge stale">Stale · ${r.stale_days}d</span>` : `<span class="badge ok">Active · ${r.stale_days}d</span>`);
+      const labels = (r.periskope_labels || []).map(l => `<span class="label-pill">${escapeHtml(l)}</span>`).join('') || '<span style="color:var(--muted);">–</span>';
+      const notes = r.notes ? escapeHtml(r.notes) : '–';
+      tr.innerHTML = `
+        <td class="lead-name">${escapeHtml(r.name)}<div class="cdetail">${escapeHtml(r.phone)}</div></td>
+        <td>${labels}</td>
+        <td>${escapeHtml(r.last_call_status || '–')}</td>
+        <td>${r.last_conversation || '–'}${badge}</td>
+        <td>${r.last_inbound_message || (warmth.messages_available ? '–' : 'n/a')}</td>
+        <td class="notes-cell" title="${notes.replace(/"/g, '&quot;')}">${notes}</td>
+        <td>${escapeHtml(r.status || '–')}</td>`;
+      warmthTbody.appendChild(tr);
+    });
+    warmthFootnote.textContent = `${warmth.rows.length} Home Loans lead(s) matched between Airtable and Periskope · flagged "Stale" when neither Airtable's Last Conversation date nor the most recent inbound WhatsApp message happened in the last ${warmth.stale_threshold_days} days` +
+      (warmth.messages_available ? '' : ' · WhatsApp activity unavailable this run (message fetch failed or skipped — see workflow log)') +
+      ` · last checked ${new Date(warmth.generated_at).toLocaleString()}.`;
+  }
 }
 
 loadDashboard();

@@ -49,8 +49,8 @@ SETUP REQUIRED BEFORE THIS WORKS:
 
 AIRTABLE SYNC CHECK (optional): if AIRTABLE_TOKEN is set (GitHub secret —
 a Personal Access Token with read access to the "Home Loans CRM" base), this
-script also cross-checks the Airtable "Periskop View" (of the Leads table)
-against Periskope:
+script also cross-checks the full Airtable Leads table (every record, same
+as Grid View — not scoped to any particular saved view) against Periskope:
 * Leads present in Airtable but with no matching Periskope contact at all.
 * Periskope contacts labeled "Home Loans" with no matching Airtable Lead.
 * Leads whose Airtable Status (Active Warm / Still Looking / Future Plan /
@@ -62,7 +62,7 @@ won't have an "airtable_sync" key) — everything else still runs normally.
 
 CONTACTS BY SOURCE (optional, also gated on AIRTABLE_TOKEN): Periskope's
 contact object has no "lead source" field at all — the only place that data
-lives is the "Lead Source" column in the same Airtable "Periskop View". So
+lives is the "Lead Source" column in the same Airtable Leads table. So
 for every Periskope contact carrying the "Home Loans" label, this looks up
 its matching Airtable lead (by phone, same join as above) and buckets it by
 Lead Source. Contacts with no Airtable match are bucketed as "Not in
@@ -105,7 +105,12 @@ PHONE_OVERRIDE = os.environ.get("PERISKOPE_PHONE")
 AIRTABLE_TOKEN = os.environ.get("AIRTABLE_TOKEN")
 AIRTABLE_BASE_ID = "appfpELkqjpJ0wfZ2"  # Home Loans CRM (not secret, just an ID)
 AIRTABLE_LEADS_TABLE_ID = "tbl8UiIyUJHN1lTz5"  # Leads
-AIRTABLE_LEADS_VIEW_ID = "viwHccNSyjXILuRfU"  # "Periskop View" (was: whole table / default view)
+AIRTABLE_LEADS_VIEW_ID = "viwHccNSyjXILuRfU"  # "Periskop View" — NOT used for the
+# discrepancy/presence checks below anymore. Scoping to this view (258 records)
+# caused real leads that exist in the full Leads table (498 records, same as
+# what you see in Grid View) to incorrectly show up as "Not in Airtable" — the
+# sanity-check needs the whole table, not a filtered subset. Kept here in case
+# a future feature wants to scope to this view specifically.
 
 # BULK MESSAGE RESPONSE TRACKING (uses PERISKOPE_API_KEY only, no new secret
 # needed): how many days back to scan /chats/messages for broadcast sends and
@@ -117,15 +122,25 @@ AIRTABLE_LEADS_VIEW_ID = "viwHccNSyjXILuRfU"  # "Periskop View" (was: whole tabl
 BROADCAST_LOOKBACK_DAYS = int(os.environ.get("BROADCAST_LOOKBACK_DAYS", "30"))
 MAX_MESSAGE_PAGES = int(os.environ.get("MAX_MESSAGE_PAGES", "25"))
 
-# Airtable "Status" choices that map 1:1 onto a Periskope label name — used
-# for the sanity-check cross-reference. Statuses with no Periskope equivalent
-# (Blocking Paid, MOU Signed, Not Qualified, Lost, etc.) are left out on
-# purpose; there's nothing on the Periskope side to compare them against.
+# LEAD WARMTH: a contact (Airtable last conversation date, or last inbound
+# WhatsApp message — whichever is more recent) older than this many days gets
+# flagged "stale" on the Lead Warmth view. No science behind the default other
+# than "two weeks of silence is worth a human look" — override via the
+# STALE_DAYS_THRESHOLD secret/variable if that's not the right cadence.
+STALE_DAYS_THRESHOLD = int(os.environ.get("STALE_DAYS_THRESHOLD", "14"))
+
+# Airtable "Status" choices that map onto a Periskope label name — used for
+# the sanity-check cross-reference. "Blocking Paid" is left out on purpose:
+# there's no Periskope label for it (confirmed against real label data), so
+# there's nothing to compare it against. "Not Qualified" and "MoU Signed" do
+# exist as real (if uncommon) Periskope labels, so they're included.
 AIRTABLE_STATUS_TO_PERISKOPE_LABEL = {
     "Active Warm (1 month)": "active warm (1 month)",
     "Still Looking (2-4 Months)": "still looking (2-4 months)",
     "Future Plan (4+ Months)": "future plan (4+ months)",
     "Registration Complete": "registration complete",
+    "Not Qualified": "not qualified",
+    "MOU Signed": "mou signed",
 }
 
 if not API_KEY:
@@ -139,6 +154,8 @@ TARGET_LABELS = {
     "Balance Transfer (Immediate)": "balance transfer (immediate)",
     "Balance Transfer (Future)": "balance transfer (future)",
     "Registration Complete": "registration complete",
+    "Not Qualified": "not qualified",
+    "MoU Signed": "mou signed",
     "M0": "m0",
     "M1": "m1",
     "M2": "m2",
@@ -324,12 +341,14 @@ def airtable_get(path, params=None):
 
 
 def fetch_airtable_leads():
-    """Paginate through every record in the "Periskop View" of the Leads table
-    (Airtable's REST API caps pageSize at 100, unlike Periskope's 2000)."""
+    """Paginate through every record in the full Leads table — the same set
+    you'd see in Grid View — (Airtable's REST API caps pageSize at 100, unlike
+    Periskope's 2000). No `view` filter is applied on purpose: see the
+    AIRTABLE_LEADS_VIEW_ID comment above for why."""
     records = []
     offset = None
     while True:
-        params = {"pageSize": 100, "view": AIRTABLE_LEADS_VIEW_ID}
+        params = {"pageSize": 100}
         if offset:
             params["offset"] = offset
         data = airtable_get(f"/{AIRTABLE_BASE_ID}/{AIRTABLE_LEADS_TABLE_ID}", params)
@@ -337,11 +356,16 @@ def fetch_airtable_leads():
             fields = rec.get("fields", {})
             status_obj = fields.get("Status")
             source_obj = fields.get("Lead Source")
+            call_status_obj = fields.get("Last Call Status")
             records.append({
                 "name": fields.get("Lead Name") or "Unknown",
                 "phone_raw": fields.get("Phone Number") or "",
                 "status": status_obj.get("name") if isinstance(status_obj, dict) else status_obj,
                 "source": source_obj.get("name") if isinstance(source_obj, dict) else source_obj,
+                # Note the trailing space in the actual Airtable field name.
+                "last_conversation": fields.get("Last Conversation "),
+                "last_call_status": call_status_obj.get("name") if isinstance(call_status_obj, dict) else call_status_obj,
+                "notes": fields.get("Notes"),
             })
         offset = data.get("offset")
         if not offset:
@@ -350,7 +374,7 @@ def fetch_airtable_leads():
 
 
 def build_airtable_sync(contacts, leads):
-    """Cross-check Airtable's "Periskop View" against Periskope contacts by
+    """Cross-check the full Airtable Leads table against Periskope contacts by
     phone number. See module docstring for exactly what's compared and why."""
     periskope_by_phone = {}
     for c in contacts:
@@ -542,6 +566,81 @@ def build_broadcast_responses(messages, contacts):
     return results
 
 
+def build_lead_warmth(contacts, leads, messages):
+    """Side-by-side view of qualitative signals for every Home Loans lead
+    matched between Airtable and Periskope: Airtable's Notes / Last
+    Conversation date / Last Call Status, plus Periskope's current labels and
+    (if the message fetch succeeded this run — `messages` may be None) the
+    date of their most recent inbound WhatsApp message. Deliberately does NOT
+    invent a "warmth score" — the two dates (Airtable's logged last
+    conversation, and Periskope's actual last inbound message) are compared
+    and the more recent of the two decides the one derived judgment made
+    here: a `stale` flag if neither has happened in STALE_DAYS_THRESHOLD
+    days. Sorted with the stalest / least-recently-contacted leads first, so
+    an RM can prioritize without needing a black-box score."""
+    contacts_by_phone = {}
+    for c in contacts:
+        phone10 = normalize_phone((c.get("contact_id") or "").split("@")[0])
+        if phone10:
+            contacts_by_phone[phone10] = c
+
+    last_inbound_by_phone = {}
+    if messages:
+        for m in messages:
+            if m.get("from_me") is False:
+                phone10 = normalize_phone((m.get("chat_id") or "").split("@")[0])
+                ts = m.get("timestamp")
+                if phone10 and ts:
+                    if phone10 not in last_inbound_by_phone or ts > last_inbound_by_phone[phone10]:
+                        last_inbound_by_phone[phone10] = ts
+
+    now = datetime.datetime.utcnow()
+    rows = []
+    for lead in leads:
+        phone10 = normalize_phone(lead["phone_raw"])
+        if not phone10:
+            continue
+        contact = contacts_by_phone.get(phone10)
+        if not contact or not has(contact, "home loans"):
+            continue  # scope: only leads matched to a Periskope "Home Loans" contact
+
+        last_conv = lead.get("last_conversation") or None
+        last_inbound = last_inbound_by_phone.get(phone10)
+        last_inbound_date = last_inbound[:10] if last_inbound else None
+        most_recent = max([d for d in (last_conv, last_inbound_date) if d], default=None)
+
+        stale_days = None
+        if most_recent:
+            try:
+                stale_days = (now - datetime.datetime.fromisoformat(most_recent)).days
+            except ValueError:
+                pass
+
+        rows.append({
+            "name": lead["name"],
+            "phone": phone10,
+            "status": lead.get("status"),
+            "notes": (lead.get("notes") or "")[:300],
+            "last_conversation": last_conv,
+            "last_call_status": lead.get("last_call_status"),
+            "last_inbound_message": last_inbound_date,
+            "periskope_labels": contact.get("labels") or [],
+            "stale_days": stale_days,
+            "stale": stale_days is not None and stale_days >= STALE_DAYS_THRESHOLD,
+            "no_contact_on_record": most_recent is None,
+        })
+
+    # Stalest (or "no contact info at all") first, then most-recently-contacted last.
+    rows.sort(key=lambda r: (-1 if r["no_contact_on_record"] else r["stale_days"]), reverse=True)
+
+    return {
+        "rows": rows,
+        "stale_threshold_days": STALE_DAYS_THRESHOLD,
+        "messages_available": messages is not None,
+        "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
+    }
+
+
 def load_history():
     if os.path.exists(HISTORY_PATH):
         with open(HISTORY_PATH) as f:
@@ -629,8 +728,9 @@ def main():
     history = update_marked_registry(history, contacts, today)
     dataset["daily"], dataset["daily_contacts"] = compute_daily_from_registry(history["marked"])
 
+    leads = None
     if AIRTABLE_TOKEN:
-        print("AIRTABLE_TOKEN set — fetching Airtable Periskop View...")
+        print("AIRTABLE_TOKEN set — fetching full Airtable Leads table...")
         leads = fetch_airtable_leads()
 
         dataset["airtable_sync"] = build_airtable_sync(contacts, leads)
@@ -649,6 +749,7 @@ def main():
               "(data.json will have no 'airtable_sync' or 'contacts_by_source' key). Add the "
               "secret to enable them.")
 
+    messages = None
     try:
         print(f"Fetching last {BROADCAST_LOOKBACK_DAYS} day(s) of messages to check bulk-message "
               f"responses among m0/m1/m2-labeled contacts...")
@@ -664,6 +765,13 @@ def main():
     except Exception as e:
         print(f"WARNING: broadcast response tracking failed ({e!r}) — skipping. "
               f"data.json will have no 'broadcast_responses' key this run.")
+
+    if leads is not None:
+        dataset["lead_warmth"] = build_lead_warmth(contacts, leads, messages)
+        warmth = dataset["lead_warmth"]
+        stale_count = sum(1 for r in warmth["rows"] if r["stale"])
+        print(f"Lead warmth: {len(warmth['rows'])} matched lead(s), {stale_count} flagged stale "
+              f"(no contact in {STALE_DAYS_THRESHOLD}+ days). Messages available: {messages is not None}.")
 
     with open(HISTORY_PATH, "w") as f:
         json.dump(history, f, indent=2)
