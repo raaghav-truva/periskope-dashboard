@@ -1,7 +1,7 @@
 {
-  "total_org_contacts": 11963,
+  "total_org_contacts": 11968,
   "label_counts": {
-    "Home Loans": 221,
+    "Home Loans": 222,
     "Active Warm": 51,
     "Still Looking": 135,
     "Future Plan": 32,
@@ -679,7 +679,7 @@
         "phone": "919892115882"
       },
       {
-        "name": "Sanjay Rathore",
+        "name": "Sanjay Rathod",
         "phone": "919324843079"
       },
       {
@@ -689,6 +689,10 @@
       {
         "name": "Sejal Sanghvi",
         "phone": "919819535550"
+      },
+      {
+        "name": "Sekhar Vishwakarma",
+        "phone": "919005368705"
       },
       {
         "name": "Selvi Jay",
@@ -2951,7 +2955,7 @@
         "phone": "919820585801"
       },
       {
-        "name": "Sanjay Rathore",
+        "name": "Sanjay Rathod",
         "phone": "919324843079"
       },
       {
@@ -2961,6 +2965,10 @@
       {
         "name": "Sejal Sanghvi",
         "phone": "919819535550"
+      },
+      {
+        "name": "Sekhar Vishwakarma",
+        "phone": "919005368705"
       },
       {
         "name": "Shabnam Shaikh",
@@ -3271,16 +3279,16 @@
       }
     ]
   },
-  "home_loans_no_m_tags": 86,
+  "home_loans_no_m_tags": 87,
   "m0_only": 0,
   "m1_no_m2": 57,
-  "generated_at": "2026-07-22T11:20:12.053269Z",
+  "generated_at": "2026-07-23T07:20:46.108360Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
       [
         "home loans",
-        221
+        222
       ],
       [
         "m1",
@@ -3304,7 +3312,7 @@
       ],
       [
         "Not Qualified",
-        8
+        9
       ],
       [
         "balance transfer (future)",
@@ -4297,9 +4305,9 @@
     }
   },
   "airtable_sync": {
-    "leads_total": 495,
+    "leads_total": 498,
     "leads_missing_phone": 83,
-    "matched": 286,
+    "matched": 289,
     "in_airtable_not_periskope": [
       {
         "name": " Pooja",
@@ -4682,6 +4690,11 @@
         "status": "Active Warm (1 month)"
       },
       {
+        "name": "Prashant NA",
+        "phone": "9820987022",
+        "status": "Active Warm (1 month)"
+      },
+      {
         "name": "Prathmesh Mane",
         "phone": "9172469293",
         "status": "Not Qualified"
@@ -4820,11 +4833,6 @@
         "name": "Suman Singh ",
         "phone": "9082586108",
         "status": "Not Qualified"
-      },
-      {
-        "name": "Sundaraiah Bodige",
-        "phone": "8691902121",
-        "status": "Still Looking (2-4 Months)"
       },
       {
         "name": "Sunil Kumar ",
@@ -5363,6 +5371,13 @@
         ]
       },
       {
+        "name": "Sundaraiah Bodige",
+        "phone": "8691902121",
+        "airtable_status": "Still Looking (2-4 Months)",
+        "expected_periskope_label": "still looking (2-4 months)",
+        "periskope_labels": []
+      },
+      {
         "name": "Sunil Parab",
         "phone": "8691884567",
         "airtable_status": "Future Plan (4+ Months)",
@@ -5485,6 +5500,6 @@
         ]
       }
     ],
-    "generated_at": "2026-07-22T11:20:14.356065Z"
+    "generated_at": "2026-07-23T07:20:50.122195Z"
   }
 }
