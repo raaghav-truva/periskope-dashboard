@@ -120,7 +120,7 @@
 
   .stat-row{
     display:grid;
-    grid-template-columns:repeat(5,1fr);
+    grid-template-columns:repeat(4,1fr);
     gap:1px;
     background:var(--line);
     border:1px solid var(--line);
@@ -286,12 +286,8 @@
       <div class="num" id="stat-untouched">–</div>
       <div class="lab">Home Loans, no M-series yet</div>
     </div>
-    <div class="stat">
-      <div class="num" id="stat-total">–</div>
-      <div class="lab">Total contacts in org</div>
-    </div>
   </div>
-  <div class="footnote">Click any number above (except "Total contacts in org" — too large to list usefully) to see the name + phone list behind it.</div>
+  <div class="footnote">Click any number above to see the name + phone list behind it.</div>
 
   <h2><span class="idx">01</span> Contacts by label</h2>
   <div class="grid-labels" id="label-grid"></div>
@@ -388,7 +384,6 @@ async function loadDashboard() {
   document.getElementById('stat-m1').textContent = data.label_counts['M1'];
   document.getElementById('stat-m2').textContent = data.label_counts['M2'];
   document.getElementById('stat-untouched').textContent = data.home_loans_no_m_tags;
-  document.getElementById('stat-total').textContent = data.total_org_contacts.toLocaleString();
 
   if (data.generated_at) {
     document.querySelector('.refresh-note').textContent = 'Last updated: ' + new Date(data.generated_at).toLocaleString();
