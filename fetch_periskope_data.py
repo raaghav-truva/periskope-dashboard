@@ -49,7 +49,8 @@ SETUP REQUIRED BEFORE THIS WORKS:
 
 AIRTABLE SYNC CHECK (optional): if AIRTABLE_TOKEN is set (GitHub secret —
 a Personal Access Token with read access to the "Home Loans CRM" base), this
-script also cross-checks the Airtable "Leads" view against Periskope:
+script also cross-checks the Airtable "Periskop View" (of the Leads table)
+against Periskope:
 * Leads present in Airtable but with no matching Periskope contact at all.
 * Periskope contacts labeled "Home Loans" with no matching Airtable Lead.
 * Leads whose Airtable Status (Active Warm / Still Looking / Future Plan /
@@ -78,6 +79,7 @@ PHONE_OVERRIDE = os.environ.get("PERISKOPE_PHONE")
 AIRTABLE_TOKEN = os.environ.get("AIRTABLE_TOKEN")
 AIRTABLE_BASE_ID = "appfpELkqjpJ0wfZ2"  # Home Loans CRM (not secret, just an ID)
 AIRTABLE_LEADS_TABLE_ID = "tbl8UiIyUJHN1lTz5"  # Leads
+AIRTABLE_LEADS_VIEW_ID = "viwHccNSyjXILuRfU"  # "Periskop View" (was: whole table / default view)
 
 # Airtable "Status" choices that map 1:1 onto a Periskope label name — used
 # for the sanity-check cross-reference. Statuses with no Periskope equivalent
@@ -286,12 +288,12 @@ def airtable_get(path, params=None):
 
 
 def fetch_airtable_leads():
-    """Paginate through every record in the Leads table (Airtable's REST API
-    caps pageSize at 100, unlike Periskope's 2000)."""
+    """Paginate through every record in the "Periskop View" of the Leads table
+    (Airtable's REST API caps pageSize at 100, unlike Periskope's 2000)."""
     records = []
     offset = None
     while True:
-        params = {"pageSize": 100}
+        params = {"pageSize": 100, "view": AIRTABLE_LEADS_VIEW_ID}
         if offset:
             params["offset"] = offset
         data = airtable_get(f"/{AIRTABLE_BASE_ID}/{AIRTABLE_LEADS_TABLE_ID}", params)
@@ -310,8 +312,8 @@ def fetch_airtable_leads():
 
 
 def build_airtable_sync(contacts):
-    """Cross-check Airtable's Leads view against Periskope contacts by phone
-    number. See module docstring for exactly what's compared and why."""
+    """Cross-check Airtable's "Periskop View" against Periskope contacts by
+    phone number. See module docstring for exactly what's compared and why."""
     leads = fetch_airtable_leads()
 
     periskope_by_phone = {}
@@ -463,7 +465,7 @@ def main():
     dataset["daily"], dataset["daily_contacts"] = compute_daily_from_registry(history["marked"])
 
     if AIRTABLE_TOKEN:
-        print("AIRTABLE_TOKEN set — running Airtable Leads vs Periskope sync check...")
+        print("AIRTABLE_TOKEN set — running Airtable Periskop View vs Periskope sync check...")
         dataset["airtable_sync"] = build_airtable_sync(contacts)
         sync = dataset["airtable_sync"]
         print(f"Airtable sync: {sync['leads_total']} leads, {sync['matched']} matched, "
