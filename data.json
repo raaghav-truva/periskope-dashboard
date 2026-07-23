@@ -3282,7 +3282,7 @@
   "home_loans_no_m_tags": 87,
   "m0_only": 0,
   "m1_no_m2": 57,
-  "generated_at": "2026-07-23T07:26:58.172878Z",
+  "generated_at": "2026-07-23T08:11:44.498353Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
@@ -5275,6 +5275,3216 @@
         ]
       }
     ],
-    "generated_at": "2026-07-23T07:26:59.220957Z"
+    "generated_at": "2026-07-23T08:11:45.227315Z"
+  },
+  "contacts_by_source": {
+    "total": 222,
+    "source_counts": {
+      "Telecalling": 164,
+      "Not in Airtable": 42,
+      "Meta Ads": 12,
+      "Buyer Experience Team": 3,
+      "Referral": 1
+    },
+    "source_contacts": {
+      "Telecalling": [
+        {
+          "name": " \n \t\nVikrant Kamath",
+          "phone": "919594586510"
+        },
+        {
+          "name": "Aaron Mathew",
+          "phone": "919920080368"
+        },
+        {
+          "name": "Abbas Dadla",
+          "phone": "919619069003"
+        },
+        {
+          "name": "Abhijit Patil",
+          "phone": "919222111506"
+        },
+        {
+          "name": "Abhishek",
+          "phone": "919769322137"
+        },
+        {
+          "name": "Abhishek D",
+          "phone": "919833970011"
+        },
+        {
+          "name": "Aishwarya Shetty",
+          "phone": "917666680005"
+        },
+        {
+          "name": "ajayvichare3",
+          "phone": "919323005553"
+        },
+        {
+          "name": "Alok Sharma",
+          "phone": "919987752831"
+        },
+        {
+          "name": "Amar",
+          "phone": "919920488488"
+        },
+        {
+          "name": "Ambika Sood",
+          "phone": "919967790245"
+        },
+        {
+          "name": "Amitava Chatterjee",
+          "phone": "919619906071"
+        },
+        {
+          "name": "Ananjan Choudhary",
+          "phone": "919930987633"
+        },
+        {
+          "name": "Anant Kasibhatla",
+          "phone": "919702578482"
+        },
+        {
+          "name": "Anil Parab",
+          "phone": "919820413505"
+        },
+        {
+          "name": "Anirudhh Gambhir",
+          "phone": "919029511391"
+        },
+        {
+          "name": "anisha Panigrahi",
+          "phone": "918879440357"
+        },
+        {
+          "name": "Ankita Bane",
+          "phone": "919769404123"
+        },
+        {
+          "name": "Ankur Sungandhi",
+          "phone": "919960934555"
+        },
+        {
+          "name": "Anu",
+          "phone": "918376957781"
+        },
+        {
+          "name": "Anubha Gupta",
+          "phone": "917683047658"
+        },
+        {
+          "name": "Anupama C",
+          "phone": "919833554828"
+        },
+        {
+          "name": "Aparna",
+          "phone": "919674171865"
+        },
+        {
+          "name": "Arvind",
+          "phone": "919818134261"
+        },
+        {
+          "name": "Ashish Chaturmohta",
+          "phone": "917738648833"
+        },
+        {
+          "name": "Ashish Yadav",
+          "phone": "919867229942"
+        },
+        {
+          "name": "Ashok",
+          "phone": "918169332952"
+        },
+        {
+          "name": "Ashok Sakpal",
+          "phone": "919892076221"
+        },
+        {
+          "name": "Asmita Singh",
+          "phone": "919820860738"
+        },
+        {
+          "name": "Ayushman Bhattacharya",
+          "phone": "919833060132"
+        },
+        {
+          "name": "Babu lal Agarwal",
+          "phone": "919820060855"
+        },
+        {
+          "name": "Baliram Ray",
+          "phone": "917208320745"
+        },
+        {
+          "name": "Bhakti Mistry",
+          "phone": "919820912442"
+        },
+        {
+          "name": "Biju Menon",
+          "phone": "919633695595"
+        },
+        {
+          "name": "Bineet Banka",
+          "phone": "918879577475"
+        },
+        {
+          "name": "Chintan Jani",
+          "phone": "918511137384"
+        },
+        {
+          "name": "Danish Khan",
+          "phone": "917453878578"
+        },
+        {
+          "name": "Deepak Harjani",
+          "phone": "919769535555"
+        },
+        {
+          "name": "Deepak madnani",
+          "phone": "919004047204"
+        },
+        {
+          "name": "Deepesh Bharani",
+          "phone": "919930376354"
+        },
+        {
+          "name": "dhananjay chaughule",
+          "phone": "919594094095"
+        },
+        {
+          "name": "Dharmesh OOT Loan",
+          "phone": "919004493570"
+        },
+        {
+          "name": "Dinesh Kirodian",
+          "phone": "919820023264"
+        },
+        {
+          "name": "Dinesh Mhatre",
+          "phone": "917045454599"
+        },
+        {
+          "name": "Dinesh Singh",
+          "phone": "919320677707"
+        },
+        {
+          "name": "Dipali",
+          "phone": "917045970804"
+        },
+        {
+          "name": "Durgesh Dadich",
+          "phone": "919833948018"
+        },
+        {
+          "name": "Garima Gupta\n",
+          "phone": "919686133391"
+        },
+        {
+          "name": "Gaurav Balani",
+          "phone": "919819722924"
+        },
+        {
+          "name": "Gopal Bansal",
+          "phone": "919310069597"
+        },
+        {
+          "name": "Jagdish M. Kaushik",
+          "phone": "919821225211"
+        },
+        {
+          "name": "Javed Choudhary",
+          "phone": "919967391117"
+        },
+        {
+          "name": "Jinal Shah",
+          "phone": "919619364453"
+        },
+        {
+          "name": "Jitendra Rawat",
+          "phone": "919769539980"
+        },
+        {
+          "name": "Johney Dua",
+          "phone": "919820127378"
+        },
+        {
+          "name": "Jolly Roger's",
+          "phone": "919819531157"
+        },
+        {
+          "name": "Jonathan",
+          "phone": "919911540463"
+        },
+        {
+          "name": "Jyoti Kapadia",
+          "phone": "919821293914"
+        },
+        {
+          "name": "Kuldeep Rathore",
+          "phone": "917718834010"
+        },
+        {
+          "name": "Linus Menezes",
+          "phone": "919820050714"
+        },
+        {
+          "name": "LiVe LiFe KiNg SiZeEeEe (Varun Upadhyay)",
+          "phone": "919997185522"
+        },
+        {
+          "name": "Lokesh Shorey",
+          "phone": "919167887434"
+        },
+        {
+          "name": "Madhvi Patil",
+          "phone": "919004769329"
+        },
+        {
+          "name": "Manisha Prasad",
+          "phone": "919953454481"
+        },
+        {
+          "name": "Manoj Gupta",
+          "phone": "919820573699"
+        },
+        {
+          "name": "Manu Sujanti",
+          "phone": "919819752121"
+        },
+        {
+          "name": "Mayur Shirishkar",
+          "phone": "917045761743"
+        },
+        {
+          "name": "Meenakshi Mediratta",
+          "phone": "919819197743"
+        },
+        {
+          "name": "Megha",
+          "phone": "919314663996"
+        },
+        {
+          "name": "Megha Sharma",
+          "phone": "919765891402"
+        },
+        {
+          "name": "Mohita",
+          "phone": "919920047561"
+        },
+        {
+          "name": "Monika Shekawat",
+          "phone": "919773166940"
+        },
+        {
+          "name": "Ms Rane",
+          "phone": "919819034821"
+        },
+        {
+          "name": "Mugdha Shankar",
+          "phone": "918452920428"
+        },
+        {
+          "name": "Mukund R Pandey",
+          "phone": "917021699650"
+        },
+        {
+          "name": "Murli Chaudhary",
+          "phone": "919820018973"
+        },
+        {
+          "name": "Nandita",
+          "phone": "919223106467"
+        },
+        {
+          "name": "Naushad Chilwan",
+          "phone": "918104971674"
+        },
+        {
+          "name": "Nayna Desai",
+          "phone": "919029391800"
+        },
+        {
+          "name": "Neha",
+          "phone": "919820565399"
+        },
+        {
+          "name": "Nikam Murlidhar",
+          "phone": "918652822453"
+        },
+        {
+          "name": "Nikeeta ",
+          "phone": "919898283680"
+        },
+        {
+          "name": "Nirmal Parikh",
+          "phone": "919892475142"
+        },
+        {
+          "name": "Nitesh Kalantri",
+          "phone": "917045955107"
+        },
+        {
+          "name": "Nitin Arya",
+          "phone": "919702838237"
+        },
+        {
+          "name": "Nitin Nitin",
+          "phone": "918261982123"
+        },
+        {
+          "name": "Nupur doshi",
+          "phone": "917566402024"
+        },
+        {
+          "name": "Pankaj",
+          "phone": "919820134382"
+        },
+        {
+          "name": "Parth Chate",
+          "phone": "919769966747"
+        },
+        {
+          "name": "Payal",
+          "phone": "919867519195"
+        },
+        {
+          "name": "Pooja Manoj Agrawal Agrawal",
+          "phone": "919325635472"
+        },
+        {
+          "name": "Poonam S",
+          "phone": "919619294373"
+        },
+        {
+          "name": "Pradnya Phene Phene",
+          "phone": "918433608835"
+        },
+        {
+          "name": "Pranam",
+          "phone": "919930928781"
+        },
+        {
+          "name": "Pranay NA",
+          "phone": "919819991128"
+        },
+        {
+          "name": "Pranjali Dubey",
+          "phone": "919324386943"
+        },
+        {
+          "name": "Prashant Chatur",
+          "phone": "917799159741"
+        },
+        {
+          "name": "Prashant Gupta",
+          "phone": "919930224986"
+        },
+        {
+          "name": "Priyanka Rajapkar",
+          "phone": "919867058900"
+        },
+        {
+          "name": "Puneet",
+          "phone": "919986290086"
+        },
+        {
+          "name": "Rachana Dewan",
+          "phone": "919892950954"
+        },
+        {
+          "name": "Radhika Mehta",
+          "phone": "917838389738"
+        },
+        {
+          "name": "Rahul Oza",
+          "phone": "919920536111"
+        },
+        {
+          "name": "Raj Bhavwat",
+          "phone": "919920858852"
+        },
+        {
+          "name": "Rajat Varma",
+          "phone": "919820067764"
+        },
+        {
+          "name": "Rajesh & Sunita Daga",
+          "phone": "919535522177"
+        },
+        {
+          "name": "Ramendr Tiwari",
+          "phone": "919930460188"
+        },
+        {
+          "name": "Ravi Dayma",
+          "phone": "919920157851"
+        },
+        {
+          "name": "Ravi Jain",
+          "phone": "919920264985"
+        },
+        {
+          "name": "Richa Parekh",
+          "phone": "919987335857"
+        },
+        {
+          "name": "Rida Sabri",
+          "phone": "919820991318"
+        },
+        {
+          "name": "Rohan",
+          "phone": "918011232920"
+        },
+        {
+          "name": "Rohit Singh copy",
+          "phone": "918800777481"
+        },
+        {
+          "name": "Rohit Tandon",
+          "phone": "919703077777"
+        },
+        {
+          "name": "Ruhi Shaikh (Fouziya)",
+          "phone": "919820585801"
+        },
+        {
+          "name": "Rushikesh",
+          "phone": "919028502679"
+        },
+        {
+          "name": "Sabeeha",
+          "phone": "918655833057"
+        },
+        {
+          "name": "Sagar Mona",
+          "phone": "919952170506"
+        },
+        {
+          "name": "Saloni",
+          "phone": "919158578801"
+        },
+        {
+          "name": "Sam .",
+          "phone": "919930050245"
+        },
+        {
+          "name": "Sandip Bhagyawant",
+          "phone": "919892115882"
+        },
+        {
+          "name": "Sarabjeet",
+          "phone": "919820261404"
+        },
+        {
+          "name": "Sejal Sanghvi",
+          "phone": "919819535550"
+        },
+        {
+          "name": "Selvi Jay",
+          "phone": "919920315969"
+        },
+        {
+          "name": "Shabnam Shaikh",
+          "phone": "919136550500"
+        },
+        {
+          "name": "Shajit Nair",
+          "phone": "919821333289"
+        },
+        {
+          "name": "Shalabh Jain",
+          "phone": "919920230103"
+        },
+        {
+          "name": "Shashi Bhushan",
+          "phone": "919971363200"
+        },
+        {
+          "name": "Sheetal Kini",
+          "phone": "919867049568"
+        },
+        {
+          "name": "Shikha Jain",
+          "phone": "919928716701"
+        },
+        {
+          "name": "Shikha Nuniha",
+          "phone": "919022631507"
+        },
+        {
+          "name": "Shiv Yadav",
+          "phone": "917021800434"
+        },
+        {
+          "name": "Shrikant Maurya",
+          "phone": "919819299611"
+        },
+        {
+          "name": "Shruti Dhariwal",
+          "phone": "919819478761"
+        },
+        {
+          "name": "Shubhanshu",
+          "phone": "918558807153"
+        },
+        {
+          "name": "Sidharth bhandari",
+          "phone": "919309099003"
+        },
+        {
+          "name": "Smita Omale",
+          "phone": "919833668338"
+        },
+        {
+          "name": "Sonia Sharma",
+          "phone": "919870473939"
+        },
+        {
+          "name": "Sreedev",
+          "phone": "919920194690"
+        },
+        {
+          "name": "Subrata Chakraborty",
+          "phone": "918777540534"
+        },
+        {
+          "name": "sumit mathur",
+          "phone": "919022960962"
+        },
+        {
+          "name": "Sumit Mittal",
+          "phone": "919910220790"
+        },
+        {
+          "name": "Sunil Parab",
+          "phone": "918691884567"
+        },
+        {
+          "name": "Surbhi Jain",
+          "phone": "919479851517"
+        },
+        {
+          "name": "Suresh Khatanhar",
+          "phone": "919664402200"
+        },
+        {
+          "name": "Tanay",
+          "phone": "919099977155"
+        },
+        {
+          "name": "Tanushree Chakraborty",
+          "phone": "918879034235"
+        },
+        {
+          "name": "Tarun Shukla",
+          "phone": "919930544030"
+        },
+        {
+          "name": "Taruna & Ankur Vats",
+          "phone": "919899575226"
+        },
+        {
+          "name": "Teena Uppal",
+          "phone": "919867577606"
+        },
+        {
+          "name": "Trupti Somaiya",
+          "phone": "919892270074"
+        },
+        {
+          "name": "Ujwal Shah",
+          "phone": "919987231131"
+        },
+        {
+          "name": "Umed Shaikh",
+          "phone": "919890183180"
+        },
+        {
+          "name": "Vaibhav",
+          "phone": "919953107773"
+        },
+        {
+          "name": "Vicky Chawla",
+          "phone": "919769608020"
+        },
+        {
+          "name": "Vijay Jain",
+          "phone": "919820370350"
+        },
+        {
+          "name": "Vikash Gupta",
+          "phone": "919870479599"
+        },
+        {
+          "name": "Vineeta Singh",
+          "phone": "918727045999"
+        },
+        {
+          "name": "Vinod Dongre",
+          "phone": "917666037888"
+        },
+        {
+          "name": "VINOD KAMTEKAR",
+          "phone": "917506135910"
+        },
+        {
+          "name": "Vipul",
+          "phone": "919821081442"
+        },
+        {
+          "name": "Vishal Lohire",
+          "phone": "919987646849"
+        },
+        {
+          "name": "Vivek",
+          "phone": "919920915156"
+        },
+        {
+          "name": "Yash Tiwari",
+          "phone": "919619325559"
+        }
+      ],
+      "Not in Airtable": [
+        {
+          "name": "AB Entertainment (Anil Bohra)",
+          "phone": "919892634211"
+        },
+        {
+          "name": "Abhishek Shah",
+          "phone": "917204786890"
+        },
+        {
+          "name": "Ajay Arora",
+          "phone": "919820608414"
+        },
+        {
+          "name": "Akshi Mahajan",
+          "phone": "917738527852"
+        },
+        {
+          "name": "Alisha Shaikh",
+          "phone": "918928839385"
+        },
+        {
+          "name": "Anant Singh",
+          "phone": "919967192044"
+        },
+        {
+          "name": "Ankit Bajaj",
+          "phone": "918861006677"
+        },
+        {
+          "name": "Arun Koushik",
+          "phone": "917708590005"
+        },
+        {
+          "name": "Arun Singh",
+          "phone": "919821058985"
+        },
+        {
+          "name": "Bharat Nanavayi",
+          "phone": "919892049942"
+        },
+        {
+          "name": "Bjorn Dsouza",
+          "phone": "919820363644"
+        },
+        {
+          "name": "Datta Sawant",
+          "phone": "919867740706"
+        },
+        {
+          "name": "Deeshank Narkar",
+          "phone": "918108959862"
+        },
+        {
+          "name": "Dheeraj",
+          "phone": "919312413896"
+        },
+        {
+          "name": "Ignatius Barretto",
+          "phone": "919833813561"
+        },
+        {
+          "name": "Kamal Mittal",
+          "phone": "919930547263"
+        },
+        {
+          "name": "Kamlesh Jadhav",
+          "phone": "919223502540"
+        },
+        {
+          "name": "Kapil Agarwal",
+          "phone": "917506707010"
+        },
+        {
+          "name": "Manoj Gupta",
+          "phone": "917045352354"
+        },
+        {
+          "name": "Mayur Srivastav",
+          "phone": "918800500769"
+        },
+        {
+          "name": "Mushir Khan",
+          "phone": "917045640732"
+        },
+        {
+          "name": "Neha Bharti",
+          "phone": "919123163416"
+        },
+        {
+          "name": "Pandurang Khamkar",
+          "phone": "918369460300"
+        },
+        {
+          "name": "Pinky",
+          "phone": "919833527517"
+        },
+        {
+          "name": "Prasad Dixit",
+          "phone": "919137434156"
+        },
+        {
+          "name": "Prasenjit Mitra",
+          "phone": "919819867099"
+        },
+        {
+          "name": "Rajkumar",
+          "phone": "918976049514"
+        },
+        {
+          "name": "Richi Agrawal",
+          "phone": "919916000572"
+        },
+        {
+          "name": "Sahiti P",
+          "phone": "917738544167"
+        },
+        {
+          "name": "Saket",
+          "phone": "919930507211"
+        },
+        {
+          "name": "Samta Jain",
+          "phone": "919820314939"
+        },
+        {
+          "name": "Sanjay Rathod",
+          "phone": "919324843079"
+        },
+        {
+          "name": "Sekhar Vishwakarma",
+          "phone": "919005368705"
+        },
+        {
+          "name": "Seth Rajiv",
+          "phone": "919650816000"
+        },
+        {
+          "name": "Shubhada",
+          "phone": "919870990454"
+        },
+        {
+          "name": "Sneha Budhia",
+          "phone": "919852340897"
+        },
+        {
+          "name": "Suhas Suryawanshi",
+          "phone": "919819412043"
+        },
+        {
+          "name": "Sunil S Dayma",
+          "phone": "919324410856"
+        },
+        {
+          "name": "Sushant Naidu",
+          "phone": "919702292779"
+        },
+        {
+          "name": "Tarachand Devgan",
+          "phone": "919920433892"
+        },
+        {
+          "name": "Tejpal Dhaiya",
+          "phone": "918527769845"
+        },
+        {
+          "name": "Vijay",
+          "phone": "918291414805"
+        }
+      ],
+      "Meta Ads": [
+        {
+          "name": "Ajay Babu ",
+          "phone": "919029114323"
+        },
+        {
+          "name": "Ajay Ghelani",
+          "phone": "919870061632"
+        },
+        {
+          "name": "Amitkumar Kanaujia",
+          "phone": "917738970849"
+        },
+        {
+          "name": "Anil Agarwal",
+          "phone": "918169952349"
+        },
+        {
+          "name": "Arman",
+          "phone": "919330973837"
+        },
+        {
+          "name": "Deipti Ragini",
+          "phone": "919152913513"
+        },
+        {
+          "name": "Haresh Parmer",
+          "phone": "919167245781"
+        },
+        {
+          "name": "Hussain Ali Shaikh",
+          "phone": "919870078640"
+        },
+        {
+          "name": "Pradeep",
+          "phone": "919004900624"
+        },
+        {
+          "name": "Raj",
+          "phone": "919702618253"
+        },
+        {
+          "name": "Rana Vishal Singh",
+          "phone": "918050004430"
+        },
+        {
+          "name": "Sagar Mhetre",
+          "phone": "918793604721"
+        }
+      ],
+      "Referral": [
+        {
+          "name": "Kajal kedia / Saurabh Agarwal",
+          "phone": "919844681243"
+        }
+      ],
+      "Buyer Experience Team": [
+        {
+          "name": "Ritesh Mittal",
+          "phone": "919696029020"
+        },
+        {
+          "name": "Utkarsh Garg",
+          "phone": "917567190153"
+        },
+        {
+          "name": "Vipul Soni",
+          "phone": "918940502402"
+        }
+      ]
+    },
+    "generated_at": "2026-07-23T08:11:45.231576Z"
+  },
+  "broadcast_responses": {
+    "lookback_days": 30,
+    "broadcasts": [
+      {
+        "broadcast_id": "6869b5ac-0610-4f25-a37b-ebf1064dfe64",
+        "sent_at": "2026-07-21T14:35:36+00:00",
+        "preview": "What kind of home are you eyeing? \ud83e\udde1",
+        "is_poll": true,
+        "total_recipients": 4,
+        "m_series_recipients": 4,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Pooja Manoj Agrawal Agrawal",
+            "phone": "919325635472",
+            "responded": false
+          },
+          {
+            "name": "Sunil Parab",
+            "phone": "918691884567",
+            "responded": false
+          },
+          {
+            "name": "Trupti Somaiya",
+            "phone": "919892270074",
+            "responded": false
+          },
+          {
+            "name": "Utkarsh Garg",
+            "phone": "917567190153",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "4c746d66-7640-4b9c-b3a3-a417f0ec87f8",
+        "sent_at": "2026-07-21T14:29:16+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 11,
+        "m_series_recipients": 11,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Danish Khan",
+            "phone": "917453878578",
+            "responded": false
+          },
+          {
+            "name": "Dipali",
+            "phone": "917045970804",
+            "responded": false
+          },
+          {
+            "name": "Haresh Parmer",
+            "phone": "919167245781",
+            "responded": false
+          },
+          {
+            "name": "Jonathan",
+            "phone": "919911540463",
+            "responded": false
+          },
+          {
+            "name": "Naushad Chilwan",
+            "phone": "918104971674",
+            "responded": false
+          },
+          {
+            "name": "Nayna Desai",
+            "phone": "919029391800",
+            "responded": false
+          },
+          {
+            "name": "Nikeeta ",
+            "phone": "919898283680",
+            "responded": false
+          },
+          {
+            "name": "Pooja Manoj Agrawal Agrawal",
+            "phone": "919325635472",
+            "responded": false
+          },
+          {
+            "name": "Poonam S",
+            "phone": "919619294373",
+            "responded": false
+          },
+          {
+            "name": "Pradnya Phene Phene",
+            "phone": "918433608835",
+            "responded": false
+          },
+          {
+            "name": "Pranam",
+            "phone": "919930928781",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "84e2b3a2-a0db-4ae9-a015-5b83c6636b75",
+        "sent_at": "2026-07-21T13:13:43+00:00",
+        "preview": "What kind of home are you eyeing? \ud83e\udde1",
+        "is_poll": true,
+        "total_recipients": 11,
+        "m_series_recipients": 11,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "ajayvichare3",
+            "phone": "919323005553",
+            "responded": false
+          },
+          {
+            "name": "Bineet Banka",
+            "phone": "918879577475",
+            "responded": false
+          },
+          {
+            "name": "Deepak madnani",
+            "phone": "919004047204",
+            "responded": false
+          },
+          {
+            "name": "Dinesh Singh",
+            "phone": "919320677707",
+            "responded": false
+          },
+          {
+            "name": "Hussain Ali Shaikh",
+            "phone": "919870078640",
+            "responded": false
+          },
+          {
+            "name": "Prashant Gupta",
+            "phone": "919930224986",
+            "responded": false
+          },
+          {
+            "name": "Raj",
+            "phone": "919702618253",
+            "responded": false
+          },
+          {
+            "name": "Rajat Varma",
+            "phone": "919820067764",
+            "responded": false
+          },
+          {
+            "name": "Rajkumar",
+            "phone": "918976049514",
+            "responded": false
+          },
+          {
+            "name": "Vicky Chawla",
+            "phone": "919769608020",
+            "responded": false
+          },
+          {
+            "name": "Vijay Jain",
+            "phone": "919820370350",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "09bb09f9-b379-4a5f-8d36-b32f1ba266ac",
+        "sent_at": "2026-07-21T13:05:18+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 2,
+        "m_series_recipients": 2,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Hussain Ali Shaikh",
+            "phone": "919870078640",
+            "responded": false
+          },
+          {
+            "name": "Rajat Varma",
+            "phone": "919820067764",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "5a9c9228-e64a-43a4-ab1a-6dcc279196e3",
+        "sent_at": "2026-07-13T15:39:19+00:00",
+        "preview": "What kind of home are you eyeing? \ud83e\udde1",
+        "is_poll": true,
+        "total_recipients": 20,
+        "m_series_recipients": 20,
+        "m_series_responded": 1,
+        "contacts": [
+          {
+            "name": "Amit Mehta",
+            "phone": "919322225890",
+            "responded": true
+          },
+          {
+            "name": "Abhishek",
+            "phone": "919769322137",
+            "responded": false
+          },
+          {
+            "name": "Alok Sharma",
+            "phone": "919987752831",
+            "responded": false
+          },
+          {
+            "name": "Ambika Sood",
+            "phone": "919967790245",
+            "responded": false
+          },
+          {
+            "name": "Anupama C",
+            "phone": "919833554828",
+            "responded": false
+          },
+          {
+            "name": "Ashish Modi",
+            "phone": "919819955999",
+            "responded": false
+          },
+          {
+            "name": "Biju Menon",
+            "phone": "919633695595",
+            "responded": false
+          },
+          {
+            "name": "dhananjay chaughule",
+            "phone": "919594094095",
+            "responded": false
+          },
+          {
+            "name": "Divakar",
+            "phone": "919956999597",
+            "responded": false
+          },
+          {
+            "name": "Kunal bagaya",
+            "phone": "917021384177",
+            "responded": false
+          },
+          {
+            "name": "Monika Shekawat",
+            "phone": "919773166940",
+            "responded": false
+          },
+          {
+            "name": "Ms Rane",
+            "phone": "919819034821",
+            "responded": false
+          },
+          {
+            "name": "Neha",
+            "phone": "919820565399",
+            "responded": false
+          },
+          {
+            "name": "Richi Agrawal",
+            "phone": "919916000572",
+            "responded": false
+          },
+          {
+            "name": "Sabeeha",
+            "phone": "918655833057",
+            "responded": false
+          },
+          {
+            "name": "Shruti Dhariwal",
+            "phone": "919819478761",
+            "responded": false
+          },
+          {
+            "name": "Surbhi Jain",
+            "phone": "919479851517",
+            "responded": false
+          },
+          {
+            "name": "Tejpal Dhaiya",
+            "phone": "918527769845",
+            "responded": false
+          },
+          {
+            "name": "Vaibhav",
+            "phone": "919953107773",
+            "responded": false
+          },
+          {
+            "name": "Vijay",
+            "phone": "918291414805",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "026b1306-3264-444f-9da3-31d080eaf492",
+        "sent_at": "2026-07-13T15:28:15+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 10,
+        "m_series_recipients": 10,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Abhishek",
+            "phone": "919769322137",
+            "responded": false
+          },
+          {
+            "name": "Anupama C",
+            "phone": "919833554828",
+            "responded": false
+          },
+          {
+            "name": "Biju Menon",
+            "phone": "919633695595",
+            "responded": false
+          },
+          {
+            "name": "Monika Shekawat",
+            "phone": "919773166940",
+            "responded": false
+          },
+          {
+            "name": "Ms Rane",
+            "phone": "919819034821",
+            "responded": false
+          },
+          {
+            "name": "Neha",
+            "phone": "919820565399",
+            "responded": false
+          },
+          {
+            "name": "Richi Agrawal",
+            "phone": "919916000572",
+            "responded": false
+          },
+          {
+            "name": "Sabeeha",
+            "phone": "918655833057",
+            "responded": false
+          },
+          {
+            "name": "Tejpal Dhaiya",
+            "phone": "918527769845",
+            "responded": false
+          },
+          {
+            "name": "Vijay",
+            "phone": "918291414805",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "5533ded4-fe66-4c6f-830a-7e99b8c241ac",
+        "sent_at": "2026-07-13T15:19:03+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 8,
+        "m_series_recipients": 8,
+        "m_series_responded": 1,
+        "contacts": [
+          {
+            "name": "Amit Mehta",
+            "phone": "919322225890",
+            "responded": true
+          },
+          {
+            "name": "Ashish Modi",
+            "phone": "919819955999",
+            "responded": false
+          },
+          {
+            "name": "Divakar",
+            "phone": "919956999597",
+            "responded": false
+          },
+          {
+            "name": "Kunal bagaya",
+            "phone": "917021384177",
+            "responded": false
+          },
+          {
+            "name": "Shruti Dhariwal",
+            "phone": "919819478761",
+            "responded": false
+          },
+          {
+            "name": "Sumit Mittal",
+            "phone": "919910220790",
+            "responded": false
+          },
+          {
+            "name": "Surbhi Jain",
+            "phone": "919479851517",
+            "responded": false
+          },
+          {
+            "name": "Vaibhav",
+            "phone": "919953107773",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "f56e9868-b38d-4c66-a9dd-d787cac36081",
+        "sent_at": "2026-07-12T18:11:13+00:00",
+        "preview": "Do you need a trusted legal advisor\u2049\ufe0f",
+        "is_poll": true,
+        "total_recipients": 22,
+        "m_series_recipients": 22,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Aaron Mathew",
+            "phone": "919920080368",
+            "responded": false
+          },
+          {
+            "name": "anisha Panigrahi",
+            "phone": "918879440357",
+            "responded": false
+          },
+          {
+            "name": "Anu",
+            "phone": "918376957781",
+            "responded": false
+          },
+          {
+            "name": "Deepak Harjani",
+            "phone": "919769535555",
+            "responded": false
+          },
+          {
+            "name": "Deepesh Bharani",
+            "phone": "919930376354",
+            "responded": false
+          },
+          {
+            "name": "Dheeraj",
+            "phone": "919312413896",
+            "responded": false
+          },
+          {
+            "name": "Ignatius Barretto",
+            "phone": "919833813561",
+            "responded": false
+          },
+          {
+            "name": "Jinal Shah",
+            "phone": "919619364453",
+            "responded": false
+          },
+          {
+            "name": "Kuldeep Rathore",
+            "phone": "917718834010",
+            "responded": false
+          },
+          {
+            "name": "Linus Menezes",
+            "phone": "919820050714",
+            "responded": false
+          },
+          {
+            "name": "Manisha Prasad",
+            "phone": "919953454481",
+            "responded": false
+          },
+          {
+            "name": "Manoj Gupta",
+            "phone": "917045352354",
+            "responded": false
+          },
+          {
+            "name": "Meenakshi Mediratta",
+            "phone": "919819197743",
+            "responded": false
+          },
+          {
+            "name": "Nitesh Kalantri",
+            "phone": "917045955107",
+            "responded": false
+          },
+          {
+            "name": "Pradeep",
+            "phone": "919004900624",
+            "responded": false
+          },
+          {
+            "name": "Rachana Dewan",
+            "phone": "919892950954",
+            "responded": false
+          },
+          {
+            "name": "Ritesh Mittal",
+            "phone": "919696029020",
+            "responded": false
+          },
+          {
+            "name": "Samta Jain",
+            "phone": "919820314939",
+            "responded": false
+          },
+          {
+            "name": "Shrikant Maurya",
+            "phone": "919819299611",
+            "responded": false
+          },
+          {
+            "name": "Shubhada",
+            "phone": "919870990454",
+            "responded": false
+          },
+          {
+            "name": "Suhas Suryawanshi",
+            "phone": "919819412043",
+            "responded": false
+          },
+          {
+            "name": "Taruna & Ankur Vats",
+            "phone": "919899575226",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "58de8b77-7d65-4aa4-90bf-8be51f9e4048",
+        "sent_at": "2026-07-12T18:09:10+00:00",
+        "preview": "*Arriving today!*\nLegal tips for your dream home \ud83c\udfdb\ufe0f\n\nBefore you pay a token, ask your lawyer for:\n\n*\ud83d\udc49\u00a0 Title Clearance R",
+        "is_poll": false,
+        "total_recipients": 22,
+        "m_series_recipients": 22,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Aaron Mathew",
+            "phone": "919920080368",
+            "responded": false
+          },
+          {
+            "name": "anisha Panigrahi",
+            "phone": "918879440357",
+            "responded": false
+          },
+          {
+            "name": "Anu",
+            "phone": "918376957781",
+            "responded": false
+          },
+          {
+            "name": "Deepak Harjani",
+            "phone": "919769535555",
+            "responded": false
+          },
+          {
+            "name": "Deepesh Bharani",
+            "phone": "919930376354",
+            "responded": false
+          },
+          {
+            "name": "Dheeraj",
+            "phone": "919312413896",
+            "responded": false
+          },
+          {
+            "name": "Ignatius Barretto",
+            "phone": "919833813561",
+            "responded": false
+          },
+          {
+            "name": "Jinal Shah",
+            "phone": "919619364453",
+            "responded": false
+          },
+          {
+            "name": "Kuldeep Rathore",
+            "phone": "917718834010",
+            "responded": false
+          },
+          {
+            "name": "Linus Menezes",
+            "phone": "919820050714",
+            "responded": false
+          },
+          {
+            "name": "Manisha Prasad",
+            "phone": "919953454481",
+            "responded": false
+          },
+          {
+            "name": "Manoj Gupta",
+            "phone": "917045352354",
+            "responded": false
+          },
+          {
+            "name": "Meenakshi Mediratta",
+            "phone": "919819197743",
+            "responded": false
+          },
+          {
+            "name": "Nitesh Kalantri",
+            "phone": "917045955107",
+            "responded": false
+          },
+          {
+            "name": "Pradeep",
+            "phone": "919004900624",
+            "responded": false
+          },
+          {
+            "name": "Rachana Dewan",
+            "phone": "919892950954",
+            "responded": false
+          },
+          {
+            "name": "Ritesh Mittal",
+            "phone": "919696029020",
+            "responded": false
+          },
+          {
+            "name": "Samta Jain",
+            "phone": "919820314939",
+            "responded": false
+          },
+          {
+            "name": "Shrikant Maurya",
+            "phone": "919819299611",
+            "responded": false
+          },
+          {
+            "name": "Shubhada",
+            "phone": "919870990454",
+            "responded": false
+          },
+          {
+            "name": "Suhas Suryawanshi",
+            "phone": "919819412043",
+            "responded": false
+          },
+          {
+            "name": "Taruna & Ankur Vats",
+            "phone": "919899575226",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "08881fc9-4951-4032-88de-59b5bf69fffe",
+        "sent_at": "2026-07-10T15:48:11+00:00",
+        "preview": "Do you need a trusted legal advisor\u2049\ufe0f",
+        "is_poll": true,
+        "total_recipients": 20,
+        "m_series_recipients": 20,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Abhishek D",
+            "phone": "919833970011",
+            "responded": false
+          },
+          {
+            "name": "Amar",
+            "phone": "919920488488",
+            "responded": false
+          },
+          {
+            "name": "Amitava Chatterjee",
+            "phone": "919619906071",
+            "responded": false
+          },
+          {
+            "name": "Anant Singh",
+            "phone": "919967192044",
+            "responded": false
+          },
+          {
+            "name": "Ankur Sungandhi",
+            "phone": "919960934555",
+            "responded": false
+          },
+          {
+            "name": "Anubha Gupta",
+            "phone": "917683047658",
+            "responded": false
+          },
+          {
+            "name": "Kapil Agarwal",
+            "phone": "917506707010",
+            "responded": false
+          },
+          {
+            "name": "Neha Bharti",
+            "phone": "919123163416",
+            "responded": false
+          },
+          {
+            "name": "Pankaj",
+            "phone": "919820134382",
+            "responded": false
+          },
+          {
+            "name": "Prasad Dixit",
+            "phone": "919137434156",
+            "responded": false
+          },
+          {
+            "name": "Prasenjit Mitra",
+            "phone": "919819867099",
+            "responded": false
+          },
+          {
+            "name": "Ravi Jain",
+            "phone": "919920264985",
+            "responded": false
+          },
+          {
+            "name": "Saket",
+            "phone": "919930507211",
+            "responded": false
+          },
+          {
+            "name": "Sam .",
+            "phone": "919930050245",
+            "responded": false
+          },
+          {
+            "name": "Seth Rajiv",
+            "phone": "919650816000",
+            "responded": false
+          },
+          {
+            "name": "Shubhanshu",
+            "phone": "918558807153",
+            "responded": false
+          },
+          {
+            "name": "Sneha Budhia",
+            "phone": "919852340897",
+            "responded": false
+          },
+          {
+            "name": "sumit mathur",
+            "phone": "919022960962",
+            "responded": false
+          },
+          {
+            "name": "Vipul Soni",
+            "phone": "918940502402",
+            "responded": false
+          },
+          {
+            "name": "Yash Tiwari",
+            "phone": "919619325559",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "39052a8f-3ec5-4b7e-95d3-f002f5a0fee3",
+        "sent_at": "2026-07-10T15:45:30+00:00",
+        "preview": "Do you need a trusted legal advisor\u2049\ufe0f",
+        "is_poll": true,
+        "total_recipients": 20,
+        "m_series_recipients": 20,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Abhishek D",
+            "phone": "919833970011",
+            "responded": false
+          },
+          {
+            "name": "Amar",
+            "phone": "919920488488",
+            "responded": false
+          },
+          {
+            "name": "Amitava Chatterjee",
+            "phone": "919619906071",
+            "responded": false
+          },
+          {
+            "name": "Anant Singh",
+            "phone": "919967192044",
+            "responded": false
+          },
+          {
+            "name": "Ankur Sungandhi",
+            "phone": "919960934555",
+            "responded": false
+          },
+          {
+            "name": "Anubha Gupta",
+            "phone": "917683047658",
+            "responded": false
+          },
+          {
+            "name": "Kapil Agarwal",
+            "phone": "917506707010",
+            "responded": false
+          },
+          {
+            "name": "Neha Bharti",
+            "phone": "919123163416",
+            "responded": false
+          },
+          {
+            "name": "Pankaj",
+            "phone": "919820134382",
+            "responded": false
+          },
+          {
+            "name": "Prasad Dixit",
+            "phone": "919137434156",
+            "responded": false
+          },
+          {
+            "name": "Prasenjit Mitra",
+            "phone": "919819867099",
+            "responded": false
+          },
+          {
+            "name": "Ravi Jain",
+            "phone": "919920264985",
+            "responded": false
+          },
+          {
+            "name": "Saket",
+            "phone": "919930507211",
+            "responded": false
+          },
+          {
+            "name": "Sam .",
+            "phone": "919930050245",
+            "responded": false
+          },
+          {
+            "name": "Seth Rajiv",
+            "phone": "919650816000",
+            "responded": false
+          },
+          {
+            "name": "Shubhanshu",
+            "phone": "918558807153",
+            "responded": false
+          },
+          {
+            "name": "Sneha Budhia",
+            "phone": "919852340897",
+            "responded": false
+          },
+          {
+            "name": "sumit mathur",
+            "phone": "919022960962",
+            "responded": false
+          },
+          {
+            "name": "Vipul Soni",
+            "phone": "918940502402",
+            "responded": false
+          },
+          {
+            "name": "Yash Tiwari",
+            "phone": "919619325559",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "b82a27a4-e6a3-4314-9115-3bc0cf163091",
+        "sent_at": "2026-07-10T15:44:14+00:00",
+        "preview": "*Arriving today!*\nLegal tips for your dream home \ud83c\udfdb\ufe0f\n\nBefore you pay a token, ask your lawyer for:\n\n*\ud83d\udc49\u00a0 Title Clearance R",
+        "is_poll": false,
+        "total_recipients": 20,
+        "m_series_recipients": 20,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Abhishek D",
+            "phone": "919833970011",
+            "responded": false
+          },
+          {
+            "name": "Amar",
+            "phone": "919920488488",
+            "responded": false
+          },
+          {
+            "name": "Amitava Chatterjee",
+            "phone": "919619906071",
+            "responded": false
+          },
+          {
+            "name": "Anant Singh",
+            "phone": "919967192044",
+            "responded": false
+          },
+          {
+            "name": "Ankur Sungandhi",
+            "phone": "919960934555",
+            "responded": false
+          },
+          {
+            "name": "Anubha Gupta",
+            "phone": "917683047658",
+            "responded": false
+          },
+          {
+            "name": "Kapil Agarwal",
+            "phone": "917506707010",
+            "responded": false
+          },
+          {
+            "name": "Neha Bharti",
+            "phone": "919123163416",
+            "responded": false
+          },
+          {
+            "name": "Pankaj",
+            "phone": "919820134382",
+            "responded": false
+          },
+          {
+            "name": "Prasad Dixit",
+            "phone": "919137434156",
+            "responded": false
+          },
+          {
+            "name": "Prasenjit Mitra",
+            "phone": "919819867099",
+            "responded": false
+          },
+          {
+            "name": "Ravi Jain",
+            "phone": "919920264985",
+            "responded": false
+          },
+          {
+            "name": "Saket",
+            "phone": "919930507211",
+            "responded": false
+          },
+          {
+            "name": "Sam .",
+            "phone": "919930050245",
+            "responded": false
+          },
+          {
+            "name": "Seth Rajiv",
+            "phone": "919650816000",
+            "responded": false
+          },
+          {
+            "name": "Shubhanshu",
+            "phone": "918558807153",
+            "responded": false
+          },
+          {
+            "name": "Sneha Budhia",
+            "phone": "919852340897",
+            "responded": false
+          },
+          {
+            "name": "sumit mathur",
+            "phone": "919022960962",
+            "responded": false
+          },
+          {
+            "name": "Vipul Soni",
+            "phone": "918940502402",
+            "responded": false
+          },
+          {
+            "name": "Yash Tiwari",
+            "phone": "919619325559",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "acba8884-4b69-4d31-9e10-67004681810a",
+        "sent_at": "2026-07-08T16:29:37+00:00",
+        "preview": "What kind of home are you eyeing? \ud83e\udde1",
+        "is_poll": true,
+        "total_recipients": 8,
+        "m_series_recipients": 8,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Anil Agarwal",
+            "phone": "918169952349",
+            "responded": false
+          },
+          {
+            "name": "anisha Panigrahi",
+            "phone": "918879440357",
+            "responded": false
+          },
+          {
+            "name": "Bhakti Mistry",
+            "phone": "919820912442",
+            "responded": false
+          },
+          {
+            "name": "Datta Sawant",
+            "phone": "919867740706",
+            "responded": false
+          },
+          {
+            "name": "Manoj Gupta",
+            "phone": "917045352354",
+            "responded": false
+          },
+          {
+            "name": "Shubhada",
+            "phone": "919870990454",
+            "responded": false
+          },
+          {
+            "name": "Vishal Lohire",
+            "phone": "919987646849",
+            "responded": false
+          },
+          {
+            "name": "Yash Tiwari",
+            "phone": "919619325559",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "05032e51-e65c-4339-9621-3d50384132e1",
+        "sent_at": "2026-07-08T16:24:56+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 8,
+        "m_series_recipients": 8,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Anil Agarwal",
+            "phone": "918169952349",
+            "responded": false
+          },
+          {
+            "name": "anisha Panigrahi",
+            "phone": "918879440357",
+            "responded": false
+          },
+          {
+            "name": "Bhakti Mistry",
+            "phone": "919820912442",
+            "responded": false
+          },
+          {
+            "name": "Datta Sawant",
+            "phone": "919867740706",
+            "responded": false
+          },
+          {
+            "name": "Manoj Gupta",
+            "phone": "917045352354",
+            "responded": false
+          },
+          {
+            "name": "Shubhada",
+            "phone": "919870990454",
+            "responded": false
+          },
+          {
+            "name": "Vishal Lohire",
+            "phone": "919987646849",
+            "responded": false
+          },
+          {
+            "name": "Yash Tiwari",
+            "phone": "919619325559",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "f0a348d9-c5f0-4d2d-ad6a-8e870cfd61a6",
+        "sent_at": "2026-07-07T17:46:23+00:00",
+        "preview": "What kind of home are you eyeing? \ud83e\udde1",
+        "is_poll": true,
+        "total_recipients": 15,
+        "m_series_recipients": 15,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": " \n \t\nVikrant Kamath",
+            "phone": "919594586510",
+            "responded": false
+          },
+          {
+            "name": "Arman",
+            "phone": "919330973837",
+            "responded": false
+          },
+          {
+            "name": "Ashish Chaturmohta",
+            "phone": "917738648833",
+            "responded": false
+          },
+          {
+            "name": "Deepak Harjani",
+            "phone": "919769535555",
+            "responded": false
+          },
+          {
+            "name": "Dharmesh OOT Loan",
+            "phone": "919004493570",
+            "responded": false
+          },
+          {
+            "name": "Dheeraj",
+            "phone": "919312413896",
+            "responded": false
+          },
+          {
+            "name": "Jinal Shah",
+            "phone": "919619364453",
+            "responded": false
+          },
+          {
+            "name": "Linus Menezes",
+            "phone": "919820050714",
+            "responded": false
+          },
+          {
+            "name": "Meenakshi Mediratta",
+            "phone": "919819197743",
+            "responded": false
+          },
+          {
+            "name": "Pradeep",
+            "phone": "919004900624",
+            "responded": false
+          },
+          {
+            "name": "Puneet",
+            "phone": "919986290086",
+            "responded": false
+          },
+          {
+            "name": "Rachana Dewan",
+            "phone": "919892950954",
+            "responded": false
+          },
+          {
+            "name": "Rana Vishal Singh",
+            "phone": "918050004430",
+            "responded": false
+          },
+          {
+            "name": "Samta Jain",
+            "phone": "919820314939",
+            "responded": false
+          },
+          {
+            "name": "Suhas Suryawanshi",
+            "phone": "919819412043",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "3728d458-4abc-4712-a2cc-d6058f89bb65",
+        "sent_at": "2026-07-07T17:01:01+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 6,
+        "m_series_recipients": 6,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": " \n \t\nVikrant Kamath",
+            "phone": "919594586510",
+            "responded": false
+          },
+          {
+            "name": "Arman",
+            "phone": "919330973837",
+            "responded": false
+          },
+          {
+            "name": "Ashish Chaturmohta",
+            "phone": "917738648833",
+            "responded": false
+          },
+          {
+            "name": "Deepak Harjani",
+            "phone": "919769535555",
+            "responded": false
+          },
+          {
+            "name": "Rana Vishal Singh",
+            "phone": "918050004430",
+            "responded": false
+          },
+          {
+            "name": "Suhas Suryawanshi",
+            "phone": "919819412043",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "fbfeb765-c8f1-442a-bf7b-7a2decc1082c",
+        "sent_at": "2026-07-06T14:44:11+00:00",
+        "preview": "Do you need a trusted legal advisor\u2049\ufe0f",
+        "is_poll": true,
+        "total_recipients": 18,
+        "m_series_recipients": 18,
+        "m_series_responded": 1,
+        "contacts": [
+          {
+            "name": "Sahiti P",
+            "phone": "917738544167",
+            "responded": true
+          },
+          {
+            "name": "Ajay Arora",
+            "phone": "919820608414",
+            "responded": false
+          },
+          {
+            "name": "Akshi Mahajan",
+            "phone": "917738527852",
+            "responded": false
+          },
+          {
+            "name": "Anirudhh Gambhir",
+            "phone": "919029511391",
+            "responded": false
+          },
+          {
+            "name": "Arun Singh",
+            "phone": "919821058985",
+            "responded": false
+          },
+          {
+            "name": "Dinesh Mhatre",
+            "phone": "917045454599",
+            "responded": false
+          },
+          {
+            "name": "Kamal Mittal",
+            "phone": "919930547263",
+            "responded": false
+          },
+          {
+            "name": "Mayur Srivastav",
+            "phone": "918800500769",
+            "responded": false
+          },
+          {
+            "name": "Nirmal Parikh",
+            "phone": "919892475142",
+            "responded": false
+          },
+          {
+            "name": "Radhika Mehta",
+            "phone": "917838389738",
+            "responded": false
+          },
+          {
+            "name": "Raj Bhavwat",
+            "phone": "919920858852",
+            "responded": false
+          },
+          {
+            "name": "Rajesh & Sunita Daga",
+            "phone": "919535522177",
+            "responded": false
+          },
+          {
+            "name": "Ramendr Tiwari",
+            "phone": "919930460188",
+            "responded": false
+          },
+          {
+            "name": "Sagar Mona",
+            "phone": "919952170506",
+            "responded": false
+          },
+          {
+            "name": "Shashi Bhushan",
+            "phone": "919971363200",
+            "responded": false
+          },
+          {
+            "name": "Sunil S Dayma",
+            "phone": "919324410856",
+            "responded": false
+          },
+          {
+            "name": "Vikash Gupta",
+            "phone": "919870479599",
+            "responded": false
+          },
+          {
+            "name": "Vivek",
+            "phone": "919920915156",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "9aedda2d-28e9-4899-a19d-8d3daf02fc22",
+        "sent_at": "2026-07-06T14:43:06+00:00",
+        "preview": "*Arriving today!*\nLegal tips for your dream home \ud83c\udfdb\ufe0f\n\nBefore you pay a token, ask your lawyer for:\n\n*\ud83d\udc49\u00a0 Title Clearance R",
+        "is_poll": false,
+        "total_recipients": 18,
+        "m_series_recipients": 18,
+        "m_series_responded": 1,
+        "contacts": [
+          {
+            "name": "Sahiti P",
+            "phone": "917738544167",
+            "responded": true
+          },
+          {
+            "name": "Ajay Arora",
+            "phone": "919820608414",
+            "responded": false
+          },
+          {
+            "name": "Akshi Mahajan",
+            "phone": "917738527852",
+            "responded": false
+          },
+          {
+            "name": "Anirudhh Gambhir",
+            "phone": "919029511391",
+            "responded": false
+          },
+          {
+            "name": "Arun Singh",
+            "phone": "919821058985",
+            "responded": false
+          },
+          {
+            "name": "Dinesh Mhatre",
+            "phone": "917045454599",
+            "responded": false
+          },
+          {
+            "name": "Kamal Mittal",
+            "phone": "919930547263",
+            "responded": false
+          },
+          {
+            "name": "Mayur Srivastav",
+            "phone": "918800500769",
+            "responded": false
+          },
+          {
+            "name": "Nirmal Parikh",
+            "phone": "919892475142",
+            "responded": false
+          },
+          {
+            "name": "Radhika Mehta",
+            "phone": "917838389738",
+            "responded": false
+          },
+          {
+            "name": "Raj Bhavwat",
+            "phone": "919920858852",
+            "responded": false
+          },
+          {
+            "name": "Rajesh & Sunita Daga",
+            "phone": "919535522177",
+            "responded": false
+          },
+          {
+            "name": "Ramendr Tiwari",
+            "phone": "919930460188",
+            "responded": false
+          },
+          {
+            "name": "Sagar Mona",
+            "phone": "919952170506",
+            "responded": false
+          },
+          {
+            "name": "Shashi Bhushan",
+            "phone": "919971363200",
+            "responded": false
+          },
+          {
+            "name": "Sunil S Dayma",
+            "phone": "919324410856",
+            "responded": false
+          },
+          {
+            "name": "Vikash Gupta",
+            "phone": "919870479599",
+            "responded": false
+          },
+          {
+            "name": "Vivek",
+            "phone": "919920915156",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "eb45e6b3-1a93-4267-bed3-a8cf8763c961",
+        "sent_at": "2026-07-03T15:09:49+00:00",
+        "preview": "Do you need a trusted legal advisor\u2049\ufe0f",
+        "is_poll": true,
+        "total_recipients": 22,
+        "m_series_recipients": 22,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Abhishek Shah",
+            "phone": "917204786890",
+            "responded": false
+          },
+          {
+            "name": "Ananjan Choudhary",
+            "phone": "919930987633",
+            "responded": false
+          },
+          {
+            "name": "Ankit Bajaj",
+            "phone": "918861006677",
+            "responded": false
+          },
+          {
+            "name": "Arvind",
+            "phone": "919818134261",
+            "responded": false
+          },
+          {
+            "name": "Ashish Yadav",
+            "phone": "919867229942",
+            "responded": false
+          },
+          {
+            "name": "Bharat Nanavayi",
+            "phone": "919892049942",
+            "responded": false
+          },
+          {
+            "name": "Bjorn Dsouza",
+            "phone": "919820363644",
+            "responded": false
+          },
+          {
+            "name": "Chintan Jani",
+            "phone": "918511137384",
+            "responded": false
+          },
+          {
+            "name": "Javed Choudhary",
+            "phone": "919967391117",
+            "responded": false
+          },
+          {
+            "name": "Kajal kedia / Saurabh Agarwal",
+            "phone": "919844681243",
+            "responded": false
+          },
+          {
+            "name": "Megha",
+            "phone": "919314663996",
+            "responded": false
+          },
+          {
+            "name": "Rahul Oza",
+            "phone": "919920536111",
+            "responded": false
+          },
+          {
+            "name": "Rushikesh",
+            "phone": "919028502679",
+            "responded": false
+          },
+          {
+            "name": "Sagar Mhetre",
+            "phone": "918793604721",
+            "responded": false
+          },
+          {
+            "name": "Saloni",
+            "phone": "919158578801",
+            "responded": false
+          },
+          {
+            "name": "Selvi Jay",
+            "phone": "919920315969",
+            "responded": false
+          },
+          {
+            "name": "Shajit Nair",
+            "phone": "919821333289",
+            "responded": false
+          },
+          {
+            "name": "Tarachand Devgan",
+            "phone": "919920433892",
+            "responded": false
+          },
+          {
+            "name": "Umed Shaikh",
+            "phone": "919890183180",
+            "responded": false
+          },
+          {
+            "name": "Vineeta Singh",
+            "phone": "918727045999",
+            "responded": false
+          },
+          {
+            "name": "Vinod Dongre",
+            "phone": "917666037888",
+            "responded": false
+          },
+          {
+            "name": "Vipul",
+            "phone": "919821081442",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "79d3b628-c62b-477e-bcb9-315b0723cde3",
+        "sent_at": "2026-07-03T15:07:54+00:00",
+        "preview": "*Arriving today!*\nLegal tips for your dream home \ud83c\udfdb\ufe0f\n\nBefore you pay a token, ask your lawyer for:\n\n*\ud83d\udc49\u00a0 Title Clearance R",
+        "is_poll": false,
+        "total_recipients": 22,
+        "m_series_recipients": 22,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Abhishek Shah",
+            "phone": "917204786890",
+            "responded": false
+          },
+          {
+            "name": "Ananjan Choudhary",
+            "phone": "919930987633",
+            "responded": false
+          },
+          {
+            "name": "Ankit Bajaj",
+            "phone": "918861006677",
+            "responded": false
+          },
+          {
+            "name": "Arvind",
+            "phone": "919818134261",
+            "responded": false
+          },
+          {
+            "name": "Ashish Yadav",
+            "phone": "919867229942",
+            "responded": false
+          },
+          {
+            "name": "Bharat Nanavayi",
+            "phone": "919892049942",
+            "responded": false
+          },
+          {
+            "name": "Bjorn Dsouza",
+            "phone": "919820363644",
+            "responded": false
+          },
+          {
+            "name": "Chintan Jani",
+            "phone": "918511137384",
+            "responded": false
+          },
+          {
+            "name": "Javed Choudhary",
+            "phone": "919967391117",
+            "responded": false
+          },
+          {
+            "name": "Kajal kedia / Saurabh Agarwal",
+            "phone": "919844681243",
+            "responded": false
+          },
+          {
+            "name": "Megha",
+            "phone": "919314663996",
+            "responded": false
+          },
+          {
+            "name": "Rahul Oza",
+            "phone": "919920536111",
+            "responded": false
+          },
+          {
+            "name": "Rushikesh",
+            "phone": "919028502679",
+            "responded": false
+          },
+          {
+            "name": "Sagar Mhetre",
+            "phone": "918793604721",
+            "responded": false
+          },
+          {
+            "name": "Saloni",
+            "phone": "919158578801",
+            "responded": false
+          },
+          {
+            "name": "Selvi Jay",
+            "phone": "919920315969",
+            "responded": false
+          },
+          {
+            "name": "Shajit Nair",
+            "phone": "919821333289",
+            "responded": false
+          },
+          {
+            "name": "Tarachand Devgan",
+            "phone": "919920433892",
+            "responded": false
+          },
+          {
+            "name": "Umed Shaikh",
+            "phone": "919890183180",
+            "responded": false
+          },
+          {
+            "name": "Vineeta Singh",
+            "phone": "918727045999",
+            "responded": false
+          },
+          {
+            "name": "Vinod Dongre",
+            "phone": "917666037888",
+            "responded": false
+          },
+          {
+            "name": "Vipul",
+            "phone": "919821081442",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "144a5b11-ba9b-4143-8d65-24931ab93f8b",
+        "sent_at": "2026-07-03T09:03:28+00:00",
+        "preview": "What kind of home are you eyeing? \ud83e\udde1",
+        "is_poll": true,
+        "total_recipients": 12,
+        "m_series_recipients": 12,
+        "m_series_responded": 1,
+        "contacts": [
+          {
+            "name": "Anu",
+            "phone": "918376957781",
+            "responded": true
+          },
+          {
+            "name": "Anubha Gupta",
+            "phone": "917683047658",
+            "responded": false
+          },
+          {
+            "name": "Ignatius Barretto",
+            "phone": "919833813561",
+            "responded": false
+          },
+          {
+            "name": "Kuldeep Rathore",
+            "phone": "917718834010",
+            "responded": false
+          },
+          {
+            "name": "Nitesh Kalantri",
+            "phone": "917045955107",
+            "responded": false
+          },
+          {
+            "name": "Prasad Dixit",
+            "phone": "919137434156",
+            "responded": false
+          },
+          {
+            "name": "Ravi Jain",
+            "phone": "919920264985",
+            "responded": false
+          },
+          {
+            "name": "Ritesh Mittal",
+            "phone": "919696029020",
+            "responded": false
+          },
+          {
+            "name": "Sam .",
+            "phone": "919930050245",
+            "responded": false
+          },
+          {
+            "name": "Shrikant Maurya",
+            "phone": "919819299611",
+            "responded": false
+          },
+          {
+            "name": "Shubhanshu",
+            "phone": "918558807153",
+            "responded": false
+          },
+          {
+            "name": "Taruna & Ankur Vats",
+            "phone": "919899575226",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "256177d8-c6d0-41de-920b-9abc634d85f6",
+        "sent_at": "2026-07-03T06:55:14+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 7,
+        "m_series_recipients": 7,
+        "m_series_responded": 1,
+        "contacts": [
+          {
+            "name": "Anu",
+            "phone": "918376957781",
+            "responded": true
+          },
+          {
+            "name": "Prasad Dixit",
+            "phone": "919137434156",
+            "responded": false
+          },
+          {
+            "name": "Ravi Jain",
+            "phone": "919920264985",
+            "responded": false
+          },
+          {
+            "name": "Ritesh Mittal",
+            "phone": "919696029020",
+            "responded": false
+          },
+          {
+            "name": "Sam .",
+            "phone": "919930050245",
+            "responded": false
+          },
+          {
+            "name": "Shrikant Maurya",
+            "phone": "919819299611",
+            "responded": false
+          },
+          {
+            "name": "Taruna & Ankur Vats",
+            "phone": "919899575226",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "59ef0952-bf19-4f9b-a984-7eceb890a411",
+        "sent_at": "2026-07-02T06:45:26+00:00",
+        "preview": "What kind of home are you eyeing? \ud83e\udde1",
+        "is_poll": true,
+        "total_recipients": 13,
+        "m_series_recipients": 13,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Abhishek D",
+            "phone": "919833970011",
+            "responded": false
+          },
+          {
+            "name": "Amitava Chatterjee",
+            "phone": "919619906071",
+            "responded": false
+          },
+          {
+            "name": "Arvind",
+            "phone": "919818134261",
+            "responded": false
+          },
+          {
+            "name": "Javed Choudhary",
+            "phone": "919967391117",
+            "responded": false
+          },
+          {
+            "name": "Kapil Agarwal",
+            "phone": "917506707010",
+            "responded": false
+          },
+          {
+            "name": "Manisha Prasad",
+            "phone": "919953454481",
+            "responded": false
+          },
+          {
+            "name": "Neha Bharti",
+            "phone": "919123163416",
+            "responded": false
+          },
+          {
+            "name": "Pankaj",
+            "phone": "919820134382",
+            "responded": false
+          },
+          {
+            "name": "Prasenjit Mitra",
+            "phone": "919819867099",
+            "responded": false
+          },
+          {
+            "name": "Saket",
+            "phone": "919930507211",
+            "responded": false
+          },
+          {
+            "name": "Seth Rajiv",
+            "phone": "919650816000",
+            "responded": false
+          },
+          {
+            "name": "Umed Shaikh",
+            "phone": "919890183180",
+            "responded": false
+          },
+          {
+            "name": "Yash Tiwari",
+            "phone": "919619325559",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "b417df8e-793d-4fd7-b112-0fadda1a51d4",
+        "sent_at": "2026-07-02T06:22:30+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 7,
+        "m_series_recipients": 7,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Amitava Chatterjee",
+            "phone": "919619906071",
+            "responded": false
+          },
+          {
+            "name": "Arun Singh",
+            "phone": "919821058985",
+            "responded": false
+          },
+          {
+            "name": "Arvind",
+            "phone": "919818134261",
+            "responded": false
+          },
+          {
+            "name": "Kapil Agarwal",
+            "phone": "917506707010",
+            "responded": false
+          },
+          {
+            "name": "Manisha Prasad",
+            "phone": "919953454481",
+            "responded": false
+          },
+          {
+            "name": "Pankaj",
+            "phone": "919820134382",
+            "responded": false
+          },
+          {
+            "name": "Yash Tiwari",
+            "phone": "919619325559",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "090c751e-ecba-4c31-a960-09fed47398b6",
+        "sent_at": "2026-06-30T08:30:39+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 7,
+        "m_series_recipients": 7,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Aaron Mathew",
+            "phone": "919920080368",
+            "responded": false
+          },
+          {
+            "name": "Amar",
+            "phone": "919920488488",
+            "responded": false
+          },
+          {
+            "name": "Deepesh Bharani",
+            "phone": "919930376354",
+            "responded": false
+          },
+          {
+            "name": "Kajal kedia / Saurabh Agarwal",
+            "phone": "919844681243",
+            "responded": false
+          },
+          {
+            "name": "Sandip Bhagyawant",
+            "phone": "919892115882",
+            "responded": false
+          },
+          {
+            "name": "Shashi Bhushan",
+            "phone": "919971363200",
+            "responded": false
+          },
+          {
+            "name": "sumit mathur",
+            "phone": "919022960962",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "35a5fd8a-8fd4-44dd-8140-37448955cb63",
+        "sent_at": "2026-06-30T07:44:03+00:00",
+        "preview": "What kind of home are you eyeing? \ud83e\udde1",
+        "is_poll": true,
+        "total_recipients": 8,
+        "m_series_recipients": 8,
+        "m_series_responded": 1,
+        "contacts": [
+          {
+            "name": "Sahiti P",
+            "phone": "917738544167",
+            "responded": true
+          },
+          {
+            "name": "Akshi Mahajan",
+            "phone": "917738527852",
+            "responded": false
+          },
+          {
+            "name": "Anant Singh",
+            "phone": "919967192044",
+            "responded": false
+          },
+          {
+            "name": "Kamal Mittal",
+            "phone": "919930547263",
+            "responded": false
+          },
+          {
+            "name": "Mayur Srivastav",
+            "phone": "918800500769",
+            "responded": false
+          },
+          {
+            "name": "Rajesh & Sunita Daga",
+            "phone": "919535522177",
+            "responded": false
+          },
+          {
+            "name": "Sneha Budhia",
+            "phone": "919852340897",
+            "responded": false
+          },
+          {
+            "name": "Vipul Soni",
+            "phone": "918940502402",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "3601e384-9974-4c41-bb8f-59bdd9113199",
+        "sent_at": "2026-06-30T07:37:22+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 8,
+        "m_series_recipients": 8,
+        "m_series_responded": 1,
+        "contacts": [
+          {
+            "name": "Sahiti P",
+            "phone": "917738544167",
+            "responded": true
+          },
+          {
+            "name": "Akshi Mahajan",
+            "phone": "917738527852",
+            "responded": false
+          },
+          {
+            "name": "Anant Singh",
+            "phone": "919967192044",
+            "responded": false
+          },
+          {
+            "name": "Kamal Mittal",
+            "phone": "919930547263",
+            "responded": false
+          },
+          {
+            "name": "Mayur Srivastav",
+            "phone": "918800500769",
+            "responded": false
+          },
+          {
+            "name": "Rajesh & Sunita Daga",
+            "phone": "919535522177",
+            "responded": false
+          },
+          {
+            "name": "Sneha Budhia",
+            "phone": "919852340897",
+            "responded": false
+          },
+          {
+            "name": "Vipul Soni",
+            "phone": "918940502402",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "d33f36c4-c8f7-4d82-a2b2-0df5b55a537d",
+        "sent_at": "2026-06-27T11:14:03+00:00",
+        "preview": "What kind of home are you eyeing? \ud83e\udde1",
+        "is_poll": true,
+        "total_recipients": 6,
+        "m_series_recipients": 6,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Abhishek Shah",
+            "phone": "917204786890",
+            "responded": false
+          },
+          {
+            "name": "Ankur Sungandhi",
+            "phone": "919960934555",
+            "responded": false
+          },
+          {
+            "name": "Nirmal Parikh",
+            "phone": "919892475142",
+            "responded": false
+          },
+          {
+            "name": "Radhika Mehta",
+            "phone": "917838389738",
+            "responded": false
+          },
+          {
+            "name": "Sagar Mona",
+            "phone": "919952170506",
+            "responded": false
+          },
+          {
+            "name": "Sunil S Dayma",
+            "phone": "919324410856",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "0f556a58-a04f-4df8-91ee-20b1a5065bdf",
+        "sent_at": "2026-06-27T06:32:39+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 4,
+        "m_series_recipients": 4,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Nirmal Parikh",
+            "phone": "919892475142",
+            "responded": false
+          },
+          {
+            "name": "Radhika Mehta",
+            "phone": "917838389738",
+            "responded": false
+          },
+          {
+            "name": "Sagar Mhetre",
+            "phone": "918793604721",
+            "responded": false
+          },
+          {
+            "name": "Sunil S Dayma",
+            "phone": "919324410856",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "4033462b-695b-4be3-9c62-acdc4eb77699",
+        "sent_at": "2026-06-26T07:40:20+00:00",
+        "preview": "What kind of home are you eyeing? \ud83e\udde1",
+        "is_poll": true,
+        "total_recipients": 6,
+        "m_series_recipients": 6,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Ashish Yadav",
+            "phone": "919867229942",
+            "responded": false
+          },
+          {
+            "name": "Chintan Jani",
+            "phone": "918511137384",
+            "responded": false
+          },
+          {
+            "name": "Megha",
+            "phone": "919314663996",
+            "responded": false
+          },
+          {
+            "name": "Tarachand Devgan",
+            "phone": "919920433892",
+            "responded": false
+          },
+          {
+            "name": "Vinod Dongre",
+            "phone": "917666037888",
+            "responded": false
+          },
+          {
+            "name": "Vipul",
+            "phone": "919821081442",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "6ee22094-851e-4236-a36d-9e2994db4864",
+        "sent_at": "2026-06-25T13:39:29+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 1,
+        "m_series_recipients": 1,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Ashish Yadav",
+            "phone": "919867229942",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "7dce57f6-6d20-442a-baf8-2a6c0c91a92d",
+        "sent_at": "2026-06-24T15:10:55+00:00",
+        "preview": "What kind of home are you eyeing? \ud83e\udde1",
+        "is_poll": true,
+        "total_recipients": 10,
+        "m_series_recipients": 10,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Ananjan Choudhary",
+            "phone": "919930987633",
+            "responded": false
+          },
+          {
+            "name": "Ankit Bajaj",
+            "phone": "918861006677",
+            "responded": false
+          },
+          {
+            "name": "Bharat Nanavayi",
+            "phone": "919892049942",
+            "responded": false
+          },
+          {
+            "name": "Bjorn Dsouza",
+            "phone": "919820363644",
+            "responded": false
+          },
+          {
+            "name": "Rahul Oza",
+            "phone": "919920536111",
+            "responded": false
+          },
+          {
+            "name": "Rushikesh",
+            "phone": "919028502679",
+            "responded": false
+          },
+          {
+            "name": "Saloni",
+            "phone": "919158578801",
+            "responded": false
+          },
+          {
+            "name": "Selvi Jay",
+            "phone": "919920315969",
+            "responded": false
+          },
+          {
+            "name": "Shajit Nair",
+            "phone": "919821333289",
+            "responded": false
+          },
+          {
+            "name": "Vineeta Singh",
+            "phone": "918727045999",
+            "responded": false
+          }
+        ]
+      },
+      {
+        "broadcast_id": "9ef4f174-052b-43f4-9259-0cbb1add16ea",
+        "sent_at": "2026-06-24T15:08:58+00:00",
+        "preview": "Arriving today! \nTips on purchasing your home \ud83d\ude80\n\n*\ud83d\udc49 Always check the builder's profile on RERA before buying \ud83d\udcdd*\n> You'll",
+        "is_poll": false,
+        "total_recipients": 10,
+        "m_series_recipients": 10,
+        "m_series_responded": 0,
+        "contacts": [
+          {
+            "name": "Ananjan Choudhary",
+            "phone": "919930987633",
+            "responded": false
+          },
+          {
+            "name": "Ankit Bajaj",
+            "phone": "918861006677",
+            "responded": false
+          },
+          {
+            "name": "Bharat Nanavayi",
+            "phone": "919892049942",
+            "responded": false
+          },
+          {
+            "name": "Bjorn Dsouza",
+            "phone": "919820363644",
+            "responded": false
+          },
+          {
+            "name": "Rahul Oza",
+            "phone": "919920536111",
+            "responded": false
+          },
+          {
+            "name": "Rushikesh",
+            "phone": "919028502679",
+            "responded": false
+          },
+          {
+            "name": "Saloni",
+            "phone": "919158578801",
+            "responded": false
+          },
+          {
+            "name": "Selvi Jay",
+            "phone": "919920315969",
+            "responded": false
+          },
+          {
+            "name": "Shajit Nair",
+            "phone": "919821333289",
+            "responded": false
+          },
+          {
+            "name": "Vineeta Singh",
+            "phone": "918727045999",
+            "responded": false
+          }
+        ]
+      }
+    ],
+    "generated_at": "2026-07-23T08:11:55.566066Z"
   }
 }
