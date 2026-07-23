@@ -49,21 +49,29 @@ SETUP REQUIRED BEFORE THIS WORKS:
 
 AIRTABLE SYNC CHECK (optional): if AIRTABLE_TOKEN is set (GitHub secret —
 a Personal Access Token with read access to the "Home Loans CRM" base), this
-script also cross-checks the full Airtable Leads table (every record, same
-as Grid View — not scoped to any particular saved view) against Periskope:
-* Leads present in Airtable but with no matching Periskope contact at all.
-* Periskope contacts labeled "Home Loans" with no matching Airtable Lead.
+script also cross-checks Airtable's "Periskop View" (of the Leads table)
+against Periskope — deliberately scoped to that curated view, not the whole
+table, per explicit request: the aim is "are all the contacts in Periskop
+View actually reflected in Periskope", so anything outside that view isn't
+in scope for this particular check:
+* Leads present in Airtable (Periskop View) but with no matching Periskope contact at all.
+* Periskope contacts labeled "Home Loans" with no matching lead in that view.
 * Leads whose Airtable Status (Active Warm / Still Looking / Future Plan /
-  Registration Complete — these four map 1:1 to Periskope label names) says
-  one thing while the matching Periskope contact's labels say another.
+  Registration Complete / Not Qualified / MOU Signed) says one thing while
+  the matching Periskope contact's labels say another.
 Matching is by phone number, normalized to the last 10 digits. If
 AIRTABLE_TOKEN isn't set, this section is skipped entirely (data.json simply
 won't have an "airtable_sync" key) — everything else still runs normally.
+Contacts by Source and Lead Warmth (below) intentionally use the FULL Leads
+table instead, not Periskop View — see their own notes for why.
 
 CONTACTS BY SOURCE (optional, also gated on AIRTABLE_TOKEN): Periskope's
 contact object has no "lead source" field at all — the only place that data
-lives is the "Lead Source" column in the same Airtable Leads table. So
-for every Periskope contact carrying the "Home Loans" label, this looks up
+lives is the "Lead Source" column in the full Airtable Leads table (same set
+as Grid View — not scoped to Periskop View, unlike the sync check above, so
+a contact genuinely in Airtable is never miscounted as "Not in Airtable"
+just because it's outside that one curated view). So for every Periskope
+contact carrying the "Home Loans" label, this looks up
 its matching Airtable lead (by phone, same join as above) and buckets it by
 Lead Source. Contacts with no Airtable match are bucketed as "Not in
 Airtable"; matched contacts with no Lead Source value set are bucketed as
@@ -105,12 +113,14 @@ PHONE_OVERRIDE = os.environ.get("PERISKOPE_PHONE")
 AIRTABLE_TOKEN = os.environ.get("AIRTABLE_TOKEN")
 AIRTABLE_BASE_ID = "appfpELkqjpJ0wfZ2"  # Home Loans CRM (not secret, just an ID)
 AIRTABLE_LEADS_TABLE_ID = "tbl8UiIyUJHN1lTz5"  # Leads
-AIRTABLE_LEADS_VIEW_ID = "viwHccNSyjXILuRfU"  # "Periskop View" — NOT used for the
-# discrepancy/presence checks below anymore. Scoping to this view (258 records)
-# caused real leads that exist in the full Leads table (498 records, same as
-# what you see in Grid View) to incorrectly show up as "Not in Airtable" — the
-# sanity-check needs the whole table, not a filtered subset. Kept here in case
-# a future feature wants to scope to this view specifically.
+AIRTABLE_LEADS_VIEW_ID = "viwHccNSyjXILuRfU"  # "Periskop View" (258 records, vs.
+# 498 in the full Leads table / Grid View). Used ONLY for the Sync checks
+# table on airtable-sync.html, per explicit request — that page's whole
+# purpose is "are all the contacts in Periskop View reflected in Periskope",
+# so this view is genuinely the intended scope there, not a bug. Contacts by
+# Source and Lead Warmth deliberately do NOT use this — they use the full
+# table instead, so a lead sitting outside Periskop View is never
+# miscounted as "not in Airtable at all" on those two.
 
 # BULK MESSAGE RESPONSE TRACKING (uses PERISKOPE_API_KEY only, no new secret
 # needed): how many days back to scan /chats/messages for broadcast sends and
@@ -340,15 +350,21 @@ def airtable_get(path, params=None):
         sys.exit(f"ERROR: {e.code} {e.reason} calling {url}\n{body}")
 
 
-def fetch_airtable_leads():
-    """Paginate through every record in the full Leads table — the same set
-    you'd see in Grid View — (Airtable's REST API caps pageSize at 100, unlike
-    Periskope's 2000). No `view` filter is applied on purpose: see the
-    AIRTABLE_LEADS_VIEW_ID comment above for why."""
+def fetch_airtable_leads(view_id=None):
+    """Paginate through every record in the Leads table (Airtable's REST API
+    caps pageSize at 100, unlike Periskope's 2000). Pass view_id=None for the
+    full table (same set you'd see in Grid View — used for Contacts by Source
+    and Lead Warmth), or view_id=AIRTABLE_LEADS_VIEW_ID to scope to "Periskop
+    View" (used only for the Sync checks table, per explicit request — that
+    view is the deliberately curated list of leads that should be in
+    Periskope, so anything outside it correctly shows as a discrepancy
+    there)."""
     records = []
     offset = None
     while True:
         params = {"pageSize": 100}
+        if view_id:
+            params["view"] = view_id
         if offset:
             params["offset"] = offset
         data = airtable_get(f"/{AIRTABLE_BASE_ID}/{AIRTABLE_LEADS_TABLE_ID}", params)
@@ -374,7 +390,7 @@ def fetch_airtable_leads():
 
 
 def build_airtable_sync(contacts, leads):
-    """Cross-check the full Airtable Leads table against Periskope contacts by
+    """Cross-check Airtable's "Periskop View" against Periskope contacts by
     phone number. See module docstring for exactly what's compared and why."""
     periskope_by_phone = {}
     for c in contacts:
@@ -730,20 +746,22 @@ def main():
 
     leads = None
     if AIRTABLE_TOKEN:
-        print("AIRTABLE_TOKEN set — fetching full Airtable Leads table...")
-        leads = fetch_airtable_leads()
+        print("AIRTABLE_TOKEN set — fetching Airtable Leads (Periskop View + full table)...")
+        leads_periskop_view = fetch_airtable_leads(view_id=AIRTABLE_LEADS_VIEW_ID)
+        leads = fetch_airtable_leads()  # full table, used for Contacts by Source + Lead Warmth
 
-        dataset["airtable_sync"] = build_airtable_sync(contacts, leads)
+        dataset["airtable_sync"] = build_airtable_sync(contacts, leads_periskop_view)
         sync = dataset["airtable_sync"]
-        print(f"Airtable sync: {sync['leads_total']} leads, {sync['matched']} matched, "
+        print(f"Airtable sync (Periskop View, {len(leads_periskop_view)} leads): "
+              f"{sync['leads_total']} leads, {sync['matched']} matched, "
               f"{len(sync['in_airtable_not_periskope'])} in Airtable only, "
               f"{len(sync['in_periskope_home_loans_not_airtable'])} in Periskope only, "
               f"{len(sync['status_label_mismatches'])} status/label mismatches.")
 
         dataset["contacts_by_source"] = build_contacts_by_source(contacts, leads)
         src = dataset["contacts_by_source"]
-        print(f"Contacts by source: {src['total']} Home Loans contact(s) across "
-              f"{len(src['source_counts'])} source bucket(s): {src['source_counts']}")
+        print(f"Contacts by source (full table, {len(leads)} leads): {src['total']} Home Loans "
+              f"contact(s) across {len(src['source_counts'])} source bucket(s): {src['source_counts']}")
     else:
         print("AIRTABLE_TOKEN not set — skipping Airtable sync check and contacts-by-source "
               "(data.json will have no 'airtable_sync' or 'contacts_by_source' key). Add the "

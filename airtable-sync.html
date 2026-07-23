@@ -214,7 +214,7 @@
     <div class="header-text">
       <div class="eyebrow">Truva Home Loans · Periskope Pipeline</div>
       <h1>Airtable Sync</h1>
-      <div class="sub">Cross-checking the full Home Loans CRM Leads table against Periskope contact labels, matched by phone number — a sanity check for where the two systems disagree.</div>
+      <div class="sub">Cross-checking the Home Loans CRM "Periskop View" against Periskope contact labels, matched by phone number — a sanity check for where the two systems disagree.</div>
       <div class="refresh-note">–</div>
     </div>
     <img src="logo.png" alt="Truva" class="logo" onerror="this.style.display='none'">
@@ -334,7 +334,7 @@ async function loadDashboard() {
     footnote.textContent = '';
   } else {
     const rows = [
-      ['Total leads in Airtable (Home Loans CRM → Leads table)', sync.leads_total, null],
+      ['Total leads in Airtable (Home Loans CRM → Periskop View)', sync.leads_total, null],
       ['Leads with no phone number on file', sync.leads_missing_phone, null],
       ['Matched to a Periskope contact', sync.matched, null],
       ['In Airtable, no matching Periskope contact', sync.in_airtable_not_periskope.length, 'in_airtable_not_periskope'],
