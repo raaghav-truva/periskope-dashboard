@@ -243,6 +243,13 @@
   </table>
   <div class="footnote">Each contact's "day marked" is recorded permanently the first time it's seen — durable across runs, not recomputed from each contact's last-updated timestamp. The earliest day(s) shown are a one-time backfill estimate from that timestamp (before this tracking started) and may be less precise. Click any non-zero number to see who was marked that day.</div>
 
+  <h2><span class="idx">04</span> Bulk message responses</h2>
+  <table>
+    <thead><tr><th>Broadcast</th><th>Sent</th><th class="num">M-series recipients</th><th class="num">Responded</th></tr></thead>
+    <tbody id="broadcast-table"></tbody>
+  </table>
+  <div class="footnote" id="broadcast-footnote"></div>
+
 </div>
 
 <div class="modal-overlay" id="modal-overlay">
@@ -309,6 +316,12 @@ const LABEL_TITLES = { m0: 'M0', m1: 'M1', m2: 'M2' };
 function openDayModal(label, date) {
   const contacts = (((data && data.daily_contacts) || {})[label] || {})[date];
   renderModal(`${LABEL_TITLES[label] || label} marked — ${date}`, contacts, 'Contact list not available yet — it will appear after the next data refresh.');
+}
+function openBroadcastModal(broadcastId, title) {
+  const list = ((data && data.broadcast_responses && data.broadcast_responses.broadcasts) || []);
+  const b = list.find(x => x.broadcast_id === broadcastId);
+  const contacts = b ? b.contacts.map(c => ({ name: c.name, phone: c.phone, detail: c.responded ? 'Responded' : 'No response yet' })) : [];
+  renderModal(title, contacts, 'Contact list not available yet — it will appear after the next data refresh.');
 }
 function closeModal() { overlay.classList.remove('open'); }
 document.getElementById('modal-close').addEventListener('click', closeModal);
@@ -395,6 +408,29 @@ async function loadDashboard() {
   });
   if (allDates.length === 0) {
     dailyTbody.innerHTML = '<tr><td colspan="5" style="color:var(--muted);text-align:center;">No daily history yet — appears after the workflow has run at least once.</td></tr>';
+  }
+
+  const bcTbody = document.getElementById('broadcast-table');
+  const bcFootnote = document.getElementById('broadcast-footnote');
+  bcTbody.innerHTML = '';
+  const br = data.broadcast_responses;
+  if (!br || !br.broadcasts || br.broadcasts.length === 0) {
+    bcTbody.innerHTML = '<tr><td colspan="4" style="color:var(--muted);text-align:center;">No broadcasts reaching M0/M1/M2-labeled contacts in the tracked window yet.</td></tr>';
+    bcFootnote.textContent = '';
+  } else {
+    br.broadcasts.forEach(b => {
+      const tr = document.createElement('tr');
+      const sentDate = b.sent_at ? new Date(b.sent_at).toLocaleString() : '–';
+      const safePreview = escapeHtml(b.preview || '(no preview)');
+      const jsPreview = safePreview.replace(/'/g, "\\'");
+      const recipCell = `<td class="num clickable" onclick="openBroadcastModal('${b.broadcast_id}','${jsPreview}')">${b.m_series_recipients}</td>`;
+      const respondedCell = b.m_series_responded > 0
+        ? `<td class="num clickable" onclick="openBroadcastModal('${b.broadcast_id}','${jsPreview}')">${b.m_series_responded}</td>`
+        : `<td class="num zero">0</td>`;
+      tr.innerHTML = `<td>${safePreview}${b.is_poll ? ' <span class="cdetail">(poll)</span>' : ''}</td><td>${sentDate}</td>${recipCell}${respondedCell}`;
+      bcTbody.appendChild(tr);
+    });
+    bcFootnote.textContent = `Tracking the last ${br.lookback_days} day(s) of broadcasts. Only recipients currently carrying an M0, M1, or M2 label are counted; "Responded" means the contact sent any message back afterward, with no time limit. Last checked ${new Date(br.generated_at).toLocaleString()}.`;
   }
 }
 

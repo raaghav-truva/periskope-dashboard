@@ -296,6 +296,10 @@
   <h2><span class="idx">01</span> Contacts by label</h2>
   <div class="grid-labels" id="label-grid"></div>
 
+  <h2><span class="idx">02</span> Contacts by source</h2>
+  <div class="grid-labels" id="source-grid"></div>
+  <div class="footnote" id="source-footnote"></div>
+
 </div>
 
 <div class="modal-overlay" id="modal-overlay">
@@ -362,6 +366,10 @@ function openSegmentModal(key, title) {
   const contacts = ((data && data.segment_contacts) || {})[key];
   renderModal(title, contacts, 'Contact list not available yet — it will appear after the next data refresh.');
 }
+function openSourceModal(name) {
+  const contacts = ((data && data.contacts_by_source && data.contacts_by_source.source_contacts) || {})[name];
+  renderModal('Source: ' + name, contacts, 'Contact list not available yet — it will appear after the next data refresh.');
+}
 function closeModal() { overlay.classList.remove('open'); }
 document.getElementById('modal-close').addEventListener('click', closeModal);
 overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
@@ -395,6 +403,24 @@ async function loadDashboard() {
     card.addEventListener('click', () => openModal(name));
     grid.appendChild(card);
   });
+
+  const sourceGrid = document.getElementById('source-grid');
+  const sourceFootnote = document.getElementById('source-footnote');
+  sourceGrid.innerHTML = '';
+  if (!data.contacts_by_source) {
+    sourceGrid.innerHTML = '<div class="modal-empty" style="grid-column:1/-1;">Not connected yet — add the AIRTABLE_TOKEN secret and re-run the workflow to enable this.</div>';
+    sourceFootnote.textContent = '';
+  } else {
+    const src = data.contacts_by_source;
+    Object.entries(src.source_counts).forEach(([name, count]) => {
+      const card = document.createElement('div');
+      card.className = 'label-card' + (count === 0 ? ' zero' : '');
+      card.innerHTML = `<div class="bar"></div><div class="name">${escapeHtml(name)}</div><div class="count">${count}</div>`;
+      card.addEventListener('click', () => openSourceModal(name));
+      sourceGrid.appendChild(card);
+    });
+    sourceFootnote.textContent = `${src.total} Home Loans contact(s) total, cross-matched to Airtable's Lead Source field by phone number. Last checked ${new Date(src.generated_at).toLocaleString()}.`;
+  }
 }
 
 loadDashboard();

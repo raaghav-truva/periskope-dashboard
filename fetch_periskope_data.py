@@ -59,12 +59,38 @@ against Periskope:
 Matching is by phone number, normalized to the last 10 digits. If
 AIRTABLE_TOKEN isn't set, this section is skipped entirely (data.json simply
 won't have an "airtable_sync" key) — everything else still runs normally.
+
+CONTACTS BY SOURCE (optional, also gated on AIRTABLE_TOKEN): Periskope's
+contact object has no "lead source" field at all — the only place that data
+lives is the "Lead Source" column in the same Airtable "Periskop View". So
+for every Periskope contact carrying the "Home Loans" label, this looks up
+its matching Airtable lead (by phone, same join as above) and buckets it by
+Lead Source. Contacts with no Airtable match are bucketed as "Not in
+Airtable"; matched contacts with no Lead Source value set are bucketed as
+"In Airtable, no source set" — neither is silently dropped.
+
+BULK MESSAGE RESPONSE TRACKING (uses PERISKOPE_API_KEY only): pages through
+GET /chats/messages for the last BROADCAST_LOOKBACK_DAYS days to reconstruct
+which broadcast (bulk message / poll) campaigns were sent, and to whom.
+Periskope's message object carries a `broadcast_id` on every message that
+was part of a bulk send (confirmed against real data — note the `broadcast`
+boolean field is unreliable/null on these, so `broadcast_id is not None` is
+the actual signal to use). For each broadcast, recipients are narrowed down
+to only those contacts currently carrying an m0/m1/m2 label (per the user's
+request — these are the ones getting sent M-series content/polls), and a
+recipient counts as "responded" if that chat has any inbound message
+(`from_me: false`) after the broadcast was sent to them, with no time limit.
+This entire section is wrapped in a try/except in main() — if it errors out
+(e.g. a transient rate limit on a very active inbox), it's logged as a
+warning and skipped rather than failing the whole daily run, since the core
+contacts/labels dataset must always succeed.
 """
 
 import os
 import re
 import json
 import sys
+import time
 import datetime
 from collections import Counter
 import urllib.request
@@ -80,6 +106,16 @@ AIRTABLE_TOKEN = os.environ.get("AIRTABLE_TOKEN")
 AIRTABLE_BASE_ID = "appfpELkqjpJ0wfZ2"  # Home Loans CRM (not secret, just an ID)
 AIRTABLE_LEADS_TABLE_ID = "tbl8UiIyUJHN1lTz5"  # Leads
 AIRTABLE_LEADS_VIEW_ID = "viwHccNSyjXILuRfU"  # "Periskop View" (was: whole table / default view)
+
+# BULK MESSAGE RESPONSE TRACKING (uses PERISKOPE_API_KEY only, no new secret
+# needed): how many days back to scan /chats/messages for broadcast sends and
+# replies. Kept modest by default since this pages through every message (not
+# just contacts) in the window — override via the BROADCAST_LOOKBACK_DAYS
+# secret/variable if you want a longer backfill. MAX_MESSAGE_PAGES is a safety
+# valve (2000 messages/page) so a very high-volume inbox can't blow up the
+# daily job's runtime.
+BROADCAST_LOOKBACK_DAYS = int(os.environ.get("BROADCAST_LOOKBACK_DAYS", "30"))
+MAX_MESSAGE_PAGES = int(os.environ.get("MAX_MESSAGE_PAGES", "25"))
 
 # Airtable "Status" choices that map 1:1 onto a Periskope label name — used
 # for the sanity-check cross-reference. Statuses with no Periskope equivalent
@@ -300,10 +336,12 @@ def fetch_airtable_leads():
         for rec in data.get("records", []):
             fields = rec.get("fields", {})
             status_obj = fields.get("Status")
+            source_obj = fields.get("Lead Source")
             records.append({
                 "name": fields.get("Lead Name") or "Unknown",
                 "phone_raw": fields.get("Phone Number") or "",
                 "status": status_obj.get("name") if isinstance(status_obj, dict) else status_obj,
+                "source": source_obj.get("name") if isinstance(source_obj, dict) else source_obj,
             })
         offset = data.get("offset")
         if not offset:
@@ -311,11 +349,9 @@ def fetch_airtable_leads():
     return records
 
 
-def build_airtable_sync(contacts):
+def build_airtable_sync(contacts, leads):
     """Cross-check Airtable's "Periskop View" against Periskope contacts by
     phone number. See module docstring for exactly what's compared and why."""
-    leads = fetch_airtable_leads()
-
     periskope_by_phone = {}
     for c in contacts:
         phone10 = normalize_phone((c.get("contact_id") or "").split("@")[0])
@@ -375,6 +411,135 @@ def build_airtable_sync(contacts):
         "status_label_mismatches": status_label_mismatches,
         "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
     }
+
+
+def build_contacts_by_source(contacts, leads):
+    """For every Periskope contact carrying the "Home Loans" label, look up
+    which Airtable Lead Source it came from (matched by phone, same join as
+    build_airtable_sync). See module docstring for the bucketing rules for
+    unmatched contacts / leads with no source set."""
+    source_by_phone = {}
+    matched_phones = set()
+    for lead in leads:
+        phone10 = normalize_phone(lead["phone_raw"])
+        if not phone10:
+            continue
+        matched_phones.add(phone10)
+        if lead.get("source"):
+            source_by_phone.setdefault(phone10, lead["source"])
+
+    source_counts = Counter()
+    source_contacts = {}
+    home_loans_contacts = [c for c in contacts if has(c, "home loans")]
+    for c in home_loans_contacts:
+        phone10 = normalize_phone((c.get("contact_id") or "").split("@")[0])
+        if phone10 in source_by_phone:
+            source = source_by_phone[phone10]
+        elif phone10 in matched_phones:
+            source = "In Airtable, no source set"
+        else:
+            source = "Not in Airtable"
+        source_counts[source] += 1
+        source_contacts.setdefault(source, []).append(contact_name_phone(c))
+
+    for lst in source_contacts.values():
+        lst.sort(key=lambda c: c["name"].lower())
+
+    return {
+        "total": len(home_loans_contacts),
+        "source_counts": dict(sorted(source_counts.items(), key=lambda kv: -kv[1])),
+        "source_contacts": source_contacts,
+        "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
+    }
+
+
+def fetch_recent_messages(phone, days):
+    """Paginate through every message (sent + received, across all chats) in
+    the last `days` days — used to reconstruct which broadcasts went out and
+    check for replies. Capped at MAX_MESSAGE_PAGES pages (2000 messages/page)
+    as a safety valve against runaway cost on a very high-volume inbox."""
+    start_time = (datetime.datetime.utcnow() - datetime.timedelta(days=days)).strftime("%Y-%m-%d")
+    headers = {"x-phone": phone}
+    all_messages = []
+    offset = 0
+    limit = 2000
+    page = 0
+    while True:
+        data = api_get("/chats/messages", {"limit": limit, "offset": offset, "start_time": start_time}, headers)
+        batch = data.get("messages", [])
+        all_messages.extend(batch)
+        page += 1
+        if len(batch) < limit or page >= MAX_MESSAGE_PAGES:
+            if page >= MAX_MESSAGE_PAGES and len(batch) == limit:
+                print(f"WARNING: hit MAX_MESSAGE_PAGES ({MAX_MESSAGE_PAGES}) while fetching messages — "
+                      f"broadcast response data may be incomplete for the full {days}-day window.")
+            break
+        offset += limit
+        time.sleep(0.5)  # be gentle with rate limits
+    return all_messages
+
+
+def build_broadcast_responses(messages, contacts):
+    """Cross-reference recent broadcast (bulk message / poll) sends against
+    contacts currently carrying an m0/m1/m2 label, and check whether each one
+    replied afterward. See module docstring for exactly what counts as a
+    broadcast and a "response"."""
+    m_series_by_phone = {}
+    for c in contacts:
+        if has(c, "m0") or has(c, "m1") or has(c, "m2"):
+            phone10 = normalize_phone((c.get("contact_id") or "").split("@")[0])
+            if phone10:
+                m_series_by_phone[phone10] = contact_name_phone(c)
+
+    broadcasts = {}
+    inbound_by_chat = {}
+
+    for m in messages:
+        chat_id = m.get("chat_id") or ""
+        ts = m.get("timestamp")
+        if not chat_id or not ts:
+            continue
+        bid = m.get("broadcast_id")
+        if bid and m.get("from_me"):
+            b = broadcasts.setdefault(bid, {"recipients": [], "preview": None, "is_poll": False, "sent_at": None})
+            b["recipients"].append({"chat_id": chat_id, "timestamp": ts})
+            if b["preview"] is None:
+                poll_info = m.get("poll_info")
+                if poll_info:
+                    b["is_poll"] = True
+                    b["preview"] = poll_info.get("pollName") or (m.get("body") or "")[:120]
+                else:
+                    b["preview"] = (m.get("body") or "(no text)")[:120]
+            if b["sent_at"] is None or ts < b["sent_at"]:
+                b["sent_at"] = ts
+        elif m.get("from_me") is False:
+            inbound_by_chat.setdefault(chat_id, []).append(ts)
+
+    results = []
+    for bid, b in broadcasts.items():
+        m_series_recipients = []
+        for r in b["recipients"]:
+            phone10 = normalize_phone(r["chat_id"].split("@")[0])
+            contact = m_series_by_phone.get(phone10)
+            if not contact:
+                continue
+            responded = any(t > r["timestamp"] for t in inbound_by_chat.get(r["chat_id"], []))
+            m_series_recipients.append({**contact, "responded": responded})
+        if not m_series_recipients:
+            continue
+        m_series_recipients.sort(key=lambda c: (not c["responded"], c["name"].lower()))
+        results.append({
+            "broadcast_id": bid,
+            "sent_at": b["sent_at"],
+            "preview": b["preview"],
+            "is_poll": b["is_poll"],
+            "total_recipients": len(b["recipients"]),
+            "m_series_recipients": len(m_series_recipients),
+            "m_series_responded": sum(1 for c in m_series_recipients if c["responded"]),
+            "contacts": m_series_recipients,
+        })
+    results.sort(key=lambda b: b["sent_at"] or "", reverse=True)
+    return results
 
 
 def load_history():
@@ -465,16 +630,40 @@ def main():
     dataset["daily"], dataset["daily_contacts"] = compute_daily_from_registry(history["marked"])
 
     if AIRTABLE_TOKEN:
-        print("AIRTABLE_TOKEN set — running Airtable Periskop View vs Periskope sync check...")
-        dataset["airtable_sync"] = build_airtable_sync(contacts)
+        print("AIRTABLE_TOKEN set — fetching Airtable Periskop View...")
+        leads = fetch_airtable_leads()
+
+        dataset["airtable_sync"] = build_airtable_sync(contacts, leads)
         sync = dataset["airtable_sync"]
         print(f"Airtable sync: {sync['leads_total']} leads, {sync['matched']} matched, "
               f"{len(sync['in_airtable_not_periskope'])} in Airtable only, "
               f"{len(sync['in_periskope_home_loans_not_airtable'])} in Periskope only, "
               f"{len(sync['status_label_mismatches'])} status/label mismatches.")
+
+        dataset["contacts_by_source"] = build_contacts_by_source(contacts, leads)
+        src = dataset["contacts_by_source"]
+        print(f"Contacts by source: {src['total']} Home Loans contact(s) across "
+              f"{len(src['source_counts'])} source bucket(s): {src['source_counts']}")
     else:
-        print("AIRTABLE_TOKEN not set — skipping Airtable sync check (data.json will have no "
-              "'airtable_sync' key). Add the secret to enable it.")
+        print("AIRTABLE_TOKEN not set — skipping Airtable sync check and contacts-by-source "
+              "(data.json will have no 'airtable_sync' or 'contacts_by_source' key). Add the "
+              "secret to enable them.")
+
+    try:
+        print(f"Fetching last {BROADCAST_LOOKBACK_DAYS} day(s) of messages to check bulk-message "
+              f"responses among m0/m1/m2-labeled contacts...")
+        messages = fetch_recent_messages(phone, BROADCAST_LOOKBACK_DAYS)
+        broadcasts = build_broadcast_responses(messages, contacts)
+        dataset["broadcast_responses"] = {
+            "lookback_days": BROADCAST_LOOKBACK_DAYS,
+            "broadcasts": broadcasts,
+            "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
+        }
+        print(f"Broadcast response check: {len(messages)} message(s) scanned, "
+              f"{len(broadcasts)} broadcast(s) reached m-series contacts.")
+    except Exception as e:
+        print(f"WARNING: broadcast response tracking failed ({e!r}) — skipping. "
+              f"data.json will have no 'broadcast_responses' key this run.")
 
     with open(HISTORY_PATH, "w") as f:
         json.dump(history, f, indent=2)
