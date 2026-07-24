@@ -1,0 +1,38 @@
+name: Sync Periskope from Airtable (Periskop View)
+
+# Manual only — this WRITES to your live Periskope org (creates contacts,
+# replaces labels). It never runs on a schedule. Defaults to a dry run;
+# tick "apply" only after you've reviewed a dry-run log and are happy with it.
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: 'Apply changes (unchecked = dry run only, writes nothing)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run sync (dry run unless "apply" is checked)
+        env:
+          PERISKOPE_API_KEY: ${{ secrets.PERISKOPE_API_KEY }}
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: |
+          if [ "${{ inputs.apply }}" = "true" ]; then
+            python sync_periskope_from_airtable.py --apply
+          else
+            python sync_periskope_from_airtable.py
+          fi
