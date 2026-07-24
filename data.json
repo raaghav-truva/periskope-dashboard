@@ -3340,7 +3340,7 @@
   "home_loans_no_m_tags": 88,
   "m0_only": 0,
   "m1_no_m2": 57,
-  "generated_at": "2026-07-24T04:20:23.692390Z",
+  "generated_at": "2026-07-24T04:39:32.557384Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
@@ -5498,7 +5498,7 @@
         ]
       }
     ],
-    "generated_at": "2026-07-24T04:20:28.578988Z"
+    "generated_at": "2026-07-24T04:39:34.398962Z"
   },
   "contacts_by_source": {
     "total": 223,
@@ -6413,7 +6413,7 @@
         }
       ]
     },
-    "generated_at": "2026-07-24T04:20:28.583256Z"
+    "generated_at": "2026-07-24T04:39:34.403305Z"
   },
   "poll_responses": {
     "lookback_days": 30,
@@ -7409,7 +7409,7 @@
         ]
       }
     ],
-    "generated_at": "2026-07-24T04:20:38.191122Z"
+    "generated_at": "2026-07-24T04:39:40.864803Z"
   },
   "lead_warmth": {
     "rows": [
@@ -11188,6 +11188,6 @@
     ],
     "stale_threshold_days": 14,
     "messages_available": true,
-    "generated_at": "2026-07-24T04:20:38.206127Z"
+    "generated_at": "2026-07-24T04:39:40.880799Z"
   }
 }
