@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
 <style>
   :root{
     --bg:#FFFFFF;
@@ -174,6 +175,15 @@
   .label-card{cursor:pointer;transition:border-color .15s ease,background .15s ease;}
   .label-card:hover{border-color:var(--accent);background:var(--panel-2);}
 
+  .source-chart-wrap{display:flex;gap:32px;align-items:center;flex-wrap:wrap;}
+  .source-chart-canvas{position:relative;width:240px;height:240px;flex-shrink:0;}
+  .source-legend{flex:1;min-width:220px;display:flex;flex-direction:column;gap:2px;}
+  .source-legend-item{display:flex;align-items:center;gap:10px;font-size:13px;cursor:pointer;padding:6px 4px;border-radius:4px;transition:background .15s ease;}
+  .source-legend-item:hover{background:var(--panel-2);}
+  .source-legend-swatch{width:11px;height:11px;border-radius:3px;flex-shrink:0;}
+  .source-legend-name{flex:1;color:var(--text);}
+  .source-legend-count{font-family:var(--font-mono);color:var(--muted);}
+
   .modal-overlay{
     display:none;
     position:fixed;inset:0;
@@ -293,7 +303,10 @@
   <div class="grid-labels" id="label-grid"></div>
 
   <h2><span class="idx">02</span> Contacts by source</h2>
-  <div class="grid-labels" id="source-grid"></div>
+  <div class="source-chart-wrap">
+    <div class="source-chart-canvas"><canvas id="source-chart"></canvas></div>
+    <div class="source-legend" id="source-legend"></div>
+  </div>
   <div class="footnote" id="source-footnote"></div>
 
 </div>
@@ -314,6 +327,7 @@
 <script>
 const REFRESH_MS = 12 * 60 * 60 * 1000; // re-fetch data.json every 12 hours while the tab stays open
 let data = null;
+let sourceChart = null;
 
 function currentTheme(){ return document.documentElement.getAttribute('data-theme') || 'light'; }
 function setTheme(t){
@@ -399,21 +413,54 @@ async function loadDashboard() {
     grid.appendChild(card);
   });
 
-  const sourceGrid = document.getElementById('source-grid');
+  const sourceLegend = document.getElementById('source-legend');
   const sourceFootnote = document.getElementById('source-footnote');
-  sourceGrid.innerHTML = '';
+  const sourceCanvas = document.getElementById('source-chart');
+  sourceLegend.innerHTML = '';
   if (!data.contacts_by_source) {
-    sourceGrid.innerHTML = '<div class="modal-empty" style="grid-column:1/-1;">Not connected yet — add the AIRTABLE_TOKEN secret and re-run the workflow to enable this.</div>';
+    if (sourceChart) { sourceChart.destroy(); sourceChart = null; }
+    sourceCanvas.style.display = 'none';
+    sourceLegend.innerHTML = '<div class="modal-empty">Not connected yet — add the AIRTABLE_TOKEN secret and re-run the workflow to enable this.</div>';
     sourceFootnote.textContent = '';
   } else {
+    sourceCanvas.style.display = '';
     const src = data.contacts_by_source;
-    Object.entries(src.source_counts).forEach(([name, count]) => {
-      const card = document.createElement('div');
-      card.className = 'label-card' + (count === 0 ? ' zero' : '');
-      card.innerHTML = `<div class="bar"></div><div class="name">${escapeHtml(name)}</div><div class="count">${count}</div>`;
-      card.addEventListener('click', () => openSourceModal(name));
-      sourceGrid.appendChild(card);
+    const entries = Object.entries(src.source_counts);
+    const labels = entries.map(([name]) => name);
+    const counts = entries.map(([, count]) => count);
+    const palette = ['#FF4802', '#FF8A50', '#2E9E6B', '#3E7CB1', '#B18AF0', '#E5484D', '#F2C94C', '#6E6B67', '#8ABF77', '#D66FAE'];
+    const colors = labels.map((_, i) => palette[i % palette.length]);
+
+    try {
+      if (sourceChart) sourceChart.destroy();
+      sourceChart = new Chart(sourceCanvas, {
+        type: 'doughnut',
+        data: { labels, datasets: [{ data: counts, backgroundColor: colors, borderColor: getComputedStyle(document.documentElement).getPropertyValue('--panel') || '#fff', borderWidth: 2 }] },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: { callbacks: { label: (ctx) => `${ctx.label}: ${ctx.raw}` } }
+          },
+          onClick: (evt, elements) => {
+            if (elements && elements.length) openSourceModal(labels[elements[0].index]);
+          }
+        }
+      });
+    } catch (e) {
+      // Chart.js needs a real <canvas> 2D context — harmless no-op in
+      // environments without one (e.g. headless test runners); real browsers render fine.
+    }
+
+    labels.forEach((name, i) => {
+      const item = document.createElement('div');
+      item.className = 'source-legend-item';
+      item.innerHTML = `<span class="source-legend-swatch" style="background:${colors[i]}"></span><span class="source-legend-name">${escapeHtml(name)}</span><span class="source-legend-count">${counts[i]}</span>`;
+      item.addEventListener('click', () => openSourceModal(name));
+      sourceLegend.appendChild(item);
     });
+
     sourceFootnote.textContent = `${src.total} Home Loans contact(s) total, cross-matched to Airtable's Lead Source field by phone number. Last checked ${new Date(src.generated_at).toLocaleString()}.`;
   }
 }

@@ -202,6 +202,18 @@
   }
   .callout b{color:var(--accent);}
   .footnote{color:var(--muted);font-size:11px;margin-top:8px;line-height:1.6;}
+
+  .stat-row{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    margin-bottom:20px;
+  }
+  .stat{background:var(--panel);padding:20px 16px;}
+  .stat .num{font-family:var(--font-display);font-size:30px;font-weight:700;color:var(--text);}
+  .stat .lab{font-size:11px;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:6px;}
 </style>
 </head>
 <body>
@@ -243,12 +255,26 @@
   </table>
   <div class="footnote">Each contact's "day marked" is recorded permanently the first time it's seen — durable across runs, not recomputed from each contact's last-updated timestamp. The earliest day(s) shown are a one-time backfill estimate from that timestamp (before this tracking started) and may be less precise. Click any non-zero number to see who was marked that day.</div>
 
-  <h2><span class="idx">04</span> Bulk message responses</h2>
+  <h2><span class="idx">04</span> Poll Response View</h2>
+  <div class="stat-row">
+    <div class="stat">
+      <div class="num" id="poll-total-recipients">–</div>
+      <div class="lab">Total M-series recipients</div>
+    </div>
+    <div class="stat">
+      <div class="num" id="poll-total-responded">–</div>
+      <div class="lab">Total responded</div>
+    </div>
+    <div class="stat">
+      <div class="num" id="poll-response-rate">–</div>
+      <div class="lab">Response rate</div>
+    </div>
+  </div>
   <table>
-    <thead><tr><th>Broadcast</th><th>Sent</th><th class="num">M-series recipients</th><th class="num">Responded</th></tr></thead>
-    <tbody id="broadcast-table"></tbody>
+    <thead><tr><th>Poll</th><th>Last sent</th><th class="num">Sends</th><th class="num">M-series recipients</th><th class="num">Responded</th><th class="num">Rate</th></tr></thead>
+    <tbody id="poll-table"></tbody>
   </table>
-  <div class="footnote" id="broadcast-footnote"></div>
+  <div class="footnote" id="poll-footnote"></div>
 
 </div>
 
@@ -317,10 +343,10 @@ function openDayModal(label, date) {
   const contacts = (((data && data.daily_contacts) || {})[label] || {})[date];
   renderModal(`${LABEL_TITLES[label] || label} marked — ${date}`, contacts, 'Contact list not available yet — it will appear after the next data refresh.');
 }
-function openBroadcastModal(broadcastId, title) {
-  const list = ((data && data.broadcast_responses && data.broadcast_responses.broadcasts) || []);
-  const b = list.find(x => x.broadcast_id === broadcastId);
-  const contacts = b ? b.contacts.map(c => ({ name: c.name, phone: c.phone, detail: c.responded ? 'Responded' : 'No response yet' })) : [];
+function openPollModal(pollName, title) {
+  const list = ((data && data.poll_responses && data.poll_responses.polls) || []);
+  const p = list.find(x => x.poll_name === pollName);
+  const contacts = p ? p.contacts.map(c => ({ name: c.name, phone: c.phone, detail: c.responded ? 'Responded' : 'No response yet' })) : [];
   renderModal(title, contacts, 'Contact list not available yet — it will appear after the next data refresh.');
 }
 function closeModal() { overlay.classList.remove('open'); }
@@ -410,27 +436,38 @@ async function loadDashboard() {
     dailyTbody.innerHTML = '<tr><td colspan="5" style="color:var(--muted);text-align:center;">No daily history yet — appears after the workflow has run at least once.</td></tr>';
   }
 
-  const bcTbody = document.getElementById('broadcast-table');
-  const bcFootnote = document.getElementById('broadcast-footnote');
-  bcTbody.innerHTML = '';
-  const br = data.broadcast_responses;
-  if (!br || !br.broadcasts || br.broadcasts.length === 0) {
-    bcTbody.innerHTML = '<tr><td colspan="4" style="color:var(--muted);text-align:center;">No broadcasts reaching M0/M1/M2-labeled contacts in the tracked window yet.</td></tr>';
-    bcFootnote.textContent = '';
+  const pollTbody = document.getElementById('poll-table');
+  const pollFootnote = document.getElementById('poll-footnote');
+  const pr = data.poll_responses;
+  pollTbody.innerHTML = '';
+  if (!pr || !pr.polls || pr.polls.length === 0) {
+    document.getElementById('poll-total-recipients').textContent = '–';
+    document.getElementById('poll-total-responded').textContent = '–';
+    document.getElementById('poll-response-rate').textContent = '–';
+    pollTbody.innerHTML = '<tr><td colspan="6" style="color:var(--muted);text-align:center;">No polls reaching M0/M1/M2-labeled contacts in the tracked window yet.</td></tr>';
+    pollFootnote.textContent = '';
   } else {
-    br.broadcasts.forEach(b => {
+    document.getElementById('poll-total-recipients').textContent = pr.total_m_series_recipients;
+    document.getElementById('poll-total-responded').textContent = pr.total_m_series_responded;
+    const overallRate = pr.total_m_series_recipients > 0
+      ? Math.round((pr.total_m_series_responded / pr.total_m_series_recipients) * 100) + '%'
+      : '–';
+    document.getElementById('poll-response-rate').textContent = overallRate;
+
+    pr.polls.forEach(p => {
       const tr = document.createElement('tr');
-      const sentDate = b.sent_at ? new Date(b.sent_at).toLocaleString() : '–';
-      const safePreview = escapeHtml(b.preview || '(no preview)');
-      const jsPreview = safePreview.replace(/'/g, "\\'");
-      const recipCell = `<td class="num clickable" onclick="openBroadcastModal('${b.broadcast_id}','${jsPreview}')">${b.m_series_recipients}</td>`;
-      const respondedCell = b.m_series_responded > 0
-        ? `<td class="num clickable" onclick="openBroadcastModal('${b.broadcast_id}','${jsPreview}')">${b.m_series_responded}</td>`
+      const lastSent = p.last_sent_at ? new Date(p.last_sent_at).toLocaleString() : '–';
+      const safeName = escapeHtml(p.poll_name || '(untitled poll)');
+      const jsName = (p.poll_name || '').replace(/'/g, "\\'").replace(/\\/g, '\\\\');
+      const rate = p.m_series_recipients > 0 ? Math.round((p.m_series_responded / p.m_series_recipients) * 100) + '%' : '–';
+      const recipCell = `<td class="num clickable" onclick="openPollModal('${jsName}','${safeName}')">${p.m_series_recipients}</td>`;
+      const respondedCell = p.m_series_responded > 0
+        ? `<td class="num clickable" onclick="openPollModal('${jsName}','${safeName}')">${p.m_series_responded}</td>`
         : `<td class="num zero">0</td>`;
-      tr.innerHTML = `<td>${safePreview}${b.is_poll ? ' <span class="cdetail">(poll)</span>' : ''}</td><td>${sentDate}</td>${recipCell}${respondedCell}`;
-      bcTbody.appendChild(tr);
+      tr.innerHTML = `<td>${safeName}</td><td>${lastSent}</td><td class="num">${p.send_count}</td>${recipCell}${respondedCell}<td class="num">${rate}</td>`;
+      pollTbody.appendChild(tr);
     });
-    bcFootnote.textContent = `Tracking the last ${br.lookback_days} day(s) of broadcasts. Only recipients currently carrying an M0, M1, or M2 label are counted; "Responded" means the contact sent any message back afterward, with no time limit. Last checked ${new Date(br.generated_at).toLocaleString()}.`;
+    pollFootnote.textContent = `Tracking the last ${pr.lookback_days} day(s) · scoped to actual WhatsApp Polls only (plain broadcasts excluded) · only recipients currently carrying an M0, M1, or M2 label are counted · a contact sent the same poll more than once is counted once, as "responded" if they replied to any send · "Responded" means any message back afterward, no time limit · last checked ${new Date(pr.generated_at).toLocaleString()}.`;
   }
 }
 

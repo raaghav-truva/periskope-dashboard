@@ -582,6 +582,50 @@ def build_broadcast_responses(messages, contacts):
     return results
 
 
+def build_poll_responses(messages, contacts):
+    """Like build_broadcast_responses, but scoped to actual WhatsApp Polls
+    only (drops plain-text broadcasts entirely) and rolled up by poll
+    question rather than by individual send — so the same poll sent out
+    across multiple days/batches becomes one row instead of several. A
+    contact who received the same poll more than once is counted once, and
+    counts as "responded" if they responded to any of those sends."""
+    broadcasts = build_broadcast_responses(messages, contacts)
+    poll_broadcasts = [b for b in broadcasts if b["is_poll"]]
+
+    groups = {}
+    for b in poll_broadcasts:
+        key = b["preview"] or "(untitled poll)"
+        g = groups.setdefault(key, {"poll_name": key, "contacts_by_phone": {}, "last_sent_at": None, "send_count": 0})
+        g["send_count"] += 1
+        if g["last_sent_at"] is None or (b["sent_at"] or "") > (g["last_sent_at"] or ""):
+            g["last_sent_at"] = b["sent_at"]
+        for c in b["contacts"]:
+            existing = g["contacts_by_phone"].get(c["phone"])
+            if not existing or (c["responded"] and not existing["responded"]):
+                g["contacts_by_phone"][c["phone"]] = c
+
+    polls = []
+    for g in groups.values():
+        contacts_list = list(g["contacts_by_phone"].values())
+        contacts_list.sort(key=lambda c: (not c["responded"], c["name"].lower()))
+        responded = sum(1 for c in contacts_list if c["responded"])
+        polls.append({
+            "poll_name": g["poll_name"],
+            "send_count": g["send_count"],
+            "last_sent_at": g["last_sent_at"],
+            "m_series_recipients": len(contacts_list),
+            "m_series_responded": responded,
+            "contacts": contacts_list,
+        })
+    polls.sort(key=lambda p: p["last_sent_at"] or "", reverse=True)
+
+    return {
+        "total_m_series_recipients": sum(p["m_series_recipients"] for p in polls),
+        "total_m_series_responded": sum(p["m_series_responded"] for p in polls),
+        "polls": polls,
+    }
+
+
 def build_lead_warmth(contacts, leads, messages):
     """Side-by-side view of qualitative signals for every Home Loans lead
     matched between Airtable and Periskope: Airtable's Notes / Last
@@ -769,20 +813,23 @@ def main():
 
     messages = None
     try:
-        print(f"Fetching last {BROADCAST_LOOKBACK_DAYS} day(s) of messages to check bulk-message "
+        print(f"Fetching last {BROADCAST_LOOKBACK_DAYS} day(s) of messages to check poll "
               f"responses among m0/m1/m2-labeled contacts...")
         messages = fetch_recent_messages(phone, BROADCAST_LOOKBACK_DAYS)
-        broadcasts = build_broadcast_responses(messages, contacts)
-        dataset["broadcast_responses"] = {
+        poll_data = build_poll_responses(messages, contacts)
+        dataset["poll_responses"] = {
             "lookback_days": BROADCAST_LOOKBACK_DAYS,
-            "broadcasts": broadcasts,
+            "total_m_series_recipients": poll_data["total_m_series_recipients"],
+            "total_m_series_responded": poll_data["total_m_series_responded"],
+            "polls": poll_data["polls"],
             "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
         }
-        print(f"Broadcast response check: {len(messages)} message(s) scanned, "
-              f"{len(broadcasts)} broadcast(s) reached m-series contacts.")
+        print(f"Poll response check: {len(messages)} message(s) scanned, {len(poll_data['polls'])} "
+              f"distinct poll(s), {poll_data['total_m_series_recipients']} total M-series recipient(s), "
+              f"{poll_data['total_m_series_responded']} responded.")
     except Exception as e:
-        print(f"WARNING: broadcast response tracking failed ({e!r}) — skipping. "
-              f"data.json will have no 'broadcast_responses' key this run.")
+        print(f"WARNING: poll response tracking failed ({e!r}) — skipping. "
+              f"data.json will have no 'poll_responses' key this run.")
 
     if leads is not None:
         dataset["lead_warmth"] = build_lead_warmth(contacts, leads, messages)
