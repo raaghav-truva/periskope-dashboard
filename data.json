@@ -1,14 +1,14 @@
 {
-  "total_org_contacts": 11971,
+  "total_org_contacts": 12046,
   "label_counts": {
-    "Home Loans": 223,
-    "Active Warm": 51,
-    "Still Looking": 135,
-    "Future Plan": 32,
+    "Home Loans": 297,
+    "Active Warm": 64,
+    "Still Looking": 140,
+    "Future Plan": 50,
     "Balance Transfer (Immediate)": 2,
     "Balance Transfer (Future)": 3,
     "Registration Complete": 0,
-    "Not Qualified": 10,
+    "Not Qualified": 51,
     "MoU Signed": 1,
     "M0": 0,
     "M1": 139,
@@ -47,6 +47,10 @@
       {
         "name": "Abhishek Shah",
         "phone": "917204786890"
+      },
+      {
+        "name": "Afaq Naik",
+        "phone": "917045007525"
       },
       {
         "name": "Aishwarya Shetty",
@@ -157,12 +161,20 @@
         "phone": "919330973837"
       },
       {
+        "name": "Arshas Shaikh (Arshad)",
+        "phone": "919702418170"
+      },
+      {
         "name": "Arun Koushik",
         "phone": "917708590005"
       },
       {
         "name": "Arun Singh",
         "phone": "919821058985"
+      },
+      {
+        "name": "Arundhati De",
+        "phone": "919820279884"
       },
       {
         "name": "Arvind",
@@ -189,6 +201,10 @@
         "phone": "919820860738"
       },
       {
+        "name": "Atul Kukreti",
+        "phone": "919049536244"
+      },
+      {
         "name": "Ayushman Bhattacharya",
         "phone": "919833060132"
       },
@@ -207,6 +223,10 @@
       {
         "name": "Bharat Nanavayi",
         "phone": "919892049942"
+      },
+      {
+        "name": "Bhavana",
+        "phone": "919930105332"
       },
       {
         "name": "Biju Menon",
@@ -233,8 +253,24 @@
         "phone": "917453878578"
       },
       {
+        "name": "Darshan Madnani",
+        "phone": "919773615193"
+      },
+      {
+        "name": "Dashrath Chandorkar",
+        "phone": "919619795632"
+      },
+      {
         "name": "Datta Sawant",
         "phone": "919867740706"
+      },
+      {
+        "name": "Deejayen",
+        "phone": "919892010909"
+      },
+      {
+        "name": "Deepak Baheti",
+        "phone": "919967404215"
       },
       {
         "name": "Deepak Harjani",
@@ -243,6 +279,10 @@
       {
         "name": "Deepak madnani",
         "phone": "919004047204"
+      },
+      {
+        "name": "Deepak Salunkhe",
+        "phone": "919322748494"
       },
       {
         "name": "Deepesh Bharani",
@@ -257,6 +297,10 @@
         "phone": "919152913513"
       },
       {
+        "name": "Devangshu ",
+        "phone": "917569953836"
+      },
+      {
         "name": "dhananjay chaughule",
         "phone": "919594094095"
       },
@@ -267,6 +311,14 @@
       {
         "name": "Dheeraj",
         "phone": "919312413896"
+      },
+      {
+        "name": "Dilip Arya",
+        "phone": "917737766942"
+      },
+      {
+        "name": "Dilshad Alam ",
+        "phone": "917765838960"
       },
       {
         "name": "Dinesh Kirodian",
@@ -285,8 +337,20 @@
         "phone": "917045970804"
       },
       {
+        "name": "Dipankar Chatterjee",
+        "phone": "919967660333"
+      },
+      {
+        "name": "Dipika Jain",
+        "phone": "919820967957"
+      },
+      {
         "name": "Durgesh Dadich",
         "phone": "919833948018"
+      },
+      {
+        "name": "Farhat fatima",
+        "phone": "919076446235"
       },
       {
         "name": "Garima Gupta\n",
@@ -297,12 +361,28 @@
         "phone": "919819722924"
       },
       {
+        "name": "Gautam Jaiswal",
+        "phone": "919594159436"
+      },
+      {
         "name": "Gopal Bansal",
         "phone": "919310069597"
       },
       {
+        "name": "Gourav",
+        "phone": "919737119963"
+      },
+      {
+        "name": "Govind Singh",
+        "phone": "917302287234"
+      },
+      {
         "name": "Haresh Parmer",
         "phone": "919167245781"
+      },
+      {
+        "name": "Hemangi Joshi",
+        "phone": "919768482177"
       },
       {
         "name": "Hussain Ali Shaikh",
@@ -311,6 +391,22 @@
       {
         "name": "Ignatius Barretto",
         "phone": "919833813561"
+      },
+      {
+        "name": "Imran ",
+        "phone": "918108227290"
+      },
+      {
+        "name": "Imran Sayyed",
+        "phone": "917705041988"
+      },
+      {
+        "name": "Imran Shaikh",
+        "phone": "918369059345"
+      },
+      {
+        "name": "Imteyaz Ansari ",
+        "phone": "918757781030"
       },
       {
         "name": "Jagdish M. Kaushik",
@@ -341,6 +437,10 @@
         "phone": "919911540463"
       },
       {
+        "name": "Juzer Lokhandwala",
+        "phone": "919867362482"
+      },
+      {
         "name": "Jyoti Kapadia",
         "phone": "919821293914"
       },
@@ -353,12 +453,28 @@
         "phone": "919930547263"
       },
       {
+        "name": "Kamlesh Gandhi",
+        "phone": "918291808589"
+      },
+      {
         "name": "Kamlesh Jadhav",
         "phone": "919223502540"
       },
       {
         "name": "Kapil Agarwal",
         "phone": "917506707010"
+      },
+      {
+        "name": "Khushboo Gupta",
+        "phone": "918169564095"
+      },
+      {
+        "name": "Krupa and Jinay",
+        "phone": "919820812456"
+      },
+      {
+        "name": "Krupali",
+        "phone": "919769120616"
       },
       {
         "name": "Kuldeep Rathore",
@@ -377,8 +493,20 @@
         "phone": "919167887434"
       },
       {
+        "name": "Madan Singh ",
+        "phone": "919892324692"
+      },
+      {
         "name": "Madhvi Patil",
         "phone": "919004769329"
+      },
+      {
+        "name": "Mahendra",
+        "phone": "918591970827"
+      },
+      {
+        "name": "Maji",
+        "phone": "917977265322"
       },
       {
         "name": "Manisha Prasad",
@@ -386,11 +514,11 @@
       },
       {
         "name": "Manoj Gupta",
-        "phone": "919820573699"
+        "phone": "917045352354"
       },
       {
         "name": "Manoj Gupta",
-        "phone": "917045352354"
+        "phone": "919820573699"
       },
       {
         "name": "Manu Sujanti",
@@ -415,6 +543,14 @@
       {
         "name": "Megha Sharma",
         "phone": "919765891402"
+      },
+      {
+        "name": "Meraj",
+        "phone": "919277161821"
+      },
+      {
+        "name": "Mohammad Abbas",
+        "phone": "919768090555"
       },
       {
         "name": "Mohita",
@@ -445,8 +581,16 @@
         "phone": "917045640732"
       },
       {
+        "name": "N Balaji",
+        "phone": "919987956489"
+      },
+      {
         "name": "Nandita",
         "phone": "919223106467"
+      },
+      {
+        "name": "NARENDRA SHAH",
+        "phone": "919004352358"
       },
       {
         "name": "Naushad Chilwan",
@@ -455,6 +599,14 @@
       {
         "name": "Nayna Desai",
         "phone": "919029391800"
+      },
+      {
+        "name": "Nazir Rabbani",
+        "phone": "919104319633"
+      },
+      {
+        "name": "Neeraj Sharma",
+        "phone": "918291004466"
       },
       {
         "name": "Neha",
@@ -475,6 +627,10 @@
       {
         "name": "Nirmal Parikh",
         "phone": "919892475142"
+      },
+      {
+        "name": "Nishant Bhatnager",
+        "phone": "919930603336"
       },
       {
         "name": "Nitesh Kalantri",
@@ -505,6 +661,10 @@
         "phone": "919769966747"
       },
       {
+        "name": "Pawan Singh",
+        "phone": "919324580158"
+      },
+      {
         "name": "Payal",
         "phone": "919867519195"
       },
@@ -517,6 +677,14 @@
         "phone": "919325635472"
       },
       {
+        "name": "Pooja Patel ",
+        "phone": "918826621116"
+      },
+      {
+        "name": "Poonam dalkar",
+        "phone": "919930017434"
+      },
+      {
         "name": "Poonam S",
         "phone": "919619294373"
       },
@@ -527,6 +695,14 @@
       {
         "name": "Pradnya Phene Phene",
         "phone": "918433608835"
+      },
+      {
+        "name": "Pradyumna",
+        "phone": "919136656055"
+      },
+      {
+        "name": "Prakash Soni",
+        "phone": "919702717929"
       },
       {
         "name": "Pranam",
@@ -557,8 +733,28 @@
         "phone": "919930224986"
       },
       {
+        "name": "Prashant Jadhav",
+        "phone": "919920204059"
+      },
+      {
+        "name": "Prashant NA",
+        "phone": "919820987022"
+      },
+      {
+        "name": "Prathmesh Mane",
+        "phone": "919172469293"
+      },
+      {
+        "name": "Priyanka Jaiswal",
+        "phone": "918459300568"
+      },
+      {
         "name": "Priyanka Rajapkar",
         "phone": "919867058900"
+      },
+      {
+        "name": "Puja Dilip",
+        "phone": "917715857250"
       },
       {
         "name": "Puneet",
@@ -571,6 +767,10 @@
       {
         "name": "Radhika Mehta",
         "phone": "917838389738"
+      },
+      {
+        "name": "Rahul Londhe",
+        "phone": "917045598212"
       },
       {
         "name": "Rahul Oza",
@@ -593,8 +793,20 @@
         "phone": "919535522177"
       },
       {
+        "name": "Rajesh Thacker",
+        "phone": "919820934996"
+      },
+      {
+        "name": "Rajiv Bhele",
+        "phone": "919822230243"
+      },
+      {
         "name": "Rajkumar",
         "phone": "918976049514"
+      },
+      {
+        "name": "Rakesh Shrivastav",
+        "phone": "919892189358"
       },
       {
         "name": "Ramendr Tiwari",
@@ -629,6 +841,10 @@
         "phone": "919696029020"
       },
       {
+        "name": "Ritesh Tambe",
+        "phone": "918767946330"
+      },
+      {
         "name": "Rohan",
         "phone": "918011232920"
       },
@@ -641,6 +857,10 @@
         "phone": "919703077777"
       },
       {
+        "name": "Ronald Fernandes",
+        "phone": "919819985892"
+      },
+      {
         "name": "Ruhi Shaikh (Fouziya)",
         "phone": "919820585801"
       },
@@ -651,6 +871,10 @@
       {
         "name": "Sabeeha",
         "phone": "918655833057"
+      },
+      {
+        "name": "Sadhana Veerkar",
+        "phone": "919920003925"
       },
       {
         "name": "Sagar Mhetre",
@@ -669,6 +893,10 @@
         "phone": "919930507211"
       },
       {
+        "name": "Salman ",
+        "phone": "918108189018"
+      },
+      {
         "name": "Saloni",
         "phone": "919158578801"
       },
@@ -681,6 +909,10 @@
         "phone": "919820314939"
       },
       {
+        "name": "Samuel ",
+        "phone": "919372647841"
+      },
+      {
         "name": "Sandip Bhagyawant",
         "phone": "919892115882"
       },
@@ -691,6 +923,10 @@
       {
         "name": "Sarabjeet",
         "phone": "919820261404"
+      },
+      {
+        "name": "Satish Chawla ",
+        "phone": "919821093229"
       },
       {
         "name": "Sejal Sanghvi",
@@ -711,6 +947,10 @@
       {
         "name": "Shabnam Shaikh",
         "phone": "919136550500"
+      },
+      {
+        "name": "Shailesh Borale",
+        "phone": "918108120143"
       },
       {
         "name": "Shajit Nair",
@@ -753,6 +993,10 @@
         "phone": "919870990454"
       },
       {
+        "name": "Shubhangi Shikhare",
+        "phone": "919757478394"
+      },
+      {
         "name": "Shubhanshu",
         "phone": "918558807153"
       },
@@ -785,6 +1029,14 @@
         "phone": "919819412043"
       },
       {
+        "name": "Sulekha Bafna",
+        "phone": "919222101521"
+      },
+      {
+        "name": "Suman Singh ",
+        "phone": "919082586108"
+      },
+      {
         "name": "sumit mathur",
         "phone": "919022960962"
       },
@@ -793,12 +1045,24 @@
         "phone": "919910220790"
       },
       {
+        "name": "Sunil Kumar ",
+        "phone": "918169981595"
+      },
+      {
         "name": "Sunil Parab",
         "phone": "918691884567"
       },
       {
         "name": "Sunil S Dayma",
         "phone": "919324410856"
+      },
+      {
+        "name": "Sunil Salve",
+        "phone": "919664755348"
+      },
+      {
+        "name": "Sunita Nair",
+        "phone": "919833646567"
       },
       {
         "name": "Surbhi Jain",
@@ -811,6 +1075,14 @@
       {
         "name": "Sushant Naidu",
         "phone": "919702292779"
+      },
+      {
+        "name": "Swastik Sen",
+        "phone": "919007354075"
+      },
+      {
+        "name": "Swati",
+        "phone": "918369406201"
       },
       {
         "name": "Tanay",
@@ -845,6 +1117,10 @@
         "phone": "919892270074"
       },
       {
+        "name": "Ujjwala Patil",
+        "phone": "919890901115"
+      },
+      {
         "name": "Ujwal Shah",
         "phone": "919987231131"
       },
@@ -861,12 +1137,24 @@
         "phone": "919953107773"
       },
       {
+        "name": "Vaishnavi Shelke",
+        "phone": "919326060929"
+      },
+      {
+        "name": "Vicky",
+        "phone": "919920197789"
+      },
+      {
         "name": "Vicky Chawla",
         "phone": "919769608020"
       },
       {
         "name": "Vijay",
         "phone": "918291414805"
+      },
+      {
+        "name": "Vijay Goswami ",
+        "phone": "919737434662"
       },
       {
         "name": "Vijay Jain",
@@ -897,6 +1185,10 @@
         "phone": "918940502402"
       },
       {
+        "name": "Vishal Gujarathi",
+        "phone": "919833879079"
+      },
+      {
         "name": "Vishal Lohire",
         "phone": "919987646849"
       },
@@ -907,6 +1199,10 @@
       {
         "name": "Yash Tiwari",
         "phone": "919619325559"
+      },
+      {
+        "name": "Yashesh Bharwada",
+        "phone": "919967969991"
       }
     ],
     "Active Warm": [
@@ -919,16 +1215,20 @@
         "phone": "919222111506"
       },
       {
+        "name": "Abhishek",
+        "phone": "919769322137"
+      },
+      {
+        "name": "Afaq Naik",
+        "phone": "917045007525"
+      },
+      {
         "name": "Ajay Arora",
         "phone": "919820608414"
       },
       {
         "name": "Amitkumar Kanaujia",
         "phone": "917738970849"
-      },
-      {
-        "name": "Ananjan Choudhary",
-        "phone": "919930987633"
       },
       {
         "name": "Anil Agarwal",
@@ -951,10 +1251,6 @@
         "phone": "919818134261"
       },
       {
-        "name": "Ashish Chaturmohta",
-        "phone": "917738648833"
-      },
-      {
         "name": "Asmita Singh",
         "phone": "919820860738"
       },
@@ -965,6 +1261,10 @@
       {
         "name": "Bharat Nanavayi",
         "phone": "919892049942"
+      },
+      {
+        "name": "Biju Menon",
+        "phone": "919633695595"
       },
       {
         "name": "Bjorn Dsouza",
@@ -979,8 +1279,20 @@
         "phone": "919594094095"
       },
       {
+        "name": "Dharmesh OOT Loan",
+        "phone": "919004493570"
+      },
+      {
+        "name": "Dilip OOT Loan",
+        "phone": "919607055537"
+      },
+      {
         "name": "Dipali",
         "phone": "917045970804"
+      },
+      {
+        "name": "Dipika Jain",
+        "phone": "919820967957"
       },
       {
         "name": "Haresh Parmer",
@@ -991,8 +1303,8 @@
         "phone": "919833813561"
       },
       {
-        "name": "Javed Choudhary",
-        "phone": "919967391117"
+        "name": "Imran Sayyed",
+        "phone": "917705041988"
       },
       {
         "name": "Kajal kedia / Saurabh Agarwal",
@@ -1003,8 +1315,20 @@
         "phone": "919867874721"
       },
       {
+        "name": "Krupa and Jinay",
+        "phone": "919820812456"
+      },
+      {
         "name": "Kuldeep Rathore",
         "phone": "917718834010"
+      },
+      {
+        "name": "Meenakshi Mediratta",
+        "phone": "919819197743"
+      },
+      {
+        "name": "Monika Shekawat",
+        "phone": "919773166940"
       },
       {
         "name": "Neha",
@@ -1027,16 +1351,20 @@
         "phone": "919867519195"
       },
       {
+        "name": "Pooja Patel ",
+        "phone": "918826621116"
+      },
+      {
         "name": "Pradeep",
         "phone": "919004900624"
       },
       {
-        "name": "Rahul Agarwal",
-        "phone": "919831077909"
+        "name": "Prashant Jadhav",
+        "phone": "919920204059"
       },
       {
-        "name": "Rahul Oza",
-        "phone": "919920536111"
+        "name": "Prashant NA",
+        "phone": "919820987022"
       },
       {
         "name": "Raj Bhavwat",
@@ -1047,8 +1375,12 @@
         "phone": "919435716823"
       },
       {
-        "name": "Ravi Dayma",
-        "phone": "919920157851"
+        "name": "Rajesh Thacker",
+        "phone": "919820934996"
+      },
+      {
+        "name": "Raju Ingulkar (H/o Megha Ingulkar)",
+        "phone": "919768128787"
       },
       {
         "name": "Rohit Singh copy",
@@ -1063,20 +1395,24 @@
         "phone": "919820585801"
       },
       {
-        "name": "Rushikesh",
-        "phone": "919028502679"
+        "name": "Sabeeha",
+        "phone": "918655833057"
       },
       {
-        "name": "Saloni",
-        "phone": "919158578801"
+        "name": "Sadhana Veerkar",
+        "phone": "919920003925"
       },
       {
-        "name": "Selvi Jay",
-        "phone": "919920315969"
+        "name": "Sam .",
+        "phone": "919930050245"
       },
       {
         "name": "Shajit Nair",
         "phone": "919821333289"
+      },
+      {
+        "name": "Shruti Dhariwal",
+        "phone": "919819478761"
       },
       {
         "name": "Subrata Chakraborty",
@@ -1087,8 +1423,16 @@
         "phone": "919819412043"
       },
       {
-        "name": "Surbhi Jain",
-        "phone": "919479851517"
+        "name": "Sulekha Bafna",
+        "phone": "919222101521"
+      },
+      {
+        "name": "sumit mathur",
+        "phone": "919022960962"
+      },
+      {
+        "name": "Suresh Khatanhar",
+        "phone": "919664402200"
       },
       {
         "name": "Trupti Somaiya",
@@ -1113,9 +1457,17 @@
       {
         "name": "Vivek",
         "phone": "919920915156"
+      },
+      {
+        "name": "Yashesh Bharwada",
+        "phone": "919967969991"
       }
     ],
     "Still Looking": [
+      {
+        "name": "919582713799",
+        "phone": "919582713799"
+      },
       {
         "name": "Abbas Dadla",
         "phone": "919619069003"
@@ -1201,8 +1553,8 @@
         "phone": "919330973837"
       },
       {
-        "name": "Arun Singh",
-        "phone": "919821058985"
+        "name": "Arshas Shaikh (Arshad)",
+        "phone": "919702418170"
       },
       {
         "name": "Ashish Yadav",
@@ -1215,6 +1567,10 @@
       {
         "name": "Ashok Sakpal",
         "phone": "919892076221"
+      },
+      {
+        "name": "Atul Kukreti",
+        "phone": "919049536244"
       },
       {
         "name": "Babu lal Agarwal",
@@ -1245,16 +1601,24 @@
         "phone": "919987950878"
       },
       {
-        "name": "Dharmesh OOT Loan",
-        "phone": "919004493570"
+        "name": "Devangshu ",
+        "phone": "917569953836"
       },
       {
         "name": "Dheeraj",
         "phone": "919312413896"
       },
       {
+        "name": "Dilip Arya",
+        "phone": "917737766942"
+      },
+      {
         "name": "Dinesh Kirodian",
         "phone": "919820023264"
+      },
+      {
+        "name": "Dinesh Mhatre",
+        "phone": "917045454599"
       },
       {
         "name": "Dinesh Singh",
@@ -1293,12 +1657,20 @@
         "phone": "919911540463"
       },
       {
+        "name": "Juzer Lokhandwala",
+        "phone": "919867362482"
+      },
+      {
         "name": "Kamal Mittal",
         "phone": "919930547263"
       },
       {
         "name": "Kapil Agarwal",
         "phone": "917506707010"
+      },
+      {
+        "name": "Kartik",
+        "phone": "919731821057"
       },
       {
         "name": "Kutub",
@@ -1318,11 +1690,11 @@
       },
       {
         "name": "Manoj Gupta",
-        "phone": "919820573699"
+        "phone": "917045352354"
       },
       {
         "name": "Manoj Gupta",
-        "phone": "917045352354"
+        "phone": "919820573699"
       },
       {
         "name": "Manu Sujanti",
@@ -1335,10 +1707,6 @@
       {
         "name": "Mayur Srivastav",
         "phone": "918800500769"
-      },
-      {
-        "name": "Meenakshi Mediratta",
-        "phone": "919819197743"
       },
       {
         "name": "Megha",
@@ -1357,10 +1725,6 @@
         "phone": "919920047561"
       },
       {
-        "name": "Monika Shekawat",
-        "phone": "919773166940"
-      },
-      {
         "name": "Mugdha Shankar",
         "phone": "918452920428"
       },
@@ -1369,8 +1733,16 @@
         "phone": "919820018973"
       },
       {
+        "name": "N Balaji",
+        "phone": "919987956489"
+      },
+      {
         "name": "Nandita",
         "phone": "919223106467"
+      },
+      {
+        "name": "NARENDRA SHAH",
+        "phone": "919004352358"
       },
       {
         "name": "Naushad Chilwan",
@@ -1433,10 +1805,6 @@
         "phone": "919324386943"
       },
       {
-        "name": "Prasad Dixit",
-        "phone": "919137434156"
-      },
-      {
         "name": "Prasenjit Mitra",
         "phone": "919819867099"
       },
@@ -1481,6 +1849,10 @@
         "phone": "918050004430"
       },
       {
+        "name": "Ravi Dayma",
+        "phone": "919920157851"
+      },
+      {
         "name": "Ravi Jain",
         "phone": "919920264985"
       },
@@ -1495,6 +1867,10 @@
       {
         "name": "Rohan",
         "phone": "918011232920"
+      },
+      {
+        "name": "Rupali Chavan",
+        "phone": "919769956745"
       },
       {
         "name": "Sagar Mhetre",
@@ -1513,8 +1889,8 @@
         "phone": "919930507211"
       },
       {
-        "name": "Sam .",
-        "phone": "919930050245"
+        "name": "Saloni",
+        "phone": "919158578801"
       },
       {
         "name": "Samta Jain",
@@ -1525,8 +1901,16 @@
         "phone": "919820261404"
       },
       {
+        "name": "Saurabh Khetan Nahar",
+        "phone": "917738864222"
+      },
+      {
         "name": "Sejal Sanghvi",
         "phone": "919819535550"
+      },
+      {
+        "name": "Selvi Jay",
+        "phone": "919920315969"
       },
       {
         "name": "Seth Rajiv",
@@ -1551,10 +1935,6 @@
       {
         "name": "Shiv Yadav",
         "phone": "917021800434"
-      },
-      {
-        "name": "Shruti Dhariwal",
-        "phone": "919819478761"
       },
       {
         "name": "Shubhada",
@@ -1585,20 +1965,20 @@
         "phone": "919920194690"
       },
       {
-        "name": "sumit mathur",
-        "phone": "919022960962"
-      },
-      {
         "name": "Sumit Mittal",
         "phone": "919910220790"
+      },
+      {
+        "name": "sundarbodige",
+        "phone": "918691902121"
       },
       {
         "name": "Sunil S Dayma",
         "phone": "919324410856"
       },
       {
-        "name": "Suresh Khatanhar",
-        "phone": "919664402200"
+        "name": "Surbhi Jain",
+        "phone": "919479851517"
       },
       {
         "name": "Tarachand Devgan",
@@ -1607,10 +1987,6 @@
       {
         "name": "Tarun Shukla",
         "phone": "919930544030"
-      },
-      {
-        "name": "Taruna & Ankur Vats",
-        "phone": "919899575226"
       },
       {
         "name": "Teena Uppal",
@@ -1641,20 +2017,12 @@
         "phone": "917506135910"
       },
       {
-        "name": "Vipul",
-        "phone": "919821081442"
-      },
-      {
-        "name": "Vipul Soni",
-        "phone": "918940502402"
+        "name": "Vishal Gujarathi",
+        "phone": "919833879079"
       },
       {
         "name": "Vishal Lohire",
         "phone": "919987646849"
-      },
-      {
-        "name": "Yash Tiwari",
-        "phone": "919619325559"
       }
     ],
     "Future Plan": [
@@ -1667,8 +2035,24 @@
         "phone": "919930023850"
       },
       {
+        "name": "Ananjan Choudhary",
+        "phone": "919930987633"
+      },
+      {
         "name": "anisha Panigrahi",
         "phone": "918879440357"
+      },
+      {
+        "name": "Anuja Barge",
+        "phone": "919769872215"
+      },
+      {
+        "name": "Anupama C",
+        "phone": "919833554828"
+      },
+      {
+        "name": "Ashish Chaturmohta",
+        "phone": "917738648833"
       },
       {
         "name": "Baliram Ray",
@@ -1683,16 +2067,20 @@
         "phone": "919930376354"
       },
       {
-        "name": "Dinesh Mhatre",
-        "phone": "917045454599"
-      },
-      {
         "name": "Durgesh Dadich",
         "phone": "919833948018"
       },
       {
         "name": "Gaurav Balani",
         "phone": "919819722924"
+      },
+      {
+        "name": "Javed Choudhary",
+        "phone": "919967391117"
+      },
+      {
+        "name": "Johney Dua",
+        "phone": "919820127378"
       },
       {
         "name": "Jyoti Kapadia",
@@ -1705,6 +2093,14 @@
       {
         "name": "Kaushal Samant",
         "phone": "919820319876"
+      },
+      {
+        "name": "Krupali",
+        "phone": "919769120616"
+      },
+      {
+        "name": "Kunal bagaya",
+        "phone": "917021384177"
       },
       {
         "name": "Linus Menezes",
@@ -1735,12 +2131,28 @@
         "phone": "918770798276"
       },
       {
+        "name": "Pranshu Soni",
+        "phone": "919321139224"
+      },
+      {
         "name": "Prashant Chatur",
         "phone": "917799159741"
       },
       {
+        "name": "Rahul Oza",
+        "phone": "919920536111"
+      },
+      {
+        "name": "Rakesh Shrivastav",
+        "phone": "919892189358"
+      },
+      {
         "name": "Ritesh Mittal",
         "phone": "919696029020"
+      },
+      {
+        "name": "Rushikesh",
+        "phone": "919028502679"
       },
       {
         "name": "Shalabh Jain",
@@ -1759,8 +2171,20 @@
         "phone": "919819299611"
       },
       {
+        "name": "Subir Bose",
+        "phone": "919810100364"
+      },
+      {
+        "name": "Sunil Parab",
+        "phone": "918691884567"
+      },
+      {
         "name": "Supriya",
         "phone": "919900100847"
+      },
+      {
+        "name": "Swastik Sen",
+        "phone": "919007354075"
       },
       {
         "name": "Tanay",
@@ -1769,6 +2193,10 @@
       {
         "name": "Tanushree Chakraborty",
         "phone": "918879034235"
+      },
+      {
+        "name": "Taruna & Ankur Vats",
+        "phone": "919899575226"
       },
       {
         "name": "Vicky Chawla",
@@ -1781,6 +2209,18 @@
       {
         "name": "Vinay Tripathi",
         "phone": "919920301580"
+      },
+      {
+        "name": "Vipul",
+        "phone": "919821081442"
+      },
+      {
+        "name": "Vipul Soni",
+        "phone": "918940502402"
+      },
+      {
+        "name": "Yash Tiwari",
+        "phone": "919619325559"
       },
       {
         "name": "Zafar Bhatri",
@@ -1822,36 +2262,200 @@
         "phone": "918928839385"
       },
       {
+        "name": "Arun Singh",
+        "phone": "919821058985"
+      },
+      {
         "name": "Chandrashekhar Mishra",
         "phone": "918898669103"
+      },
+      {
+        "name": "Dashrath Chandorkar",
+        "phone": "919619795632"
+      },
+      {
+        "name": "Deejayen",
+        "phone": "919892010909"
+      },
+      {
+        "name": "Deepak Salunkhe",
+        "phone": "919322748494"
       },
       {
         "name": "Deeshank Narkar",
         "phone": "918108959862"
       },
       {
+        "name": "Dilshad Alam ",
+        "phone": "917765838960"
+      },
+      {
+        "name": "Dipankar Chatterjee",
+        "phone": "919967660333"
+      },
+      {
+        "name": "Farhat fatima",
+        "phone": "919076446235"
+      },
+      {
+        "name": "Gautam Jaiswal",
+        "phone": "919594159436"
+      },
+      {
+        "name": "Gourav",
+        "phone": "919737119963"
+      },
+      {
+        "name": "Govind Singh",
+        "phone": "917302287234"
+      },
+      {
+        "name": "Hemangi Joshi",
+        "phone": "919768482177"
+      },
+      {
+        "name": "Imran ",
+        "phone": "918108227290"
+      },
+      {
+        "name": "Imran Habibur",
+        "phone": "917304419319"
+      },
+      {
+        "name": "Imran Shaikh",
+        "phone": "918369059345"
+      },
+      {
+        "name": "Imteyaz Ansari ",
+        "phone": "918757781030"
+      },
+      {
+        "name": "Kamlesh Gandhi",
+        "phone": "918291808589"
+      },
+      {
         "name": "Kamlesh Jadhav",
         "phone": "919223502540"
+      },
+      {
+        "name": "Madan Singh ",
+        "phone": "919892324692"
+      },
+      {
+        "name": "Mahendra",
+        "phone": "918591970827"
+      },
+      {
+        "name": "Maji",
+        "phone": "917977265322"
+      },
+      {
+        "name": "Meraj",
+        "phone": "919277161821"
       },
       {
         "name": "Mushir Khan",
         "phone": "917045640732"
       },
       {
+        "name": "Nazir Rabbani",
+        "phone": "919104319633"
+      },
+      {
+        "name": "Pawan Singh",
+        "phone": "919324580158"
+      },
+      {
         "name": "Pinky",
         "phone": "919833527517"
+      },
+      {
+        "name": "Pradyumna",
+        "phone": "919136656055"
+      },
+      {
+        "name": "Prakash Soni",
+        "phone": "919702717929"
+      },
+      {
+        "name": "Prasad Dixit",
+        "phone": "919137434156"
+      },
+      {
+        "name": "Prathmesh Mane",
+        "phone": "919172469293"
+      },
+      {
+        "name": "Rahul Londhe",
+        "phone": "917045598212"
+      },
+      {
+        "name": "Rajiv Bhele",
+        "phone": "919822230243"
       },
       {
         "name": "Rajkumar",
         "phone": "918976049514"
       },
       {
+        "name": "Ritesh Tambe",
+        "phone": "918767946330"
+      },
+      {
+        "name": "Salman ",
+        "phone": "918108189018"
+      },
+      {
+        "name": "Samuel ",
+        "phone": "919372647841"
+      },
+      {
         "name": "Sanjay Rathod",
         "phone": "919324843079"
       },
       {
+        "name": "Satish Chawla ",
+        "phone": "919821093229"
+      },
+      {
         "name": "Sekhar Vishwakarma",
         "phone": "919005368705"
+      },
+      {
+        "name": "Shailesh Borale",
+        "phone": "918108120143"
+      },
+      {
+        "name": "Shubhangi Shikhare",
+        "phone": "919757478394"
+      },
+      {
+        "name": "Suman Singh ",
+        "phone": "919082586108"
+      },
+      {
+        "name": "Sunil Kumar ",
+        "phone": "918169981595"
+      },
+      {
+        "name": "Sunil Salve",
+        "phone": "919664755348"
+      },
+      {
+        "name": "Swati",
+        "phone": "918369406201"
+      },
+      {
+        "name": "Ujjwala Patil",
+        "phone": "919890901115"
+      },
+      {
+        "name": "Vaishnavi Shelke",
+        "phone": "919326060929"
+      },
+      {
+        "name": "Vijay Goswami ",
+        "phone": "919737434662"
       }
     ],
     "MoU Signed": [
@@ -2765,6 +3369,10 @@
         "phone": "919222111506"
       },
       {
+        "name": "Afaq Naik",
+        "phone": "917045007525"
+      },
+      {
         "name": "Aishwarya Shetty",
         "phone": "917666680005"
       },
@@ -2801,8 +3409,16 @@
         "phone": "919674171865"
       },
       {
+        "name": "Arshas Shaikh (Arshad)",
+        "phone": "919702418170"
+      },
+      {
         "name": "Arun Koushik",
         "phone": "917708590005"
+      },
+      {
+        "name": "Arundhati De",
+        "phone": "919820279884"
       },
       {
         "name": "Ashok",
@@ -2817,6 +3433,10 @@
         "phone": "919820860738"
       },
       {
+        "name": "Atul Kukreti",
+        "phone": "919049536244"
+      },
+      {
         "name": "Ayushman Bhattacharya",
         "phone": "919833060132"
       },
@@ -2829,8 +3449,32 @@
         "phone": "917208320745"
       },
       {
+        "name": "Bhavana",
+        "phone": "919930105332"
+      },
+      {
         "name": "Chandrashekhar Mishra",
         "phone": "918898669103"
+      },
+      {
+        "name": "Darshan Madnani",
+        "phone": "919773615193"
+      },
+      {
+        "name": "Dashrath Chandorkar",
+        "phone": "919619795632"
+      },
+      {
+        "name": "Deejayen",
+        "phone": "919892010909"
+      },
+      {
+        "name": "Deepak Baheti",
+        "phone": "919967404215"
+      },
+      {
+        "name": "Deepak Salunkhe",
+        "phone": "919322748494"
       },
       {
         "name": "Deeshank Narkar",
@@ -2841,12 +3485,36 @@
         "phone": "919152913513"
       },
       {
+        "name": "Devangshu ",
+        "phone": "917569953836"
+      },
+      {
+        "name": "Dilip Arya",
+        "phone": "917737766942"
+      },
+      {
+        "name": "Dilshad Alam ",
+        "phone": "917765838960"
+      },
+      {
         "name": "Dinesh Kirodian",
         "phone": "919820023264"
       },
       {
+        "name": "Dipankar Chatterjee",
+        "phone": "919967660333"
+      },
+      {
+        "name": "Dipika Jain",
+        "phone": "919820967957"
+      },
+      {
         "name": "Durgesh Dadich",
         "phone": "919833948018"
+      },
+      {
+        "name": "Farhat fatima",
+        "phone": "919076446235"
       },
       {
         "name": "Garima Gupta\n",
@@ -2857,8 +3525,40 @@
         "phone": "919819722924"
       },
       {
+        "name": "Gautam Jaiswal",
+        "phone": "919594159436"
+      },
+      {
         "name": "Gopal Bansal",
         "phone": "919310069597"
+      },
+      {
+        "name": "Gourav",
+        "phone": "919737119963"
+      },
+      {
+        "name": "Govind Singh",
+        "phone": "917302287234"
+      },
+      {
+        "name": "Hemangi Joshi",
+        "phone": "919768482177"
+      },
+      {
+        "name": "Imran ",
+        "phone": "918108227290"
+      },
+      {
+        "name": "Imran Sayyed",
+        "phone": "917705041988"
+      },
+      {
+        "name": "Imran Shaikh",
+        "phone": "918369059345"
+      },
+      {
+        "name": "Imteyaz Ansari ",
+        "phone": "918757781030"
       },
       {
         "name": "Jagdish M. Kaushik",
@@ -2877,12 +3577,32 @@
         "phone": "919819531157"
       },
       {
+        "name": "Juzer Lokhandwala",
+        "phone": "919867362482"
+      },
+      {
         "name": "Jyoti Kapadia",
         "phone": "919821293914"
       },
       {
+        "name": "Kamlesh Gandhi",
+        "phone": "918291808589"
+      },
+      {
         "name": "Kamlesh Jadhav",
         "phone": "919223502540"
+      },
+      {
+        "name": "Khushboo Gupta",
+        "phone": "918169564095"
+      },
+      {
+        "name": "Krupa and Jinay",
+        "phone": "919820812456"
+      },
+      {
+        "name": "Krupali",
+        "phone": "919769120616"
       },
       {
         "name": "LiVe LiFe KiNg SiZeEeEe (Varun Upadhyay)",
@@ -2893,8 +3613,20 @@
         "phone": "919167887434"
       },
       {
+        "name": "Madan Singh ",
+        "phone": "919892324692"
+      },
+      {
         "name": "Madhvi Patil",
         "phone": "919004769329"
+      },
+      {
+        "name": "Mahendra",
+        "phone": "918591970827"
+      },
+      {
+        "name": "Maji",
+        "phone": "917977265322"
       },
       {
         "name": "Manoj Gupta",
@@ -2911,6 +3643,14 @@
       {
         "name": "Megha Sharma",
         "phone": "919765891402"
+      },
+      {
+        "name": "Meraj",
+        "phone": "919277161821"
+      },
+      {
+        "name": "Mohammad Abbas",
+        "phone": "919768090555"
       },
       {
         "name": "Mohita",
@@ -2933,12 +3673,32 @@
         "phone": "917045640732"
       },
       {
+        "name": "N Balaji",
+        "phone": "919987956489"
+      },
+      {
         "name": "Nandita",
         "phone": "919223106467"
       },
       {
+        "name": "NARENDRA SHAH",
+        "phone": "919004352358"
+      },
+      {
+        "name": "Nazir Rabbani",
+        "phone": "919104319633"
+      },
+      {
+        "name": "Neeraj Sharma",
+        "phone": "918291004466"
+      },
+      {
         "name": "Nikam Murlidhar",
         "phone": "918652822453"
+      },
+      {
+        "name": "Nishant Bhatnager",
+        "phone": "919930603336"
       },
       {
         "name": "Nitin Arya",
@@ -2961,12 +3721,32 @@
         "phone": "919769966747"
       },
       {
+        "name": "Pawan Singh",
+        "phone": "919324580158"
+      },
+      {
         "name": "Payal",
         "phone": "919867519195"
       },
       {
         "name": "Pinky",
         "phone": "919833527517"
+      },
+      {
+        "name": "Pooja Patel ",
+        "phone": "918826621116"
+      },
+      {
+        "name": "Poonam dalkar",
+        "phone": "919930017434"
+      },
+      {
+        "name": "Pradyumna",
+        "phone": "919136656055"
+      },
+      {
+        "name": "Prakash Soni",
+        "phone": "919702717929"
       },
       {
         "name": "Pranay NA",
@@ -2981,8 +3761,44 @@
         "phone": "917799159741"
       },
       {
+        "name": "Prashant Jadhav",
+        "phone": "919920204059"
+      },
+      {
+        "name": "Prashant NA",
+        "phone": "919820987022"
+      },
+      {
+        "name": "Prathmesh Mane",
+        "phone": "919172469293"
+      },
+      {
+        "name": "Priyanka Jaiswal",
+        "phone": "918459300568"
+      },
+      {
         "name": "Priyanka Rajapkar",
         "phone": "919867058900"
+      },
+      {
+        "name": "Puja Dilip",
+        "phone": "917715857250"
+      },
+      {
+        "name": "Rahul Londhe",
+        "phone": "917045598212"
+      },
+      {
+        "name": "Rajesh Thacker",
+        "phone": "919820934996"
+      },
+      {
+        "name": "Rajiv Bhele",
+        "phone": "919822230243"
+      },
+      {
+        "name": "Rakesh Shrivastav",
+        "phone": "919892189358"
       },
       {
         "name": "Ravi Dayma",
@@ -2997,6 +3813,10 @@
         "phone": "919820991318"
       },
       {
+        "name": "Ritesh Tambe",
+        "phone": "918767946330"
+      },
+      {
         "name": "Rohan",
         "phone": "918011232920"
       },
@@ -3009,8 +3829,24 @@
         "phone": "919703077777"
       },
       {
+        "name": "Ronald Fernandes",
+        "phone": "919819985892"
+      },
+      {
         "name": "Ruhi Shaikh (Fouziya)",
         "phone": "919820585801"
+      },
+      {
+        "name": "Sadhana Veerkar",
+        "phone": "919920003925"
+      },
+      {
+        "name": "Salman ",
+        "phone": "918108189018"
+      },
+      {
+        "name": "Samuel ",
+        "phone": "919372647841"
       },
       {
         "name": "Sanjay Rathod",
@@ -3019,6 +3855,10 @@
       {
         "name": "Sarabjeet",
         "phone": "919820261404"
+      },
+      {
+        "name": "Satish Chawla ",
+        "phone": "919821093229"
       },
       {
         "name": "Sejal Sanghvi",
@@ -3031,6 +3871,10 @@
       {
         "name": "Shabnam Shaikh",
         "phone": "919136550500"
+      },
+      {
+        "name": "Shailesh Borale",
+        "phone": "918108120143"
       },
       {
         "name": "Shalabh Jain",
@@ -3053,6 +3897,10 @@
         "phone": "917021800434"
       },
       {
+        "name": "Shubhangi Shikhare",
+        "phone": "919757478394"
+      },
+      {
         "name": "Sidharth bhandari",
         "phone": "919309099003"
       },
@@ -3073,12 +3921,40 @@
         "phone": "918777540534"
       },
       {
+        "name": "Sulekha Bafna",
+        "phone": "919222101521"
+      },
+      {
+        "name": "Suman Singh ",
+        "phone": "919082586108"
+      },
+      {
+        "name": "Sunil Kumar ",
+        "phone": "918169981595"
+      },
+      {
+        "name": "Sunil Salve",
+        "phone": "919664755348"
+      },
+      {
+        "name": "Sunita Nair",
+        "phone": "919833646567"
+      },
+      {
         "name": "Suresh Khatanhar",
         "phone": "919664402200"
       },
       {
         "name": "Sushant Naidu",
         "phone": "919702292779"
+      },
+      {
+        "name": "Swastik Sen",
+        "phone": "919007354075"
+      },
+      {
+        "name": "Swati",
+        "phone": "918369406201"
       },
       {
         "name": "Tanay",
@@ -3097,12 +3973,36 @@
         "phone": "919867577606"
       },
       {
+        "name": "Ujjwala Patil",
+        "phone": "919890901115"
+      },
+      {
         "name": "Ujwal Shah",
         "phone": "919987231131"
       },
       {
+        "name": "Vaishnavi Shelke",
+        "phone": "919326060929"
+      },
+      {
+        "name": "Vicky",
+        "phone": "919920197789"
+      },
+      {
+        "name": "Vijay Goswami ",
+        "phone": "919737434662"
+      },
+      {
         "name": "VINOD KAMTEKAR",
         "phone": "917506135910"
+      },
+      {
+        "name": "Vishal Gujarathi",
+        "phone": "919833879079"
+      },
+      {
+        "name": "Yashesh Bharwada",
+        "phone": "919967969991"
       }
     ],
     "m0_only": [],
@@ -3337,24 +4237,24 @@
       }
     ]
   },
-  "home_loans_no_m_tags": 88,
+  "home_loans_no_m_tags": 162,
   "m0_only": 0,
   "m1_no_m2": 57,
-  "generated_at": "2026-07-24T04:39:32.557384Z",
+  "generated_at": "2026-07-24T05:31:38.172588Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
       [
         "home loans",
-        223
+        297
+      ],
+      [
+        "still looking (2-4 months)",
+        140
       ],
       [
         "m1",
         139
-      ],
-      [
-        "still looking (2-4 months)",
-        135
       ],
       [
         "m2",
@@ -3362,15 +4262,15 @@
       ],
       [
         "active warm (1 month)",
+        64
+      ],
+      [
+        "Not Qualified",
         51
       ],
       [
         "future plan (4+ months)",
-        32
-      ],
-      [
-        "Not Qualified",
-        10
+        50
       ],
       [
         "balance transfer (future)",
@@ -4363,386 +5263,10 @@
     }
   },
   "airtable_sync": {
-    "leads_total": 310,
+    "leads_total": 309,
     "leads_missing_phone": 6,
-    "matched": 229,
-    "in_airtable_not_periskope": [
-      {
-        "name": "Afaq Naik",
-        "phone": "7045007525",
-        "status": "Active Warm (1 month)"
-      },
-      {
-        "name": "Arshas Shaikh (Arshad)",
-        "phone": "9702418170",
-        "status": "Still Looking (2-4 Months)"
-      },
-      {
-        "name": "Arundhati De",
-        "phone": "9820279884",
-        "status": null
-      },
-      {
-        "name": "Atul Kukreti",
-        "phone": "9049536244",
-        "status": "Still Looking (2-4 Months)"
-      },
-      {
-        "name": "Bhavana",
-        "phone": "9930105332",
-        "status": null
-      },
-      {
-        "name": "Darshan Madnani",
-        "phone": "9773615193",
-        "status": null
-      },
-      {
-        "name": "Dashrath Chandorkar",
-        "phone": "9619795632",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Deejayen",
-        "phone": "9892010909",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Deepak Baheti",
-        "phone": "9967404215",
-        "status": null
-      },
-      {
-        "name": "Deepak Salunkhe",
-        "phone": "9322748494",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Devangshu ",
-        "phone": "7569953836",
-        "status": "Still Looking (2-4 Months)"
-      },
-      {
-        "name": "Dilip Arya",
-        "phone": "7737766942",
-        "status": "Still Looking (2-4 Months)"
-      },
-      {
-        "name": "Dilshad Alam ",
-        "phone": "7765838960",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Dipankar Chatterjee",
-        "phone": "9967660333",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Dipika Jain",
-        "phone": "9820967957",
-        "status": "Active Warm (1 month)"
-      },
-      {
-        "name": "Farhat fatima",
-        "phone": "9076446235",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Gautam Jaiswal",
-        "phone": "9594159436",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Gourav",
-        "phone": "9737119963",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Govind Singh",
-        "phone": "7302287234",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Hemangi Joshi",
-        "phone": "9768482177",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Imran ",
-        "phone": "8108227290",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Imran Sayyed",
-        "phone": "7705041988",
-        "status": "Active Warm (1 month)"
-      },
-      {
-        "name": "Imran Shaikh",
-        "phone": "8369059345",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Imteyaz Ansari ",
-        "phone": "8757781030",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Juzer Lokhandwala",
-        "phone": "9867362482",
-        "status": "Still Looking (2-4 Months)"
-      },
-      {
-        "name": "Kamlesh Gandhi",
-        "phone": "8291808589",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Khushboo Gupta",
-        "phone": "8169564095",
-        "status": null
-      },
-      {
-        "name": "Krupa and Jinay",
-        "phone": "9820812456",
-        "status": "Active Warm (1 month)"
-      },
-      {
-        "name": "Krupali",
-        "phone": "9769120616",
-        "status": "Future Plan (4+ Months)"
-      },
-      {
-        "name": "Madan Singh ",
-        "phone": "9892324692",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Mahendra",
-        "phone": "8591970827",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Maji",
-        "phone": "7977265322",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Meraj",
-        "phone": "9277161821",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Mohammad Abbas",
-        "phone": "9768090555",
-        "status": null
-      },
-      {
-        "name": "N Balaji",
-        "phone": "9987956489",
-        "status": "Still Looking (2-4 Months)"
-      },
-      {
-        "name": "NARENDRA SHAH",
-        "phone": "9004352358",
-        "status": "Still Looking (2-4 Months)"
-      },
-      {
-        "name": "Nazir Rabbani",
-        "phone": "9104319633",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Neeraj Sharma",
-        "phone": "8291004466",
-        "status": null
-      },
-      {
-        "name": "Nishant Bhatnager",
-        "phone": "9930603336",
-        "status": "Registration Complete"
-      },
-      {
-        "name": "Pawan Singh",
-        "phone": "9324580158",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Pooja Patel ",
-        "phone": "8826621116",
-        "status": "Active Warm (1 month)"
-      },
-      {
-        "name": "Poonam dalkar",
-        "phone": "9930017434",
-        "status": null
-      },
-      {
-        "name": "Pradyumna",
-        "phone": "9136656055",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Prakash Soni",
-        "phone": "9702717929",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Prashant Jadhav",
-        "phone": "9920204059",
-        "status": "Active Warm (1 month)"
-      },
-      {
-        "name": "Prashant NA",
-        "phone": "9820987022",
-        "status": "Active Warm (1 month)"
-      },
-      {
-        "name": "Prathmesh Mane",
-        "phone": "9172469293",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Priyanka Jaiswal",
-        "phone": "8459300568",
-        "status": null
-      },
-      {
-        "name": "Puja Dilip",
-        "phone": "7715857250",
-        "status": null
-      },
-      {
-        "name": "Puja Tambe",
-        "phone": "7715857250",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Rahul Londhe",
-        "phone": "7045598212",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Rajesh Thacker",
-        "phone": "9820934996",
-        "status": "Active Warm (1 month)"
-      },
-      {
-        "name": "Rajiv Bhele",
-        "phone": "9822230243",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Rakesh Shrivastav",
-        "phone": "9892189358",
-        "status": "Future Plan (4+ Months)"
-      },
-      {
-        "name": "Ritesh Tambe",
-        "phone": "8767946330",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Ronald Fernandes",
-        "phone": "9819985892",
-        "status": null
-      },
-      {
-        "name": "Sadhana Veerkar",
-        "phone": "9920003925",
-        "status": "Active Warm (1 month)"
-      },
-      {
-        "name": "Salman ",
-        "phone": "8108189018",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Samuel ",
-        "phone": "9372647841",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Satish Chawla ",
-        "phone": "9821093229",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Shailesh Borale",
-        "phone": "8108120143",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Shubhangi Shikhare",
-        "phone": "9757478394",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Sulekha Bafna",
-        "phone": "9222101521",
-        "status": "Active Warm (1 month)"
-      },
-      {
-        "name": "Suman Singh ",
-        "phone": "9082586108",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Sunil Kumar ",
-        "phone": "8169981595",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Sunil Salve",
-        "phone": "9664755348",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Sunita Nair",
-        "phone": "9833646567",
-        "status": null
-      },
-      {
-        "name": "Swastik Sen",
-        "phone": "9007354075",
-        "status": "Future Plan (4+ Months)"
-      },
-      {
-        "name": "Swati",
-        "phone": "8369406201",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Ujjwala Patil",
-        "phone": "9890901115",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Vaishnavi Shelke",
-        "phone": "9326060929",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Vicky",
-        "phone": "9920197789",
-        "status": null
-      },
-      {
-        "name": "Vijay Goswami ",
-        "phone": "9737434662",
-        "status": "Not Qualified"
-      },
-      {
-        "name": "Vishal Gujarathi",
-        "phone": "9833879079",
-        "status": "Still Looking (2-4 Months)"
-      },
-      {
-        "name": "Yashesh Bharwada",
-        "phone": "9967969991",
-        "status": "Active Warm (1 month)"
-      }
-    ],
+    "matched": 303,
+    "in_airtable_not_periskope": [],
     "in_periskope_home_loans_not_airtable": [
       {
         "name": "Abhishek Shah",
@@ -5061,309 +5585,20 @@
     ],
     "status_label_mismatches": [
       {
-        "name": "Abhishek",
-        "phone": "9769322137",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": [
-          "m1",
-          "home loans"
-        ]
-      },
-      {
-        "name": "Ananjan Choudhary",
-        "phone": "9930987633",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "active warm (1 month)"
-        ]
-      },
-      {
-        "name": "Anuja Barge",
-        "phone": "9769872215",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": []
-      },
-      {
-        "name": "Anupama C",
-        "phone": "9833554828",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": [
-          "m1",
-          "home loans"
-        ]
-      },
-      {
-        "name": "Arun Singh",
-        "phone": "9821058985",
-        "airtable_status": "Not Qualified",
-        "expected_periskope_label": "not qualified",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Ashish Chaturmohta",
-        "phone": "7738648833",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": [
-          "m1",
-          "home loans",
-          "active warm (1 month)"
-        ]
-      },
-      {
-        "name": "Biju Menon",
-        "phone": "9633695595",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": [
-          "m1",
-          "home loans"
-        ]
-      },
-      {
-        "name": "CA Saurabh Khaitan",
-        "phone": "7738864222",
-        "airtable_status": "Still Looking (2-4 Months)",
-        "expected_periskope_label": "still looking (2-4 months)",
-        "periskope_labels": []
-      },
-      {
-        "name": "Dharmesh Shah",
-        "phone": "9004493570",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": [
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Dilip Anam",
-        "phone": "9607055537",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": []
-      },
-      {
-        "name": "Dinesh Mhatre",
-        "phone": "7045454599",
-        "airtable_status": "Still Looking (2-4 Months)",
-        "expected_periskope_label": "still looking (2-4 months)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "future plan (4+ months)"
-        ]
-      },
-      {
-        "name": "Imran Habibur",
-        "phone": "7304419319",
-        "airtable_status": "Not Qualified",
-        "expected_periskope_label": "not qualified",
-        "periskope_labels": []
-      },
-      {
-        "name": "Javed Choudhary",
-        "phone": "9967391117",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "active warm (1 month)"
-        ]
-      },
-      {
-        "name": "Johney Dua",
-        "phone": "9820127378",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
+        "name": "Nishant Bhatnager",
+        "phone": "9930603336",
+        "airtable_status": "Registration Complete",
+        "expected_periskope_label": "registration complete",
         "periskope_labels": [
           "home loans"
         ]
-      },
-      {
-        "name": "Kartik",
-        "phone": "9731821057",
-        "airtable_status": "Still Looking (2-4 Months)",
-        "expected_periskope_label": "still looking (2-4 months)",
-        "periskope_labels": []
-      },
-      {
-        "name": "Kunal bagaya",
-        "phone": "7021384177",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": [
-          "m1"
-        ]
-      },
-      {
-        "name": "Meenakshi Mediratta",
-        "phone": "9819197743",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Monika Shekawat",
-        "phone": "9773166940",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": [
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Pranshu Soni",
-        "phone": "9321139224",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": []
-      },
-      {
-        "name": "Prasad Dixit",
-        "phone": "9137434156",
-        "airtable_status": "Not Qualified",
-        "expected_periskope_label": "not qualified",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Prashant Gagneja",
-        "phone": "9582713799",
-        "airtable_status": "Still Looking (2-4 Months)",
-        "expected_periskope_label": "still looking (2-4 months)",
-        "periskope_labels": []
       },
       {
         "name": "Rahul Agarwal",
         "phone": "9831077909",
         "airtable_status": "Registration Complete",
         "expected_periskope_label": "registration complete",
-        "periskope_labels": [
-          "active warm (1 month)"
-        ]
-      },
-      {
-        "name": "Rahul Oza",
-        "phone": "9920536111",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "active warm (1 month)"
-        ]
-      },
-      {
-        "name": "Raju Ingulkar (H/o Megha Ingulkar)",
-        "phone": "9768128787",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
         "periskope_labels": []
-      },
-      {
-        "name": "Ravi Dayma",
-        "phone": "9920157851",
-        "airtable_status": "Still Looking (2-4 Months)",
-        "expected_periskope_label": "still looking (2-4 months)",
-        "periskope_labels": [
-          "home loans",
-          "active warm (1 month)"
-        ]
-      },
-      {
-        "name": "Rupali Chavan",
-        "phone": "9769956745",
-        "airtable_status": "Still Looking (2-4 Months)",
-        "expected_periskope_label": "still looking (2-4 months)",
-        "periskope_labels": []
-      },
-      {
-        "name": "Rushikesh ",
-        "phone": "9028502679",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "active warm (1 month)"
-        ]
-      },
-      {
-        "name": "Sabeeha",
-        "phone": "8655833057",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": [
-          "m1",
-          "home loans"
-        ]
-      },
-      {
-        "name": "Saloni",
-        "phone": "9158578801",
-        "airtable_status": "Still Looking (2-4 Months)",
-        "expected_periskope_label": "still looking (2-4 months)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "active warm (1 month)"
-        ]
-      },
-      {
-        "name": "Sam .",
-        "phone": "9930050245",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Selvi Jay",
-        "phone": "9920315969",
-        "airtable_status": "Still Looking (2-4 Months)",
-        "expected_periskope_label": "still looking (2-4 months)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "active warm (1 month)"
-        ]
       },
       {
         "name": "Shobhit",
@@ -5373,110 +5608,6 @@
         "periskope_labels": []
       },
       {
-        "name": "Shruti Dhariwal",
-        "phone": "9819478761",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": [
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Subir Bose",
-        "phone": "9810100364",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": []
-      },
-      {
-        "name": "sumit mathur",
-        "phone": "9022960962",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Sundaraiah Bodige",
-        "phone": "8691902121",
-        "airtable_status": "Still Looking (2-4 Months)",
-        "expected_periskope_label": "still looking (2-4 months)",
-        "periskope_labels": []
-      },
-      {
-        "name": "Sunil Parab",
-        "phone": "8691884567",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": [
-          "m1",
-          "home loans"
-        ]
-      },
-      {
-        "name": "Surbhi Jain",
-        "phone": "9479851517",
-        "airtable_status": "Still Looking (2-4 Months)",
-        "expected_periskope_label": "still looking (2-4 months)",
-        "periskope_labels": [
-          "m1",
-          "home loans",
-          "active warm (1 month)"
-        ]
-      },
-      {
-        "name": "Suresh Khatanhar",
-        "phone": "9664402200",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": [
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Taruna & Ankur Vats",
-        "phone": "9899575226",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Vipul",
-        "phone": "9821081442",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
-        "name": "Vipul Soni",
-        "phone": "8940502402",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
-      },
-      {
         "name": "Virendra Vichare",
         "phone": "9920969608",
         "airtable_status": "Registration Complete",
@@ -5484,28 +5615,16 @@
         "periskope_labels": [
           "balance transfer (future)"
         ]
-      },
-      {
-        "name": "Yash Tiwari",
-        "phone": "9619325559",
-        "airtable_status": "Future Plan (4+ Months)",
-        "expected_periskope_label": "future plan (4+ months)",
-        "periskope_labels": [
-          "m2",
-          "m1",
-          "home loans",
-          "still looking (2-4 months)"
-        ]
       }
     ],
-    "generated_at": "2026-07-24T04:39:34.398962Z"
+    "generated_at": "2026-07-24T05:31:39.955818Z"
   },
   "contacts_by_source": {
-    "total": 223,
+    "total": 297,
     "source_counts": {
-      "Telecalling": 193,
-      "Meta Ads": 25,
-      "Buyer Experience Team": 3,
+      "Telecalling": 216,
+      "Meta Ads": 75,
+      "Buyer Experience Team": 4,
       "Not in Airtable": 1,
       "Referral": 1
     },
@@ -5624,6 +5743,14 @@
           "phone": "919674171865"
         },
         {
+          "name": "Arshas Shaikh (Arshad)",
+          "phone": "919702418170"
+        },
+        {
+          "name": "Arundhati De",
+          "phone": "919820279884"
+        },
+        {
           "name": "Arvind",
           "phone": "919818134261"
         },
@@ -5648,6 +5775,10 @@
           "phone": "919820860738"
         },
         {
+          "name": "Atul Kukreti",
+          "phone": "919049536244"
+        },
+        {
           "name": "Ayushman Bhattacharya",
           "phone": "919833060132"
         },
@@ -5666,6 +5797,10 @@
         {
           "name": "Bharat Nanavayi",
           "phone": "919892049942"
+        },
+        {
+          "name": "Bhavana",
+          "phone": "919930105332"
         },
         {
           "name": "Biju Menon",
@@ -5688,8 +5823,16 @@
           "phone": "917453878578"
         },
         {
+          "name": "Darshan Madnani",
+          "phone": "919773615193"
+        },
+        {
           "name": "Datta Sawant",
           "phone": "919867740706"
+        },
+        {
+          "name": "Deepak Baheti",
+          "phone": "919967404215"
         },
         {
           "name": "Deepak Harjani",
@@ -5704,6 +5847,10 @@
           "phone": "919930376354"
         },
         {
+          "name": "Devangshu ",
+          "phone": "917569953836"
+        },
+        {
           "name": "dhananjay chaughule",
           "phone": "919594094095"
         },
@@ -5714,6 +5861,10 @@
         {
           "name": "Dheeraj",
           "phone": "919312413896"
+        },
+        {
+          "name": "Dilip Arya",
+          "phone": "917737766942"
         },
         {
           "name": "Dinesh Kirodian",
@@ -5730,6 +5881,10 @@
         {
           "name": "Dipali",
           "phone": "917045970804"
+        },
+        {
+          "name": "Dipika Jain",
+          "phone": "919820967957"
         },
         {
           "name": "Durgesh Dadich",
@@ -5792,6 +5947,18 @@
           "phone": "917506707010"
         },
         {
+          "name": "Khushboo Gupta",
+          "phone": "918169564095"
+        },
+        {
+          "name": "Krupa and Jinay",
+          "phone": "919820812456"
+        },
+        {
+          "name": "Krupali",
+          "phone": "919769120616"
+        },
+        {
           "name": "Kuldeep Rathore",
           "phone": "917718834010"
         },
@@ -5817,11 +5984,11 @@
         },
         {
           "name": "Manoj Gupta",
-          "phone": "919820573699"
+          "phone": "917045352354"
         },
         {
           "name": "Manoj Gupta",
-          "phone": "917045352354"
+          "phone": "919820573699"
         },
         {
           "name": "Manu Sujanti",
@@ -5872,6 +6039,10 @@
           "phone": "919820018973"
         },
         {
+          "name": "N Balaji",
+          "phone": "919987956489"
+        },
+        {
           "name": "Nandita",
           "phone": "919223106467"
         },
@@ -5882,6 +6053,10 @@
         {
           "name": "Nayna Desai",
           "phone": "919029391800"
+        },
+        {
+          "name": "Neeraj Sharma",
+          "phone": "918291004466"
         },
         {
           "name": "Neha",
@@ -5902,6 +6077,10 @@
         {
           "name": "Nirmal Parikh",
           "phone": "919892475142"
+        },
+        {
+          "name": "Nishant Bhatnager",
+          "phone": "919930603336"
         },
         {
           "name": "Nitesh Kalantri",
@@ -5968,6 +6147,10 @@
           "phone": "919930224986"
         },
         {
+          "name": "Priyanka Jaiswal",
+          "phone": "918459300568"
+        },
+        {
           "name": "Priyanka Rajapkar",
           "phone": "919867058900"
         },
@@ -5998,6 +6181,10 @@
         {
           "name": "Rajesh & Sunita Daga",
           "phone": "919535522177"
+        },
+        {
+          "name": "Rajesh Thacker",
+          "phone": "919820934996"
         },
         {
           "name": "Ramendr Tiwari",
@@ -6046,6 +6233,10 @@
         {
           "name": "Sabeeha",
           "phone": "918655833057"
+        },
+        {
+          "name": "Sadhana Veerkar",
+          "phone": "919920003925"
         },
         {
           "name": "Sagar Mona",
@@ -6168,6 +6359,10 @@
           "phone": "919819412043"
         },
         {
+          "name": "Sulekha Bafna",
+          "phone": "919222101521"
+        },
+        {
           "name": "sumit mathur",
           "phone": "919022960962"
         },
@@ -6184,6 +6379,10 @@
           "phone": "919324410856"
         },
         {
+          "name": "Sunita Nair",
+          "phone": "919833646567"
+        },
+        {
           "name": "Surbhi Jain",
           "phone": "919479851517"
         },
@@ -6194,6 +6393,10 @@
         {
           "name": "Sushant Naidu",
           "phone": "919702292779"
+        },
+        {
+          "name": "Swastik Sen",
+          "phone": "919007354075"
         },
         {
           "name": "Tanay",
@@ -6272,6 +6475,10 @@
           "phone": "919821081442"
         },
         {
+          "name": "Vishal Gujarathi",
+          "phone": "919833879079"
+        },
+        {
           "name": "Vishal Lohire",
           "phone": "919987646849"
         },
@@ -6282,12 +6489,20 @@
         {
           "name": "Yash Tiwari",
           "phone": "919619325559"
+        },
+        {
+          "name": "Yashesh Bharwada",
+          "phone": "919967969991"
         }
       ],
       "Meta Ads": [
         {
           "name": "AB Entertainment (Anil Bohra)",
           "phone": "919892634211"
+        },
+        {
+          "name": "Afaq Naik",
+          "phone": "917045007525"
         },
         {
           "name": "Ajay Babu ",
@@ -6322,6 +6537,18 @@
           "phone": "918898669103"
         },
         {
+          "name": "Dashrath Chandorkar",
+          "phone": "919619795632"
+        },
+        {
+          "name": "Deejayen",
+          "phone": "919892010909"
+        },
+        {
+          "name": "Deepak Salunkhe",
+          "phone": "919322748494"
+        },
+        {
           "name": "Deeshank Narkar",
           "phone": "918108959862"
         },
@@ -6330,60 +6557,244 @@
           "phone": "919152913513"
         },
         {
+          "name": "Dilshad Alam ",
+          "phone": "917765838960"
+        },
+        {
+          "name": "Dipankar Chatterjee",
+          "phone": "919967660333"
+        },
+        {
+          "name": "Farhat fatima",
+          "phone": "919076446235"
+        },
+        {
+          "name": "Gautam Jaiswal",
+          "phone": "919594159436"
+        },
+        {
+          "name": "Gourav",
+          "phone": "919737119963"
+        },
+        {
+          "name": "Govind Singh",
+          "phone": "917302287234"
+        },
+        {
           "name": "Haresh Parmer",
           "phone": "919167245781"
+        },
+        {
+          "name": "Hemangi Joshi",
+          "phone": "919768482177"
         },
         {
           "name": "Hussain Ali Shaikh",
           "phone": "919870078640"
         },
         {
+          "name": "Imran ",
+          "phone": "918108227290"
+        },
+        {
+          "name": "Imran Sayyed",
+          "phone": "917705041988"
+        },
+        {
+          "name": "Imran Shaikh",
+          "phone": "918369059345"
+        },
+        {
+          "name": "Imteyaz Ansari ",
+          "phone": "918757781030"
+        },
+        {
+          "name": "Juzer Lokhandwala",
+          "phone": "919867362482"
+        },
+        {
+          "name": "Kamlesh Gandhi",
+          "phone": "918291808589"
+        },
+        {
           "name": "Kamlesh Jadhav",
           "phone": "919223502540"
+        },
+        {
+          "name": "Madan Singh ",
+          "phone": "919892324692"
+        },
+        {
+          "name": "Mahendra",
+          "phone": "918591970827"
+        },
+        {
+          "name": "Maji",
+          "phone": "917977265322"
+        },
+        {
+          "name": "Meraj",
+          "phone": "919277161821"
+        },
+        {
+          "name": "Mohammad Abbas",
+          "phone": "919768090555"
         },
         {
           "name": "Mushir Khan",
           "phone": "917045640732"
         },
         {
+          "name": "NARENDRA SHAH",
+          "phone": "919004352358"
+        },
+        {
+          "name": "Nazir Rabbani",
+          "phone": "919104319633"
+        },
+        {
           "name": "Pandurang Khamkar",
           "phone": "918369460300"
+        },
+        {
+          "name": "Pawan Singh",
+          "phone": "919324580158"
         },
         {
           "name": "Pinky",
           "phone": "919833527517"
         },
         {
+          "name": "Pooja Patel ",
+          "phone": "918826621116"
+        },
+        {
+          "name": "Poonam dalkar",
+          "phone": "919930017434"
+        },
+        {
           "name": "Pradeep",
           "phone": "919004900624"
+        },
+        {
+          "name": "Pradyumna",
+          "phone": "919136656055"
+        },
+        {
+          "name": "Prakash Soni",
+          "phone": "919702717929"
         },
         {
           "name": "Prasad Dixit",
           "phone": "919137434156"
         },
         {
+          "name": "Prashant Jadhav",
+          "phone": "919920204059"
+        },
+        {
+          "name": "Prathmesh Mane",
+          "phone": "919172469293"
+        },
+        {
+          "name": "Puja Dilip",
+          "phone": "917715857250"
+        },
+        {
+          "name": "Rahul Londhe",
+          "phone": "917045598212"
+        },
+        {
           "name": "Raj",
           "phone": "919702618253"
+        },
+        {
+          "name": "Rajiv Bhele",
+          "phone": "919822230243"
         },
         {
           "name": "Rajkumar",
           "phone": "918976049514"
         },
         {
+          "name": "Rakesh Shrivastav",
+          "phone": "919892189358"
+        },
+        {
           "name": "Rana Vishal Singh",
           "phone": "918050004430"
+        },
+        {
+          "name": "Ritesh Tambe",
+          "phone": "918767946330"
+        },
+        {
+          "name": "Ronald Fernandes",
+          "phone": "919819985892"
         },
         {
           "name": "Sagar Mhetre",
           "phone": "918793604721"
         },
         {
+          "name": "Salman ",
+          "phone": "918108189018"
+        },
+        {
+          "name": "Samuel ",
+          "phone": "919372647841"
+        },
+        {
           "name": "Sanjay Rathod",
           "phone": "919324843079"
         },
         {
+          "name": "Satish Chawla ",
+          "phone": "919821093229"
+        },
+        {
           "name": "Sekhar Vishwakarma",
           "phone": "919005368705"
+        },
+        {
+          "name": "Shailesh Borale",
+          "phone": "918108120143"
+        },
+        {
+          "name": "Shubhangi Shikhare",
+          "phone": "919757478394"
+        },
+        {
+          "name": "Suman Singh ",
+          "phone": "919082586108"
+        },
+        {
+          "name": "Sunil Kumar ",
+          "phone": "918169981595"
+        },
+        {
+          "name": "Sunil Salve",
+          "phone": "919664755348"
+        },
+        {
+          "name": "Swati",
+          "phone": "918369406201"
+        },
+        {
+          "name": "Ujjwala Patil",
+          "phone": "919890901115"
+        },
+        {
+          "name": "Vaishnavi Shelke",
+          "phone": "919326060929"
+        },
+        {
+          "name": "Vicky",
+          "phone": "919920197789"
+        },
+        {
+          "name": "Vijay Goswami ",
+          "phone": "919737434662"
         }
       ],
       "Not in Airtable": [
@@ -6400,6 +6811,10 @@
       ],
       "Buyer Experience Team": [
         {
+          "name": "Prashant NA",
+          "phone": "919820987022"
+        },
+        {
           "name": "Ritesh Mittal",
           "phone": "919696029020"
         },
@@ -6413,7 +6828,7 @@
         }
       ]
     },
-    "generated_at": "2026-07-24T04:39:34.403305Z"
+    "generated_at": "2026-07-24T05:31:39.960342Z"
   },
   "poll_responses": {
     "lookback_days": 30,
@@ -7409,7 +7824,7 @@
         ]
       }
     ],
-    "generated_at": "2026-07-24T04:39:40.864803Z"
+    "generated_at": "2026-07-24T05:31:47.311930Z"
   },
   "lead_warmth": {
     "rows": [
@@ -7458,9 +7873,9 @@
         "last_inbound_message": null,
         "periskope_labels": [
           "m2",
+          "Not Qualified",
           "m1",
-          "home loans",
-          "still looking (2-4 months)"
+          "home loans"
         ],
         "stale_days": 36,
         "stale": true,
@@ -7476,11 +7891,59 @@
         "last_inbound_message": null,
         "periskope_labels": [
           "m2",
+          "Not Qualified",
           "m1",
+          "home loans"
+        ],
+        "stale_days": 36,
+        "stale": true,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Devangshu ",
+        "phone": "7569953836",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Looking for 2BHK in Godrej seen our flat but pricing is high saying and will look through somewhere else and once finalize anything will let us know about further part.",
+        "last_conversation": "2026-07-02",
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
           "home loans",
           "still looking (2-4 months)"
         ],
-        "stale_days": 36,
+        "stale_days": 22,
+        "stale": true,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Vishal Gujarathi",
+        "phone": "9833879079",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Looking for a apartment only in Ghatkopar at 4Cr and once he will finalize anything he will think about consultation call.",
+        "last_conversation": "2026-07-02",
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "still looking (2-4 months)"
+        ],
+        "stale_days": 22,
+        "stale": true,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Rajesh Thacker",
+        "phone": "9820934996",
+        "status": "Active Warm (1 month)",
+        "notes": "Still looking. Will finance a part through Home Loan. Booked for Tom. 12 pm. raj12esh@gmail.com. He also wants to sell his property in Mulund East. So, get him connected with the concerned department.\n\n--- Consultation Summary (Jul 4, 2026) ---\nConsultation completed. Client searching for a move-in-",
+        "last_conversation": "2026-07-03",
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "active warm (1 month)"
+        ],
+        "stale_days": 21,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7550,6 +8013,21 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Nishant Bhatnager",
+        "phone": "9930603336",
+        "status": "Registration Complete",
+        "notes": "--- Consultation Summary (Jul 4, 2026) ---\nConsultation completed. Reviewed refinancing a ~\u20b92.4Cr existing mortgage; potential savings of \u20b95L identified via anonymous-profile balance transfer, but client prioritized minimal effort given existing bank relationship and decided to postpone any balance ",
+        "last_conversation": "2026-07-04",
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": 20,
+        "stale": true,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Tanushree Chakraborty",
         "phone": "8879034235",
         "status": "Future Plan (4+ Months)",
@@ -7562,6 +8040,22 @@
           "future plan (4+ months)"
         ],
         "stale_days": 20,
+        "stale": true,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Pooja Patel ",
+        "phone": "8826621116",
+        "status": "Active Warm (1 month)",
+        "notes": "Shared details of our property in Chandivali will see and once finalizes anything look for the later loan part",
+        "last_conversation": "2026-07-06",
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "active warm (1 month)"
+        ],
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7655,7 +8149,7 @@
         "last_inbound_message": null,
         "periskope_labels": [
           "home loans",
-          "still looking (2-4 months)"
+          "active warm (1 month)"
         ],
         "stale_days": 17,
         "stale": true,
@@ -8151,6 +8645,53 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Khushboo Gupta",
+        "phone": "8169564095",
+        "status": null,
+        "notes": "Consultation for 12PM Sunday\n\n[11 Jul 2026 - Rashmi Gupta]: 11th July - called again - not required now. she will connect on her own when  required.",
+        "last_conversation": "2026-07-11",
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": 13,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Yashesh Bharwada",
+        "phone": "9967969991",
+        "status": "Active Warm (1 month)",
+        "notes": "Looking for a property in Powai, Hiranandani with a budget of 4-4.5 CR\n\n[11 Jul 2026 - Rashmi Gupta]: 11th July - called again - he asked to call on Monday before booking a new slot.",
+        "last_conversation": "2026-07-11",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "active warm (1 month)"
+        ],
+        "stale_days": 13,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Shamuyal Pakhare",
+        "phone": "9372647841",
+        "status": "Not Qualified",
+        "notes": "He had personal loan requirement.",
+        "last_conversation": "2026-07-12",
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": 12,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Sunil S Dayma",
         "phone": "9324410856",
         "status": "Not Qualified",
@@ -8180,7 +8721,7 @@
           "m2",
           "m1",
           "home loans",
-          "still looking (2-4 months)"
+          "future plan (4+ months)"
         ],
         "stale_days": 11,
         "stale": false,
@@ -8305,7 +8846,23 @@
           "m2",
           "m1",
           "home loans",
-          "active warm (1 month)"
+          "future plan (4+ months)"
+        ],
+        "stale_days": 11,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Farhat fatima",
+        "phone": "9076446235",
+        "status": "Not Qualified",
+        "notes": "[5 Jun 2026 - Arpit Shah]: Busy, call later\n\n[5 Jun 2026 - Arpit Shah]: Busy, call later\n\n[13 Jul 2026 - Arhan Shinde]: Farhat's son picked up, requested to call tomorrow",
+        "last_conversation": "2026-07-13",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
         ],
         "stale_days": 11,
         "stale": false,
@@ -8323,6 +8880,22 @@
           "m1",
           "home loans",
           "still looking (2-4 months)"
+        ],
+        "stale_days": 11,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Sulekha Bafna",
+        "phone": "9222101521",
+        "status": "Active Warm (1 month)",
+        "notes": "Call has been scheduled for 4PM on Monday. Had seen our unit in Exquisite (902)\n\n[16 Jun 2026 - Raaghav Paharia]: Will be available for a consultation call after 10-12 days, currently finalising a flat in Santacruz\n\n[13 Jul 2026 - Raaghav Paharia]: Not very actively looking rn, just exploring the op",
+        "last_conversation": "2026-07-13",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "active warm (1 month)"
         ],
         "stale_days": 11,
         "stale": false,
@@ -8347,6 +8920,22 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Swastik Sen",
+        "phone": "9007354075",
+        "status": "Future Plan (4+ Months)",
+        "notes": "He is in process to buy a house, lives on rent and looking to upgrade since he will be living longer in Mumbai. He got hooked when mentioned that by structuring loan earlier it gives clear visibility for the purchase and can make much more informed decision. Consultation booked for Monday morning\n\n[",
+        "last_conversation": "2026-07-13",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 11,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Sneha Budhia",
         "phone": "9852340897",
         "status": "Still Looking (2-4 Months)",
@@ -8365,6 +8954,22 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Rakesh Shrivastav",
+        "phone": "9892189358",
+        "status": "Future Plan (4+ Months)",
+        "notes": "[23 May 2026 - Arpit Shah]: Lead came through meta Ad. He wants to check his eligibility and has one existing loan. Explained a bit about what Truva home loan does and asked his time for consultation. consultation booked on 24th may at 12PM. Have shared an Invite and whats app message\n\n[25 May 2026 ",
+        "last_conversation": "2026-07-13",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 11,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Ashish Chaturmohta",
         "phone": "7738648833",
         "status": "Future Plan (4+ Months)",
@@ -8375,7 +8980,7 @@
         "periskope_labels": [
           "m1",
           "home loans",
-          "active warm (1 month)"
+          "future plan (4+ months)"
         ],
         "stale_days": 11,
         "stale": false,
@@ -8411,7 +9016,7 @@
           "m2",
           "m1",
           "home loans",
-          "active warm (1 month)"
+          "future plan (4+ months)"
         ],
         "stale_days": 11,
         "stale": false,
@@ -8429,7 +9034,7 @@
           "m2",
           "m1",
           "home loans",
-          "still looking (2-4 months)"
+          "future plan (4+ months)"
         ],
         "stale_days": 11,
         "stale": false,
@@ -8489,6 +9094,22 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Prashant Jadhav",
+        "phone": "9920204059",
+        "status": "Active Warm (1 month)",
+        "notes": "Not finalized any property yet looking for a 2 BHK at 2Cr...wants a loan of 1Cr.\nAgreed for a consultation call for tomorrow at 12pm.\nEmail - plj000096@gmail.com\n\n[12 Jul 2026 - Afif Bellikunhi]: Consultation Call Notes Link - \n\nhttps://docs.google.com/document/d/1sxEGUtDmGXjsRIdNTiLvNyFFknG8J41bY0W",
+        "last_conversation": "2026-07-13",
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "active warm (1 month)"
+        ],
+        "stale_days": 11,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Taruna & Ankur Vats",
         "phone": "9899575226",
         "status": "Future Plan (4+ Months)",
@@ -8500,7 +9121,7 @@
           "m2",
           "m1",
           "home loans",
-          "still looking (2-4 months)"
+          "future plan (4+ months)"
         ],
         "stale_days": 11,
         "stale": false,
@@ -8535,7 +9156,7 @@
           "m2",
           "m1",
           "home loans",
-          "still looking (2-4 months)"
+          "active warm (1 month)"
         ],
         "stale_days": 11,
         "stale": false,
@@ -8623,7 +9244,8 @@
         "last_inbound_message": null,
         "periskope_labels": [
           "m1",
-          "home loans"
+          "home loans",
+          "future plan (4+ months)"
         ],
         "stale_days": 10,
         "stale": false,
@@ -8675,7 +9297,7 @@
         "periskope_labels": [
           "m1",
           "home loans",
-          "active warm (1 month)"
+          "still looking (2-4 months)"
         ],
         "stale_days": 10,
         "stale": false,
@@ -8710,7 +9332,23 @@
         "periskope_labels": [
           "m1",
           "home loans",
-          "still looking (2-4 months)"
+          "active warm (1 month)"
+        ],
+        "stale_days": 10,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Krupali",
+        "phone": "9769120616",
+        "status": "Future Plan (4+ Months)",
+        "notes": "Agreed for a consultation call for tomorrow 11am.\n\n--- Consultation Summary (Jun 25, 2026) ---\nConsultation completed. Discussed property location/budget preferences and ran financial simulations for loan eligibility based on combined income and credit profile; overdraft account strategy flagged for",
+        "last_conversation": "2026-07-14",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "future plan (4+ months)"
         ],
         "stale_days": 10,
         "stale": false,
@@ -8779,7 +9417,7 @@
           "m2",
           "m1",
           "home loans",
-          "future plan (4+ months)"
+          "still looking (2-4 months)"
         ],
         "stale_days": 10,
         "stale": false,
@@ -8893,6 +9531,22 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Krupa and Jinay",
+        "phone": "9820812456",
+        "status": "Active Warm (1 month)",
+        "notes": "She is interested in the due diligence angle. They are about to finalize a deal in ghatkopar east. 9820812456 - jinay (husband) handles the loan part.\n\n[18 May 2026 - Arpit Shah]: She is interested in the due diligence angle. They are about to finalize a deal in ghatkopar east. 9820812456 - jinay (h",
+        "last_conversation": "2026-07-14",
+        "last_call_status": "Call Back",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "active warm (1 month)"
+        ],
+        "stale_days": 10,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Linus Menezes",
         "phone": "9820050714",
         "status": "Future Plan (4+ Months)",
@@ -8939,7 +9593,7 @@
         "periskope_labels": [
           "m1",
           "home loans",
-          "still looking (2-4 months)"
+          "active warm (1 month)"
         ],
         "stale_days": 10,
         "stale": false,
@@ -8952,6 +9606,22 @@
         "notes": "Booked for Saturday, 11th July, 3.30 pm. \nFor Due Diligence and Home loan. \nWants to take 60 percent loan. \nShe has already got sanctioned from Bajaj Finance at 7.5 ROI. \nStill looking for a 1BHK with 430 and above carpet area in the range of 1.1 to 1.5 cr. \nPreferably in Andheri W and Oshiwara. Cou",
         "last_conversation": "2026-07-14",
         "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "still looking (2-4 months)"
+        ],
+        "stale_days": 10,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Atul Kukreti",
+        "phone": "9049536244",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Looking for a 2BHK in Goregaon...Suggested him our property Romell Aether...Interested in consultation call on saturday 5pm.\n\n--- Consultation Summary (Jun 27, 2026) ---\nConsultation completed. Property budget \u20b92.7-2.9Cr; financial profiling confirmed a \u20b91.8Cr loan is feasible with a 790-798 credit ",
+        "last_conversation": "2026-07-14",
+        "last_call_status": "Connected",
         "last_inbound_message": null,
         "periskope_labels": [
           "home loans",
@@ -9024,7 +9694,8 @@
         "last_inbound_message": null,
         "periskope_labels": [
           "m1",
-          "home loans"
+          "home loans",
+          "active warm (1 month)"
         ],
         "stale_days": 10,
         "stale": false,
@@ -9042,7 +9713,7 @@
           "m2",
           "m1",
           "home loans",
-          "still looking (2-4 months)"
+          "future plan (4+ months)"
         ],
         "stale_days": 9,
         "stale": false,
@@ -9151,6 +9822,22 @@
         "no_contact_on_record": false
       },
       {
+        "name": "N Balaji",
+        "phone": "9987956489",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Agreed for a consultation call for tomorrow 28-5-26 morning 11Am.\n\n[28 May 2026 - Arpit Shah]: Consultation done, he is 46 year old. Looking to either buy 3 bhk property in chandivali or a plot in Navi mumbai in next 2-3 months. He is still evaluating what is best for him. He earns 3.75 pm after tax",
+        "last_conversation": "2026-07-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "still looking (2-4 months)"
+        ],
+        "stale_days": 9,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": " \n \t\nVikrant Kamath",
         "phone": "9594586510",
         "status": null,
@@ -9230,6 +9917,22 @@
           "m1",
           "home loans",
           "still looking (2-4 months)"
+        ],
+        "stale_days": 9,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Sunil Salve",
+        "phone": "9664755348",
+        "status": "Not Qualified",
+        "notes": "[15 Jul 2026 - Raaghav Paharia]: \"HDFC, Thane, 8.75%, 20 years\n\nTook in 2016 - ~17L\nProperty Loan + Top-up\nCurrently looking for a 25-30L TOP-UP\n\nTotal BT - 45-50L\n\nCIBIL : 750-770\"\n\nPassed to Meta as he is not qualified",
+        "last_conversation": "2026-07-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
         ],
         "stale_days": 9,
         "stale": false,
@@ -9325,6 +10028,36 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Arundhati De",
+        "phone": "9820279884",
+        "status": null,
+        "notes": "Customer agreed for a consultation call on saturday 12pm....she was looking for a apartment in 1.5Cr...So told her about loan and she was interested to have a conversation about that.\nEmail - meetarundhati@gmail.com\n\n[19 Jun 2026 - Arpit Shah]: She didn't show up, Sameer called her yesterday as well",
+        "last_conversation": "2026-07-17",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": 7,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Ronald Fernandes",
+        "phone": "9819985892",
+        "status": null,
+        "notes": "[2 Jun 2026 - Afif Bellikunhi]: Number busy\n\n[2 Jun 2026 - Afif Bellikunhi]: 85L Pending at 8% from Bajaj.\n\nCIBIL - 744\n\nHouse is in thane. Loan is in both wife's and his names. Above 760. \n\nNet take home estimate: 1.85L\n\nExisting loans they have (personal loan)\n\nPersonal loan EMI is 67K per month\n\n",
+        "last_conversation": "2026-07-17",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": 7,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Megha",
         "phone": "9314663996",
         "status": "Still Looking (2-4 Months)",
@@ -9379,6 +10112,21 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Deepak Baheti",
+        "phone": "9967404215",
+        "status": null,
+        "notes": "Looking for a property of 3bhk on and near ghatkopar or andheri east but would be happy to understand the banking processes\n\n[11 May 2026 - Harsh Mody]: He is an ex banker and CA himself looking around Goregoan area. I focused more on closing as a service because Home loan was not something he was s",
+        "last_conversation": "2026-07-17",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": 7,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Akshi Mahajan",
         "phone": "7738527852",
         "status": "Not Qualified",
@@ -9409,6 +10157,21 @@
           "m1",
           "home loans",
           "still looking (2-4 months)"
+        ],
+        "stale_days": 7,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Mohammad Abbas",
+        "phone": "9768090555",
+        "status": null,
+        "notes": "[5 Jun 2026 - Arpit Shah]: Not able to receieve calls\n\n[13 Jul 2026 - Arhan Shinde]: Not able to recieve calls\n\n[15 Jul 2026 - Arhan Shinde]: not recieving\n[17 Jul 2026 - Arhan Shinde]: not receiving calls",
+        "last_conversation": "2026-07-17",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
         ],
         "stale_days": 7,
         "stale": false,
@@ -9504,6 +10267,21 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Priyanka Jaiswal",
+        "phone": "8459300568",
+        "status": null,
+        "notes": "Agreed for a consultation call for sunday 31-5-26 morning 11AM.\n\n[31 May 2026 - Afif Bellikunhi]: Looking to buy in the next 3-5 months. Specifically wants in Heritage, Avalon, Octavius. 2BHK and budget is 5Cr\n\n[31 May 2026 - Afif Bellikunhi]: Consultation completed\n\n[13 Jul 2026 - Arhan Shinde]: dn",
+        "last_conversation": "2026-07-17",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": 7,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Suhas Suryawanshi",
         "phone": "9819412043",
         "status": "Not Qualified",
@@ -9516,6 +10294,21 @@
           "m1",
           "home loans",
           "active warm (1 month)"
+        ],
+        "stale_days": 7,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Neeraj Sharma",
+        "phone": "8291004466",
+        "status": null,
+        "notes": "Customer is interested for consultation call by monday 1-6-26..3pm...Looking for a 3BHK in Powai At 6Cr.\n\n[4 Jun 2026 - Afif Bellikunhi]: DNP\n\n[11 Jul 2026 - Rashmi Gupta]: 11th July - called again - call busy\n\n[13 Jul 2026 - Arhan Shinde]: dnp\n\n[14 Jul 2026 - Rashmi Gupta]: 14th July, Tuesday - cal",
+        "last_conversation": "2026-07-17",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
         ],
         "stale_days": 7,
         "stale": false,
@@ -9552,6 +10345,36 @@
           "m1",
           "home loans",
           "still looking (2-4 months)"
+        ],
+        "stale_days": 7,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Sunita Nair",
+        "phone": "9833646567",
+        "status": null,
+        "notes": "Already purchased a property in Neelam Senroofs ( Mulund )....Taken a loan of 1Cr from SBI at 7.35% wants a loan transfer\nAgreed for a consultation call on friday 5-6-26 at 3PM.\nEmail . sunidas@gmail.com\n\n[8 Jun 2026 - Arpit Shah]: Didn't show up in consultation call. Have asked for next week\n\n[11 J",
+        "last_conversation": "2026-07-17",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": 7,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Bhavana",
+        "phone": "9930105332",
+        "status": null,
+        "notes": "In person consultation booked for the weekend.\n\n[13 Jul 2026 - Arhan Shinde]: Busy at the moment and cut the call\n[17 Jul 2026 - Arhan Shinde]: dnp",
+        "last_conversation": "2026-07-17",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
         ],
         "stale_days": 7,
         "stale": false,
@@ -9641,7 +10464,22 @@
           "m2",
           "m1",
           "home loans",
-          "active warm (1 month)"
+          "future plan (4+ months)"
+        ],
+        "stale_days": 7,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Vicky",
+        "phone": "9920197789",
+        "status": null,
+        "notes": "(17 Jul 2026- Arhan Shinde): callback next week\n\n[23 Jun 2026 - Raaghav Paharia]: DNP\n\n[13 Jul 2026 - Arhan Shinde]: dnp\n\n[15 Jul 2026 - Arhan Shinde]: dnp\n\n[17 Jul 2026 - Arhan Shinde]: requested callback next week",
+        "last_conversation": "2026-07-17",
+        "last_call_status": "Call Back",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
         ],
         "stale_days": 7,
         "stale": false,
@@ -9683,6 +10521,37 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Puja Dilip",
+        "phone": "7715857250",
+        "status": null,
+        "notes": "[2 Jun 2026 - Afif Bellikunhi]: number busy\n\n[23 Jun 2026 - Raaghav Paharia]: Cut the call\n\n[13 Jul 2026 - Arhan Shinde]: not going through\n[17 Jul 2026 - Arhan Shinde]: dnp",
+        "last_conversation": "2026-07-17",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": 7,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Rahul Londhe",
+        "phone": "7045598212",
+        "status": "Not Qualified",
+        "notes": "(17 Jul 2026- Arhan Shinde): getting 7.1 interest from bank of maharashtra and has already finalized home in vikhroli\n\n[15 Jul 2026 - Arhan Shinde]: dnp\n\n[17 Jul 2026 - Arhan Shinde]: rahullondhe689@gmail.com\n\n[17 Jul 2026 - Arhan Shinde]: consultation booked for july 18, 11 am\n\n[17 Jul 2026 - Arhan",
+        "last_conversation": "2026-07-17",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": 7,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Sagar Mona`",
         "phone": "9952170506",
         "status": "Still Looking (2-4 Months)",
@@ -9712,7 +10581,7 @@
           "m2",
           "m1",
           "home loans",
-          "active warm (1 month)"
+          "still looking (2-4 months)"
         ],
         "stale_days": 7,
         "stale": false,
@@ -9731,6 +10600,21 @@
           "m1",
           "home loans",
           "still looking (2-4 months)"
+        ],
+        "stale_days": 7,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Poonam dalkar",
+        "phone": "9930017434",
+        "status": null,
+        "notes": "[23 Jun 2026 - Raaghav Paharia]: Busy\n\n[13 Jul 2026 - Arhan Shinde]: dnp\n\n[15 Jul 2026 - Arhan Shinde]: cut the call\n\n\n(17 Jul 2026- Arhan Shinde): dnp\n",
+        "last_conversation": "2026-07-17",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
         ],
         "stale_days": 7,
         "stale": false,
@@ -9783,7 +10667,7 @@
           "m2",
           "m1",
           "home loans",
-          "active warm (1 month)"
+          "still looking (2-4 months)"
         ],
         "stale_days": 7,
         "stale": false,
@@ -9908,6 +10792,22 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Prashant NA",
+        "phone": "9820987022",
+        "status": "Active Warm (1 month)",
+        "notes": "He is a lawyer and also has retailorship in shipping business. \nHas a joint home with his brother and father, for which an EMI of 96K goes every month - he is not the one in paying capacity here (can be proved with the bank statements)\nCIBIL - 830 to 840\nIncome (He and his wife) - 20-21LPA\n\n",
+        "last_conversation": "2026-07-21",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "active warm (1 month)"
+        ],
+        "stale_days": 3,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Pranay NA",
         "phone": "9819991128",
         "status": "Still Looking (2-4 Months)",
@@ -10013,7 +10913,8 @@
         "last_inbound_message": null,
         "periskope_labels": [
           "m1",
-          "home loans"
+          "home loans",
+          "active warm (1 month)"
         ],
         "stale_days": 1,
         "stale": false,
@@ -10029,7 +10930,8 @@
         "last_inbound_message": null,
         "periskope_labels": [
           "m1",
-          "home loans"
+          "home loans",
+          "active warm (1 month)"
         ],
         "stale_days": 1,
         "stale": false,
@@ -10047,7 +10949,7 @@
           "m2",
           "m1",
           "home loans",
-          "still looking (2-4 months)"
+          "active warm (1 month)"
         ],
         "stale_days": 1,
         "stale": false,
@@ -10140,6 +11042,22 @@
         "no_contact_on_record": false
       },
       {
+        "name": "NARENDRA SHAH",
+        "phone": "9004352358",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Booked for today Sat, 18 July, 3.30 pm. Home loan of 2 cr for a property in Kandivali that he is still looking.\n23/7/26 - Rescheduled for today 4.30 pm.",
+        "last_conversation": "2026-07-23",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "still looking (2-4 months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Sekhar Vishwakarma",
         "phone": "9005368705",
         "status": "Not Qualified",
@@ -10199,7 +11117,7 @@
         "periskope_labels": [
           "m1",
           "home loans",
-          "still looking (2-4 months)"
+          "active warm (1 month)"
         ],
         "stale_days": 1,
         "stale": false,
@@ -10217,7 +11135,39 @@
           "m2",
           "m1",
           "home loans",
+          "active warm (1 month)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Arshas Shaikh (Arshad)",
+        "phone": "9702418170",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Booked for next Sunday, 19th July, 2.30 pm. For due diligence only. Self-funded. Looking for a good 3BHK in Ghatkopar, Mulund, Thane. Budget no issue. Concerned about his son and daughter's upbringing and well-being. Therefore, looking for a good society/place. Also, the society should allow Muslim ",
+        "last_conversation": "2026-07-23",
+        "last_call_status": "Call Back",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
           "still looking (2-4 months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Dipika Jain",
+        "phone": "9820967957",
+        "status": "Active Warm (1 month)",
+        "notes": "--- Consultation Summary (Jun 26, 2026) ---\nConsultation completed. Budget \u20b93.5Cr for a 3BHK purchase, funded via sale of an existing asset plus a \u20b92Cr loan (~60% LTV); plan is to approach multiple private and public banks to generate rate leverage. Next step: Arpit to send matching property details",
+        "last_conversation": "2026-07-23",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "active warm (1 month)"
         ],
         "stale_days": 1,
         "stale": false,
@@ -10233,7 +11183,7 @@
         "last_inbound_message": null,
         "periskope_labels": [
           "home loans",
-          "active warm (1 month)"
+          "still looking (2-4 months)"
         ],
         "stale_days": 1,
         "stale": false,
@@ -10272,6 +11222,22 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Dilip Arya",
+        "phone": "7737766942",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Booked for Sunday, 19th July, 2 pm. For due diligence and home loan advisory. Will be doing 80 percent down payment and 20 percent home loan. Looking for a 2BHK or 3BHK specifically in Malad around 2 cr. Plans to move in within a month or two, or may be by December. \n\n23/7/26 - call forwarded to voi",
+        "last_conversation": "2026-07-23",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "still looking (2-4 months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Ambika Sood",
         "phone": "9967790245",
         "status": "Still Looking (2-4 Months)",
@@ -10283,6 +11249,22 @@
           "m1",
           "home loans",
           "still looking (2-4 months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Afaq Naik",
+        "phone": "7045007525",
+        "status": "Active Warm (1 month)",
+        "notes": "Booked for tomorrow, Sat, 12 pm. For Home loan advisory. Going to finalize property in Jogeshwari in 1 week. Loan requirement around 75 to 80 lakhs.\n\nArhan, July 23:dnp",
+        "last_conversation": "2026-07-23",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "active warm (1 month)"
         ],
         "stale_days": 1,
         "stale": false,
@@ -10374,6 +11356,22 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Imran Sayyed",
+        "phone": "7705041988",
+        "status": "Active Warm (1 month)",
+        "notes": "[26 May 2026 - Arpit Shah]: Called him but did not pick\n\n[29 May 2026 - Arpit Shah]: He has agreed for consultation for today at 5PM. He works in real estate only. Looking to buy penthouse in Navi Mumbai. Loan amount could be 2Cr\n\n[11 Jul 2026 - Rashmi Gupta]: 11th July - called again - call busy\n\n[",
+        "last_conversation": "2026-07-23",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "active warm (1 month)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Rohit Singh",
         "phone": "8800777481",
         "status": "Active Warm (1 month)",
@@ -10452,7 +11450,7 @@
           "m2",
           "m1",
           "home loans",
-          "active warm (1 month)"
+          "future plan (4+ months)"
         ],
         "stale_days": 1,
         "stale": false,
@@ -10469,6 +11467,22 @@
         "periskope_labels": [
           "home loans",
           "still looking (2-4 months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Sadhana Veerkar",
+        "phone": "9920003925",
+        "status": "Active Warm (1 month)",
+        "notes": "CC booked for Monday, 20th July, 5 pm for Due Diligence and finance part. Her husband Sanjay Veerkar will attend the call. Have finalized a property in Thane Kalpatru. But as mentioned by her, the builder said that her daughter won't get loan as she has her salary account in ICICI. Couldn't understa",
+        "last_conversation": "2026-07-23",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "active warm (1 month)"
         ],
         "stale_days": 1,
         "stale": false,
@@ -10608,6 +11622,21 @@
         "no_contact_on_record": true
       },
       {
+        "name": "Darshan Madnani",
+        "phone": "9773615193",
+        "status": null,
+        "notes": "Already Purchased and taken a loan of 2.4Cr from union bank at 7.30% and wants to transfer his loan...and agreed for a consultation call for tomorrow at 12.30pm..Email - darshan.madnani.dm@gmail.com\n\n[27 Jun 2026 - Raaghav Paharia]: Want 0% processing charge for BT, will be connected if any option c",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
         "name": "Anil Parab",
         "phone": "9820413505",
         "status": "Still Looking (2-4 Months)",
@@ -10618,6 +11647,22 @@
         "periskope_labels": [
           "home loans",
           "still looking (2-4 months)"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Govind Singh",
+        "phone": "7302287234",
+        "status": "Not Qualified",
+        "notes": "Not Enquired ",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
         ],
         "stale_days": null,
         "stale": false,
@@ -10656,6 +11701,22 @@
         "no_contact_on_record": true
       },
       {
+        "name": "Prakash Soni",
+        "phone": "9702717929",
+        "status": "Not Qualified",
+        "notes": "Wants a loan of 45Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
         "name": "Deipti Ragini",
         "phone": "9152913513",
         "status": null,
@@ -10664,6 +11725,54 @@
         "last_call_status": null,
         "last_inbound_message": null,
         "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Vaishnavi Shelke",
+        "phone": "9326060929",
+        "status": "Not Qualified",
+        "notes": "Bymistakely done ",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Kamlesh Gandhi",
+        "phone": "8291808589",
+        "status": "Not Qualified",
+        "notes": "Ringing",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Mahendra",
+        "phone": "8591970827",
+        "status": "Not Qualified",
+        "notes": "Wants a loan of 15Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
           "home loans"
         ],
         "stale_days": null,
@@ -10734,6 +11843,22 @@
         "no_contact_on_record": true
       },
       {
+        "name": "Shailesh Borale",
+        "phone": "8108120143",
+        "status": "Not Qualified",
+        "notes": "Wants a loan of 35Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
         "name": "Mukund R Pandey",
         "phone": "7021699650",
         "status": "Future Plan (4+ Months)",
@@ -10766,6 +11891,54 @@
         "no_contact_on_record": true
       },
       {
+        "name": "Madan Singh ",
+        "phone": "9892324692",
+        "status": "Not Qualified",
+        "notes": "Bymistakely done",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Imran Shaikh",
+        "phone": "8369059345",
+        "status": "Not Qualified",
+        "notes": "Wants a loan of 15Lac for a property in Nerul.",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Suman Singh ",
+        "phone": "9082586108",
+        "status": "Not Qualified",
+        "notes": "",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
         "name": "Johney Dua",
         "phone": "9820127378",
         "status": "Future Plan (4+ Months)",
@@ -10774,6 +11947,23 @@
         "last_call_status": null,
         "last_inbound_message": null,
         "periskope_labels": [
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Dashrath Chandorkar",
+        "phone": "9619795632",
+        "status": "Not Qualified",
+        "notes": "Wants a loan of 20Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
           "home loans"
         ],
         "stale_days": null,
@@ -10829,6 +12019,22 @@
         "no_contact_on_record": true
       },
       {
+        "name": "Shubhangi Shikhare",
+        "phone": "9757478394",
+        "status": "Not Qualified",
+        "notes": "Wants a loan of 30Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
         "name": "Ankita Bane",
         "phone": "9769404123",
         "status": "Still Looking (2-4 Months)",
@@ -10839,6 +12045,22 @@
         "periskope_labels": [
           "home loans",
           "still looking (2-4 months)"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Swati",
+        "phone": "8369406201",
+        "status": "Not Qualified",
+        "notes": "Ringing",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
         ],
         "stale_days": null,
         "stale": false,
@@ -10860,10 +12082,74 @@
         "no_contact_on_record": true
       },
       {
+        "name": "Pawan Singh",
+        "phone": "9324580158",
+        "status": "Not Qualified",
+        "notes": "Bymistakely done",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Prathmesh Mane",
+        "phone": "9172469293",
+        "status": "Not Qualified",
+        "notes": "wants a loan of 5Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Maji",
+        "phone": "7977265322",
+        "status": "Not Qualified",
+        "notes": "Ringing",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
         "name": "Deeshank Narkar",
         "phone": "8108959862",
         "status": "Not Qualified",
         "notes": "he needs 18,50,000 for a Mhada property in Virar W",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Samuel ",
+        "phone": "9372647841",
+        "status": "Not Qualified",
+        "notes": "Wants a personal loan ",
         "last_conversation": null,
         "last_call_status": null,
         "last_inbound_message": null,
@@ -10974,6 +12260,22 @@
         "no_contact_on_record": true
       },
       {
+        "name": "Hemangi Joshi",
+        "phone": "9768482177",
+        "status": "Not Qualified",
+        "notes": "Ringing",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
         "name": "Raj",
         "phone": "9702618253",
         "status": null,
@@ -10983,6 +12285,53 @@
         "last_inbound_message": null,
         "periskope_labels": [
           "m1",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Nazir Rabbani",
+        "phone": "9104319633",
+        "status": "Not Qualified",
+        "notes": "Busy ",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Pradyumna",
+        "phone": "9136656055",
+        "status": "Not Qualified",
+        "notes": "Wants a loan of 5Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": " Pooja",
+        "phone": "7715857250",
+        "status": "Not Qualified",
+        "notes": "Needed a 20 lacs loan and now not needed his husband arranged it from somewhere",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
           "home loans"
         ],
         "stale_days": null,
@@ -11006,6 +12355,22 @@
         "no_contact_on_record": true
       },
       {
+        "name": "Dipankar Chatterjee",
+        "phone": "9967660333",
+        "status": "Not Qualified",
+        "notes": "[13 Jul 2026 - Arhan Shinde]: dnp",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
         "name": "Sunil Parab",
         "phone": "8691884567",
         "status": "Future Plan (4+ Months)",
@@ -11015,6 +12380,71 @@
         "last_inbound_message": null,
         "periskope_labels": [
           "m1",
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Vijay Goswami ",
+        "phone": "9737434662",
+        "status": "Not Qualified",
+        "notes": "Wants a loan of 20Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Deejayen",
+        "phone": "9892010909",
+        "status": "Not Qualified",
+        "notes": "Ringing",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Rajiv Bhele",
+        "phone": "9822230243",
+        "status": "Not Qualified",
+        "notes": "Wants a loan of 40Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Imran ",
+        "phone": "8108227290",
+        "status": "Not Qualified",
+        "notes": "Not Reachable ",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
           "home loans"
         ],
         "stale_days": null,
@@ -11054,6 +12484,22 @@
         "no_contact_on_record": true
       },
       {
+        "name": "Deepak Salunkhe",
+        "phone": "9322748494",
+        "status": "Not Qualified",
+        "notes": "Busy ",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
         "name": "Shikha Jain",
         "phone": "9928716701",
         "status": "Future Plan (4+ Months)",
@@ -11064,6 +12510,54 @@
         "periskope_labels": [
           "home loans",
           "future plan (4+ months)"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Dilshad Alam ",
+        "phone": "7765838960",
+        "status": "Not Qualified",
+        "notes": "Not Reachable ",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Ujjwala Patil",
+        "phone": "9890901115",
+        "status": "Not Qualified",
+        "notes": "Want a home loan top-up of 20Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Salman ",
+        "phone": "8108189018",
+        "status": "Not Qualified",
+        "notes": "",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
         ],
         "stale_days": null,
         "stale": false,
@@ -11086,6 +12580,22 @@
         "no_contact_on_record": true
       },
       {
+        "name": "Gautam Jaiswal",
+        "phone": "9594159436",
+        "status": "Not Qualified",
+        "notes": "Switched Off",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
         "name": "Jonathan",
         "phone": "9911540463",
         "status": "Still Looking (2-4 Months)",
@@ -11097,6 +12607,38 @@
           "m1",
           "home loans",
           "still looking (2-4 months)"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Gourav",
+        "phone": "9737119963",
+        "status": "Not Qualified",
+        "notes": "",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Sunil Kumar ",
+        "phone": "8169981595",
+        "status": "Not Qualified",
+        "notes": "Wants a loan of 30Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
         ],
         "stale_days": null,
         "stale": false,
@@ -11136,6 +12678,22 @@
         "no_contact_on_record": true
       },
       {
+        "name": "Satish Chawla ",
+        "phone": "9821093229",
+        "status": "Not Qualified",
+        "notes": "Customer will call in sometime ",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
         "name": "Tarun Shukla",
         "phone": "9930544030",
         "status": "Still Looking (2-4 Months)",
@@ -11169,6 +12727,38 @@
         "no_contact_on_record": true
       },
       {
+        "name": "Meraj",
+        "phone": "9277161821",
+        "status": "Not Qualified",
+        "notes": "Wants a loan of 40Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Ritesh Tambe",
+        "phone": "8767946330",
+        "status": "Not Qualified",
+        "notes": "Wants a loan of 10Lac",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
         "name": "Pradnya Phene Phene",
         "phone": "8433608835",
         "status": "Still Looking (2-4 Months)",
@@ -11184,10 +12774,42 @@
         "stale_days": null,
         "stale": false,
         "no_contact_on_record": true
+      },
+      {
+        "name": "Imteyaz Ansari ",
+        "phone": "8757781030",
+        "status": "Not Qualified",
+        "notes": "Incoming off and not active on whatsapp.",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "Not Qualified",
+          "home loans"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
+      },
+      {
+        "name": "Juzer Lokhandwala",
+        "phone": "9867362482",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Booked for Monday, 20 July, 4 pm. He needs Home loan 1 cr for a property in Mumbai. Not confirmed if his property is finalized.",
+        "last_conversation": null,
+        "last_call_status": null,
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "still looking (2-4 months)"
+        ],
+        "stale_days": null,
+        "stale": false,
+        "no_contact_on_record": true
       }
     ],
     "stale_threshold_days": 14,
     "messages_available": true,
-    "generated_at": "2026-07-24T04:39:40.880799Z"
+    "generated_at": "2026-07-24T05:31:47.327512Z"
   }
 }
