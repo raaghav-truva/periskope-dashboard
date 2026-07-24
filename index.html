@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <style>
   :root{
     --bg:#FFFFFF;
@@ -230,7 +230,8 @@
   table{width:100%;border-collapse:collapse;font-size:13px;}
   th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);}
   th{color:var(--muted);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;}
-  td.num{font-family:var(--font-mono);text-align:right;}
+  th.num,td.num{text-align:right;}
+  td.num{font-family:var(--font-mono);}
   tr.total td{font-weight:600;background:var(--panel-2);}
   td.num.clickable{cursor:pointer;color:var(--accent);text-decoration:underline;text-decoration-color:transparent;transition:text-decoration-color .15s ease;}
   td.num.clickable:hover{text-decoration-color:var(--accent);}
