@@ -96,7 +96,9 @@ def plan(contacts, leads):
         if p10:
             by_phone10[p10] = c
 
-    to_create, to_relabel = [], []
+    to_create_by_phone = {}  # phone10 -> candidate, resolves same-phone duplicates
+    duplicate_phone_skipped = []
+    to_relabel = []
     no_change = no_phone = unmapped_status = 0
 
     for lead in leads:
@@ -115,10 +117,24 @@ def plan(contacts, leads):
             labels = ["home loans"]
             if expected_label:
                 labels.append(expected_label)
-            to_create.append({
+            candidate = {
                 "contact_id": cid, "name": lead["name"], "status": lead.get("status"),
                 "labels": labels,
-            })
+            }
+            existing = to_create_by_phone.get(phone10)
+            if existing is None:
+                to_create_by_phone[phone10] = candidate
+            else:
+                # Same phone number, two different Airtable lead records.
+                # Prefer whichever one has a status (more useful signal than
+                # a blank one); otherwise keep whichever was seen first.
+                # Either way, only ONE contact gets created for this phone —
+                # flagged in the plan output so it can be double-checked.
+                keep, drop = existing, candidate
+                if not existing["status"] and candidate["status"]:
+                    keep, drop = candidate, existing
+                to_create_by_phone[phone10] = keep
+                duplicate_phone_skipped.append({"phone": phone10, "kept": keep["name"], "dropped": drop["name"]})
             continue
 
         if not expected_label:
@@ -139,8 +155,9 @@ def plan(contacts, leads):
         })
 
     return {
-        "to_create": to_create, "to_relabel": to_relabel,
+        "to_create": list(to_create_by_phone.values()), "to_relabel": to_relabel,
         "no_change": no_change, "no_phone": no_phone, "unmapped_status": unmapped_status,
+        "duplicate_phone_skipped": duplicate_phone_skipped,
     }
 
 
@@ -152,6 +169,11 @@ def print_plan(p):
     print(f"{p['no_phone']} lead(s) with no usable phone number (skipped)")
     print(f"{p['unmapped_status']} lead(s) exist in Periskope but have a Status with no "
           f"Periskope-label mapping, e.g. Blocking Paid (left untouched)")
+    if p["duplicate_phone_skipped"]:
+        print(f"\n{len(p['duplicate_phone_skipped'])} phone number(s) shared by more than one "
+              f"Airtable lead — only one contact created per phone:")
+        for d in p["duplicate_phone_skipped"]:
+            print(f"  ! {d['phone']}: kept {d['kept']!r}, skipped {d['dropped']!r}")
 
     if p["to_create"]:
         print("\nTo create:")
