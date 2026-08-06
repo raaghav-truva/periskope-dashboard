@@ -4601,7 +4601,7 @@
   "home_loans_no_m_tags": 177,
   "m0_only": 0,
   "m1_no_m2": 56,
-  "generated_at": "2026-08-06T09:35:40.619315Z",
+  "generated_at": "2026-08-06T11:42:05.660997Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
@@ -5648,9 +5648,9 @@
     }
   },
   "airtable_sync": {
-    "leads_total": 299,
+    "leads_total": 298,
     "leads_missing_phone": 1,
-    "matched": 295,
+    "matched": 294,
     "in_airtable_not_periskope": [
       {
         "name": "Daljeet Rana",
@@ -6066,6 +6066,15 @@
         ]
       },
       {
+        "name": "Ravindra Kamble",
+        "phone": "919076185157",
+        "labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ]
+      },
+      {
         "name": "Richi Agrawal",
         "phone": "919916000572",
         "labels": [
@@ -6444,7 +6453,7 @@
         ]
       }
     ],
-    "generated_at": "2026-08-06T09:35:44.017116Z"
+    "generated_at": "2026-08-06T11:42:07.492201Z"
   },
   "contacts_by_source": {
     "total": 307,
@@ -7695,14 +7704,14 @@
         }
       ]
     },
-    "generated_at": "2026-08-06T09:35:44.019833Z"
+    "generated_at": "2026-08-06T11:42:07.494833Z"
   },
   "poll_responses": {
     "lookback_days": 30,
     "total_m_series_recipients": 0,
     "total_m_series_responded": 0,
     "polls": [],
-    "generated_at": "2026-08-06T09:35:55.933403Z"
+    "generated_at": "2026-08-06T11:42:21.032034Z"
   },
   "lead_warmth": {
     "rows": [
@@ -12294,10 +12303,10 @@
       {
         "name": "Ravindra Kamble",
         "phone": "9076185157",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP\n\n6th Aug - Rashmi - Connected - Call back as out of network",
+        "status": "Not Qualified",
+        "notes": "DNP\n\n6th Aug - Rashmi - Connected - NQ - Needs 30 lacs loan for a home he has visited in Thane.",
         "last_conversation": "2026-08-06",
-        "last_call_status": "Call Back",
+        "last_call_status": "Connected",
         "last_inbound_message": null,
         "periskope_labels": [
           "new contact",
@@ -13055,6 +13064,6 @@
     ],
     "stale_threshold_days": 14,
     "messages_available": true,
-    "generated_at": "2026-08-06T09:35:55.942541Z"
+    "generated_at": "2026-08-06T11:42:21.043744Z"
   }
 }
