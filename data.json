@@ -1,8 +1,8 @@
 {
-  "total_org_contacts": 4861,
+  "total_org_contacts": 4862,
   "label_counts": {
-    "Home Loans": 290,
-    "Active Warm": 106,
+    "Home Loans": 285,
+    "Active Warm": 105,
     "Still Looking": 161,
     "Future Plan": 63,
     "Balance Transfer (Immediate)": 2,
@@ -16,10 +16,6 @@
   },
   "contacts_by_label": {
     "Home Loans": [
-      {
-        "name": "Aaditya Tripathi",
-        "phone": "919819781304"
-      },
       {
         "name": "Aaniil Kaul",
         "phone": "919819035965"
@@ -35,10 +31,6 @@
       {
         "name": "Abhijeet Kumbhar",
         "phone": "919821468182"
-      },
-      {
-        "name": "Abhijit Patil",
-        "phone": "919222111506"
       },
       {
         "name": "Abhishek",
@@ -345,10 +337,6 @@
         "phone": "917045970804"
       },
       {
-        "name": "Dipika Jain",
-        "phone": "919820967957"
-      },
-      {
         "name": "Dolly Pradeep Dhali",
         "phone": "919867131296"
       },
@@ -359,10 +347,6 @@
       {
         "name": "Durgesh Dadich",
         "phone": "919833948018"
-      },
-      {
-        "name": "E K Enterprises",
-        "phone": "918108981844"
       },
       {
         "name": "Elizabeth",
@@ -399,6 +383,10 @@
       {
         "name": "Hitesh Mehta",
         "phone": "919820349689"
+      },
+      {
+        "name": "Hitesh Toshniwal",
+        "phone": "919930136265"
       },
       {
         "name": "Hrithik Bombale",
@@ -642,11 +630,11 @@
       },
       {
         "name": "Pankaj",
-        "phone": "919820134382"
+        "phone": "918770798276"
       },
       {
         "name": "Pankaj",
-        "phone": "918770798276"
+        "phone": "919820134382"
       },
       {
         "name": "Pankaj Roy",
@@ -853,10 +841,6 @@
         "phone": "918800777481"
       },
       {
-        "name": "Rohit Tandon",
-        "phone": "919703077777"
-      },
-      {
         "name": "Ruchi Srivastava Srivastava",
         "phone": "918369506155"
       },
@@ -939,10 +923,6 @@
       {
         "name": "Shashi Bhushan",
         "phone": "919971363200"
-      },
-      {
-        "name": "Sheela Kannan",
-        "phone": "919867009318"
       },
       {
         "name": "Shikha Jain",
@@ -1179,10 +1159,6 @@
     ],
     "Active Warm": [
       {
-        "name": "Aaditya Tripathi",
-        "phone": "919819781304"
-      },
-      {
         "name": "Abhijit Patil",
         "phone": "919222111506"
       },
@@ -1315,10 +1291,6 @@
         "phone": "919137923612"
       },
       {
-        "name": "E K Enterprises",
-        "phone": "918108981844"
-      },
-      {
         "name": "Elizabeth",
         "phone": "919867613228"
       },
@@ -1333,6 +1305,10 @@
       {
         "name": "Harish Patnayak",
         "phone": "919664131074"
+      },
+      {
+        "name": "Hitesh Toshniwal",
+        "phone": "919930136265"
       },
       {
         "name": "Hussain Ali Shaikh",
@@ -3646,10 +3622,6 @@
   "segment_contacts": {
     "home_loans_no_m": [
       {
-        "name": "Aaditya Tripathi",
-        "phone": "919819781304"
-      },
-      {
         "name": "Aaniil Kaul",
         "phone": "919819035965"
       },
@@ -3838,10 +3810,6 @@
         "phone": "919820023264"
       },
       {
-        "name": "Dipika Jain",
-        "phone": "919820967957"
-      },
-      {
         "name": "Dolly Pradeep Dhali",
         "phone": "919867131296"
       },
@@ -3852,10 +3820,6 @@
       {
         "name": "Durgesh Dadich",
         "phone": "919833948018"
-      },
-      {
-        "name": "E K Enterprises",
-        "phone": "918108981844"
       },
       {
         "name": "Elizabeth",
@@ -3888,6 +3852,10 @@
       {
         "name": "Hitesh Mehta",
         "phone": "919820349689"
+      },
+      {
+        "name": "Hitesh Toshniwal",
+        "phone": "919930136265"
       },
       {
         "name": "Hrithik Bombale",
@@ -4226,10 +4194,6 @@
         "phone": "918800777481"
       },
       {
-        "name": "Rohit Tandon",
-        "phone": "919703077777"
-      },
-      {
         "name": "Ruchi Srivastava Srivastava",
         "phone": "918369506155"
       },
@@ -4276,10 +4240,6 @@
       {
         "name": "Sharad Johari",
         "phone": "918097316388"
-      },
-      {
-        "name": "Sheela Kannan",
-        "phone": "919867009318"
       },
       {
         "name": "Shikha Jain",
@@ -4662,16 +4622,16 @@
       }
     ]
   },
-  "home_loans_no_m_tags": 197,
+  "home_loans_no_m_tags": 193,
   "m0_only": 0,
   "m1_no_m2": 56,
-  "generated_at": "2026-08-07T08:00:00.341349Z",
+  "generated_at": "2026-08-07T10:09:37.635887Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
       [
         "home loans",
-        290
+        285
       ],
       [
         "still looking (2-4 months)",
@@ -4683,7 +4643,7 @@
       ],
       [
         "active warm (1 month)",
-        106
+        105
       ],
       [
         "m2",
@@ -4695,7 +4655,7 @@
       ],
       [
         "new contact",
-        55
+        54
       ],
       [
         "not qualified",
@@ -5712,9 +5672,9 @@
     }
   },
   "airtable_sync": {
-    "leads_total": 291,
+    "leads_total": 292,
     "leads_missing_phone": 1,
-    "matched": 288,
+    "matched": 289,
     "in_airtable_not_periskope": [
       {
         "name": "Daljeet Rana",
@@ -5728,41 +5688,6 @@
       }
     ],
     "in_periskope_home_loans_not_airtable": [
-      {
-        "name": "Aaditya Tripathi",
-        "phone": "919819781304",
-        "labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ]
-      },
-      {
-        "name": "Abhijit Patil",
-        "phone": "919222111506",
-        "labels": [
-          "m1",
-          "active warm (1 month)",
-          "home loans"
-        ]
-      },
-      {
-        "name": "Dipika Jain",
-        "phone": "919820967957",
-        "labels": [
-          "active warm (1 month)",
-          "home loans"
-        ]
-      },
-      {
-        "name": "E K Enterprises",
-        "phone": "918108981844",
-        "labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ]
-      },
       {
         "name": "Neeraj Gutgutia",
         "phone": "919920591306",
@@ -5791,28 +5716,11 @@
         ]
       },
       {
-        "name": "Rohit Tandon",
-        "phone": "919703077777",
-        "labels": [
-          "active warm (1 month)",
-          "home loans"
-        ]
-      },
-      {
         "name": "Saurabh Khetan Nahar",
         "phone": "917738864222",
         "labels": [
           "still looking (2-4 months)",
           "home loans"
-        ]
-      },
-      {
-        "name": "Sheela Kannan",
-        "phone": "919867009318",
-        "labels": [
-          "new contact",
-          "home loans",
-          "future plan (4+ months)"
         ]
       },
       {
@@ -5912,23 +5820,18 @@
         ]
       }
     ],
-    "generated_at": "2026-08-07T08:00:07.825652Z"
+    "generated_at": "2026-08-07T10:09:43.548861Z"
   },
   "contacts_by_source": {
-    "total": 290,
+    "total": 285,
     "source_counts": {
-      "Telecalling": 232,
-      "Meta Ads- Slack": 41,
+      "Telecalling": 229,
+      "Meta Ads- Slack": 40,
       "Meta Leads- Whatsapp": 11,
-      "Buyer Experience Team": 5,
-      "Not in Airtable": 1
+      "Buyer Experience Team": 5
     },
     "source_contacts": {
       "Telecalling": [
-        {
-          "name": "Aaditya Tripathi",
-          "phone": "919819781304"
-        },
         {
           "name": "Aaniil Kaul",
           "phone": "919819035965"
@@ -5944,10 +5847,6 @@
         {
           "name": "Abhijeet Kumbhar",
           "phone": "919821468182"
-        },
-        {
-          "name": "Abhijit Patil",
-          "phone": "919222111506"
         },
         {
           "name": "Abhishek",
@@ -6198,10 +6097,6 @@
           "phone": "917045970804"
         },
         {
-          "name": "Dipika Jain",
-          "phone": "919820967957"
-        },
-        {
           "name": "Durgesh Dadich",
           "phone": "919833948018"
         },
@@ -6228,6 +6123,10 @@
         {
           "name": "Hitesh Mehta",
           "phone": "919820349689"
+        },
+        {
+          "name": "Hitesh Toshniwal",
+          "phone": "919930136265"
         },
         {
           "name": "Hrithik Bombale",
@@ -6427,11 +6326,11 @@
         },
         {
           "name": "Pankaj",
-          "phone": "919820134382"
+          "phone": "918770798276"
         },
         {
           "name": "Pankaj",
-          "phone": "918770798276"
+          "phone": "919820134382"
         },
         {
           "name": "Parag Bapat",
@@ -6580,10 +6479,6 @@
         {
           "name": "Rohit Singh copy",
           "phone": "918800777481"
-        },
-        {
-          "name": "Rohit Tandon",
-          "phone": "919703077777"
         },
         {
           "name": "Ruchi Srivastava Srivastava",
@@ -6996,10 +6891,6 @@
           "phone": "917506786333"
         },
         {
-          "name": "Sheela Kannan",
-          "phone": "919867009318"
-        },
-        {
           "name": "Siddharth Satpute",
           "phone": "918355834847"
         },
@@ -7066,12 +6957,6 @@
           "phone": "919619998518"
         }
       ],
-      "Not in Airtable": [
-        {
-          "name": "E K Enterprises",
-          "phone": "918108981844"
-        }
-      ],
       "Buyer Experience Team": [
         {
           "name": "Prashant NA",
@@ -7095,14 +6980,14 @@
         }
       ]
     },
-    "generated_at": "2026-08-07T08:00:07.827975Z"
+    "generated_at": "2026-08-07T10:09:43.550893Z"
   },
   "poll_responses": {
     "lookback_days": 30,
     "total_m_series_recipients": 0,
     "total_m_series_responded": 0,
     "polls": [],
-    "generated_at": "2026-08-07T08:00:19.045636Z"
+    "generated_at": "2026-08-07T10:09:54.577142Z"
   },
   "lead_warmth": {
     "rows": [
@@ -10604,23 +10489,6 @@
         "no_contact_on_record": false
       },
       {
-        "name": "Sheela Kannan",
-        "phone": "9867009318",
-        "status": "Not Qualified",
-        "notes": "She is 63 years old working in a law firm. She intends to buy a 2BHK in Mumbai. However, she first wants to know if she is eligible for Home loan because of her age. Only then she will be able to decide the HL amount and her budget for Home buying.\n\nOn 2nd call dated Aug.1, Saturday, got to know tha",
-        "last_conversation": "2026-08-01",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
         "name": "akshay kothari",
         "phone": "9769992396",
         "status": "Registration Complete",
@@ -10806,39 +10674,6 @@
         "no_contact_on_record": false
       },
       {
-        "name": "Abhijit Patil",
-        "phone": "9222111506",
-        "status": "Not Qualified",
-        "notes": "for due diligence and home loan advisory but after finalizing the property that he has checked in Raheja Residency. He is nearby, may finalize in 2 weeks. So, will call him then to book his CC.\n\n30 July 2026 - He is travelling currently, wants us to call back after 1 week. Texted on WA\n\n\n\n4th Aug, A",
-        "last_conversation": "2026-08-04",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 3,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Rohit Tandon",
-        "phone": "9703077777",
-        "status": "Not Qualified",
-        "notes": "Call back in 15 days he will freeze a property then talk about \n\n29 July, raaghav - Visited esquire, liked it a lot but out of budget. Want something close to highway and spacious - interested in Trump Tower (South Bombay) specificallly. Have shared details on Lake Castle 3BHK Unit in Powai\n\n[4 Aug ",
-        "last_conversation": "2026-08-04",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 3,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
         "name": "Neeraj Gutgutia",
         "phone": "9920591306",
         "status": "Active Warm (1 month)",
@@ -10848,22 +10683,6 @@
         "last_inbound_message": null,
         "periskope_labels": [
           "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 3,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Dipika Jain",
-        "phone": "9820967957",
-        "status": "Future Plan (4+ Months)",
-        "notes": "--- Consultation Summary (Jun 26, 2026) ---\nConsultation completed. Budget \u20b93.5Cr for a 3BHK purchase, funded via sale of an existing asset plus a \u20b92Cr loan (~60% LTV); plan is to approach multiple private and public banks to generate rate leverage. Next step: Arpit to send matching property details",
-        "last_conversation": "2026-08-04",
-        "last_call_status": "Connected",
-        "last_inbound_message": "2026-07-29",
-        "periskope_labels": [
           "active warm (1 month)",
           "home loans"
         ],
@@ -11076,23 +10895,6 @@
         "last_call_status": "DNP",
         "last_inbound_message": null,
         "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 2,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Aditya Tripathi",
-        "phone": "9819781304",
-        "status": "Active Warm (1 month)",
-        "notes": "Interested to be booked for Consultation for due diligence and home loan. He requested to call on Monday to confirm his availability. He has already finalized with the property and also he mentioned that he has already got bank loan sanctioned at somewhere around 8 ROI. However, he is not sure about",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
           "active warm (1 month)",
           "home loans"
         ],
@@ -11700,6 +11502,23 @@
         "no_contact_on_record": false
       },
       {
+        "name": "Hitesh Toshniwal",
+        "phone": "9930136265",
+        "status": "Active Warm (1 month)",
+        "notes": "Interested in due diligence and home loan advisory. Will confirm the CC booking on Monday. He has already bought a property and is about to start the paperwork. He has already approached a bank for Home Loan. Upon explaining him how different our services are from that of a bank, (on his enquiry), h",
+        "last_conversation": "2026-08-07",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 0,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
         "name": "Darshan Madnani",
         "phone": "9773615193",
         "status": null,
@@ -12176,6 +11995,6 @@
     ],
     "stale_threshold_days": 14,
     "messages_available": true,
-    "generated_at": "2026-08-07T08:00:19.052298Z"
+    "generated_at": "2026-08-07T10:09:54.583709Z"
   }
 }
