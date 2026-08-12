@@ -1,8 +1,8 @@
 {
-  "total_org_contacts": 4889,
+  "total_org_contacts": 4900,
   "label_counts": {
-    "Home Loans": 291,
-    "Active Warm": 110,
+    "Home Loans": 293,
+    "Active Warm": 112,
     "Still Looking": 161,
     "Future Plan": 63,
     "Balance Transfer (Immediate)": 2,
@@ -373,6 +373,10 @@
         "phone": "919819722924"
       },
       {
+        "name": "Gaurav Gupta",
+        "phone": "919029525929"
+      },
+      {
         "name": "Gopal Bansal",
         "phone": "919310069597"
       },
@@ -642,11 +646,11 @@
       },
       {
         "name": "Pankaj",
-        "phone": "919820134382"
+        "phone": "918770798276"
       },
       {
         "name": "Pankaj",
-        "phone": "918770798276"
+        "phone": "919820134382"
       },
       {
         "name": "Pankaj Roy",
@@ -807,6 +811,10 @@
       {
         "name": "Rakesh Shrivastav",
         "phone": "919892189358"
+      },
+      {
+        "name": "Ramakant Singh",
+        "phone": "918530528888"
       },
       {
         "name": "Ramchandra Gade",
@@ -1323,6 +1331,10 @@
         "phone": "919892057186"
       },
       {
+        "name": "Gaurav Gupta",
+        "phone": "919029525929"
+      },
+      {
         "name": "Haresh Parmer",
         "phone": "919167245781"
       },
@@ -1485,6 +1497,10 @@
       {
         "name": "Raju Ingulkar (H/o Megha Ingulkar)",
         "phone": "919768128787"
+      },
+      {
+        "name": "Ramakant Singh",
+        "phone": "918530528888"
       },
       {
         "name": "Ramchandra Gade",
@@ -3890,6 +3906,10 @@
         "phone": "919819722924"
       },
       {
+        "name": "Gaurav Gupta",
+        "phone": "919029525929"
+      },
+      {
         "name": "Gopal Bansal",
         "phone": "919310069597"
       },
@@ -4216,6 +4236,10 @@
       {
         "name": "Rakesh Shrivastav",
         "phone": "919892189358"
+      },
+      {
+        "name": "Ramakant Singh",
+        "phone": "918530528888"
       },
       {
         "name": "Ramchandra Gade",
@@ -4690,16 +4714,16 @@
       }
     ]
   },
-  "home_loans_no_m_tags": 199,
+  "home_loans_no_m_tags": 201,
   "m0_only": 0,
   "m1_no_m2": 56,
-  "generated_at": "2026-08-11T04:42:51.364367Z",
+  "generated_at": "2026-08-12T05:08:05.908054Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
       [
         "home loans",
-        291
+        293
       ],
       [
         "still looking (2-4 months)",
@@ -4711,7 +4735,7 @@
       ],
       [
         "active warm (1 month)",
-        110
+        112
       ],
       [
         "m2",
@@ -4723,7 +4747,7 @@
       ],
       [
         "new contact",
-        60
+        62
       ],
       [
         "not qualified",
@@ -5740,9 +5764,9 @@
     }
   },
   "airtable_sync": {
-    "leads_total": 297,
+    "leads_total": 304,
     "leads_missing_phone": 1,
-    "matched": 293,
+    "matched": 301,
     "in_airtable_not_periskope": [
       {
         "name": "Daljeet Rana",
@@ -5753,14 +5777,17 @@
         "name": "Shejeet",
         "phone": "9022947001",
         "status": "Still Looking (2-4 Months)"
-      },
-      {
-        "name": "Vinay Shetty ",
-        "phone": "9967190380",
-        "status": null
       }
     ],
     "in_periskope_home_loans_not_airtable": [
+      {
+        "name": "Abdul Kadir",
+        "phone": "918116247695",
+        "labels": [
+          "new contact",
+          "home loans"
+        ]
+      },
       {
         "name": "Ajar uddin",
         "phone": "919435292830",
@@ -5871,6 +5898,20 @@
     ],
     "status_label_mismatches": [
       {
+        "name": "Abdul Kadir",
+        "phone": "6294144886",
+        "airtable_status": "Active Warm (1 month)",
+        "expected_periskope_label": "active warm (1 month)",
+        "periskope_labels": []
+      },
+      {
+        "name": "Anis Shaikh",
+        "phone": "9769390152",
+        "airtable_status": "Active Warm (1 month)",
+        "expected_periskope_label": "active warm (1 month)",
+        "periskope_labels": []
+      },
+      {
         "name": "Anupama C",
         "phone": "9833554828",
         "airtable_status": "Still Looking (2-4 Months)",
@@ -5932,8 +5973,29 @@
         ]
       },
       {
-        "name": "Sunil Bajaj",
-        "phone": "9820961334",
+        "name": "Rajesh Shivhare",
+        "phone": "9870232226",
+        "airtable_status": "Future Plan (4+ Months)",
+        "expected_periskope_label": "future plan (4+ months)",
+        "periskope_labels": []
+      },
+      {
+        "name": "Ravi Bhatt ",
+        "phone": "9833624175",
+        "airtable_status": "Active Warm (1 month)",
+        "expected_periskope_label": "active warm (1 month)",
+        "periskope_labels": []
+      },
+      {
+        "name": "Shakila Ahmed ",
+        "phone": "7275001578",
+        "airtable_status": "Active Warm (1 month)",
+        "expected_periskope_label": "active warm (1 month)",
+        "periskope_labels": []
+      },
+      {
+        "name": "Sudeshwar Mehta",
+        "phone": "9142527570",
         "airtable_status": "Active Warm (1 month)",
         "expected_periskope_label": "active warm (1 month)",
         "periskope_labels": []
@@ -5964,6 +6026,13 @@
         ]
       },
       {
+        "name": "Vinay Shetty ",
+        "phone": "9967190380",
+        "airtable_status": "Active Warm (1 month)",
+        "expected_periskope_label": "active warm (1 month)",
+        "periskope_labels": []
+      },
+      {
         "name": "Vinay Tripathi",
         "phone": "9920301580",
         "airtable_status": "Active Warm (1 month)",
@@ -5974,15 +6043,16 @@
         ]
       }
     ],
-    "generated_at": "2026-08-11T04:42:54.606832Z"
+    "generated_at": "2026-08-12T05:08:13.339418Z"
   },
   "contacts_by_source": {
-    "total": 291,
+    "total": 293,
     "source_counts": {
       "Telecalling": 230,
-      "Meta Ads- Slack": 45,
+      "Meta Ads- Slack": 46,
       "Meta Leads- Whatsapp": 11,
-      "Buyer Experience Team": 5
+      "Buyer Experience Team": 5,
+      "Not in Airtable": 1
     },
     "source_contacts": {
       "Telecalling": [
@@ -6480,11 +6550,11 @@
         },
         {
           "name": "Pankaj",
-          "phone": "919820134382"
+          "phone": "918770798276"
         },
         {
           "name": "Pankaj",
-          "phone": "918770798276"
+          "phone": "919820134382"
         },
         {
           "name": "Parag Bapat",
@@ -6907,11 +6977,13 @@
           "phone": "919820289666"
         }
       ],
-      "Meta Ads- Slack": [
+      "Not in Airtable": [
         {
           "name": "Abdul Kadir",
           "phone": "918116247695"
-        },
+        }
+      ],
+      "Meta Ads- Slack": [
         {
           "name": "Afaq Naik",
           "phone": "917045007525"
@@ -6967,6 +7039,10 @@
         {
           "name": "Ganesh Jadhav",
           "phone": "919892057186"
+        },
+        {
+          "name": "Gaurav Gupta",
+          "phone": "919029525929"
         },
         {
           "name": "Haresh Parmer",
@@ -7043,6 +7119,10 @@
         {
           "name": "Rakesh Shrivastav",
           "phone": "919892189358"
+        },
+        {
+          "name": "Ramakant Singh",
+          "phone": "918530528888"
         },
         {
           "name": "Ramchandra Gade",
@@ -7158,14 +7238,14 @@
         }
       ]
     },
-    "generated_at": "2026-08-11T04:42:54.609240Z"
+    "generated_at": "2026-08-12T05:08:13.342144Z"
   },
   "poll_responses": {
     "lookback_days": 30,
     "total_m_series_recipients": 0,
     "total_m_series_responded": 0,
     "polls": [],
-    "generated_at": "2026-08-11T04:43:03.511407Z"
+    "generated_at": "2026-08-12T05:08:22.802809Z"
   },
   "lead_warmth": {
     "rows": [
@@ -7181,7 +7261,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 111,
+        "stale_days": 112,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7197,7 +7277,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 40,
+        "stale_days": 41,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7213,7 +7293,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 39,
+        "stale_days": 40,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7229,7 +7309,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 39,
+        "stale_days": 40,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7245,7 +7325,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 39,
+        "stale_days": 40,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7261,7 +7341,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 38,
+        "stale_days": 39,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7277,7 +7357,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 38,
+        "stale_days": 39,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7293,7 +7373,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 38,
+        "stale_days": 39,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7309,7 +7389,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 38,
+        "stale_days": 39,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7325,7 +7405,7 @@
           "registration complete",
           "home loans"
         ],
-        "stale_days": 38,
+        "stale_days": 39,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7341,7 +7421,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 38,
+        "stale_days": 39,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7357,7 +7437,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 38,
+        "stale_days": 39,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7373,7 +7453,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 37,
+        "stale_days": 38,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7389,7 +7469,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 36,
+        "stale_days": 37,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7405,7 +7485,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 35,
+        "stale_days": 36,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7421,7 +7501,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 34,
+        "stale_days": 35,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7438,7 +7518,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 34,
+        "stale_days": 35,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7454,7 +7534,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 34,
+        "stale_days": 35,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7470,7 +7550,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 34,
+        "stale_days": 35,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7486,7 +7566,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 34,
+        "stale_days": 35,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7503,7 +7583,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 34,
+        "stale_days": 35,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7519,7 +7599,7 @@
           "home loans",
           "mou signed"
         ],
-        "stale_days": 32,
+        "stale_days": 33,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7536,7 +7616,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 31,
+        "stale_days": 32,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7552,7 +7632,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 31,
+        "stale_days": 32,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7568,7 +7648,7 @@
           "balance transfer (immediate)",
           "home loans"
         ],
-        "stale_days": 31,
+        "stale_days": 32,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7584,7 +7664,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 31,
+        "stale_days": 32,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7599,7 +7679,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 31,
+        "stale_days": 32,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7617,7 +7697,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7635,7 +7715,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7651,7 +7731,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7669,7 +7749,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7685,7 +7765,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7701,7 +7781,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7717,7 +7797,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7734,7 +7814,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7752,7 +7832,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7770,7 +7850,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7788,7 +7868,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7804,7 +7884,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7821,7 +7901,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7839,7 +7919,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7855,7 +7935,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7871,7 +7951,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7889,7 +7969,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7906,7 +7986,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7923,7 +8003,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7941,7 +8021,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7959,7 +8039,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7975,7 +8055,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7992,7 +8072,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8010,7 +8090,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8028,7 +8108,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8046,7 +8126,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8062,7 +8142,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8080,7 +8160,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8096,7 +8176,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8114,7 +8194,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8132,7 +8212,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8149,7 +8229,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8165,7 +8245,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8182,7 +8262,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8200,7 +8280,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8218,7 +8298,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8234,7 +8314,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8251,7 +8331,7 @@
           "balance transfer (future)",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8268,7 +8348,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 28,
+        "stale_days": 29,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8284,7 +8364,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8300,7 +8380,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8316,7 +8396,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8332,7 +8412,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8349,7 +8429,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8366,7 +8446,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8384,7 +8464,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8401,7 +8481,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8417,7 +8497,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8435,7 +8515,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8452,7 +8532,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8468,7 +8548,7 @@
           "registration complete",
           "home loans"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8486,7 +8566,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 27,
+        "stale_days": 28,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8504,7 +8584,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 25,
+        "stale_days": 26,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8521,7 +8601,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 25,
+        "stale_days": 26,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8537,7 +8617,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8553,7 +8633,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8569,7 +8649,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8585,7 +8665,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 20,
+        "stale_days": 21,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8601,7 +8681,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 20,
+        "stale_days": 21,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8617,7 +8697,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8633,7 +8713,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8649,7 +8729,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8666,7 +8746,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8682,7 +8762,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8698,7 +8778,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8716,7 +8796,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8732,7 +8812,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8748,7 +8828,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8766,7 +8846,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8784,7 +8864,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8799,7 +8879,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8815,7 +8895,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8831,7 +8911,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8848,7 +8928,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8864,7 +8944,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8880,7 +8960,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8898,7 +8978,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8914,7 +8994,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8932,7 +9012,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8948,7 +9028,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8964,7 +9044,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8980,7 +9060,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8996,7 +9076,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9012,7 +9092,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9030,7 +9110,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9047,7 +9127,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9064,7 +9144,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9082,7 +9162,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9099,7 +9179,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9115,7 +9195,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9131,7 +9211,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9147,7 +9227,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9163,7 +9243,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9181,7 +9261,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9197,7 +9277,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9215,7 +9295,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9231,7 +9311,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9248,7 +9328,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9266,7 +9346,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9282,7 +9362,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9298,7 +9378,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9314,7 +9394,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9330,7 +9410,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9346,7 +9426,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9362,7 +9442,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9379,7 +9459,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9395,7 +9475,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9412,7 +9492,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9428,7 +9508,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9444,7 +9524,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9460,7 +9540,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9478,7 +9558,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9494,7 +9574,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9512,7 +9592,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9528,7 +9608,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9544,7 +9624,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9560,7 +9640,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9576,7 +9656,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9595,7 +9675,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9612,7 +9692,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9630,7 +9710,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9646,7 +9726,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9662,7 +9742,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9679,7 +9759,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9697,7 +9777,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9714,7 +9794,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9729,7 +9809,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9747,7 +9827,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9764,7 +9844,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9782,7 +9862,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9798,7 +9878,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9816,7 +9896,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9834,7 +9914,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9850,7 +9930,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9866,7 +9946,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9883,7 +9963,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9899,7 +9979,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9915,7 +9995,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9933,7 +10013,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9950,7 +10030,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9968,7 +10048,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9985,7 +10065,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10000,7 +10080,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10016,7 +10096,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10032,7 +10112,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10050,7 +10130,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10068,7 +10148,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10086,7 +10166,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10102,7 +10182,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10118,7 +10198,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10135,7 +10215,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10151,7 +10231,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10167,7 +10247,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10185,7 +10265,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10203,7 +10283,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10219,7 +10299,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 15,
+        "stale_days": 16,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10236,7 +10316,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10251,7 +10331,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10267,7 +10347,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10282,7 +10362,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10300,7 +10380,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10315,7 +10395,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10330,7 +10410,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10347,7 +10427,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10363,7 +10443,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10379,8 +10459,8 @@
           "m1",
           "home loans"
         ],
-        "stale_days": 13,
-        "stale": false,
+        "stale_days": 14,
+        "stale": true,
         "no_contact_on_record": false
       },
       {
@@ -10395,8 +10475,8 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 13,
-        "stale": false,
+        "stale_days": 14,
+        "stale": true,
         "no_contact_on_record": false
       },
       {
@@ -10412,8 +10492,8 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 13,
-        "stale": false,
+        "stale_days": 14,
+        "stale": true,
         "no_contact_on_record": false
       },
       {
@@ -10429,8 +10509,8 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 13,
-        "stale": false,
+        "stale_days": 14,
+        "stale": true,
         "no_contact_on_record": false
       },
       {
@@ -10446,8 +10526,8 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 13,
-        "stale": false,
+        "stale_days": 14,
+        "stale": true,
         "no_contact_on_record": false
       },
       {
@@ -10463,8 +10543,8 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 13,
-        "stale": false,
+        "stale_days": 14,
+        "stale": true,
         "no_contact_on_record": false
       },
       {
@@ -10479,8 +10559,8 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 13,
-        "stale": false,
+        "stale_days": 14,
+        "stale": true,
         "no_contact_on_record": false
       },
       {
@@ -10495,8 +10575,8 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 13,
-        "stale": false,
+        "stale_days": 14,
+        "stale": true,
         "no_contact_on_record": false
       },
       {
@@ -10511,8 +10591,8 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 13,
-        "stale": false,
+        "stale_days": 14,
+        "stale": true,
         "no_contact_on_record": false
       },
       {
@@ -10527,8 +10607,8 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 13,
-        "stale": false,
+        "stale_days": 14,
+        "stale": true,
         "no_contact_on_record": false
       },
       {
@@ -10544,7 +10624,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 12,
+        "stale_days": 13,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10561,7 +10641,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 12,
+        "stale_days": 13,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10577,7 +10657,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 12,
+        "stale_days": 13,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10594,7 +10674,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 10,
+        "stale_days": 11,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10611,7 +10691,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 10,
+        "stale_days": 11,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10628,7 +10708,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 10,
+        "stale_days": 11,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10645,7 +10725,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 10,
+        "stale_days": 11,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10662,7 +10742,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 10,
+        "stale_days": 11,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10679,7 +10759,7 @@
           "new contact",
           "home loans"
         ],
-        "stale_days": 10,
+        "stale_days": 11,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10696,7 +10776,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 10,
+        "stale_days": 11,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10713,7 +10793,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 10,
+        "stale_days": 11,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10730,7 +10810,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 10,
+        "stale_days": 11,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10747,7 +10827,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 8,
+        "stale_days": 9,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10764,7 +10844,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 8,
+        "stale_days": 9,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10781,7 +10861,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 8,
+        "stale_days": 9,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10798,7 +10878,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 7,
+        "stale_days": 8,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10815,7 +10895,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 7,
+        "stale_days": 8,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10831,7 +10911,7 @@
           "registration complete",
           "home loans"
         ],
-        "stale_days": 7,
+        "stale_days": 8,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10847,7 +10927,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 7,
+        "stale_days": 8,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10864,7 +10944,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 7,
+        "stale_days": 8,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10880,7 +10960,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 7,
+        "stale_days": 8,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10896,7 +10976,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 7,
+        "stale_days": 8,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10913,7 +10993,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10929,7 +11009,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10945,7 +11025,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10961,7 +11041,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10978,7 +11058,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10994,7 +11074,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11011,7 +11091,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11028,7 +11108,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11044,7 +11124,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11060,7 +11140,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11076,7 +11156,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11092,7 +11172,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11108,7 +11188,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11124,7 +11204,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11141,7 +11221,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11157,7 +11237,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11174,7 +11254,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11190,7 +11270,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11206,7 +11286,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11222,7 +11302,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11240,7 +11320,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11256,7 +11336,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 5,
+        "stale_days": 6,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11272,7 +11352,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 5,
+        "stale_days": 6,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11289,7 +11369,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 5,
+        "stale_days": 6,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11306,7 +11386,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 5,
+        "stale_days": 6,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11322,7 +11402,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 5,
+        "stale_days": 6,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11338,7 +11418,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 5,
+        "stale_days": 6,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11354,7 +11434,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 5,
+        "stale_days": 6,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11370,7 +11450,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 5,
+        "stale_days": 6,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11386,7 +11466,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 5,
+        "stale_days": 6,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11403,7 +11483,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 4,
+        "stale_days": 5,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11420,7 +11500,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 4,
+        "stale_days": 5,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11437,7 +11517,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11454,7 +11534,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11471,7 +11551,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11488,7 +11568,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11505,7 +11585,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11522,7 +11602,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11539,7 +11619,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11556,7 +11636,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11573,7 +11653,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11590,7 +11670,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11607,7 +11687,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11624,7 +11704,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11641,7 +11721,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11658,7 +11738,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11675,7 +11755,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11692,7 +11772,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11709,7 +11789,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11726,7 +11806,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11743,23 +11823,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 2,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Abdul Kadir",
-        "phone": "8116247695",
-        "status": null,
-        "notes": "DNP",
-        "last_conversation": "2026-08-10",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "home loans"
-        ],
-        "stale_days": 1,
+        "stale_days": 3,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11776,7 +11840,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 0,
+        "stale_days": 1,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11787,6 +11851,57 @@
         "notes": "DNP. WA message sent.",
         "last_conversation": "2026-08-11",
         "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Ramakant Singh",
+        "phone": "8530528888",
+        "status": "Not Qualified",
+        "notes": "DNP. Number busy. He is not on WA. Sent a text message.\n\n12th Aug - Rashmi - NQ - Needs 15 lakhs BT for a property in Nalasopara. ",
+        "last_conversation": "2026-08-12",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 0,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Sagar Singh",
+        "phone": "8530528888",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP. Number busy. WA message sent.",
+        "last_conversation": "2026-08-12",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 0,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Gaurav Gupta",
+        "phone": "9029525929",
+        "status": "Active Warm (1 month)",
+        "notes": "Connected but he was not audible. Have sent him WA message.",
+        "last_conversation": "2026-08-12",
+        "last_call_status": "Connected",
         "last_inbound_message": null,
         "periskope_labels": [
           "new contact",
@@ -12274,6 +12389,6 @@
     ],
     "stale_threshold_days": 14,
     "messages_available": true,
-    "generated_at": "2026-08-11T04:43:03.519029Z"
+    "generated_at": "2026-08-12T05:08:22.811757Z"
   }
 }
