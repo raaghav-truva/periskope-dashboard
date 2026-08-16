@@ -1,5 +1,5 @@
 {
-  "total_org_contacts": 4963,
+  "total_org_contacts": 4970,
   "label_counts": {
     "Home Loans": 295,
     "Active Warm": 114,
@@ -38,11 +38,11 @@
       },
       {
         "name": "Abhishek",
-        "phone": "919769322137"
+        "phone": "919818573680"
       },
       {
         "name": "Abhishek",
-        "phone": "919818573680"
+        "phone": "919769322137"
       },
       {
         "name": "Abhishek D",
@@ -646,11 +646,11 @@
       },
       {
         "name": "Pankaj",
-        "phone": "919820134382"
+        "phone": "918770798276"
       },
       {
         "name": "Pankaj",
-        "phone": "918770798276"
+        "phone": "919820134382"
       },
       {
         "name": "Pankaj Roy",
@@ -1926,11 +1926,11 @@
       },
       {
         "name": "Manoj Gupta",
-        "phone": "917045352354"
+        "phone": "919820573699"
       },
       {
         "name": "Manoj Gupta",
-        "phone": "919820573699"
+        "phone": "917045352354"
       },
       {
         "name": "Manu Sujanti",
@@ -4741,7 +4741,7 @@
   "home_loans_no_m_tags": 203,
   "m0_only": 0,
   "m1_no_m2": 56,
-  "generated_at": "2026-08-15T03:56:51.804887Z",
+  "generated_at": "2026-08-16T04:02:41.069082Z",
   "api_reported_count": 2000,
   "diagnostics": {
     "top_raw_labels": [
@@ -5792,9 +5792,9 @@
     }
   },
   "airtable_sync": {
-    "leads_total": 287,
+    "leads_total": 280,
     "leads_missing_phone": 1,
-    "matched": 284,
+    "matched": 277,
     "in_airtable_not_periskope": [
       {
         "name": "Unknown",
@@ -5813,6 +5813,14 @@
         "phone": "918116247695",
         "labels": [
           "new contact",
+          "home loans"
+        ]
+      },
+      {
+        "name": "Abhijeet Kumbhar",
+        "phone": "919821468182",
+        "labels": [
+          "still looking (2-4 months)",
           "home loans"
         ]
       },
@@ -5846,6 +5854,14 @@
         "phone": "919819496717",
         "labels": [
           "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ]
+      },
+      {
+        "name": "chandupamarthi",
+        "phone": "919321652078",
+        "labels": [
           "active warm (1 month)",
           "home loans"
         ]
@@ -5947,6 +5963,15 @@
         ]
       },
       {
+        "name": "Pranam",
+        "phone": "919930928781",
+        "labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "home loans"
+        ]
+      },
+      {
         "name": "Prashant NA",
         "phone": "919820987022",
         "labels": [
@@ -5957,6 +5982,15 @@
       {
         "name": "Raaghav Test",
         "phone": "918103594780",
+        "labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ]
+      },
+      {
+        "name": "Ramakant Singh",
+        "phone": "918530528888",
         "labels": [
           "new contact",
           "active warm (1 month)",
@@ -6035,6 +6069,15 @@
         ]
       },
       {
+        "name": "Sumit Mittal",
+        "phone": "919910220790",
+        "labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "home loans"
+        ]
+      },
+      {
         "name": "Test",
         "phone": "919823272893",
         "labels": [
@@ -6059,6 +6102,15 @@
           "m1",
           "home loans",
           "future plan (4+ months)"
+        ]
+      },
+      {
+        "name": "Vaibhav",
+        "phone": "919953107773",
+        "labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "home loans"
         ]
       },
       {
@@ -6113,13 +6165,6 @@
       },
       {
         "name": "Unknown",
-        "phone": "9833624175",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": []
-      },
-      {
-        "name": "Unknown",
         "phone": "7275001578",
         "airtable_status": "Active Warm (1 month)",
         "expected_periskope_label": "active warm (1 month)",
@@ -6128,13 +6173,6 @@
       {
         "name": "Unknown",
         "phone": "9769390152",
-        "airtable_status": "Active Warm (1 month)",
-        "expected_periskope_label": "active warm (1 month)",
-        "periskope_labels": []
-      },
-      {
-        "name": "Unknown",
-        "phone": "6294144886",
         "airtable_status": "Active Warm (1 month)",
         "expected_periskope_label": "active warm (1 month)",
         "periskope_labels": []
@@ -6352,6 +6390,18 @@
       },
       {
         "name": "Unknown",
+        "phone": "9930987633",
+        "airtable_status": "Still Looking (2-4 Months)",
+        "expected_periskope_label": "still looking (2-4 months)",
+        "periskope_labels": [
+          "m1",
+          "m2",
+          "home loans",
+          "future plan (4+ months)"
+        ]
+      },
+      {
+        "name": "Unknown",
         "phone": "9594586510",
         "airtable_status": "Still Looking (2-4 Months)",
         "expected_periskope_label": "still looking (2-4 months)",
@@ -6362,7 +6412,7 @@
         ]
       }
     ],
-    "generated_at": "2026-08-15T03:56:56.105550Z"
+    "generated_at": "2026-08-16T04:02:45.169974Z"
   },
   "contacts_by_source": {
     "total": 295,
@@ -6394,11 +6444,11 @@
         },
         {
           "name": "Abhishek",
-          "phone": "919769322137"
+          "phone": "919818573680"
         },
         {
           "name": "Abhishek",
-          "phone": "919818573680"
+          "phone": "919769322137"
         },
         {
           "name": "Abhishek D",
@@ -6870,11 +6920,11 @@
         },
         {
           "name": "Pankaj",
-          "phone": "919820134382"
+          "phone": "918770798276"
         },
         {
           "name": "Pankaj",
-          "phone": "918770798276"
+          "phone": "919820134382"
         },
         {
           "name": "Parag Bapat",
@@ -7568,14 +7618,14 @@
         }
       ]
     },
-    "generated_at": "2026-08-15T03:56:56.107947Z"
+    "generated_at": "2026-08-16T04:02:45.172063Z"
   },
   "poll_responses": {
     "lookback_days": 30,
     "total_m_series_recipients": 0,
     "total_m_series_responded": 0,
     "polls": [],
-    "generated_at": "2026-08-15T03:57:04.667260Z"
+    "generated_at": "2026-08-16T04:02:54.139845Z"
   },
   "lead_warmth": {
     "rows": [
@@ -7593,7 +7643,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 666235,
+        "stale_days": 666236,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7609,7 +7659,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 115,
+        "stale_days": 116,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7625,7 +7675,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 44,
+        "stale_days": 45,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7641,7 +7691,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 43,
+        "stale_days": 44,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7657,7 +7707,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 42,
+        "stale_days": 43,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7673,7 +7723,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 42,
+        "stale_days": 43,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7689,7 +7739,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 42,
+        "stale_days": 43,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7705,7 +7755,7 @@
           "registration complete",
           "home loans"
         ],
-        "stale_days": 42,
+        "stale_days": 43,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7721,7 +7771,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 42,
+        "stale_days": 43,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7737,23 +7787,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 42,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9867874721",
-        "status": "Active Warm (1 month)",
-        "notes": "Self-fund. Interested in Due Diligence only after finalising the property.",
-        "last_conversation": "2026-07-05",
-        "last_call_status": null,
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 41,
+        "stale_days": 43,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7769,7 +7803,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 38,
+        "stale_days": 39,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7786,23 +7820,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 38,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9892076221",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Booked for Thursday, 9th July, 12 pm. \nInterested in Due Diligence and Home loan structuring. \nHe is around 68-70 yrs. \nLooking to buy for his son. \nWill be paying 20 or 30 ratio and rest on Home Loan. \nLooking for a 2BHK in Kalpatru, Ghatkopar. \nIf refurbished then under 2.75 to 2.87 cr. \n(he doesn",
-        "last_conversation": "2026-07-11",
-        "last_call_status": null,
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 35,
+        "stale_days": 39,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7818,7 +7836,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 35,
+        "stale_days": 36,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7836,7 +7854,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 33,
+        "stale_days": 34,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7852,25 +7870,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 33,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9930987633",
-        "status": "Future Plan (4+ Months)",
-        "notes": "He is looking to buy property in L&T only, looking to close soon. He has asked to call on Friday to confirm timing for consultation call. He was interested in to understand how we can help to structure the loan part\n\n[11 May 2026 - Arpit Shah]: Follow up for the weekend consultation call\n\n[18 May 20",
-        "last_conversation": "2026-07-13",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "m2",
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 33,
+        "stale_days": 34,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7886,92 +7886,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 33,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9892189358",
-        "status": "Future Plan (4+ Months)",
-        "notes": "[23 May 2026 - Arpit Shah]: Lead came through meta Ad. He wants to check his eligibility and has one existing loan. Explained a bit about what Truva home loan does and asked his time for consultation. consultation booked on 24th may at 12PM. Have shared an Invite and whats app message\n\n[25 May 2026 ",
-        "last_conversation": "2026-07-13",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 33,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9892475142",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "He is actively looking to buy a house in kanjurmarg area, his budget is 3-3.25Cr and looking for 3bhk property. Currently living in 2bhk and to purchase new house, he has saving and might sell his current house. Also will be taking loan but said he will think about it once the property has been fina",
-        "last_conversation": "2026-07-13",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "still looking (2-4 months)",
-          "m2",
-          "home loans"
-        ],
-        "stale_days": 33,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9920204059",
-        "status": "Active Warm (1 month)",
-        "notes": "Not finalized any property yet looking for a 2 BHK at 2Cr...wants a loan of 1Cr.\nAgreed for a consultation call for tomorrow at 12pm.\nEmail - plj000096@gmail.com\n\n[12 Jul 2026 - Afif Bellikunhi]: Consultation Call Notes Link - \nhttps://docs.google.com/document/d/1sxEGUtDmGXjsRIdNTiLvNyFFknG8J41bY0Wn",
-        "last_conversation": "2026-07-13",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 33,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9987646849",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "once he will finalize any property the property then he will attend the consultation call.\n\n[13 Jul 2026 - Arhan Shinde]: Still looking for a property in either mulund, chembur area, told us to reach out after a few months\n\n[13 Jul 2026 - Arhan Shinde]: 2.5 cr budget",
-        "last_conversation": "2026-07-13",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 33,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9930376354",
-        "status": "Future Plan (4+ Months)",
-        "notes": "Had visited and liked our property in KSV. Has now finalized an under construction Nahar property. Interested in the call. Set up a call in the coming week. \n\nAlso would have liked prompt follow ups from our BeX team. \n\n[11 May 2026 - Afif Bellikunhi]: hasn't responded, to follow up with meme\n\n[12 M",
-        "last_conversation": "2026-07-14",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "m2",
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 32,
+        "stale_days": 34,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -7987,148 +7902,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 32,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9833554828",
-        "status": "Future Plan (4+ Months)",
-        "notes": "Looking for specifically in hiranandani and already seen all our property in that area but has not liked anything yet so once she will finalize anything she will let us klnow and then attend a consultation call\n\n[14 Jul 2026 - Raaghav Paharia]: busy",
-        "last_conversation": "2026-07-14",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 32,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9971363200",
-        "status": "Future Plan (4+ Months)",
-        "notes": "Brother works in movie industry. He wants to buy 2 flats in goregaon, and his brother's purchase will happen in the next few months. Will use sale of property in delhi to fund the purchase but will opt for a loan. Hasn't thought much about the loan angle yet. He hasn't found a house that meets his r",
-        "last_conversation": "2026-07-14",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "m2",
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 32,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9920080368",
-        "status": "Future Plan (4+ Months)",
-        "notes": "Interested in consultation call will confirm the time after discussing with his father.\n\n[14 Jul 2026 - Raaghav Paharia]: dnp",
-        "last_conversation": "2026-07-14",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "m2",
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 32,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9930224986",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Booked for tomorrow, Sat. 11th July, 12 pm. \nFor due diligence (primarily). \nMay think about 10 to 15 percent Home loan. \nBecause he is going to self-fund by selling his another property. \nNot yet sure about Home loan part though. \nHe is looking for a 3BHK in Andheri W, Goregaon E and W RTM in the r",
-        "last_conversation": "2026-07-14",
-        "last_call_status": null,
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 32,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9821333289",
-        "status": "Active Warm (1 month)",
-        "notes": "3.7 cr budget. Looking to purchase soon once he gets the right option. Has an IP from kotak of 2cr at 7.4. \n\nWas very interested in the due diligence angle and will also want to talk about the loan once the property gets finalized. \n\n[14 Jul 2026 - Arhan Shinde]: Looking for property ranging from 4c",
-        "last_conversation": "2026-07-14",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "m2",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 32,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9870479599",
-        "status": "Future Plan (4+ Months)",
-        "notes": "He is passively looking to buy house, if all his requirements are aligned he'll buy a house. Pitched him for out of Truva home loan, will take consultation call after 15-17 days. He is not in Mumbai so contact him after 15 days\n\n[11 May 2026 - Arpit Shah]: Call on 15th May\n\n[18 May 2026 - Arpit Shah",
-        "last_conversation": "2026-07-14",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "m2",
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 32,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9953107773",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Looking for a apartment in KSV once he finalize anything then he will come for consultation.\n\n[14 Jul 2026 - Arhan Shinde]: Said he was travelling and directly cut the call",
-        "last_conversation": "2026-07-14",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 32,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9953454481",
-        "status": "Future Plan (4+ Months)",
-        "notes": "Said that she will definietly reach out to us when she decides to purchase. Has put it off for 6 months\n\n[14 Jul 2026 - Raaghav Paharia]: Busy right now, will contact us later (not searching for a home currently)",
-        "last_conversation": "2026-07-14",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "m2",
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 32,
+        "stale_days": 33,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8145,7 +7919,7 @@
           "balance transfer (future)",
           "home loans"
         ],
-        "stale_days": 32,
+        "stale_days": 33,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8161,7 +7935,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 31,
+        "stale_days": 32,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8177,23 +7951,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 31,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9987956489",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Agreed for a consultation call for tomorrow 28-5-26 morning 11Am.\n\n[28 May 2026 - Arpit Shah]: Consultation done, he is 46 year old. Looking to either buy 3 bhk property in chandivali or a plot in Navi mumbai in next 2-3 months. He is still evaluating what is best for him. He earns 3.75 pm after tax",
-        "last_conversation": "2026-07-15",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 31,
+        "stale_days": 32,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8210,42 +7968,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 31,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9910220790",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "once he will finalize any property the property then he will attend the consultation call.\n\n[13 Jul 2026 - Arhan Shinde]: dnp\n\n[15 Jul 2026 - Raaghav Paharia]: was a little bit angry, still have not finalised - said will take his time",
-        "last_conversation": "2026-07-15",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 31,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9920858852",
-        "status": null,
-        "notes": "Interested in having a consultation call next week. Has an IP from a pvt bank at 7.15 floating. Didn't know about OD but is interested now. \n\n[16 Jun 2026 - Raaghav Paharia]: Has already bought a home and done loan from HDFC, 7.2% ROI, asked him to still do a consultation. Said would think about it,",
-        "last_conversation": "2026-07-15",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "m2",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 31,
+        "stale_days": 32,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8262,7 +7985,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 31,
+        "stale_days": 32,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8278,25 +8001,7 @@
           "registration complete",
           "home loans"
         ],
-        "stale_days": 31,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9920915156",
-        "status": null,
-        "notes": "Already has a banking partner but is interested to have a consultation call over the weekend. Is still looking for units in DB woods. \n\n[13 Jul 2026 - Raaghav Paharia]: DNP",
-        "last_conversation": "2026-07-15",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "m2",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 31,
+        "stale_days": 32,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8314,7 +8019,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8331,7 +8036,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 29,
+        "stale_days": 30,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8347,7 +8052,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 25,
+        "stale_days": 26,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8363,7 +8068,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 25,
+        "stale_days": 26,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8379,7 +8084,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 24,
+        "stale_days": 25,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8395,7 +8100,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 24,
+        "stale_days": 25,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8411,7 +8116,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 23,
+        "stale_days": 24,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8427,7 +8132,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 23,
+        "stale_days": 24,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8443,7 +8148,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 23,
+        "stale_days": 24,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8460,7 +8165,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 23,
+        "stale_days": 24,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8476,7 +8181,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 23,
+        "stale_days": 24,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8492,7 +8197,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 23,
+        "stale_days": 24,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8510,7 +8215,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 23,
+        "stale_days": 24,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8526,7 +8231,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8542,7 +8247,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8560,7 +8265,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8575,7 +8280,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8591,7 +8296,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8607,7 +8312,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8624,7 +8329,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8640,7 +8345,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8656,7 +8361,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8674,7 +8379,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8690,7 +8395,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8708,7 +8413,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8724,7 +8429,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8740,7 +8445,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8756,7 +8461,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8774,7 +8479,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8791,7 +8496,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8808,7 +8513,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8826,7 +8531,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8843,7 +8548,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8859,7 +8564,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8875,7 +8580,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8891,7 +8596,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 22,
+        "stale_days": 23,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8907,7 +8612,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8925,7 +8630,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8941,7 +8646,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8959,7 +8664,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8975,7 +8680,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -8992,7 +8697,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9010,7 +8715,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9026,7 +8731,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9042,7 +8747,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9058,7 +8763,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 21,
+        "stale_days": 22,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9074,7 +8779,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 20,
+        "stale_days": 21,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9090,7 +8795,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 20,
+        "stale_days": 21,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9106,40 +8811,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 20,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9867131296",
-        "status": "Future Plan (4+ Months)",
-        "notes": "DNP\n\n25th July - DNP - out of network\n\n26th July - Rashmi - DNP - number busy",
-        "last_conversation": "2026-07-26",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 20,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9987950878",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "24th July - Rashmi - DNP \n\n25th July - Rashmi - DNP \n\n26th July - Rashmi - Out of town so call back next weekend.",
-        "last_conversation": "2026-07-26",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 20,
+        "stale_days": 21,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9156,7 +8828,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 20,
+        "stale_days": 21,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9172,7 +8844,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 20,
+        "stale_days": 21,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9188,7 +8860,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 20,
+        "stale_days": 21,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9206,25 +8878,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 20,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9899575226",
-        "status": "Future Plan (4+ Months)",
-        "notes": "Customer is out of mumbai currently she will come next month around 15th.\n\n[15 Jun 2026 - Raaghav Paharia]: looking for 3BHK, L&T 3BHK\n\n[13 Jul 2026 - Arhan Shinde]: dnp\n\n24th July - Rashmi - DNP - call forwarded to voicemail\n\n25th July - Rashmi - DNP\n\n26th July - Rashmi - DNP - number busy\n\n\n[27 Ju",
-        "last_conversation": "2026-07-26",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "m2",
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 20,
+        "stale_days": 21,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9240,7 +8894,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 20,
+        "stale_days": 21,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9256,23 +8910,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 20,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9958008881",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Self-finance once finalising property. Interested in Due Diligence service. She is travelling. Will connect once available.\n\n24th July - Rashmi - DNP - call forwarded to voicemail\n\n25th July - Rashmi - DNP \n\n26th July - Rashmi - DNP - call forwarded to voicemail\n\n[27 Jul 2026 - Arhan Shinde]:dnp\n",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 19,
+        "stale_days": 21,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9291,7 +8929,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9308,42 +8946,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9890183180",
-        "status": "Active Warm (1 month)",
-        "notes": "2BHK in Goregaon or Malad, Budget is 2.5 Cr and doing self funded + loan. Can do consultation post finalising.\n\n[14 Jul 2026 - Arhan Shinde]: dnp\n[17 Jul 2026 - Arhan Shinde]: dnp\n\n(Arhan, Jul 23, 2026):dnp\n\n24th July 2026 - Rashmi - DNP - call forwarded to voicemail\n\n25th July 2026 - Rashmi - DNP -",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "m2",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9930928781",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Might connect for Home loan, he hasn't yet planned. Also, for due diligence, he said there is no need as society gives NOC and requires nothing else. Looking to buy in Lake Castle, Powai.\n\n(Arhan, Jul 24, 2026):dnp\n\n25th July - Rashmi - DNP\n\n26th July - Rashmi - DNP - out of network\n\n[27 Jul 2026 - ",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9360,22 +8963,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9833646567",
-        "status": null,
-        "notes": "Already purchased a property in Neelam Senroofs ( Mulund )....Taken a loan of 1Cr from SBI at 7.35% wants a loan transfer\nAgreed for a consultation call on friday 5-6-26 at 3PM.\nEmail . sunidas@gmail.com\n\n[8 Jun 2026 - Arpit Shah]: Didn't show up in consultation call. Have asked for next week\n\n[11 J",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "home loans"
-        ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9393,23 +8981,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9821225211",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Interested in due diligence after finalising property. Looking for 2BHK under 2 cr with 700-750 carpet area in Mulund and Ghatkopar.\n\n[15 Jun 2026 - Raaghav Paharia]: might not stay in mumbai, currently paused looking for home. Will contact truva if he resumes.\n\n[14 Jul 2026 - Raaghav Paharia]: Will",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9425,7 +8997,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9442,124 +9014,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9821468182",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "He will take loan for 20-30 lakhs and his overall budget is 1.5 to 1.6 cr. However, he already has arrangement for loan. He can connect for Due Diligence. Need to confirm next week.\n\n23/7/26 - call disconnected\n\n26th July - Rashmi - DNP - call disconnected\n\n[27 Jul 2026 - Arhan Shinde]:dnp",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9952170506",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Have seen our property in KSV. They are active buyers and looking for 3bhk in Powai or Bandra. Our current KSV property is on 1st floor which is not his preference, he wants higher floor. He'll speak to his wife and schedule a consultation call in a week or two\n\n[11 May 2026 - Arpit Shah]: Have seen",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "still looking (2-4 months)",
-          "m2",
-          "home loans"
-        ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9987752831",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Called again on 12th July. Interested for Due diligence. Home loan part hasn't yet decided. Looking for a 3BHK between Goregaon to Vile Parle. Budget 4 cr. He has also showed his interest in Satellite Tower and Hiranandani.\n\n23/7/26 - call forwarded to voicemail\n\n26th July - Rashmi - DNP - call forw",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9920315969",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Will speak to husband and then schedule a call\n\n[18 May 2026 - Arpit Shah]: Will speak to husband and then schedule a call\n\n[22 May 2026 - Afif Bellikunhi]: wants to see oberoi woods next week. Is travelling to BLR.\n\n[14 Jul 2026 - Arhan Shinde]: dnp\n[17 Jul 2026 - Arhan Shinde]: wants to be called ",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "still looking (2-4 months)",
-          "m2",
-          "home loans"
-        ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9986290086",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Wants to buy in trees itself. Looking for a 2.5bhk. Has an existing relationship with HSBC but is happy to reach out to us once he finalizes. Also mentioned that the due diligence part would anyway be covered by the bank\n\n[13 Jul 2026 - Arhan Shinde]: Looking for a flat in Godrej Trees, wants us to ",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9930017434",
-        "status": null,
-        "notes": "[23 Jun 2026 - Raaghav Paharia]: Busy\n\n[13 Jul 2026 - Arhan Shinde]: dnp\n\n[15 Jul 2026 - Arhan Shinde]: cut the call\n\n\n(17 Jul 2026- Arhan Shinde): dnp\n\n24th July 2026 - Rashmi - DNP - Call disconnected\n\n25th July 2026 - Rashmi - DNP - Call disconnected\n\n26th July 2026 - Rashmi - DNP - Call busy\n\n\n[",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "home loans"
-        ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9833879079",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Looking for a apartment only in Ghatkopar at 4Cr and once he will finalize anything he will think about consultation call.\n\n24th July - Rashmi - DNP\n\n25th July - Rashmi - DNP\n\n26th July - Rashmi - DNP - call disconnected\n\n[27 Jul 2026 - Arhan Shinde]:dnp",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9577,73 +9032,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9867577606",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "For Due Diligence. Need to connect with her Husband on Saturday after 11 am to book consultation. They opt for Home loan but her husband is a Top designated Railway employee, so have all the benefits regarding loan and ROI. They btw have connection with SBI Bank.\n\n23/7/26 - call forwarded to voicema",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9987335857",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Called back on 12th July. Interested For due diligence and Home loan. Will connect only after finalising the property. She is opting for a Mix of self-fund and Home loan. Looking for a property between Borivali to Goregaon. Should not be too near or too far from Highway. Less traffic, less crowd, id",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9867362482",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Booked for Monday, 20 July, 4 pm. He needs Home loan 1 cr for a property in Mumbai. Not confirmed if his property is finalized.\n\n25th July - Rashmi - DNP\n\n26th July - Rashmi - DNP - call disconnected\n\n[27 Jul 2026 - Arhan Shinde]:dnp",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 19,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9833970011",
-        "status": null,
-        "notes": "Will resume after 2 months, doing self funding but still reach out later\n\n[14 Jul 2026 - Arhan Shinde]: dnp\n\n[15 Jul 2026 - Arhan Shinde]: dnp\n\n[17 Jul 2026 - Arhan Shinde]: dnp\n\n23 Jul 2026 - Raaghav : DNP, Busy\n\n[27 Jul 2026 - Arhan Shinde]: dnp\n\n28 July 2026 - raaghav : DNP\n",
-        "last_conversation": "2026-07-27",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "still looking (2-4 months)",
-          "m2",
-          "home loans"
-        ],
-        "stale_days": 19,
+        "stale_days": 20,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9660,7 +9049,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9676,22 +9065,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 18,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9930105332",
-        "status": null,
-        "notes": "In person consultation booked for the weekend.\n\n[13 Jul 2026 - Arhan Shinde]: Busy at the moment and cut the call\n[17 Jul 2026 - Arhan Shinde]: dnp\n\n24th July 2026 - Rashmi - DNP - call forwarded to voicemail\n\n25th July 2026 - Rashmi - DNP - call disconnected\n\n26th July 2026 - Rashmi - DNP - number ",
-        "last_conversation": "2026-07-28",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "home loans"
-        ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9707,7 +9081,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 18,
+        "stale_days": 19,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9723,7 +9097,7 @@
           "m1",
           "home loans"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9740,7 +9114,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9757,7 +9131,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9774,7 +9148,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9790,7 +9164,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9806,7 +9180,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 17,
+        "stale_days": 18,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9823,23 +9197,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 16,
-        "stale": true,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9920197789",
-        "status": "Active Warm (1 month)",
-        "notes": "(17 Jul 2026- Arhan Shinde): callback next week\n\n[23 Jun 2026 - Raaghav Paharia]: DNP\n\n[13 Jul 2026 - Arhan Shinde]: dnp\n\n[15 Jul 2026 - Arhan Shinde]: dnp\n\n[17 Jul 2026 - Arhan Shinde]: requested callback next week\n\n24th July 2026 - Rashmi - DNP \n\n25th July - Rashmi - DNP\n\n26th July - Rashmi - DNP\n",
-        "last_conversation": "2026-07-26",
-        "last_call_status": "DNP",
-        "last_inbound_message": "2026-07-30",
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 16,
+        "stale_days": 17,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9856,7 +9214,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9873,7 +9231,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9890,7 +9248,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9907,7 +9265,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9924,7 +9282,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9941,7 +9299,7 @@
           "new contact",
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9958,7 +9316,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9975,7 +9333,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -9992,7 +9350,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 14,
+        "stale_days": 15,
         "stale": true,
         "no_contact_on_record": false
       },
@@ -10009,7 +9367,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 12,
+        "stale_days": 13,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10026,7 +9384,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 12,
+        "stale_days": 13,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10043,24 +9401,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 12,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9820951029",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Could be Interested for due diligence and may be home loan, but after finalizing the property. She is specifically looking in Andheri W, her workplace being around. She had earlier visited Samarth Siddhi. She has asked to Whatsapp her about our services as she is busy in office. So, doing that. Let'",
-        "last_conversation": "2026-08-04",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 11,
+        "stale_days": 13,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10077,7 +9418,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 11,
+        "stale_days": 12,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10093,7 +9434,7 @@
           "registration complete",
           "home loans"
         ],
-        "stale_days": 11,
+        "stale_days": 12,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10109,7 +9450,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 11,
+        "stale_days": 12,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10126,23 +9467,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 11,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9833948018",
-        "status": "Future Plan (4+ Months)",
-        "notes": "For Due Diligence and Home Loan requirement. Will connect after sometime.\n\n24th July - Rashmi - Connect after Aug. 4 - He is busy in his shoots until July end. He is Producer-Director for films and ads.\n\n[4 Aug 2026]- Arhan:dnp\n\n5th Aug, Arhan:\n\n",
-        "last_conversation": "2026-08-04",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 11,
+        "stale_days": 12,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10158,7 +9483,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 11,
+        "stale_days": 12,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10174,153 +9499,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9997185522",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Varun Upadhyay - Interested for due diligence, home loan not yet sure. Still looking for property. Out of town, Call back in first week of August.\n\n\n4th Aug, Arhan:dnp\n\n5th Aug - Rashmi - Connected - Will be back after 10th August - So, will call then.",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9920301580",
-        "status": "Active Warm (1 month)",
-        "notes": "Living in Kalpatru only. However, will look to purchase later. Opting for Home loan and due diligence.\n\n24th July - Rashmi - Not needed to call right now as mentioned above that they will purchase later and it will be too soon to reconnect them on the purchase status and due diligence and home loan ",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9870473939",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Called again on 12th July. Would like to book CC in the first week of August as she is travelling. Will call her first by then to confirm her CC booking. For due diligence and Home loan. She is looking for a 2BHK between Andheri-Goregaon. She was keen to check the properties between 2-3 cr as listed",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9833060132",
-        "status": "Active Warm (1 month)",
-        "notes": "Interested for due diligence, home loan not sure. He has finalized a property in Hiranandani, Powai. Since travelling in aircraft, will call back tomorrow to book  CC.\nArhan, July 23: Callback tomorrow\n\n24th July 2026 - Rashmi - Connected - CC booked for Saturday, 1st August 2026 - this time he said",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "m1",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "7399950333",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. WA message sent.\n\n5th Aug, Arhan: dnp",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9819531157",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "Interested. asked to WA the details of services. \n23/7/26 - Needs time to decide to get on CC.\n\n\n4th Aug, Arhan:dnp\n\n5th Aug, Arhan: dnp",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9619998518",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. Have sent WA message.\n5th Aug, Arhan: dnp",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9773397615",
-        "status": "Still Looking (2-4 Months)",
-        "notes": "CC booked for tomorrow, Sunday, 2nd August, 12 pm. He is still looking for a home. He showed his interest in Due Diligence service as well as Home loan advisory as he will be opting for partly home loan.\n\n(4th Aug, 2026) - Arhan: dnp\n\n5th Aug, Arhan: dnp",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9819862771",
-        "status": "Active Warm (1 month)",
-        "notes": "Connected but his son spoke on his behalf. Have sent WA message. \n\n5th Aug, Arhan: switched off",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "Call Back",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 10,
+        "stale_days": 11,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10337,87 +9516,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9920003925",
-        "status": "Active Warm (1 month)",
-        "notes": "CC booked for Monday, 20th July, 5 pm for Due Diligence and finance part. Her husband Sanjay Veerkar will attend the call. Have finalized a property in Thane Kalpatru. But as mentioned by her, the builder said that her daughter won't get loan as she has her salary account in ICICI. Couldn't understa",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "8692033660",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. Number switched off.\n\n5th Aug, Arhan:dnp",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9820573699",
-        "status": "Active Warm (1 month)",
-        "notes": "Interested for due diligence and home loan advisory. His son is looking for a 4BHK in Oberoi. Yet to finalize. His son is in US. Coming to Mumbai by the end of July. So, will call him by that time to book CC.\n\n\n4th Aug, Arhan: interested in CC, requested callback tomorrow\n\n5th Aug, Arhan:dnp",
-        "last_conversation": "2026-08-05",
-        "last_call_status": "Call Back",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "still looking (2-4 months)",
-          "home loans"
-        ],
-        "stale_days": 10,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9321652078",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. Number busy.",
-        "last_conversation": "2026-08-06",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 9,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "7758999854",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. Number busy.",
-        "last_conversation": "2026-08-06",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 9,
+        "stale_days": 11,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10434,7 +9533,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 9,
+        "stale_days": 10,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10451,274 +9550,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 9,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "8355849340",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. Number busy.",
-        "last_conversation": "2026-08-06",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 9,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9930442132",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP",
-        "last_conversation": "2026-08-06",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 9,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "7518933843",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP",
-        "last_conversation": "2026-08-06",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 9,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9702504810",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP",
-        "last_conversation": "2026-08-06",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 9,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "8879382656",
-        "status": "Active Warm (1 month)",
-        "notes": "He needs time to connect with us for the home loan requirement as he is already in talks with other two sources, as mentioned by him.",
-        "last_conversation": "2026-08-06",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 9,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9930136265",
-        "status": "Active Warm (1 month)",
-        "notes": "Interested in due diligence and home loan advisory. Will confirm the CC booking on Monday. He has already bought a property and is about to start the paperwork. He has already approached a bank for Home Loan. Upon explaining him how different our services are from that of a bank, (on his enquiry), h",
-        "last_conversation": "2026-08-07",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 8,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9870061632",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP\n\n6th Aug - Rashmi - DNP - WA message sent\n\n9th Aug - Rashmi - DNP",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9137923612",
-        "status": "Active Warm (1 month)",
-        "notes": "He was busy, so asked me to call back later.\n\n9th Aug - Rashmi - Call back on Monday as busy with patients.",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "Call Back",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9867256210",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. i/c barred.\n\n\n4th Aug, Arhan:dnp\n\n6th Aug - Rashmi - DNP - WA message sent \n\n9th Aug - Rashmi - DNP",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9892057186",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP\n\n\n4th Aug, Arhan: dnp\n\n5th Aug, Arhan: dnp\n\n6th Aug - Rashmi - DNP - WA message sent\n\n9th Aug - Rashmi - DNP",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9619437399",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. WA message sent.",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9769832928",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. Call disconnected while ringing on.",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "8779913030",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. Call disconnected while ringing. WA message sent.",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9029114323",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP\n\n6th Aug - Rashmi - DNP - WA message sent\n\n9th Aug - Rashmi - DNP ",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "7506786333",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP\n\n\n4th Aug, Arhan: dnp\n\n5th Aug, Arhan:dnp\n\n6th Aug - Rashmi - DNP - WA message sent\n\n9th Aug - Rashmi - DNP",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "8308844362",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP\n\n6th Aug - Rashmi - DNP - He is not on WA. \n\n9th Aug - Rashmi - DNP",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
+        "stale_days": 10,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10735,7 +9567,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10752,7 +9584,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10769,58 +9601,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9152913513",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP\n\n6th Aug - Rashmi - DNP - WA message sent\n\n9th Aug - Rashmi - DNP",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9867131296",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP\n\n6th Aug - Rashmi - DNP - Call forwarded to voicemail - WA message sent\n\n9th Aug - Rashmi - DNP - Call forwarded to voicemail ",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "home loans",
-          "future plan (4+ months)"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9987208802",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP\n\n6th Aug - Rashmi - DNP - I/C barred - WA message sent\n\n9th Aug - Rashmi - DNP - I/c barred",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10837,41 +9618,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9819080773",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP\n[4 Aug 2026]- Arhan:dnp\n\n\n5th Aug, Arhan:dnp\n\n6th Aug - Rashmi - DNP - WA message sent\n\n9th Aug - Rashmi - DNP",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9987867325",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP\n\n6th Aug - Rashmi - DNP - I/c barred - WA message sent\n\n9th Aug - Rashmi - DNP ",
-        "last_conversation": "2026-08-09",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 6,
+        "stale_days": 7,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10888,24 +9635,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 4,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9324911152",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. WA message sent.",
-        "last_conversation": "2026-08-11",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 4,
+        "stale_days": 5,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10922,58 +9652,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 3,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "8530528888",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. Number busy. WA message sent.",
-        "last_conversation": "2026-08-12",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 3,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9029525929",
-        "status": "Active Warm (1 month)",
-        "notes": "Connected but he was not audible. Have sent him WA message.",
-        "last_conversation": "2026-08-12",
-        "last_call_status": "Connected",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 3,
-        "stale": false,
-        "no_contact_on_record": false
-      },
-      {
-        "name": "Unknown",
-        "phone": "9867275356",
-        "status": "Active Warm (1 month)",
-        "notes": "DNP. WA message sent.",
-        "last_conversation": "2026-08-13",
-        "last_call_status": "DNP",
-        "last_inbound_message": null,
-        "periskope_labels": [
-          "new contact",
-          "active warm (1 month)",
-          "home loans"
-        ],
-        "stale_days": 2,
+        "stale_days": 4,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -10989,7 +9668,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11005,7 +9684,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11021,7 +9700,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11037,7 +9716,7 @@
           "home loans",
           "mou signed"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11052,7 +9731,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11068,7 +9747,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11084,7 +9763,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11100,7 +9779,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11115,7 +9794,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11132,7 +9811,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11150,7 +9829,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11166,7 +9845,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11184,7 +9863,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11201,7 +9880,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11217,7 +9896,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11232,7 +9911,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11248,7 +9927,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11265,7 +9944,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11283,7 +9962,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11299,7 +9978,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11316,7 +9995,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11333,7 +10012,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11349,7 +10028,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11364,7 +10043,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11382,7 +10061,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11398,7 +10077,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11414,7 +10093,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11432,7 +10111,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11449,7 +10128,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11466,7 +10145,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11484,7 +10163,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11501,7 +10180,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11518,7 +10197,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11534,7 +10213,7 @@
           "balance transfer (immediate)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11551,7 +10230,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11567,7 +10246,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11585,7 +10264,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11601,7 +10280,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11617,7 +10296,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11633,7 +10312,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11649,7 +10328,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11667,7 +10346,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11685,7 +10364,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11703,7 +10382,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11719,7 +10398,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11735,7 +10414,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11751,7 +10430,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11768,7 +10447,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11785,7 +10464,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11803,7 +10482,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11819,7 +10498,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11835,7 +10514,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11853,7 +10532,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11871,7 +10550,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11887,7 +10566,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11905,7 +10584,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11922,7 +10601,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11938,7 +10617,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11954,7 +10633,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11970,7 +10649,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -11986,7 +10665,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12002,7 +10681,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12018,7 +10697,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12034,7 +10713,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12050,7 +10729,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12066,7 +10745,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12082,7 +10761,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12100,7 +10779,7 @@
           "home loans",
           "future plan (4+ months)"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12116,7 +10795,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12134,7 +10813,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12152,7 +10831,7 @@
           "m2",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12168,7 +10847,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12186,7 +10865,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12201,7 +10880,7 @@
         "periskope_labels": [
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12218,7 +10897,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12234,7 +10913,7 @@
           "still looking (2-4 months)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12251,7 +10930,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12269,7 +10948,7 @@
           "active warm (1 month)",
           "home loans"
         ],
-        "stale_days": 1,
+        "stale_days": 2,
         "stale": false,
         "no_contact_on_record": false
       },
@@ -12283,6 +10962,1377 @@
         "last_inbound_message": null,
         "periskope_labels": [
           "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 2,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9820951029",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Could be Interested for due diligence and may be home loan, but after finalizing the property. She is specifically looking in Andheri W, her workplace being around. She had earlier visited Samarth Siddhi. She has asked to Whatsapp her about our services as she is busy in office. So, doing that. Let'",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9930376354",
+        "status": "Future Plan (4+ Months)",
+        "notes": "Had visited and liked our property in KSV. Has now finalized an under construction Nahar property. Interested in the call. Set up a call in the coming week. \n\nAlso would have liked prompt follow ups from our BeX team. \n\n[11 May 2026 - Afif Bellikunhi]: hasn't responded, to follow up with meme\n\n[12 M",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "m2",
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9870061632",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n\n6th Aug - Rashmi - DNP - WA message sent\n\n9th Aug - Rashmi - DNP\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9137923612",
+        "status": "Active Warm (1 month)",
+        "notes": "He was busy, so asked me to call back later.\n\n9th Aug - Rashmi - Call back on Monday as busy with patients.\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9958008881",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Self-finance once finalising property. Interested in Due Diligence service. She is travelling. Will connect once available.\n\n24th July - Rashmi - DNP - call forwarded to voicemail\n\n25th July - Rashmi - DNP \n\n26th July - Rashmi - DNP - call forwarded to voicemail\n\n[27 Jul 2026 - Arhan Shinde]:dnp\n\n15",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9321652078",
+        "status": "Not Qualified",
+        "notes": "DNP. Number busy.\n\n15th Aug - Rashmi - Does  not need HL so marking NQ",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9997185522",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Varun Upadhyay - Interested for due diligence, home loan not yet sure. Still looking for property. Out of town, Call back in first week of August.\n\n\n4th Aug, Arhan:dnp\n\n5th Aug - Rashmi - Connected - Will be back after 10th August - So, will call then.\n\n15th Aug - Rashmi - He is still out of town. h",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9930136265",
+        "status": "Active Warm (1 month)",
+        "notes": "Interested in due diligence and home loan advisory. Will confirm the CC booking on Monday. He has already bought a property and is about to start the paperwork. He has already approached a bank for Home Loan. Upon explaining him how different our services are from that of a bank, (on his enquiry), h",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9833554828",
+        "status": "Future Plan (4+ Months)",
+        "notes": "Looking for specifically in hiranandani and already seen all our property in that area but has not liked anything yet so once she will finalize anything she will let us klnow and then attend a consultation call\n\n[14 Jul 2026 - Raaghav Paharia]: busy\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "7758999854",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP. Number busy.\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9890183180",
+        "status": "Active Warm (1 month)",
+        "notes": "2BHK in Goregaon or Malad, Budget is 2.5 Cr and doing self funded + loan. Can do consultation post finalising.\n\n[14 Jul 2026 - Arhan Shinde]: dnp\n[17 Jul 2026 - Arhan Shinde]: dnp\n\n(Arhan, Jul 23, 2026):dnp\n\n24th July 2026 - Rashmi - DNP - call forwarded to voicemail\n\n25th July 2026 - Rashmi - DNP -",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "m2",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9920301580",
+        "status": "Active Warm (1 month)",
+        "notes": "Living in Kalpatru only. However, will look to purchase later. Opting for Home loan and due diligence.\n\n24th July - Rashmi - Not needed to call right now as mentioned above that they will purchase later and it will be too soon to reconnect them on the purchase status and due diligence and home loan ",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9867256210",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP. i/c barred.\n\n\n4th Aug, Arhan:dnp\n\n6th Aug - Rashmi - DNP - WA message sent \n\n9th Aug - Rashmi - DNP\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9870473939",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Called again on 12th July. Would like to book CC in the first week of August as she is travelling. Will call her first by then to confirm her CC booking. For due diligence and Home loan. She is looking for a 2BHK between Andheri-Goregaon. She was keen to check the properties between 2-3 cr as listed",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9892057186",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n\n\n4th Aug, Arhan: dnp\n\n5th Aug, Arhan: dnp\n\n6th Aug - Rashmi - DNP - WA message sent\n\n9th Aug - Rashmi - DNP\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9867131296",
+        "status": "Future Plan (4+ Months)",
+        "notes": "DNP\n\n25th July - DNP - out of network\n\n26th July - Rashmi - DNP - number busy\n\n15th Aug - Rashmi - DNP - Message forwarded to her voice message ",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9930928781",
+        "status": "Not Qualified",
+        "notes": "Might connect for Home loan, he hasn't yet planned. Also, for due diligence, he said there is no need as society gives NOC and requires nothing else. Looking to buy in Lake Castle, Powai.\n\n(Arhan, Jul 24, 2026):dnp\n\n25th July - Rashmi - DNP\n\n26th July - Rashmi - DNP - out of network\n\n[27 Jul 2026 - ",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9971363200",
+        "status": "Future Plan (4+ Months)",
+        "notes": "Brother works in movie industry. He wants to buy 2 flats in goregaon, and his brother's purchase will happen in the next few months. Will use sale of property in delhi to fund the purchase but will opt for a loan. Hasn't thought much about the loan angle yet. He hasn't found a house that meets his r",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "m2",
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9324911152",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP. WA message sent.\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9892076221",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Booked for Thursday, 9th July, 12 pm. \nInterested in Due Diligence and Home loan structuring. \nHe is around 68-70 yrs. \nLooking to buy for his son. \nWill be paying 20 or 30 ratio and rest on Home Loan. \nLooking for a 2BHK in Kalpatru, Ghatkopar. \nIf refurbished then under 2.75 to 2.87 cr. \n(he doesn",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9619437399",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP. WA message sent.\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9769832928",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP. Call disconnected while ringing on.\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9920080368",
+        "status": "Future Plan (4+ Months)",
+        "notes": "Interested in consultation call will confirm the time after discussing with his father.\n\n[14 Jul 2026 - Raaghav Paharia]: dnp\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "m2",
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9833646567",
+        "status": null,
+        "notes": "Already purchased a property in Neelam Senroofs ( Mulund )....Taken a loan of 1Cr from SBI at 7.35% wants a loan transfer\nAgreed for a consultation call on friday 5-6-26 at 3PM.\nEmail . sunidas@gmail.com\n\n[8 Jun 2026 - Arpit Shah]: Didn't show up in consultation call. Have asked for next week\n\n[11 J",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9930105332",
+        "status": null,
+        "notes": "In person consultation booked for the weekend.\n\n[13 Jul 2026 - Arhan Shinde]: Busy at the moment and cut the call\n[17 Jul 2026 - Arhan Shinde]: dnp\n\n24th July 2026 - Rashmi - DNP - call forwarded to voicemail\n\n25th July 2026 - Rashmi - DNP - call disconnected\n\n26th July 2026 - Rashmi - DNP - number ",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "8530528888",
+        "status": "Not Qualified",
+        "notes": "DNP. Number busy. WA message sent.\n\n15th Aug - Rashmi - NQ as needs BT of 12 lacs for a home at Nalasopara.",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "8779913030",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP. Call disconnected while ringing. WA message sent.\n\n15th Aug - Rashmi - He is still looking for property, will be available for CC only after finalizing. has asked to reconnect on the status by Sept. end.",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9029114323",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n\n6th Aug - Rashmi - DNP - WA message sent\n\n9th Aug - Rashmi - DNP \n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9930224986",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Booked for tomorrow, Sat. 11th July, 12 pm. \nFor due diligence (primarily). \nMay think about 10 to 15 percent Home loan. \nBecause he is going to self-fund by selling his another property. \nNot yet sure about Home loan part though. \nHe is looking for a 3BHK in Andheri W, Goregaon E and W RTM in the r",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9833060132",
+        "status": "Active Warm (1 month)",
+        "notes": "Interested for due diligence, home loan not sure. He has finalized a property in Hiranandani, Powai. Since travelling in aircraft, will call back tomorrow to book  CC.\nArhan, July 23: Callback tomorrow\n\n24th July 2026 - Rashmi - Connected - CC booked for Saturday, 1st August 2026 - this time he said",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9987956489",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Agreed for a consultation call for tomorrow 28-5-26 morning 11Am.\n\n[28 May 2026 - Arpit Shah]: Consultation done, he is 46 year old. Looking to either buy 3 bhk property in chandivali or a plot in Navi mumbai in next 2-3 months. He is still evaluating what is best for him. He earns 3.75 pm after tax",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9930987633",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "He is looking to buy property in L&T only, looking to close soon. He has asked to call on Friday to confirm timing for consultation call. He was interested in to understand how we can help to structure the loan part\n\n[11 May 2026 - Arpit Shah]: Follow up for the weekend consultation call\n\n[18 May 20",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "m2",
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9867275356",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP. WA message sent.\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "7506786333",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n\n\n4th Aug, Arhan: dnp\n\n5th Aug, Arhan:dnp\n\n6th Aug - Rashmi - DNP - WA message sent\n\n9th Aug - Rashmi - DNP\n\n15th Aug - Rashmi - DNP - Phone switched off",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9821225211",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Interested in due diligence after finalising property. Looking for 2BHK under 2 cr with 700-750 carpet area in Mulund and Ghatkopar.\n\n[15 Jun 2026 - Raaghav Paharia]: might not stay in mumbai, currently paused looking for home. Will contact truva if he resumes.\n\n[14 Jul 2026 - Raaghav Paharia]: Will",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9821333289",
+        "status": "Active Warm (1 month)",
+        "notes": "3.7 cr budget. Looking to purchase soon once he gets the right option. Has an IP from kotak of 2cr at 7.4. \n\nWas very interested in the due diligence angle and will also want to talk about the loan once the property gets finalized. \n\n[14 Jul 2026 - Arhan Shinde]: Looking for property ranging from 4c",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "m2",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "7399950333",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP. WA message sent.\n\n5th Aug, Arhan: dnp\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9892189358",
+        "status": "Future Plan (4+ Months)",
+        "notes": "[23 May 2026 - Arpit Shah]: Lead came through meta Ad. He wants to check his eligibility and has one existing loan. Explained a bit about what Truva home loan does and asked his time for consultation. consultation booked on 24th may at 12PM. Have shared an Invite and whats app message\n\n[25 May 2026 ",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9029525929",
+        "status": "Active Warm (1 month)",
+        "notes": "Connected but he was not audible. Have sent him WA message.\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9920197789",
+        "status": "Active Warm (1 month)",
+        "notes": "(17 Jul 2026- Arhan Shinde): callback next week\n\n[23 Jun 2026 - Raaghav Paharia]: DNP\n\n[13 Jul 2026 - Arhan Shinde]: dnp\n\n[15 Jul 2026 - Arhan Shinde]: dnp\n\n[17 Jul 2026 - Arhan Shinde]: requested callback next week\n\n24th July 2026 - Rashmi - DNP \n\n25th July - Rashmi - DNP\n\n26th July - Rashmi - DNP\n",
+        "last_conversation": "2026-07-26",
+        "last_call_status": "DNP",
+        "last_inbound_message": "2026-08-15",
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "8308844362",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n\n6th Aug - Rashmi - DNP - He is not on WA. \n\n9th Aug - Rashmi - DNP\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9987950878",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "24th July - Rashmi - DNP \n\n25th July - Rashmi - DNP \n\n26th July - Rashmi - Out of town so call back next weekend.\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9870479599",
+        "status": "Future Plan (4+ Months)",
+        "notes": "He is passively looking to buy house, if all his requirements are aligned he'll buy a house. Pitched him for out of Truva home loan, will take consultation call after 15-17 days. He is not in Mumbai so contact him after 15 days\n\n[11 May 2026 - Arpit Shah]: Call on 15th May\n\n[18 May 2026 - Arpit Shah",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "m2",
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9833948018",
+        "status": "Future Plan (4+ Months)",
+        "notes": "For Due Diligence and Home Loan requirement. Will connect after sometime.\n\n24th July - Rashmi - Connect after Aug. 4 - He is busy in his shoots until July end. He is Producer-Director for films and ads.\n\n[4 Aug 2026]- Arhan:dnp\n\n5th Aug, Arhan:\n\n15th Aug - Rashmi - DNP - Number busy\n\n",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9910220790",
+        "status": "Not Qualified",
+        "notes": "once he will finalize any property the property then he will attend the consultation call.\n\n[13 Jul 2026 - Arhan Shinde]: dnp\n\n[15 Jul 2026 - Raaghav Paharia]: was a little bit angry, still have not finalised - said will take his time\n\n15th Aug - Rashmi - NQ as he hasn't yet finalized a property and",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "8355849340",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP. Number busy.\n\n15th Aug - Has time to finalize the property. has asked to reconnect by the end of August to get the exact loan amount.",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9821468182",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "He will take loan for 20-30 lakhs and his overall budget is 1.5 to 1.6 cr. However, he already has arrangement for loan. He can connect for Due Diligence. Need to confirm next week.\n\n23/7/26 - call disconnected\n\n26th July - Rashmi - DNP - call disconnected\n\n[27 Jul 2026 - Arhan Shinde]:dnp\n\n15th Aug",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9952170506",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Have seen our property in KSV. They are active buyers and looking for 3bhk in Powai or Bandra. Our current KSV property is on 1st floor which is not his preference, he wants higher floor. He'll speak to his wife and schedule a consultation call in a week or two\n\n[11 May 2026 - Arpit Shah]: Have seen",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "m2",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9930442132",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9987752831",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Called again on 12th July. Interested for Due diligence. Home loan part hasn't yet decided. Looking for a 3BHK between Goregaon to Vile Parle. Budget 4 cr. He has also showed his interest in Satellite Tower and Hiranandani.\n\n23/7/26 - call forwarded to voicemail\n\n26th July - Rashmi - DNP - call forw",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9819531157",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Interested. asked to WA the details of services. \n23/7/26 - Needs time to decide to get on CC.\n\n\n4th Aug, Arhan:dnp\n\n5th Aug, Arhan: dnp\n\n15th Aug - Rashmi - Asked to call next week to discuss the services and ahead, as not interested right now.",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9619998518",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP. Have sent WA message.\n5th Aug, Arhan: dnp\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9152913513",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n\n6th Aug - Rashmi - DNP - WA message sent\n\n9th Aug - Rashmi - DNP\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9953107773",
+        "status": "Not Qualified",
+        "notes": "Looking for a apartment in KSV once he finalize anything then he will come for consultation.\n\n[14 Jul 2026 - Arhan Shinde]: Said he was travelling and directly cut the call\n\n15th Aug - Rashmi - Not interested for anything, he had already said this earlier also.",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9920315969",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Will speak to husband and then schedule a call\n\n[18 May 2026 - Arpit Shah]: Will speak to husband and then schedule a call\n\n[22 May 2026 - Afif Bellikunhi]: wants to see oberoi woods next week. Is travelling to BLR.\n\n[14 Jul 2026 - Arhan Shinde]: dnp\n[17 Jul 2026 - Arhan Shinde]: wants to be called ",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "m2",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9867131296",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n\n6th Aug - Rashmi - DNP - Call forwarded to voicemail - WA message sent\n\n9th Aug - Rashmi - DNP - Call forwarded to voicemail \n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9953454481",
+        "status": "Future Plan (4+ Months)",
+        "notes": "Said that she will definietly reach out to us when she decides to purchase. Has put it off for 6 months\n\n[14 Jul 2026 - Raaghav Paharia]: Busy right now, will contact us later (not searching for a home currently)\n\n15th Aug - Rashmi - Asked to check status next year.",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "m2",
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9987208802",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n\n6th Aug - Rashmi - DNP - I/C barred - WA message sent\n\n9th Aug - Rashmi - DNP - I/c barred\n\n15th Aug - Rashmi - DNP - I/c barred",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9867874721",
+        "status": "Active Warm (1 month)",
+        "notes": "Self-fund. Interested in Due Diligence only after finalising the property.\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9920858852",
+        "status": null,
+        "notes": "Interested in having a consultation call next week. Has an IP from a pvt bank at 7.15 floating. Didn't know about OD but is interested now. \n\n[16 Jun 2026 - Raaghav Paharia]: Has already bought a home and done loan from HDFC, 7.2% ROI, asked him to still do a consultation. Said would think about it,",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "m2",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9986290086",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Wants to buy in trees itself. Looking for a 2.5bhk. Has an existing relationship with HSBC but is happy to reach out to us once he finalizes. Also mentioned that the due diligence part would anyway be covered by the bank\n\n[13 Jul 2026 - Arhan Shinde]: Looking for a flat in Godrej Trees, wants us to ",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9930017434",
+        "status": null,
+        "notes": "[23 Jun 2026 - Raaghav Paharia]: Busy\n\n[13 Jul 2026 - Arhan Shinde]: dnp\n\n[15 Jul 2026 - Arhan Shinde]: cut the call\n\n\n(17 Jul 2026- Arhan Shinde): dnp\n\n24th July 2026 - Rashmi - DNP - Call disconnected\n\n25th July 2026 - Rashmi - DNP - Call disconnected\n\n26th July 2026 - Rashmi - DNP - Call busy\n\n\n[",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9892475142",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "He is actively looking to buy a house in kanjurmarg area, his budget is 3-3.25Cr and looking for 3bhk property. Currently living in 2bhk and to purchase new house, he has saving and might sell his current house. Also will be taking loan but said he will think about it once the property has been fina",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "m2",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9833879079",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Looking for a apartment only in Ghatkopar at 4Cr and once he will finalize anything he will think about consultation call.\n\n24th July - Rashmi - DNP\n\n25th July - Rashmi - DNP\n\n26th July - Rashmi - DNP - call disconnected\n\n[27 Jul 2026 - Arhan Shinde]:dnp\n\n15th Aug - Rashmi - He hasn't yet finalized ",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9773397615",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "CC booked for tomorrow, Sunday, 2nd August, 12 pm. He is still looking for a home. He showed his interest in Due Diligence service as well as Home loan advisory as he will be opting for partly home loan.\n\n(4th Aug, 2026) - Arhan: dnp\n\n5th Aug, Arhan: dnp\n\n15th Aug - Rashmi - Asked to reconnect on ne",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "7518933843",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9920204059",
+        "status": "Active Warm (1 month)",
+        "notes": "Not finalized any property yet looking for a 2 BHK at 2Cr...wants a loan of 1Cr.\nAgreed for a consultation call for tomorrow at 12pm.\nEmail - plj000096@gmail.com\n\n[12 Jul 2026 - Afif Bellikunhi]: Consultation Call Notes Link - \nhttps://docs.google.com/document/d/1sxEGUtDmGXjsRIdNTiLvNyFFknG8J41bY0Wn",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9867577606",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "For Due Diligence. Need to connect with her Husband on Saturday after 11 am to book consultation. They opt for Home loan but her husband is a Top designated Railway employee, so have all the benefits regarding loan and ROI. They btw have connection with SBI Bank.\n\n23/7/26 - call forwarded to voicema",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9899575226",
+        "status": "Future Plan (4+ Months)",
+        "notes": "Customer is out of mumbai currently she will come next month around 15th.\n\n[15 Jun 2026 - Raaghav Paharia]: looking for 3BHK, L&T 3BHK\n\n[13 Jul 2026 - Arhan Shinde]: dnp\n\n24th July - Rashmi - DNP - call forwarded to voicemail\n\n25th July - Rashmi - DNP\n\n26th July - Rashmi - DNP - number busy\n\n\n[27 Ju",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "m2",
+          "home loans",
+          "future plan (4+ months)"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9819862771",
+        "status": "Active Warm (1 month)",
+        "notes": "Connected but his son spoke on his behalf. Have sent WA message. \n\n5th Aug, Arhan: switched off\n\n15th Aug - Rashmi - DNP ",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9920003925",
+        "status": "Active Warm (1 month)",
+        "notes": "CC booked for Monday, 20th July, 5 pm for Due Diligence and finance part. Her husband Sanjay Veerkar will attend the call. Have finalized a property in Thane Kalpatru. But as mentioned by her, the builder said that her daughter won't get loan as she has her salary account in ICICI. Couldn't understa",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "8692033660",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP. Number switched off.\n\n5th Aug, Arhan:dnp\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9987335857",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Called back on 12th July. Interested For due diligence and Home loan. Will connect only after finalising the property. She is opting for a Mix of self-fund and Home loan. Looking for a property between Borivali to Goregaon. Should not be too near or too far from Highway. Less traffic, less crowd, id",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9819080773",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n[4 Aug 2026]- Arhan:dnp\n\n\n5th Aug, Arhan:dnp\n\n6th Aug - Rashmi - DNP - WA message sent\n\n9th Aug - Rashmi - DNP\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9987867325",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n\n6th Aug - Rashmi - DNP - I/c barred - WA message sent\n\n9th Aug - Rashmi - DNP \n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "new contact",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9820573699",
+        "status": "Active Warm (1 month)",
+        "notes": "Interested for due diligence and home loan advisory. His son is looking for a 4BHK in Oberoi. Yet to finalize. His son is in US. Coming to Mumbai by the end of July. So, will call him by that time to book CC.\n\n\n4th Aug, Arhan: interested in CC, requested callback tomorrow\n\n5th Aug, Arhan:dnp\n\n15th A",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9987646849",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "once he will finalize any property the property then he will attend the consultation call.\n\n[13 Jul 2026 - Arhan Shinde]: Still looking for a property in either mulund, chembur area, told us to reach out after a few months\n\n[13 Jul 2026 - Arhan Shinde]: 2.5 cr budget\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9702504810",
+        "status": "Active Warm (1 month)",
+        "notes": "DNP\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9920915156",
+        "status": null,
+        "notes": "Already has a banking partner but is interested to have a consultation call over the weekend. Is still looking for units in DB woods. \n\n[13 Jul 2026 - Raaghav Paharia]: DNP\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "m2",
+          "active warm (1 month)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9867362482",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Booked for Monday, 20 July, 4 pm. He needs Home loan 1 cr for a property in Mumbai. Not confirmed if his property is finalized.\n\n25th July - Rashmi - DNP\n\n26th July - Rashmi - DNP - call disconnected\n\n[27 Jul 2026 - Arhan Shinde]:dnp\n\n15th Aug - Rashmi - Hasn't yet finalized property, so has asked t",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "Connected",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "still looking (2-4 months)",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "9833970011",
+        "status": "Still Looking (2-4 Months)",
+        "notes": "Will resume after 2 months, doing self funding but still reach out later\n\n[14 Jul 2026 - Arhan Shinde]: dnp\n\n[15 Jul 2026 - Arhan Shinde]: dnp\n\n[17 Jul 2026 - Arhan Shinde]: dnp\n\n23 Jul 2026 - Raaghav : DNP, Busy\n\n[27 Jul 2026 - Arhan Shinde]: dnp\n\n28 July 2026 - raaghav : DNP\n\n15th Aug - Rashmi - D",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "m1",
+          "still looking (2-4 months)",
+          "m2",
+          "home loans"
+        ],
+        "stale_days": 1,
+        "stale": false,
+        "no_contact_on_record": false
+      },
+      {
+        "name": "Unknown",
+        "phone": "8879382656",
+        "status": "Active Warm (1 month)",
+        "notes": "He needs time to connect with us for the home loan requirement as he is already in talks with other two sources, as mentioned by him.\n\n15th Aug - Rashmi - DNP",
+        "last_conversation": "2026-08-15",
+        "last_call_status": "DNP",
+        "last_inbound_message": null,
+        "periskope_labels": [
+          "active warm (1 month)",
           "home loans"
         ],
         "stale_days": 1,
@@ -12719,6 +12769,6 @@
     ],
     "stale_threshold_days": 14,
     "messages_available": true,
-    "generated_at": "2026-08-15T03:57:04.674067Z"
+    "generated_at": "2026-08-16T04:02:54.146502Z"
   }
 }
